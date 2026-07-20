@@ -1,0 +1,83 @@
+---
+lesson: 5
+sequence: 5.4
+title: Project Integration Management — Source Mapping
+document_type: Source Mapping
+status: Draft
+canonical_source:
+  - ../../references/PMBOK-Overview.md
+---
+
+# Lesson 05_4 — Source Mapping
+
+## 1. Canonical Source
+
+บทนี้ยึดจาก:
+
+> Knowledge Area 1: Project Integration Management และ Change Management Process
+
+## 2. Source-Derived Topics
+
+1. Develop Project Charter
+2. Develop Project Management Plan
+3. Direct and Manage Project Work
+4. Manage Project Knowledge
+5. Monitor and Control Project Work
+6. Perform Integrated Change Control
+7. Close Project or Phase
+8. Governance
+9. Decision Rights
+10. Trade-off Management
+11. Benefits Alignment
+12. Transition to Operation
+
+## 3. Teaching Enrichment
+
+ส่วนต่อไปนี้เป็นการขยายเพื่อการสอน:
+
+- Opening Question และ Scenario
+- การเชื่อมกับ Business Need, Outcome, Benefit และ Value
+- การแยก Fact, Assumption, Decision และ Action
+- Cross-Knowledge Impact
+- Process Theater
+- Tailoring Guidance
+- ERP Transformation Scenario
+- Hotel Booking Digital Platform Scenario
+- Reflection และ Applied Assessment
+
+## 4. ERP Assumptions
+
+- เชื่อม Business Case, Process Design, Data Migration, Vendor, UAT, Cutover และ Support
+- วิเคราะห์ Change Request ที่เพิ่ม Approval Workflow ก่อน Go-live
+- ตัดสินใจ Trade-off ระหว่างวัน Go-live, Scope, Data Quality และ User Readiness
+
+รายละเอียดเป็น Teaching Scenario ไม่ใช่ข้อเท็จจริงจากโครงการจริง
+
+## 5. Hotel Booking Assumptions
+
+- เชื่อม Mobile, Web, Landing Page, Back Office, Booking Engine, Payment และ Inventory
+- วิเคราะห์คำขอเพิ่ม Promotion Engine ก่อน Launch
+- ตัดสินใจระหว่าง Launch Date, Conversion, Payment Stability และ Support Readiness
+
+ระบบสมมติประกอบด้วย Mobile App, Customer Web App, Landing Page, Back Office, Booking Engine, Payment, Inventory, Notification และ Reporting
+
+## 6. Content Boundaries
+
+- ไม่อ้างว่าทุกองค์กรต้องใช้ Artifact เหมือนกัน
+- ไม่อ้างว่าสมมติฐานของ Scenario เป็นข้อเท็จจริง
+- ไม่แทนที่ Policy, Contract, Law หรือ Standard เฉพาะองค์กร
+- ไม่ขยาย Tool หรือ Template เฉพาะผลิตภัณฑ์
+- ไม่ตัดสิน Approach โดยไม่มีบริบท
+
+## 7. Quality Check
+
+บทนี้ต้อง:
+
+- รักษาความหมายของ Canonical Source
+- แยก Source Fact กับ Teaching Enrichment
+- มี ERP และ Hotel Booking
+- แสดง Cross-Knowledge Impact
+- เชื่อม Outcome และ Business Value
+- มี Misconception Correction
+- มี Assessment
+- ระบุ Assumption อย่างชัดเจน
