@@ -31,4 +31,4 @@ git diff --check
 
 ## Release Result
 
-Lessons 11–16 and Capstone passed Batch 3 Release Gate and are `Active / Validated`. No commit or push was performed.
+Lessons 11–16 and Capstone passed Batch 3 Release Gate and are `Active / Validated`. Git publication is recorded in repository history.

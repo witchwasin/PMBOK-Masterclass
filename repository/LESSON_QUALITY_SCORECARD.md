@@ -4,7 +4,7 @@ document_type: Quality Scorecard
 baseline_audit_date: 2026-07-22
 latest_rescore_date: 2026-07-22
 current_release_scope: Lessons 01-16 and Capstone
-scoring_standard: "§14.2 of REPOSITORY-VALIDATION-AND-FULL-REBUILD.md"
+scoring_standard: "COURSE_STANDARD.md release gate"
 scale: 0-5
 minimum_release_threshold:
   no_category_below: 3

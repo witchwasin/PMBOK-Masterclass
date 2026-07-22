@@ -1,7 +1,7 @@
 ---
 title: AI Continuation Guide
 document_type: AI Guide
-version: 1.0
+version: 2.0
 ---
 
 # PMBOK Masterclass — AI Continuation Guide
@@ -12,22 +12,22 @@ version: 1.0
 
 ## 1. ก่อนทำอะไร ให้อ่านไฟล์เหล่านี้ก่อน (ตามลำดับ)
 
-1. `governance/REPOSITORY-VALIDATION-AND-FULL-REBUILD.md` — คำสั่งหลัก
-2. `governance/COURSE_STANDARD.md` — มาตรฐาน 21 mandatory sections
-3. `governance/STYLE_GUIDE.md` — กฎการเขียน
-4. `governance/CONTENT-RULES.md` — กฎเนื้อหา
-5. `repository/PMBOK-EDITION-POSITION.md` — จุดยืน PMBOK Edition
-6. `scenarios/ERP-TRANSFORMATION-CASE.md` — Scenario Master ERP
-7. `scenarios/HOTEL-BOOKING-PLATFORM-CASE.md` — Scenario Master Hotel Booking
-8. `repository/LESSON_QUALITY_SCORECARD.md` — สถานะคุณภาพปัจจุบัน
-9. `governance/LESSON_INDEX.md` — สถานะทุกบท
+1. `governance/COURSE_STANDARD.md` — มาตรฐานและ release gate
+2. `governance/CONTENT-RULES.md` — กฎเนื้อหาและ source boundaries
+3. `governance/EXECUTION_BASELINE.md` — learning sequence และ artifact contract
+4. `governance/ARTIFACT_DEPENDENCY_MAP.md` — end-to-end handoff
+5. `governance/STYLE_GUIDE.md` — กฎการเขียน
+6. `repository/PMBOK-EDITION-POSITION.md` — จุดยืน PMBOK Edition
+7. `scenarios/ERP-TRANSFORMATION-CASE.md` — Scenario Master ERP
+8. `scenarios/HOTEL-BOOKING-PLATFORM-CASE.md` — Scenario Master Hotel Booking
+9. `repository/LESSON_QUALITY_SCORECARD.md` และ `governance/LESSON_INDEX.md` — สถานะ release ปัจจุบัน
 10. `repository/REPOSITORY_DECISION_LOG.md` — การตัดสินใจที่เคยทำ
 
 ## 2. กฎหลัก
 
-1. **ห้าม Rewrite ก่อน Audit** — ถ้ายังไม่มี Audit Report ให้ทำก่อน
+1. **เริ่มจาก source of truth ปัจจุบัน** — ใช้ Course Standard, Execution Baseline และ Scenario Master; อ่าน archive เฉพาะเมื่อจำเป็นต้องเข้าใจประวัติ
 2. **ห้ามสร้างตัวเลข Scenario ใหม่** — ใช้จาก Scenario Master เท่านั้น ถ้าต้องเพิ่มให้ update Scenario Master ก่อน
-3. **ห้ามข้ามขั้นตอน** — Pass 0 → 1 → 2 → 3 → 4 → 5 → 6 → 7
+3. **ห้ามข้าม release gate** — ตรวจ metadata, artifact, scenario consistency, integration และ evidence ตามงานที่เปลี่ยน
 4. **ทุก Lesson ต้องมีครบ 21 sections** — ตาม COURSE_STANDARD.md
 5. **ทุกส่วนเนื้อหาต้องมี Source Classification label**
 6. **Lesson 01 คือ quality baseline** — ห้ามลดคุณภาพ narrative ของ L01 เพื่อให้เท่ากับบทอื่น
@@ -43,4 +43,4 @@ version: 1.0
 
 ## 4. เมื่อ Output ใกล้ Response Limit
 
-หยุดที่ logical boundary แล้วรอคำสั่ง: `Continue Repository Rebuild`
+หยุดที่ logical boundary แล้วสรุป validation และ artifact handoff ที่ยังเหลือ
