@@ -19,9 +19,9 @@ last_updated: 2026-07-22
 | 08 | Project Schedule Management | Core | Active | Validated | 2026-07-22 |
 | 09 | Project Cost Management and Earned Value | Core | Active | Validated | 2026-07-22 |
 | 10 | Project Quality Management | Core | Active | Validated | 2026-07-22 |
-| 11 | Project Resource Management | Core | Draft | Not Validated | — |
-| 12 | Project Communications Management | Core | Draft | Not Validated | — |
-| 13 | Project Risk Management | Core | Draft | Not Validated | — |
-| 14 | Project Procurement Management | Core | Draft | Not Validated | — |
-| 15 | Agile Project Management: Scrum and Kanban | Advanced | Draft | Not Validated | — |
-| 16 | Predictive vs Agile vs Hybrid and Tailoring | Advanced | Draft | Not Validated | — |
+| 11 | Project Resource Management | Core | Active | Validated | 2026-07-22 |
+| 12 | Project Communications Management | Core | Active | Validated | 2026-07-22 |
+| 13 | Project Risk Management | Core | Active | Validated | 2026-07-22 |
+| 14 | Project Procurement Management | Core | Active | Validated | 2026-07-22 |
+| 15 | Agile Project Management: Scrum and Kanban | Advanced | Active | Validated | 2026-07-22 |
+| 16 | Predictive vs Agile vs Hybrid and Tailoring | Advanced | Active | Validated | 2026-07-22 |

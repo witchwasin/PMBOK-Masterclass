@@ -3,9 +3,24 @@ lesson: 13
 sequence: 13.4
 title: Project Risk Management — Source Mapping
 document_type: Source Mapping
-status: Draft
+difficulty: Core
+estimated_study_time: 10
+status: Active
+validation_status: Validated
+last_reviewed: 2026-07-22
+intended_learner_level: Beginner PM
+prerequisite:
+  - Lesson 12 — Project Communications Management
+related_lessons:
+  - Lesson 14 — Project Procurement Management
 canonical_source:
   - ../../references/PMBOK-Overview.md
+scenario_version:
+  erp: "1.0"
+  hotel_booking: "1.0"
+core_scenarios:
+  - ERP Transformation
+  - Hotel Booking Digital Platform
 ---
 
 # Lesson 13_4 — Source Mapping
@@ -96,8 +111,8 @@ canonical_source:
 
 - **[PMBOK 6]** ใช้สำหรับ process, artifact, baseline, knowledge area และ governance vocabulary
 - **[PMBOK 7]** ใช้สำหรับ value delivery, systems thinking, tailoring, adaptability และ stewardship
-- **[Scenario]** ใช้สำหรับ ERP Transformation และ Hotel Booking Platform ที่มาจาก scenario master files
-- **[Instructor Interpretation]** ใช้สำหรับ workshop, decision prompt, misconception correction, rubric และ Thai executive framing
+- **[Teaching Scenario]** ใช้สำหรับ ERP Transformation และ Hotel Booking Platform ที่มาจาก scenario master files
+- **[Professional Opinion]** ใช้สำหรับ workshop, decision prompt, misconception correction, rubric และ Thai executive framing
 
 ## 9. Mapping Boundary and Continuation Notes
 

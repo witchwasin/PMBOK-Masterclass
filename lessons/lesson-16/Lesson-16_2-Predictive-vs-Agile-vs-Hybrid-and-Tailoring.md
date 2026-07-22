@@ -3,21 +3,32 @@ lesson: 16
 sequence: 16.2
 title: Predictive vs Agile vs Hybrid and Tailoring
 document_type: Lesson
-level: Core
-status: Draft
-validation_status: Pending Final Repository Validation
-version: 1.0
-last_updated: 2026-07-22
+difficulty: Core
+estimated_study_time: 95
+status: Active
+validation_status: Validated
+last_reviewed: 2026-07-22
+intended_learner_level: Beginner PM
 prerequisite:
   - Lesson 15 — Agile Project Management Frameworks (Scrum and Kanban)
+related_lessons:
+  - Capstone — Full Project Management Handover and Launch
 canonical_source:
   - ../../references/PMBOK-Overview.md
+scenario_version:
+  erp: "1.0"
+  hotel_booking: "1.0"
 core_scenarios:
   - ERP Transformation
   - Hotel Booking Digital Platform
 ---
 
 # Lesson 16_2 — Predictive vs Agile vs Hybrid and Tailoring
+
+## Beginner Safety
+
+- **ควรรู้แล้ว:** L11–15 governance and delivery evidence; **คำศัพท์ใหม่:** tailoring rationale, trigger, cadence.
+- **Novice trap:** ตั้งชื่อ approach แล้วคิดว่าเป็น tailoring โดยไม่บันทึกเหตุผลหรือ control.
 
 ## Opening Professional Question — ถ้าสูตรสำเร็จเดียวไม่ได้ผลกับทุกโครงการ แล้ว PM จะเลือกระหว่าง Predictive, Agile หรือ Hybrid อย่างไรให้เหมาะกับงานจริง?
 
@@ -179,7 +190,7 @@ PM มืออาชีพไม่ถามว่า Waterfall หรือ Ag
 
 ## ERP Scenario
 
-**[Scenario]** ERP Transformation มี 5 modules, TechConsult, data migration, 80 key users, working budget 45 ล้านบาท และ go-live target ก่อน 1 ตุลาคม.
+**[Teaching Scenario]** ERP Transformation มี 5 modules, TechConsult, data migration, 80 key users, working budget 45 ล้านบาท และ go-live target ก่อน 1 ตุลาคม.
 
 Recommended approach: Hybrid.
 
@@ -190,7 +201,7 @@ Recommended approach: Hybrid.
 
 ## Hotel Booking Scenario
 
-**[Scenario]** Hotel Booking Platform มีเป้าหมาย direct booking 35% หลัง 18 เดือน และต้องเรียนรู้จาก user behavior, conversion, payment reliability และ partner adoption.
+**[Teaching Scenario]** Hotel Booking Platform มีเป้าหมาย direct booking 35% หลัง 18 เดือน และต้องเรียนรู้จาก user behavior, conversion, payment reliability และ partner adoption.
 
 Recommended approach: Agile with selective predictive controls.
 
@@ -201,7 +212,7 @@ Recommended approach: Agile with selective predictive controls.
 
 ## Real Enterprise Example
 
-**[Instructor Interpretation]** องค์กรที่บังคับทุก project ให้ Agile 100% หรือ Waterfall 100% กำลังละเลยธรรมชาติของงาน. การสร้างโรงงาน ระบบบัญชี ERP และ mobile product มี uncertainty, compliance และ feedback cadence ต่างกัน. Approach ที่ดีต้องอธิบายเหตุผลได้ ไม่ใช่เป็นคำสั่งจาก trend.
+**[Enterprise Practice]** องค์กรที่บังคับทุก project ให้ Agile 100% หรือ Waterfall 100% กำลังละเลยธรรมชาติของงาน. การสร้างโรงงาน ระบบบัญชี ERP และ mobile product มี uncertainty, compliance และ feedback cadence ต่างกัน. Approach ที่ดีต้องอธิบายเหตุผลได้ ไม่ใช่เป็นคำสั่งจาก trend.
 
 ## Common Mistakes
 
@@ -291,3 +302,9 @@ Lesson 15 สอน Agile/Scrum/Kanban. Lesson 16 รวมทั้งหลั
 ## AI Continuation Context
 
 Future AI agents must preserve Lesson 16 as the course capstone. Do not present a single best methodology. Use ERP as hybrid with predictive governance and Hotel Booking as agile product delivery with selective predictive controls.
+
+## Artifact Handoff
+
+- **Output:** Approved Tailored Hybrid Delivery Plan with workstream rationale, trigger and review cadence.
+- **Authority:** PM owns integration, PO product policy; Steering Committee/Sponsor approves.
+- **Next use:** Capstone links this canonical artifact to launch, handover and benefit evidence.

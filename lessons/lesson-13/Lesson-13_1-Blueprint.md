@@ -3,18 +3,39 @@ lesson: 13
 sequence: 13.1
 title: Project Risk Management
 document_type: Blueprint
-level: Core
-status: Draft
-validation_status: Not Validated
+difficulty: Core
+estimated_study_time: 30
+status: Active
+validation_status: Validated
 last_reviewed: 2026-07-22
 intended_learner_level: Beginner PM
 prerequisite:
-  - Lesson 12
+  - Lesson 12 — Project Communications Management
+related_lessons:
+  - Lesson 14 — Project Procurement Management
 canonical_source:
   - ../../references/PMBOK-Overview.md
+scenario_version:
+  erp: "1.0"
+  hotel_booking: "1.0"
 core_scenarios:
   - ERP Transformation
   - Hotel Booking Digital Platform
+artifact_inputs:
+  - Communication plan, status report and escalation path from Lesson 12
+artifact_outputs:
+  - name: Risk Register, Response Plan and Issue Log
+    creator: PM, Risk Owners and Issue Owners
+    artifact_owner: PM
+    reviewer: Risk Owners and Issue Owners
+    approval_authority: PM within delegated threshold; Steering Committee for appetite, threshold, high/critical responses and excess contingency
+    approval_evidence: Risk acceptance, review minutes, escalation record and Change Request ID
+next_lesson_usage:
+  - Risk allocation and change evidence inform procurement and vendor control.
+acceptance_level:
+  incomplete: Risks have no owner, trigger or response.
+  usable: Risk-to-issue escalation and approved responses can be followed.
+  professional: Thresholds, reserves, change control and governance evidence are decision-ready.
 ---
 
 # Lesson 13_1 — Blueprint: Project Risk Management

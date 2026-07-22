@@ -3,18 +3,39 @@ lesson: 14
 sequence: 14.1
 title: Project Procurement Management
 document_type: Blueprint
-level: Core
-status: Draft
-validation_status: Not Validated
+difficulty: Core
+estimated_study_time: 30
+status: Active
+validation_status: Validated
 last_reviewed: 2026-07-22
 intended_learner_level: Beginner PM
 prerequisite:
-  - Lesson 13
+  - Lesson 13 — Project Risk Management
+related_lessons:
+  - Lesson 15 — Agile Project Management
 canonical_source:
   - ../../references/PMBOK-Overview.md
+scenario_version:
+  erp: "1.0"
+  hotel_booking: "1.0"
 core_scenarios:
   - ERP Transformation
   - Hotel Booking Digital Platform
+artifact_inputs:
+  - Risk register, issue log and approved change requests from Lesson 13
+artifact_outputs:
+  - name: Procurement Plan, Vendor Evaluation and Contract Control Record
+    creator: PM, Procurement Manager and Commercial Lead
+    artifact_owner: Procurement Manager for commercial artifacts; PM for delivery and acceptance linkage
+    reviewer: Legal, Finance, IT and Business Owners
+    approval_authority: Procurement Authority or Sponsor according to financial authority
+    approval_evidence: Sourcing decision, contract approval, vendor acceptance and payment authorization
+next_lesson_usage:
+  - Contract constraints and acceptance evidence shape iterative delivery choices.
+acceptance_level:
+  incomplete: Scope, acceptance or commercial owner is unclear.
+  usable: Supplier selection, contract control and acceptance evidence are connected.
+  professional: Commercial risk, change and payment controls support a defensible decision.
 ---
 
 # Lesson 14_1 — Blueprint: Project Procurement Management

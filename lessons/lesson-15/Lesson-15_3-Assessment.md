@@ -3,7 +3,24 @@ lesson: 15
 sequence: 15.3
 title: Agile Project Management: Mindset, Scrum and Kanban — Assessment
 document_type: Assessment
-status: Draft
+difficulty: Core
+estimated_study_time: 40
+status: Active
+validation_status: Validated
+last_reviewed: 2026-07-22
+intended_learner_level: Beginner PM
+prerequisite:
+  - Lesson 15 — Agile Project Management: Mindset, Scrum and Kanban
+related_lessons:
+  - Lesson 16 — Predictive vs Agile vs Hybrid and Tailoring
+canonical_source:
+  - ../../references/PMBOK-Overview.md
+scenario_version:
+  erp: "1.0"
+  hotel_booking: "1.0"
+core_scenarios:
+  - ERP Transformation
+  - Hotel Booking Digital Platform
 ---
 
 # Lesson 15_3 — Assessment
@@ -19,7 +36,7 @@ B. ส่งมอบ value เป็นรอบสั้น เรียนร
 C. ใช้ daily standup แทน governance ทั้งหมด
 D. ใช้ Scrum กับทุกงานเสมอ
 
-**คำตอบ:** C
+**คำตอบ:** B
 
 ### ข้อ 2
 

@@ -3,7 +3,7 @@ title: Lesson Quality Scorecard
 document_type: Quality Scorecard
 baseline_audit_date: 2026-07-22
 latest_rescore_date: 2026-07-22
-current_release_scope: Lessons 01-10
+current_release_scope: Lessons 01-16 and Capstone
 scoring_standard: "§14.2 of REPOSITORY-VALIDATION-AND-FULL-REBUILD.md"
 scale: 0-5
 minimum_release_threshold:
@@ -80,6 +80,35 @@ minimum_release_threshold:
 - Hotel Booking Contrast แสดง tailoring โดยไม่ล้ำ Lesson 15
 - Assessment วัด application/judgement 90%
 - Integration Review trace Need → Requirement → Scope → WBS → Activity → Schedule → Cost → Quality/Acceptance
+
+## Current Post-Rebuild Score — Batch 3
+
+| Dimension | L11 | L12 | L13 | L14 | L15 | L16 |
+|---|---:|---:|---:|---:|---:|---:|
+| Accuracy | 5 | 5 | 5 | 5 | 5 | 5 |
+| Depth | 4 | 4 | 5 | 4 | 4 | 5 |
+| Why-before-What | 5 | 5 | 5 | 5 | 5 | 5 |
+| Mental Model | 4 | 4 | 5 | 4 | 4 | 5 |
+| Narrative Flow | 4 | 4 | 4 | 4 | 4 | 4 |
+| PM Thinking | 4 | 5 | 5 | 4 | 4 | 5 |
+| PM Decision Thinking | 5 | 5 | 5 | 5 | 5 | 5 |
+| ERP Continuity | 5 | 5 | 5 | 5 | 4 | 5 |
+| Hotel Booking Continuity | 4 | 4 | 4 | 4 | 5 | 5 |
+| Misconception Correction | 5 | 5 | 5 | 5 | 5 | 5 |
+| Assessment Quality | 5 | 5 | 5 | 5 | 5 | 5 |
+| Source Transparency | 5 | 5 | 5 | 5 | 5 | 5 |
+| Terminology Consistency | 5 | 5 | 5 | 5 | 5 | 5 |
+| Lesson Boundary | 5 | 5 | 5 | 5 | 5 | 5 |
+| Connection to Adjacent | 5 | 5 | 5 | 5 | 5 | 5 |
+| **Average** | **4.67** | **4.73** | **4.87** | **4.67** | **4.67** | **4.87** |
+| **Release Gate** | **PASS** | **PASS** | **PASS** | **PASS** | **PASS** | **PASS** |
+
+### Batch 3 Rescore Evidence
+
+- 24 core files meet the strict metadata contract; 48 learning assets meet the prescribed learner/instructor split.
+- Governance authority is explicit: functional capacity (L11), delegated risk threshold (L13), commercial acceptance (L14), and distinct PO/team/release ownership (L15).
+- Capstone requires canonical links, sequential completeness/consistency/integration/defense gates and no ERP budget-term contradiction.
+- All required dimensions meet the course threshold: no score below 3, average at least 4, source/terminology at 5, and decision/assessment at least 4.
 
 ## Historical Pre-Rebuild Baseline — Superseded
 

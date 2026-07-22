@@ -3,18 +3,39 @@ lesson: 16
 sequence: 16.1
 title: Predictive vs Agile vs Hybrid and Tailoring
 document_type: Blueprint
-level: Core
-status: Draft
-validation_status: Not Validated
+difficulty: Core
+estimated_study_time: 35
+status: Active
+validation_status: Validated
 last_reviewed: 2026-07-22
 intended_learner_level: Beginner PM
 prerequisite:
-  - Lesson 15
+  - Lesson 15 — Agile Project Management: Mindset, Scrum and Kanban
+related_lessons:
+  - Capstone — Full Project Management Handover and Launch
 canonical_source:
   - ../../references/PMBOK-Overview.md
+scenario_version:
+  erp: "1.0"
+  hotel_booking: "1.0"
 core_scenarios:
   - ERP Transformation
   - Hotel Booking Digital Platform
+artifact_inputs:
+  - Backlog, flow, feedback, contract and governance evidence from Lessons 11–15
+artifact_outputs:
+  - name: Tailored Hybrid Delivery Plan
+    creator: PM, Product Owner and Delivery Leads
+    artifact_owner: PM for governance/integration; Product Owner for product delivery policy
+    reviewer: PMO, Architecture, Security, QA, Operations and Vendor
+    approval_authority: Steering Committee or Sponsor
+    approval_evidence: Tailoring decision, trigger/review cadence and governance approval
+next_lesson_usage:
+  - Tailoring rationale and evidence form the capstone handover and launch package.
+acceptance_level:
+  incomplete: Approach is named without context, trigger or accountable authority.
+  usable: Delivery approach, governance and review cadence are documented and approved.
+  professional: Workstream-level tailoring and change triggers sustain an executable hybrid plan.
 ---
 
 # Lesson 16_1 — Blueprint: Predictive vs Agile vs Hybrid and Tailoring
