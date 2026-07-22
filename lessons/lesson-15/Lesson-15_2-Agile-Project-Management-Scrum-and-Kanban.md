@@ -1,0 +1,155 @@
+---
+lesson: 15
+sequence: 15.2
+title: Agile Project Management Frameworks (Scrum and Kanban)
+document_type: Lesson
+level: Core
+status: Active
+prerequisite:
+  - Lesson 14 — Project Procurement Management
+canonical_source:
+  - ../../references/PMBOK-Overview.md
+core_scenarios:
+  - ERP Transformation
+  - Hotel Booking Digital Platform
+---
+
+# Lesson 15_2 — Agile Project Management Frameworks (Scrum and Kanban)
+
+## 1. คำถามเปิดบท: ทำไมการวางแผนงานล่วงหน้า 1 ปีอย่างละเอียด ถึงกลับกลายเป็นจุดอ่อนร้ายแรงที่สุดในโลกธุรกิจยุคปัจจุบัน?
+
+ลองพิจารณาคำถามท้าทายในยุคดิจิทัล:
+
+> ในยุคที่พฤติกรรมผู้บริโภคเปลี่ยนแปลงทุกสัปดาห์ คู่แข่งออกฟีเจอร์ใหม่ทุกเดือน และเทคโนโลยีปัญญาประดิษฐ์ (AI) ก้าวกระโดดทุกวัน การยึดติดกับแผนงาน 500 หน้าที่วางไว้เมื่อ 2 ปีที่แล้ว โดยไม่ยอมปรับเปลี่ยนเลย ถือเป็น "วินัยทางการบริหาร" หรือเป็น "การเดินหน้าสู่ความล้มเหลว"?
+
+ในโลกที่ซับซ้อนและเปลี่ยนแปลงรวดเร็ว (VUCA World) แผนงานแบบเดิมที่สมบูรณ์แบบบนกระดาษ อาจกลายเป็นสิ่งที่ไร้ประโยชน์ทันทีเมื่อเปิดตัว
+
+> **คำถามสำคัญคือ:** Agile คืออะไร? มันเป็นเพียง "ความไม่มีระเบียบวินัยที่ไม่ยอมทำเอกสาร" หรือเป็น "ปรัชญาและกรอบการทำงานอย่างมีวินัยที่เน้นการเรียนรู้ ปรับตัว และส่งมอบความคุ้มค่าเร็วที่สุด"?
+
+---
+
+## 2. ปัญหาที่ต้องทำความเข้าใจ: การทำ "Agile in Name Only" (Fake Agile)
+
+ความล้มเหลวหลักในการนำ Agile มาใช้ในองค์กร ได้แก่:
+
+1. **ทำตามพิธีกรรมแต่ไม่เปลี่ยน Mindset (Agile Theater):**
+   * มีการยืนประชุมสั้น (Daily Standup) ทุกเช้า มีตาราง Scrum Board แต่กระบวนการคิด การอนุมัติ และสัญญายังคงเป็น Waterfall 100%
+2. **เข้าใจผิดว่า Agile คือการไม่ต้องทำเอกสารและไม่ต้องวางแผน:**
+   * ละเลยการทำ Product Backlog Refinement ขาดข้อตกลงเกณฑ์งานเสร็จ (Definition of Done) จนเกิด Technical Debt มหาศาล
+3. **การพยายามนำ Scrum หรือ Kanban ไปบังคับใช้กับงานที่ไม่เหมาะสม:**
+   * นำ Scrum ไปใช้กับงานก่อสร้างอาคาร หรือนำ Kanban ไปใช้กับงานที่ต้องการกำหนดการส่งมอบแบบล็อควันคงที่แน่นอน
+
+---
+
+## 3. เหตุผลและที่มา: จาก Agile Manifesto สู่การส่งมอบความคุ้มค่าอย่างต่อเนื่อง
+
+เหตุใด **Agile Project Management** จึงกลายเป็นมาตรฐานสำคัญของวิชาชีพ PM?
+
+เพราะในการพัฒนาผลิตภัณฑ์ดิจิทัลและนวัตกรรมใหม่ **"สมมติฐานในวันแรกมักจะผิด"** วิธีเดียวที่จะรู้ความจริงคือการส่งมอบผลงานชิ้นเล็ก ๆ ออกไปทดสอบกับตลาดจริงให้เร็วที่สุด (Build-Measure-Learn Loop)
+
+> **Core Rationale:**  
+> **Agile ไม่ใช่เครื่องมือหรือเทคนิคเฉพาะ แต่คือ Mindset ที่ขับเคลื่อนด้วย 4 ค่านิยมหลัก (4 Values) และ 12 หลักการ (12 Principles) ที่เน้นการตอบสนองต่อการเปลี่ยนแปลง มากกว่าการทำตามแผนที่วางไว้**
+
+---
+
+## 4. Mental Model: 4 Values of Agile Manifesto & Scrum Cycle
+
+เพื่อสร้างกรอบความคิดที่ถูกต้อง ให้ยึด **4 ค่านิยมหลักของ Agile Manifesto** (อ้างอิงจาก Canonical Source):
+
+```text
+1. คนและการมีปฏิสัมพันธ์                 เหนือกว่า   กระบวนการและเครื่องมือ
+   (Individuals and Interactions        over       Processes and Tools)
+
+2. ซอฟต์แวร์ที่นำไปใช้งานได้จริง          เหนือกว่า   เอกสารที่ครบถ้วนสมบูรณ์
+   (Working Software                    over       Comprehensive Documentation)
+
+3. การร่วมมือทำงานกับลูกค้า              เหนือกว่า   การเจรจาต่อรองสัญญา
+   (Customer Collaboration              over       Contract Negotiation)
+
+4. การตอบสนองต่อการเปลี่ยนแปลง         เหนือกว่า   การปฏิบัติตามแผนผูกมัด
+   (Responding to Change                over       Following a Plan)
+```
+
+*(หมายเหตุ: สิ่งทางขวายังคงมีคุณค่า แต่สิ่งทางซ้ายมีคุณค่ามากกว่า)*
+
+---
+
+## 5. คำศัพท์และ Framework (Scrum vs Kanban ตาม Canonical Source)
+
+อ้างอิงจาก [references/PMBOK-Overview.md](file:///Users/arm/Documents/GitHub/PMBOK-Masterclass/references/PMBOK-Overview.md):
+
+### 5.1 Scrum Framework (Iterative & Incremental Delivery)
+Scrum บริหารงานเป็นรอบเวลาคงที่เรียกว่า **Sprint** (ปกติ 1-4 สัปดาห์) โดยประกอบด้วย:
+
+- **3 Roles:** 
+  * *Product Owner (PO):* เจ้าของผลิตภัณฑ์ จัดลำดับความสำคัญใน Backlog (Maximizing Value)
+  * *Scrum Master (SM):* โค้ชผู้ดูแลกระบวนการ ขจัดอุปสรรคให้ทีม (Servant Leader)
+  * *Developers / Team:* ทีมงานข้ามสายงานผู้ลงมือทำระบบ (Self-Organizing)
+- **3 Artifacts:** *Product Backlog*, *Sprint Backlog*, *Increment* (ผลงานที่พร้อมใช้งานได้จริง)
+- **5 Events:** *Sprint*, *Sprint Planning*, *Daily Scrum (15 นาที)*, *Sprint Review (Demo)*, *Sprint Retrospective (ปรับปรุงการทำงาน)*
+
+### 5.2 Kanban Framework (Flow-based Delivery)
+Kanban เน้นการเห็นภาพการไหลของงาน (Visualize Flow) และการจำกัดปริมาณงานที่ทำพร้อมกัน:
+- **Visual Board:** แบ่งช่องสถานะงาน เช่น *To Do → In Progress → Testing → Done*
+- **WIP Limits (Work in Progress Limits):** กำหนดจำนวนงานสูงสุดที่ยอมให้ทำพร้อมกันในแต่ละช่อง เพื่อลดการสลับงานไปมา (Context Switching) และกำจัดคอขวด (Bottlenecks)
+
+---
+
+## 6. ตัวอย่างสถานการณ์จริง (Core Scenarios)
+
+### 🏨 Core Scenario B: Hotel Booking Digital Platform (Scrum & Kanban in Practice)
+
+- **Scrum Flow in Mobile App Development:**
+  * ทีมพัฒนาใช้ Scrum แบบ **Sprint ละ 2 สัปดาห์**
+  * *Sprint 1:* ส่งมอบ Increment หน้าค้นหาโรงแรม (Search)
+  * *Sprint 2:* ส่งมอบ Increment หน้าเลือกห้องพักและชำระเงิน (Booking & Payment)
+  * ในทุกจบ Sprint ทีมจัด **Sprint Review** นำแอปจริงให้ Stakeholders ทดลองเล่น และทำ **Sprint Retrospective** เพื่อปรับปรุงกระบวนการทำงานใน Sprint ถัดไป
+- **Kanban for Support & Maintenance:**
+  * สำหรับทีมดูแลระบบและแก้ Incident ใช้ **Kanban Board** ที่มี WIP Limit ไม่เกิน 3 งานในช่อง *In Progress* เพื่อรับประกันว่าบั๊กวิกฤตจะได้รับการแก้ไขและส่งมอบอย่างรวดเร็วที่สุด
+
+### 🏢 Core Scenario A: ERP Transformation (Agile/Hybrid Mindset)
+
+- แม้โครงการ ERP จะใช้วิธีวางแผนหลักแบบ Waterfall แต่สามารถนำ **Daily Standup (15 นาที)** และ **Kanban Board** มาใช้ในการติดตามสถานะงาน Data Migration และการทำ SIT ร่วมกันระหว่าง Vendor กับทีมงานภายใน เพื่อเพิ่มความโปร่งใส
+
+---
+
+## 7. ความเข้าใจผิดที่พบบ่อย (Misconceptions to Correct)
+
+1. **"Agile หมายถึงไม่มีแผน และสามารถเปลี่ยนสเปคได้ทุกวันตามใจชอบ":**
+   * *ความจริง:* ในระหว่างที่ดำเนินการใน Sprint (Sprint Execution) ขอบเขตใน Sprint Backlog จะถูกล็อคไว้ การเปลี่ยนความสำคัญจะทำได้ใน Sprint ถัดไปผ่านการจัดลำดับ Product Backlog โดย Product Owner
+2. **"Agile ไม่ต้องการ Project Manager อีกต่อไป":**
+   * *ความจริง:* แม้ใน Scrum จะไม่มีชื่อตำแหน่ง PM แต่ทักษะของ PM ด้าน Integration, Risk, Stakeholder, และ Governance ยังคงจำเป็นอย่างยิ่ง โดย PM อาจปรับบทบาทเป็น Product Owner, Scrum Master หรือ Delivery Manager
+3. **"Scrum ดีกว่า Kanban เสมอ":**
+   * *ความจริง:* Scrum เหมาะกับงานพัฒนาสิ่งใหม่ที่มีจังหวะแน่นอน ส่วน Kanban เหมาะกับงานที่มีคำขอเข้ามาต่อเนื่องและต้องการความยืดหยุ่นสูง ไม่มีตัวใดเหนือกว่า ขึ้นอยู่กับบริบทงาน
+
+---
+
+## 8. PM Thinking & Decision Making
+
+เมื่อต้องพิจารณานำ Agile Framework มาใช้ ให้ PM ใช้ **Agile Readiness Decision Steps**:
+
+```text
+Step 1: Assess Uncertainty -> งานมีความไม่แน่นอนด้าน Requirement หรือเทคโนโลยีสูงหรือไม่?
+        - ถ้าความไม่แน่นอนสูง -> เลือกใช้ Agile Framework (Scrum/Kanban)
+        - ถ้าสเปคแน่นอน 100% ไม่เปลี่ยนเลย -> เลือกใช้ Predictive (Waterfall)
+
+Step 2: Choose Framework ->
+        - ต้องการส่งมอบเป็นรอบเวลาแน่นอน (Timeboxed Iterations) -> ใช้ Scrum
+        - ต้องการบริหารการไหลของงานต่อเนื่องและลดคอขวด (Continuous Flow) -> ใช้ Kanban
+
+Step 3: Establish Definition of Done (DoD) -> กำหนดเกณฑ์คุณภาพว่า "งานเสร็จสมบูรณ์" หมายถึงอะไร (ต้องผ่าน Test, Code Review, Security Check) เพื่อป้องกัน Tech Debt
+```
+
+---
+
+## 9. Reflection & Assessment
+
+### 📝 คำถามทบทวนตัวเอง (Self-Reflection):
+1. ทีมของคุณในปัจจุบันกำลังทำ **Agile จริง** (เปลี่ยน Mindset และส่งมอบ Value เร็วขึ้น) หรือทำเพียงแค่ **Agile Theater** (ยืนประชุมสั้นแต่กระบวนการคิดยังคงเดิม)?
+2. คุณมีการจัดทำ **Sprint Retrospective** เพื่อให้ทีมงานทบทวนและปรับปรุงกระบวนการทำงานร่วมกันเป็นประจำแล้วหรือยัง?
+
+---
+
+## 🌉 Bridge to Next Lesson: Lesson 16 — Predictive vs Agile vs Hybrid & Tailoring Framework
+
+ในบทสุดท้าย **Lesson 16** เราจะนำองค์ความรู้ทั้งหมดตั้งแต่ Predictive (Waterfall) จนถึง Agile มาประมวลรวมกัน เพื่อสร้าง **Framework ในการเลือกแนวทาง (Tailoring Framework)** ที่เหมาะสมที่สุดสำหรับโครงการของคุณครับ!

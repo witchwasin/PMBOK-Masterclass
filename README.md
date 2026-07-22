@@ -11,11 +11,12 @@
 5. แก้ความเข้าใจผิดที่พบบ่อย
 6. ปิดด้วย Reflection และการประยุกต์ใช้
 
-## Canonical Reference
+## Governance & Reference
 
-- [`references/PMBOK-Overview.md`](references/PMBOK-Overview.md)
-
-ทุกบทเรียนต้องเริ่มจากสาระในเอกสารนี้ก่อน แล้วจึงเสริมคำอธิบาย ตัวอย่าง และมุมมองเชิงวิชาชีพ
+- **Canonical Reference:** [`references/PMBOK-Overview.md`](references/PMBOK-Overview.md) (ทุกบทเรียนอ้างอิงจากเอกสารนี้)
+- **Course Roadmap:** [`governance/COURSE-ROADMAP.md`](governance/COURSE-ROADMAP.md)
+- **Content Rules:** [`governance/CONTENT-RULES.md`](governance/CONTENT-RULES.md)
+- **Validation & Audit Guideline:** [`governance/REPOSITORY-VALIDATION-AND-FULL-REBUILD.md`](governance/REPOSITORY-VALIDATION-AND-FULL-REBUILD.md)
 
 ## Core Teaching Scenarios
 
@@ -39,15 +40,25 @@ PMBOK-Masterclass/
 ├── references/
 │   └── PMBOK-Overview.md
 ├── governance/
-│   └── CONTENT-RULES.md
+│   ├── CONTENT-RULES.md
+│   ├── COURSE-ROADMAP.md
+│   └── REPOSITORY-VALIDATION-AND-FULL-REBUILD.md
 └── lessons/
-    └── lesson-01/
-        ├── Lesson-01-Blueprint.md
-        └── Lesson-01-Why-PM-Must-Know-PMBOK.md
+    ├── lesson-01/
+    │   ├── Lesson-01_1-Blueprint.md
+    │   └── Lesson-01_2-Why-PM-Must-Know-PMBOK.md
+    ├── lesson-02/
+    │   ├── Lesson-02_1-Blueprint.md
+    │   ├── Lesson-02_2-Project-Management-Overview.md
+    │   ├── Lesson-02_3-Assessment.md
+    │   └── Lesson-02_4-Source-Mapping.md
+    ├── lesson-03/
+    ├── lesson-04/
+    ├── ...
+    └── lesson-16/
 ```
 
 ## Current Status
 
-- Repository foundation: Draft
-- Lesson 01 Blueprint: Draft
-- Lesson 01: Draft
+- Repository foundation: Complete Structure
+- Lessons 01–16: Structured in `lessons/`
