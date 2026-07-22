@@ -3,7 +3,24 @@ lesson: 16
 sequence: 16.3
 title: Predictive vs Agile vs Hybrid and Tailoring — Assessment
 document_type: Assessment
-status: Draft
+difficulty: Core
+estimated_study_time: 45
+status: Active
+validation_status: Validated
+last_reviewed: 2026-07-22
+intended_learner_level: Beginner PM
+prerequisite:
+  - Lesson 16 — Predictive vs Agile vs Hybrid and Tailoring
+related_lessons:
+  - Capstone — Full Project Management Handover and Launch
+canonical_source:
+  - ../../references/PMBOK-Overview.md
+scenario_version:
+  erp: "1.0"
+  hotel_booking: "1.0"
+core_scenarios:
+  - ERP Transformation
+  - Hotel Booking Digital Platform
 ---
 
 # Lesson 16_3 — Assessment
@@ -19,7 +36,7 @@ B. เลือกและ tailor approach ตาม uncertainty, governance, r
 C. ตัด process ที่ไม่อยากทำแล้วเรียกว่า hybrid
 D. ใช้ predictive กับทุกโครงการเพื่อควบคุมง่าย
 
-**คำตอบ:** C
+**คำตอบ:** B
 
 ### ข้อ 2
 

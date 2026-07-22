@@ -3,7 +3,24 @@ lesson: 14
 sequence: 14.3
 title: Project Procurement Management — Assessment
 document_type: Assessment
-status: Draft
+difficulty: Core
+estimated_study_time: 40
+status: Active
+validation_status: Validated
+last_reviewed: 2026-07-22
+intended_learner_level: Beginner PM
+prerequisite:
+  - Lesson 14 — Project Procurement Management
+related_lessons:
+  - Lesson 15 — Agile Project Management
+canonical_source:
+  - ../../references/PMBOK-Overview.md
+scenario_version:
+  erp: "1.0"
+  hotel_booking: "1.0"
+core_scenarios:
+  - ERP Transformation
+  - Hotel Booking Digital Platform
 ---
 
 # Lesson 14_3 — Assessment
@@ -19,7 +36,7 @@ B. เลือกและควบคุม vendor/contract ให้ส่ง
 C. ใช้ fixed price ทุกครั้งเพื่อความปลอดภัย
 D. ตรวจรับ vendor เฉพาะวันสุดท้าย
 
-**คำตอบ:** C
+**คำตอบ:** B
 
 ### ข้อ 2
 

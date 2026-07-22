@@ -3,18 +3,39 @@ lesson: 12
 sequence: 12.1
 title: Project Communications Management
 document_type: Blueprint
-level: Core
-status: Draft
-validation_status: Not Validated
+difficulty: Core
+estimated_study_time: 25
+status: Active
+validation_status: Validated
 last_reviewed: 2026-07-22
 intended_learner_level: Beginner PM
 prerequisite:
-  - Lesson 11
+  - Lesson 11 — Project Resource Management
+related_lessons:
+  - Lesson 13 — Project Risk Management
 canonical_source:
   - ../../references/PMBOK-Overview.md
+scenario_version:
+  erp: "1.0"
+  hotel_booking: "1.0"
 core_scenarios:
   - ERP Transformation
   - Hotel Booking Digital Platform
+artifact_inputs:
+  - Approved RACI and resource commitments from Lesson 11
+artifact_outputs:
+  - name: Communication Plan, Cadence and Status Report
+    creator: PM and PMO Coordinator
+    artifact_owner: PM
+    reviewer: Sponsor Representative, Change Lead and Workstream Leads
+    approval_authority: Sponsor for communication plan/cadence; PM for each status report
+    approval_evidence: Approved plan, status distribution record and decision/escalation log
+next_lesson_usage:
+  - Status signals and escalation path feed risk and issue management.
+acceptance_level:
+  incomplete: Audience, decision need or cadence is unspecified.
+  usable: Each audience receives actionable information through an agreed cadence.
+  professional: Messages, decisions and escalations are traceable and adapted to stakeholder needs.
 ---
 
 # Lesson 12_1 — Blueprint: Project Communications Management

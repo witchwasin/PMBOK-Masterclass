@@ -3,18 +3,39 @@ lesson: 11
 sequence: 11.1
 title: Project Resource Management
 document_type: Blueprint
-level: Core
-status: Draft
-validation_status: Not Validated
+difficulty: Core
+estimated_study_time: 25
+status: Active
+validation_status: Validated
 last_reviewed: 2026-07-22
 intended_learner_level: Beginner PM
 prerequisite:
-  - Lesson 10
+  - Lesson 10 — Project Quality Management
+related_lessons:
+  - Lesson 12 — Project Communications Management
 canonical_source:
   - ../../references/PMBOK-Overview.md
+scenario_version:
+  erp: "1.0"
+  hotel_booking: "1.0"
 core_scenarios:
   - ERP Transformation
   - Hotel Booking Digital Platform
+artifact_inputs:
+  - Quality and acceptance evidence from Lesson 10
+artifact_outputs:
+  - name: Consolidated Resource Plan, Organization Chart and RACI
+    creator: PM, Resource Manager and Workstream Leads
+    artifact_owner: PM
+    reviewer: Functional Managers, HR and SI/Vendor Lead
+    approval_authority: PM for the consolidated plan; Functional Managers for capacity and resource commitment; Steering Committee for exceptions only
+    approval_evidence: Approved resource commitment, RACI sign-off and escalation decision
+next_lesson_usage:
+  - Communication audiences, accountable roles and escalation path are derived from the approved RACI
+acceptance_level:
+  incomplete: Roles or capacity commitments are missing or unowned.
+  usable: Roles, assignments, capacity and approval evidence are sufficient for execution.
+  professional: Conflicts, contingencies and escalation thresholds are explicit and decision-ready.
 ---
 
 # Lesson 11_1 — Blueprint: Project Resource Management
