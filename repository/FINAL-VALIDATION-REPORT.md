@@ -1,7 +1,13 @@
 ---
 title: Final Repository Validation Report
 document_type: Validation Report
-status: Passed
+status: Structural Validation Passed
+structural_validation: Passed
+editorial_validation: In Progress
+instructional_validation: In Progress
+lesson_release_validation: Not Completed
+validated_release_scope:
+  - Lessons 01-05 (see BATCH-1-VALIDATION-REPORT.md)
 validated_on: 2026-07-22
 validator: scripts/validate-repository.sh
 ---
@@ -10,7 +16,7 @@ validator: scripts/validate-repository.sh
 
 ## Result
 
-Repository validation passed.
+Structural repository validation passed. Editorial, instructional, and lesson release validation are tracked separately and must not be inferred from this result.
 
 The repository now has the required lesson structure for Lessons 01-16, core governance files, scenario master files, and automated validation script.
 
@@ -88,7 +94,7 @@ The automated validator confirms structural completion and lesson-local path hyg
 
 ## Handoff
 
-The repository is now safe to continue from as a structured PMBOK Masterclass course foundation. Future changes should run:
+The repository is safe to continue from as a structured course foundation. This report does not declare the lessons release-ready. Future changes should run:
 
 ```bash
 ./scripts/validate-repository.sh

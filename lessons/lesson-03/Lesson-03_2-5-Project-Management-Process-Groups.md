@@ -4,8 +4,8 @@ sequence: 3.2
 title: 5 Project Management Process Groups
 document_type: Lesson
 level: Foundation
-status: Draft
-validation_status: Pending Final Repository Validation
+status: Active
+validation_status: Validated
 version: 1.0
 last_updated: 2026-07-22
 prerequisite:
@@ -19,6 +19,13 @@ core_scenarios:
 ---
 
 # Lesson 03_2 — 5 Project Management Process Groups
+
+## Beginner Safety
+
+- **ควรรู้แล้ว:** Project boundary, Value Chain และ Transition จาก Lesson 02
+- **ยังไม่ต้องรู้:** รายละเอียดทุก process หรือ Knowledge Area
+- **คำศัพท์ใหม่:** Process Group, Phase, Lifecycle, Feedback Loop, Replanning, Closing Evidence
+- **Novice traps:** วาด 5 Process Groups เป็น 5 phases ที่เกิดครั้งเดียว
 
 ## Opening Professional Question — ถ้าโครงการเริ่มทำงานจริงไปแล้ว แต่พบว่าขอบเขตไม่ชัด เราควรกลับไป Planning หรือเดินหน้าต่อ?
 
@@ -174,17 +181,13 @@ core_scenarios:
 
 ---
 
-## 9. Reflection & Assessment
+## Guided Reflection During Learning
 
 ### 📝 คำถามทบทวนตัวเอง (Self-Reflection):
 1. ในโครงการของคุณ มีกระบวนการใดใน 5 Process Groups ที่มักถูกมองข้ามหรือทำแบบข้ามขั้นตอนมากที่สุด (เช่น ข้าม Initiating ไป Executing เลย หรือไม่มี Closing)?
 2. คุณเคยปฏิเสธการปรับแผน (Replanning) เพียงเพราะกลัวถูกมองว่าวางแผนไม่ดีหรือไม่ ทั้งที่ข้อมูลหน้างานชี้ชัดว่าแผนเดิมใช้ไม่ได้แล้ว?
 
 ---
-
-## 🌉 Bridge to Next Lesson: Lesson 04 — 10 Project Management Knowledge Areas Overview
-
-เมื่อเราเข้าใจการไหลของกระบวนการบริหารผ่าน **5 Process Groups** แล้ว ในบทถัดไป **Lesson 04** เราจะไปทำความรู้จักกับ **10 Knowledge Areas** (องค์ความรู้ทั้ง 10 ด้านที่ PM ต้องบริหาร) และดูว่าเมื่อนำ 5 Process Groups มาตัดกับ 10 Knowledge Areas จะเกิดเป็น **Process Matrix** ที่ช่วยให้ PM ไม่ลืมบริหารมิติใดมิติหนึ่งได้อย่างไร!
 
 ## PM Decision Thinking
 
@@ -311,6 +314,12 @@ ERP workstream พบว่า master data ไม่พร้อม แต่ SI
 
 คำตอบที่ดีต้องไม่ตอบแค่ว่า “กลับไป planning” หรือ “execute ต่อ” แต่ต้องแยกว่างานใดไปต่อได้ งานใดต้อง control และงานใดต้อง escalate.
 
+### Artifact Learning Path
+
+- **Do:** สร้าง [Lifecycle and Process Group Map](learner/Artifact-Template.md)
+- **Checkpoint:** ทำ [Beginner Checkpoint](learner/Beginner-Checkpoint.md)
+- **Review หลังส่งคำตอบ:** ใช้ [Thinking Walkthrough](instructor/Thinking-Walkthrough.md), [Completed Example](instructor/Completed-Example.md) และ [Rubric](instructor/Scoring-Rubric.md)
+
 ## Assessment
 
 ดูแบบประเมินหลักที่ [Lesson 03 Assessment](./Lesson-03_3-Assessment.md). ข้อสอบต้องวัดมากกว่าการจำชื่อ 5 Process Groups โดยให้ผู้เรียนตัดสินใจจาก ERP และ Hotel Booking scenarios ว่าควร execute, control, replan, escalate หรือ close อย่างไร.
@@ -326,3 +335,11 @@ Lesson 02 แยก project, operation, output, outcome และ value. Lesson 
 ## AI Continuation Context
 
 Future AI agents must preserve the distinction between Process Groups and Project Phases. Do not describe Initiating, Planning, Executing, Monitoring & Controlling, and Closing as rigid waterfall phases. Keep ERP and Hotel scenarios aligned with the scenario master files, and carry the Lesson 03 bridge into Lesson 04 Knowledge Areas.
+
+## Artifact Handoff
+
+- **Input:** Project vs Operation Analysis and Value Chain
+- **Output:** Lifecycle and Process Group Map
+- **Governance:** Project Planner สร้าง; PM เป็น Owner; PMO/Workstream Leads ตรวจ; PM อนุมัติพร้อม Sponsor acknowledgement
+- **Minimum acceptance:** `Usable`
+- **Next use:** Lesson 04 ใช้ activities, gates และ feedback loops ทำ PM Coverage and Cross-impact Map

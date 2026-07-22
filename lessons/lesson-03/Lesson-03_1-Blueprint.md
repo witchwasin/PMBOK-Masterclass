@@ -4,8 +4,8 @@ sequence: 3.1
 title: 5 Project Management Process Groups
 document_type: Blueprint
 level: Foundation
-status: Draft
-validation_status: Not Validated
+status: Active
+validation_status: Validated
 last_reviewed: 2026-07-22
 intended_learner_level: Beginner PM
 prerequisite:
@@ -16,6 +16,21 @@ canonical_source:
 core_scenarios:
   - ERP Transformation
   - Hotel Booking Digital Platform
+artifact_inputs:
+  - ../lesson-02/learner/Artifact-Template.md — Project vs Operation Analysis and Value Chain
+artifact_outputs:
+  - name: Lifecycle and Process Group Map
+    creator: Learner in Project Planner role
+    artifact_owner: Project Manager
+    reviewer: PMO and Workstream Leads
+    approval_authority: Project Manager with Sponsor acknowledgement
+    approval_evidence: Reviewed lifecycle map and recorded governance acknowledgement
+next_lesson_usage:
+  - Lesson 04 ใช้ management activities, decision gates และ feedback loops เพื่อทำ PM Coverage and Cross-impact Map
+acceptance_level:
+  incomplete: เรียง Process Groups เป็น phase ตายตัวหรือไม่มี feedback/replanning
+  usable: แยก phase จาก Process Group และระบุ decisions, evidence และ feedback loops ได้
+  professional: เชื่อม lifecycle, governance gates, monitoring signals, closing evidence และ transition อย่างตรวจสอบได้
 ---
 
 # Lesson 03_1 — Blueprint: 5 Project Management Process Groups

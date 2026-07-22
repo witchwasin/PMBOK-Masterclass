@@ -5,8 +5,8 @@ title: Assessment — Why Project Managers Must Know PMBOK
 document_type: Assessment
 difficulty: Foundation
 estimated_study_time: 35
-status: Draft
-validation_status: Not Validated
+status: Active
+validation_status: Validated
 last_reviewed: 2026-07-22
 intended_learner_level: Beginner PM
 canonical_source:
@@ -17,6 +17,8 @@ scenario_version:
 ---
 
 # Lesson 01 Assessment — Why Project Managers Must Know PMBOK
+
+> ทำ [PM Learning Baseline](learner/Artifact-Template.md) ก่อนเปิด [Model Answer](instructor/Model-Answer.md). ใช้ [Scoring Rubric](instructor/Scoring-Rubric.md) ตัดสินระดับ Incomplete, Usable หรือ Professional.
 
 > At least 80% of marks assess application and judgement, not recall.
 

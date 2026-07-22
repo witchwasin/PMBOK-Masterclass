@@ -35,10 +35,32 @@ scenario_version:
 core_scenarios:
   - ERP Transformation
   - Hotel Booking Digital Platform
+artifact_inputs:
+  - <artifact จากบทก่อน>
+artifact_outputs:
+  - name: <ชื่อ artifact>
+    creator: <ผู้จัดทำ>
+    artifact_owner: <ผู้รับผิดชอบความถูกต้องและการใช้งาน>
+    reviewer: <ผู้ตรวจสอบ>
+    approval_authority: <ผู้มีอำนาจอนุมัติ>
+    approval_evidence: <sign-off / decision record / baseline approval>
+next_lesson_usage:
+  - <วิธีใช้ artifact ในบทถัดไป>
+acceptance_level:
+  incomplete: <ข้อมูลหรือองค์ประกอบสำคัญยังขาด>
+  usable: <เพียงพอสำหรับนำไปใช้ต่อ>
+  professional: <พร้อมใช้ใน Governance และตัดสินใจจริง>
 ---
 ```
 
 # Lesson XX — <Lesson Title>
+
+## 0. Beginner Safety
+
+- **ควรรู้แล้ว:** <prerequisite capability>
+- **ยังไม่ต้องรู้:** <หัวข้อในบทถัดไป>
+- **คำศัพท์ใหม่:** <terms>
+- **Novice traps:** <ข้อผิดพลาดมือใหม่>
 
 ## 1. Opening Professional Question
 
@@ -212,3 +234,11 @@ prohibited_contradictions:
   - <do not contradict this in later lessons>
 next_lesson_handoff: <what the next lesson should pick up>
 ```
+
+## 21. Artifact Handoff
+
+- **Input used:** <artifact input>
+- **Output produced:** <artifact output>
+- **Creator / Owner / Reviewer / Approver:** <roles>
+- **Minimum acceptance:** Usable
+- **Next lesson usage:** <usage>

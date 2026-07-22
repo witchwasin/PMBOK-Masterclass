@@ -11,7 +11,9 @@ status: Active
 
 ---
 
-## 1. Mandatory Lesson Sections (21 sections)
+## 1. Mandatory Lesson Controls (25 controls)
+
+Controls 1–21 อยู่ใน Main Lesson ส่วน Controls 22–25 กระจายอยู่ใน Main Lesson, Blueprint และ learner/instructor assets ตามหน้าที่ เพื่อไม่ทำให้บทเรียนกลายเป็นเอกสารรวมทุกอย่างไฟล์เดียว
 
 ทุกบทเรียนฉบับเต็ม (`_2-<Title>.md`) ต้องมีครบ:
 
@@ -38,6 +40,10 @@ status: Active
 | 19 | **Executive Summary** | สรุปสำหรับผู้บริหาร: Why, Decision improved, Failure prevented, What to monitor |
 | 20 | **Lesson Connection** | สิ่งที่ทำได้แล้ว, สิ่งที่ยังไม่ครบ, เหตุผลที่บทถัดไปตามมา |
 | 21 | **AI Continuation Context** | Concepts introduced, Terms standardized, Scenario state, Decisions made, Assumptions, Open questions, Dependencies, Prohibited contradictions, Next lesson handoff |
+| 22 | **Beginner Safety** | Prerequisite, สิ่งที่ยังไม่ต้องรู้, คำศัพท์ใหม่ และ novice traps |
+| 23 | **Artifact Governance** | Input, Output, Creator, Owner, Reviewer, Approval Authority และ Approval Evidence |
+| 24 | **Thinking Walkthrough** | แสดงเหตุผลและลำดับการสร้าง Artifact ไม่ใช่แค่คำตอบสุดท้าย |
+| 25 | **Artifact Handoff** | Acceptance level และวิธีใช้ Output เป็น Input ของบทถัดไป |
 
 ---
 
@@ -119,6 +125,28 @@ core_scenarios:
 - [ ] Internal links เป็น relative path
 - [ ] Quality Score ผ่าน Release Gate
 - [ ] Cross-lesson references ถูกต้อง
+- [ ] Blueprint มี Artifact Contract ครบทุก field
+- [ ] learner/ และ instructor/ มีไฟล์บังคับครบ
+- [ ] Artifact ผ่านอย่างน้อยระดับ Usable ก่อนส่งบทถัดไป
+- [ ] Beginner Checkpoint ระบุ section ที่ต้องย้อนอ่านเมื่อไม่ผ่าน
+- [ ] Thinking Walkthrough แสดงเหตุผลระหว่างขั้น ไม่ใช่เพียง Completed Example
+
+## 5.1 Artifact Acceptance Levels
+
+| Level | ความหมาย | การใช้งานต่อ |
+|---|---|---|
+| **Incomplete** | ขาดข้อมูล Owner, boundary, evidence หรือ decision สำคัญ | ห้ามใช้เป็น Input บทถัดไป |
+| **Usable** | ข้อมูลหลักครบ ตรวจสอบย้อนกลับได้ และใช้ตัดสินใจขั้นถัดไปได้ | ใช้เรียนต่อได้ |
+| **Professional** | พร้อมใช้ใน governance จริง มี approval evidence และผลกระทบข้ามด้าน | พร้อมรวมใน Capstone/Handover |
+
+## 5.2 Batch Exit Criteria
+
+- ทุกบทผ่าน Release Gate
+- Integration Review ผ่าน
+- ไม่มี Critical Issue ด้าน Scenario, Terminology หรือ Source Label
+- Artifact Governance และ Dependency ครบ
+- Beginner Comprehension และ Artifact Traceability ผ่าน
+- Scorecard, Lesson Index และ Validation Report ตรงกัน
 
 ---
 

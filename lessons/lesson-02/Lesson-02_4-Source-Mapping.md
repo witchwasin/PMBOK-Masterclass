@@ -3,8 +3,8 @@ lesson: 2
 sequence: 2.4
 title: Project Management Overview — Source Mapping
 document_type: Source Mapping
-status: Draft — Rebuilt
-validation_status: Pending Final Repository Validation
+status: Active
+validation_status: Validated
 version: 1.0
 last_updated: 2026-07-22
 canonical_sources:
@@ -121,3 +121,12 @@ Lesson 02 is acceptable when:
 ## Continuation Notes for Future Agents
 
 Preserve Lesson 02 as the foundation for Lesson 03. Lesson 03 should build from the same concepts and explain Process Groups as recurring management logic, not as rigid project phases. Keep the ERP budget distinction locked: Working Budget 45 ล้านบาท; Total Funding Envelope 60 ล้านบาท.
+
+## Learning Asset Mapping
+
+| Asset | Classification | Source boundary |
+|---|---|---|
+| Classification/Value Chain Template | `[Best Practice]` | Course tool implementing PMBOK concepts |
+| ERP and Hotel Completed Examples | `[Teaching Scenario]` | Must follow Scenario Master v1.0 |
+| Thinking Walkthrough / Model Answer | `[Professional Opinion]` | Reasoning guidance, not a universal rule |
+| Rubric | `[Best Practice]` | Course release standard |

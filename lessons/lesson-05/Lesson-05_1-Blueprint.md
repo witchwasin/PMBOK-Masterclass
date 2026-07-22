@@ -4,8 +4,8 @@ sequence: 5.1
 title: Project Integration Management
 document_type: Blueprint
 level: Core
-status: Draft
-validation_status: Not Validated
+status: Active
+validation_status: Validated
 last_reviewed: 2026-07-22
 intended_learner_level: Beginner PM
 prerequisite:
@@ -15,6 +15,35 @@ canonical_source:
 core_scenarios:
   - ERP Transformation
   - Hotel Booking Digital Platform
+artifact_inputs:
+  - ../lesson-02/learner/Artifact-Template.md — Value Chain
+  - ../lesson-03/learner/Artifact-Template.md — Lifecycle and Process Group Map
+  - ../lesson-04/learner/Artifact-Template.md — PM Coverage and Cross-impact Map
+artifact_outputs:
+  - name: Project Charter
+    creator: Project Manager with Business Analyst support
+    artifact_owner: Sponsor
+    reviewer: PMO, Business Owner and Core Workstream Leads
+    approval_authority: Sponsor
+    approval_evidence: Signed or digitally approved Project Charter
+  - name: Governance and Decision Rights Map
+    creator: Project Manager
+    artifact_owner: Sponsor
+    reviewer: PMO and Steering Committee members
+    approval_authority: Steering Committee Chair
+    approval_evidence: Governance meeting approval record
+  - name: Change Decision Record
+    creator: Project Manager or Change Coordinator
+    artifact_owner: Project Manager
+    reviewer: Impact Owners
+    approval_authority: Change Authority defined by threshold
+    approval_evidence: Decision log entry and approved baseline update
+next_lesson_usage:
+  - Lesson 06 ใช้ Charter และ Governance Map เพื่อระบุ Stakeholder, influence, engagement และ approval expectations
+acceptance_level:
+  incomplete: Business Need, authority, scope boundary หรือ decision evidence ขาด
+  usable: Charter และ governance ใช้อนุมัติการเริ่มงานและ route change decision ได้
+  professional: Objective วัดได้, authority ชัด, impacts traceable และ approval เชื่อม baseline update
 ---
 
 # Lesson 05_1 — Blueprint: Project Integration Management

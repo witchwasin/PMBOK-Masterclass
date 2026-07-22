@@ -3,12 +3,40 @@ lesson: 3
 sequence: 3.3
 title: 5 Project Management Process Groups — Assessment
 document_type: Assessment
-status: Draft
+status: Active
+validation_status: Validated
 ---
 
 # Lesson 03_3 — Assessment
 
-## ส่วนที่ 1: Multiple Choice
+## Release Assessment Structure — 100 Points
+
+| ส่วน | งาน | คะแนน |
+|---|---|---:|
+| Decision Case | ตัดสินใจเมื่อ ERP data readiness ไม่พอแต่ build เริ่มแล้ว | 35 |
+| Artifact Construction | สร้าง Lifecycle and Process Group Map | 35 |
+| Artifact Review | หา error ใน map ที่ใช้ Process Groups เป็น phase | 20 |
+| Retrieval Check | อธิบาย Process Group vs Phase | 10 |
+
+### Decision Case
+
+ใช้ Scenario จาก [Workshop](learner/Workshop.md). ระบุ evidence ที่มี/ขาด, งานที่ไปต่อได้, งานที่ต้องหยุดหรือ replan, decision owner และ next action ภายใน 48 ชั่วโมง ห้ามตอบเพียง “กลับไป Planning”.
+
+### Artifact Construction
+
+ส่ง [Lifecycle and Process Group Map](learner/Artifact-Template.md) ที่มี phase, exit evidence, management activities, feedback triggers, closing และ transition.
+
+### Artifact Review
+
+ตรวจข้อความนี้: “Initiating คือ Phase 1, Planning คือ Phase 2, Executing คือ Phase 3, Monitoring เริ่มหลัง build เสร็จ และ Closing คือประชุมสรุปบทเรียน” ระบุอย่างน้อย 4 จุดผิดและเสนอ flow ใหม่.
+
+### Grading
+
+ใช้ [Model Answer](instructor/Model-Answer.md), [Review Checklist](instructor/Review-Checklist.md) และ [Scoring Rubric](instructor/Scoring-Rubric.md). ต้องได้อย่างน้อย 70/100 และทุกมิติไม่ต่ำกว่า `Usable`.
+
+## Supplementary Practice Question Bank — Ungraded
+
+### ส่วนที่ 1: Multiple Choice
 
 ### ข้อ 1
 
@@ -140,7 +168,7 @@ D. Release ทีมทันที
 
 ---
 
-## ส่วนที่ 2: True or False
+### ส่วนที่ 2: True or False
 
 1. 5 Process Groups ต้องเกิดครั้งเดียว  
    **False**

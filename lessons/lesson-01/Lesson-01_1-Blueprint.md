@@ -2,8 +2,8 @@
 lesson: 1
 title: ทำไม Project Manager ต้องรู้ PMBOK
 level: Foundation
-status: Draft
-validation_status: Not Validated
+status: Active
+validation_status: Validated
 last_reviewed: 2026-07-22
 intended_learner_level: Beginner PM
 canonical_source:
@@ -11,6 +11,23 @@ canonical_source:
 core_scenarios:
   - ERP Transformation
   - Hotel Booking Digital Platform
+artifact_inputs:
+  - Learner experience and project assumptions
+  - ERP Transformation Case v1.0
+  - Hotel Booking Platform Case v1.0
+artifact_outputs:
+  - name: PM Learning Baseline
+    creator: Learner
+    artifact_owner: Learner
+    reviewer: Instructor or AI Coach
+    approval_authority: Course Assessor
+    approval_evidence: Baseline rubric and assessor sign-off
+next_lesson_usage:
+  - ใช้ blind spots และ value assumptions เป็นจุดตั้งต้นของ Project vs Operation Analysis ใน Lesson 02
+acceptance_level:
+  incomplete: ระบุเพียงประสบการณ์หรือเป้าหมายโดยไม่มี blind spot และ evidence gap
+  usable: ระบุ project context, blind spots, output/outcome assumptions และ learning actions ได้
+  professional: เชื่อม assumptions กับ scenario evidence, decision risk และวิธีตรวจสอบในบทถัดไป
 ---
 
 # Lesson 01 Blueprint — ทำไม Project Manager ต้องรู้ PMBOK

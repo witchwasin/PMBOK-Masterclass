@@ -3,7 +3,8 @@ lesson: 3
 sequence: 3.4
 title: 5 Project Management Process Groups — Source Mapping
 document_type: Source Mapping
-status: Draft
+status: Active
+validation_status: Validated
 canonical_source:
   - ../../references/PMBOK-Overview.md
 ---
@@ -182,3 +183,12 @@ Lesson 03 ต้อง:
 - ใช้ ERP และ Hotel Booking
 - ไม่ลงลึก Knowledge Areas เกินขอบเขต
 - เชื่อม Lesson 02 และ Lesson 04 ได้
+
+## 8. Learning Asset Mapping
+
+| Asset | Classification | Source boundary |
+|---|---|---|
+| Lifecycle/Process Group Template | `[PMBOK 6]` / `[Best Practice]` | Process Group meaning from PMBOK 6; template is course design |
+| ERP/Hotel exercises and example | `[Teaching Scenario]` | Locked scenario facts |
+| Thinking Walkthrough / Model Answer | `[Professional Opinion]` | Teaching interpretation |
+| Rubric / Checklist | `[Best Practice]` | Acceptance criteria for this course |

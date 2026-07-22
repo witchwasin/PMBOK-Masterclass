@@ -4,8 +4,8 @@ sequence: 2.1
 title: Project Management Overview
 document_type: Blueprint
 level: Foundation
-status: Draft
-validation_status: Not Validated
+status: Active
+validation_status: Validated
 last_reviewed: 2026-07-22
 intended_learner_level: Beginner PM
 prerequisite:
@@ -15,6 +15,23 @@ canonical_source:
 core_scenarios:
   - ERP Transformation
   - Hotel Booking Digital Platform
+artifact_inputs:
+  - ../lesson-01/learner/Artifact-Template.md — PM Learning Baseline
+  - ../../scenarios/ERP-TRANSFORMATION-CASE.md
+  - ../../scenarios/HOTEL-BOOKING-PLATFORM-CASE.md
+artifact_outputs:
+  - name: Project vs Operation Analysis and Value Chain
+    creator: Learner in PM Analyst role
+    artifact_owner: Sponsor or Business Owner of the selected scenario
+    reviewer: Functional Owner and PM
+    approval_authority: Sponsor
+    approval_evidence: Approved classification and measurable value-chain statement
+next_lesson_usage:
+  - Lesson 03 ใช้ Project boundary, expected value และ transition point เพื่อสร้าง Lifecycle and Process Group Map
+acceptance_level:
+  incomplete: แยก project/operation จาก deadline อย่างเดียวหรือหยุดที่ output
+  usable: แยก boundary และเชื่อม Business Need ถึง Outcome พร้อม Owner ได้
+  professional: มี evidence gap, transition ownership, benefit measure และ governance recommendation ที่ตรวจสอบได้
 ---
 
 # Lesson 02_1 — Blueprint: Project Management Overview

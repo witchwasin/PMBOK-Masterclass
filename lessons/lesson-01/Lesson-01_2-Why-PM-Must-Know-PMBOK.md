@@ -2,8 +2,8 @@
 lesson: 1
 title: ทำไม Project Manager ต้องรู้ PMBOK
 level: Foundation
-status: Draft
-validation_status: Not Validated
+status: Active
+validation_status: Validated
 last_reviewed: 2026-07-22
 estimated_study_time: 75
 related_lessons:
@@ -20,6 +20,27 @@ core_scenarios:
 ---
 
 # Lesson 01 — ทำไม Project Manager ต้องรู้ PMBOK
+
+## Beginner Safety
+
+- **ควรรู้แล้ว:** ไม่ต้องมีประสบการณ์ PM แต่ควรเล่าเหตุการณ์ทำงานหนึ่งเรื่องได้
+- **ยังไม่ต้องรู้:** ชื่อ Process Groups, Knowledge Areas หรือรายละเอียด Artifact
+- **คำศัพท์ใหม่:** PMBOK, Framework, Tailoring, Output, Outcome, Benefit, Business Value
+- **Novice traps:** คิดว่า PMBOK คือ Waterfall, Template หรือ checklist ที่ต้องทำครบทุกชิ้น
+
+## Learning Objectives
+
+เมื่อจบบท ผู้เรียนสามารถ (1) แยก PMBOK ออกจาก methodology และ template, (2) อธิบาย Need → Output → Outcome → Value, (3) ระบุ blind spot และข้อมูลที่ต้องถามก่อนเลือกแนวทาง, และ (4) สร้าง PM Learning Baseline ที่ตรวจสอบ assumption ได้. `[PMBOK]` `[Professional Opinion]`
+
+## Mental Model
+
+```text
+Business Need → Decision → Work → Output → Adoption/Outcome → Benefit → Value
+                     ↑                 ↓
+            Framework + judgement + feedback
+```
+
+Framework ช่วยให้ PM เห็นคำถามที่ต้องถาม ส่วน judgement ใช้ evidence และบริบทเพื่อตัดสินใจ. `[PMBOK]`
 
 ## Opening Professional Question — PM ที่มีประสบการณ์ยังต้องรู้ PMBOK หรือไม่
 
@@ -354,7 +375,7 @@ PM ต้องรู้ PMBOK เพราะ:
 
 ---
 
-## 14. Reflection
+## Guided Reflection and Knowledge Check
 
 1. โครงการที่คุณทำเริ่มจาก Business Need อะไร?
 2. สิ่งที่ผู้บริหารขอเป็นปัญหา เป้าหมาย หรือ Solution?
@@ -365,7 +386,7 @@ PM ต้องรู้ PMBOK เพราะ:
 7. ถ้างานส่งครบแต่ผู้ใช้ไม่ยอมใช้ คุณจะรายงานสถานะว่าอย่างไร?
 8. ส่วนใดควรใช้ Predictive, Agile หรือ Hybrid เพราะเหตุใด?
 
-## Mini Assessment
+### Mini Assessment
 
 ### 1. ข้อใดอธิบาย PMBOK เหมาะสมที่สุด?
 
@@ -386,30 +407,6 @@ D. เป็นความผิดของลูกค้า
 **คำตอบ: B**
 
 ---
-
-## เชื่อมไปยัง Lesson 02
-
-เมื่อเข้าใจแล้วว่าทำไมต้องมีองค์ความรู้ร่วม คำถามถัดไปคือ:
-
-> **Project คืออะไร แตกต่างจากงานประจำอย่างไร และ Project Management ต้องเชื่อมองค์ประกอบใดเข้าด้วยกัน?**
-
-Lesson 02 จะเริ่มจาก Project vs Routine, Output vs Outcome, บทบาทของ Project Manager, ปัจจัยความสำเร็จ และบริบทของโครงสร้างองค์กร
-
----
-
-## Learning Objectives
-
-เมื่อจบบท ผู้เรียนสามารถ (1) แยก PMBOK ออกจาก methodology และ template ได้, (2) อธิบายความเชื่อมโยง Need → Output → Outcome → Value, (3) ระบุข้อมูลที่ต้องถามก่อนเลือก Predictive, Agile หรือ Hybrid, และ (4) เขียนเหตุผลการ tailor แนวทางโดยระบุ owner, assumption และ review trigger. `[PMBOK]` `[Professional Opinion]`
-
-## Mental Model
-
-```text
-Business Need → Decision → Work → Output → Adoption/Outcome → Benefit → Value
-                     ↑                 ↓
-            Framework + judgement + feedback
-```
-
-Framework ทำหน้าที่ให้ PM เห็นคำถามที่ต้องถาม; judgement เป็นผู้ตัดสินใจจาก evidence และบริบท. `[PMBOK]`
 
 ## PM Decision Thinking
 
@@ -496,6 +493,12 @@ Hotel Booking MVP มี deadline ก่อน High Season และพึ่ง
 **Debrief:** assumption ใดทำให้คำแนะนำเปลี่ยน?
 **Evaluation:** evidence 30%, trade-off 30%, ownership 20%, clarity 20%. `[Teaching Scenario]`
 
+### Artifact Learning Path
+
+- **Do:** กรอก [PM Learning Baseline](learner/Artifact-Template.md) และทำ [Workshop](learner/Workshop.md)
+- **Checkpoint:** ตรวจด้วย [Beginner Checkpoint](learner/Beginner-Checkpoint.md)
+- **Review หลังส่งคำตอบ:** ดู [Thinking Walkthrough](instructor/Thinking-Walkthrough.md), [Completed Example](instructor/Completed-Example.md) และ [Rubric](instructor/Scoring-Rubric.md)
+
 ## Assessment
 
 ทำ [Lesson 01 Assessment](Lesson-01_3-Assessment.md) ซึ่งประกอบด้วย decision case, artifact review, ambiguous scenario และ retrieval check; 90 คะแนนจาก 100 เป็น application/judgement. `[Teaching Scenario]`
@@ -522,3 +525,11 @@ Hotel Booking MVP มี deadline ก่อน High Season และพึ่ง
 - **Decisions introduced:** approach selection ต้องมี owner, evidence, trade-off และ review trigger.
 - **Prohibited contradictions:** ห้ามเรียก PMBOK 6 process structure ว่าเป็น PMBOK 7 structure; ห้าม equate delivery with value.
 - **Next handoff:** Lesson 02 ใช้ value chain นี้ แต่ไม่ลงลึก Process Groups หรือ Knowledge Areas.
+
+## Artifact Handoff
+
+- **Input:** ประสบการณ์และ assumption ของผู้เรียน พร้อม Scenario Master v1.0
+- **Output:** PM Learning Baseline
+- **Governance:** Learner สร้างและเป็น Owner; Instructor/AI Coach ตรวจ; Course Assessor อนุมัติ
+- **Minimum acceptance:** `Usable`
+- **Next use:** Lesson 02 ใช้ blind spots และ value assumptions เพื่อสร้าง Project vs Operation Analysis

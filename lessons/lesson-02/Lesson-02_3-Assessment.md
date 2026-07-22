@@ -3,8 +3,8 @@ lesson: 2
 sequence: 2.3
 title: Project Management Overview — Assessment
 document_type: Assessment
-status: Draft — Rebuilt
-validation_status: Pending Final Repository Validation
+status: Active
+validation_status: Validated
 version: 1.0
 last_updated: 2026-07-22
 canonical_sources:
@@ -15,6 +15,8 @@ scenario_sources:
 ---
 
 # Lesson 02_3 — Assessment
+
+> ส่ง [Project vs Operation Analysis and Value Chain](learner/Artifact-Template.md) ก่อนเปิด [Model Answer](instructor/Model-Answer.md). ใช้ [Scoring Rubric](instructor/Scoring-Rubric.md) ร่วมกับคะแนนด้านล่าง.
 
 ## Assessment Purpose
 

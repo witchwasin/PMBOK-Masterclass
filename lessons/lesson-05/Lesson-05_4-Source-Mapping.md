@@ -3,7 +3,8 @@ lesson: 5
 sequence: 5.4
 title: Project Integration Management — Source Mapping
 document_type: Source Mapping
-status: Draft
+status: Active
+validation_status: Validated
 canonical_source:
   - ../../references/PMBOK-Overview.md
 ---
@@ -86,8 +87,9 @@ canonical_source:
 
 - **[PMBOK 6]** ใช้สำหรับ process, artifact, baseline, knowledge area และ governance vocabulary
 - **[PMBOK 7]** ใช้สำหรับ value delivery, systems thinking, tailoring, adaptability และ stewardship
-- **[Scenario]** ใช้สำหรับ ERP Transformation และ Hotel Booking Platform ที่มาจาก scenario master files
-- **[Instructor Interpretation]** ใช้สำหรับ workshop, decision prompt, misconception correction, rubric และ Thai executive framing
+- **[Teaching Scenario]** ใช้สำหรับ ERP Transformation และ Hotel Booking Platform ที่มาจาก scenario master files
+- **[Professional Opinion]** ใช้สำหรับ workshop, decision prompt, misconception correction และ Thai executive framing
+- **[Best Practice]** ใช้สำหรับ rubric, checklist และ governance pattern ที่ไม่ใช่คำสั่งจาก PMBOK
 
 ## 9. Mapping Boundary and Continuation Notes
 
@@ -95,3 +97,12 @@ canonical_source:
 - บทนี้ต้องไม่แทนที่ policy, contract, law หรือ standard เฉพาะองค์กร
 - การเพิ่มเนื้อหาใหม่ต้องรักษา distinction ระหว่าง canonical concept, scenario fact และ instructor interpretation
 - Future AI agents must preserve the lesson-specific PM decision logic and keep scenario details aligned with the ERP and Hotel master scenario files
+
+## 10. Learning Asset Mapping
+
+| Asset | Classification | Source boundary |
+|---|---|---|
+| Charter/Governance/Change Templates | `[PMBOK 6]` / `[Best Practice]` | Core concepts from PMBOK 6; fields tailored for course |
+| ERP Completed Example | `[Teaching Scenario]` | Locked ERP facts only |
+| Thinking Walkthrough / Model Answer | `[Professional Opinion]` | Reasoning guidance |
+| Rubric / Checklist | `[Best Practice]` | Course acceptance standard |

@@ -29,6 +29,8 @@ total_lessons: 16
 7. เชื่อม Output ไปสู่ Outcome, Benefit และ Business Value
 8. ปิดด้วย Reflection และ Assessment
 
+ทุกบทต้องสร้าง Artifact ต่อเนื่องด้วยวงจร `Learn → Watch PM Think → Watch Completed Artifact → Do → Review → Approve → Handoff` ตาม [Execution Baseline](EXECUTION-BASELINE.md) และ [Artifact Dependency Map](ARTIFACT_DEPENDENCY_MAP.md)
+
 ---
 
 # 2. Course Structure Overview

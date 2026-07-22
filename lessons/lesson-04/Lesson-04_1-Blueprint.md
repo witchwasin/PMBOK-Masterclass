@@ -4,8 +4,8 @@ sequence: 4.1
 title: 10 Project Management Knowledge Areas Overview
 document_type: Blueprint
 level: Foundation
-status: Draft
-validation_status: Not Validated
+status: Active
+validation_status: Validated
 last_reviewed: 2026-07-22
 intended_learner_level: Beginner PM
 prerequisite:
@@ -17,6 +17,21 @@ canonical_source:
 core_scenarios:
   - ERP Transformation
   - Hotel Booking Digital Platform
+artifact_inputs:
+  - ../lesson-03/learner/Artifact-Template.md — Lifecycle and Process Group Map
+artifact_outputs:
+  - name: PM Coverage and Cross-impact Map
+    creator: Learner in Project Manager role
+    artifact_owner: Project Manager
+    reviewer: Knowledge-area Owners and PMO
+    approval_authority: Change Authority or Sponsor according to decision threshold
+    approval_evidence: Integrated impact review decision
+next_lesson_usage:
+  - Lesson 05 ใช้ dependencies, decision owners และ impacts เพื่อร่าง Charter, Governance และ Change Decision Record
+acceptance_level:
+  incomplete: ลิสต์ Knowledge Areas โดยไม่แสดง dependency หรือ owner
+  usable: แสดง impact, missing evidence, owner และ escalation ของการเปลี่ยนแปลงได้
+  professional: เชื่อม impacts กับ baseline, governance threshold, recommendation และ decision evidence ได้ครบ
 ---
 
 # Lesson 04_1 — Blueprint: 10 Project Management Knowledge Areas Overview

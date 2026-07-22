@@ -3,8 +3,8 @@ lesson: 1
 sequence: 1.4
 title: Source Mapping — Why Project Managers Must Know PMBOK
 document_type: Source Mapping
-status: Draft
-validation_status: Not Validated
+status: Active
+validation_status: Validated
 last_reviewed: 2026-07-22
 canonical_source:
   - ../../references/PMBOK-Overview.md
@@ -31,3 +31,12 @@ scenario_version:
 - A PMBOK 6 process structure is the complete PMBOK 7 structure.
 - Agile, predictive, or hybrid is universally best.
 - A project is successful merely because its output is delivered.
+
+## Learning Asset Mapping
+
+| Asset | Classification | Source boundary |
+|---|---|---|
+| PM Learning Baseline / Workshop | `[Teaching Scenario]` | Uses locked ERP/Hotel facts only |
+| Thinking Walkthrough / Model Answer | `[Professional Opinion]` | Teaching judgement; not a PMBOK prescription |
+| Completed Example | `[Teaching Scenario]` | Demonstration, not external fact |
+| Rubric / Checklist | `[Best Practice]` | Course acceptance standard |

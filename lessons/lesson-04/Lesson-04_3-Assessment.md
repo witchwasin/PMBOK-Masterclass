@@ -3,12 +3,40 @@ lesson: 4
 sequence: 4.3
 title: 10 Project Management Knowledge Areas Overview — Assessment
 document_type: Assessment
-status: Draft
+status: Active
+validation_status: Validated
 ---
 
 # Lesson 04_3 — Assessment
 
-## ส่วนที่ 1: Multiple Choice
+## Release Assessment Structure — 100 Points
+
+| ส่วน | งาน | คะแนน |
+|---|---|---:|
+| Cross-impact Decision | วิเคราะห์ Corporate Booking change | 40 |
+| Artifact Construction | สร้าง PM Coverage and Cross-impact Map | 30 |
+| Artifact Review | ตรวจ impact analysis ที่ generic/ไร้ Owner | 20 |
+| Retrieval Check | Process Group vs Knowledge Area | 10 |
+
+### Cross-impact Decision
+
+ใช้ [Workshop](learner/Workshop.md). สร้าง options อย่างน้อย 3 ทาง ระบุ concrete impacts, missing evidence, Impact Owners, Approval Authority และ recommendation.
+
+### Artifact Construction
+
+ส่ง [PM Coverage and Cross-impact Map](learner/Artifact-Template.md) ซึ่ง trace กลับไปยัง lifecycle/gate ใน Lesson 03 ได้.
+
+### Artifact Review
+
+Review รายงานที่เขียนเพียง “กระทบทุก Knowledge Area เล็กน้อย PM อนุมัติให้ทำได้” ระบุข้อบกพร่องอย่างน้อย 5 จุดและเขียน escalation/approval route ใหม่.
+
+### Grading
+
+ใช้ [Model Answer](instructor/Model-Answer.md), [Review Checklist](instructor/Review-Checklist.md) และ [Scoring Rubric](instructor/Scoring-Rubric.md). ต้องได้อย่างน้อย 70/100 และทุกมิติไม่ต่ำกว่า `Usable`.
+
+## Supplementary Practice Question Bank — Ungraded
+
+### ส่วนที่ 1: Multiple Choice
 
 ### ข้อ 1
 
@@ -140,7 +168,7 @@ D. ทำแทนทุกคน
 
 ---
 
-## ส่วนที่ 2: True or False
+### ส่วนที่ 2: True or False
 
 1. Knowledge Areas คือ Department  
    **False**

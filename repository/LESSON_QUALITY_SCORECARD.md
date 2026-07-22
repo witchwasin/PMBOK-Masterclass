@@ -1,7 +1,9 @@
 ---
 title: Lesson Quality Scorecard
 document_type: Quality Scorecard
-audit_date: 2026-07-22
+baseline_audit_date: 2026-07-22
+latest_rescore_date: 2026-07-22
+current_release_scope: Lessons 01-05
 scoring_standard: "§14.2 of REPOSITORY-VALIDATION-AND-FULL-REBUILD.md"
 scale: 0-5
 minimum_release_threshold:
@@ -15,7 +17,42 @@ minimum_release_threshold:
 
 # PMBOK Masterclass — Lesson Quality Scorecard
 
-> **Pass 0 Deliverable** — Score ตรงไปตรงมา ไม่ inflate
+> Current release score อยู่ในส่วนแรก ส่วนคะแนนก่อน rebuild ถูกเก็บไว้เป็น historical baseline และห้ามใช้ตัดสินสถานะปัจจุบัน
+
+## Current Post-Rebuild Score — Batch 1
+
+| Dimension | L01 | L02 | L03 | L04 | L05 |
+|---|---:|---:|---:|---:|---:|
+| Accuracy | 5 | 5 | 5 | 5 | 5 |
+| Depth | 4 | 4 | 4 | 4 | 5 |
+| Why-before-What | 5 | 5 | 5 | 5 | 5 |
+| Mental Model | 5 | 5 | 5 | 5 | 5 |
+| Narrative Flow | 5 | 4 | 4 | 4 | 4 |
+| PM Thinking | 4 | 4 | 4 | 4 | 5 |
+| PM Decision Thinking | 4 | 4 | 4 | 4 | 5 |
+| ERP Continuity | 4 | 5 | 5 | 5 | 5 |
+| Hotel Booking Continuity | 4 | 5 | 5 | 5 | 4 |
+| Misconception Correction | 5 | 5 | 5 | 5 | 5 |
+| Assessment Quality | 4 | 5 | 5 | 5 | 5 |
+| Source Transparency | 5 | 5 | 5 | 5 | 5 |
+| Terminology Consistency | 5 | 5 | 5 | 5 | 5 |
+| Lesson Boundary | 5 | 5 | 5 | 5 | 5 |
+| Connection to Adjacent | 5 | 5 | 5 | 5 | 5 |
+| **Average** | **4.60** | **4.73** | **4.73** | **4.73** | **4.87** |
+| **Release Gate** | **PASS** | **PASS** | **PASS** | **PASS** | **PASS** |
+
+### Rescore Evidence
+
+- Artifact Contract และ governance roles อยู่ใน Blueprint ทุกบท
+- learner/instructor assets แยกกันและมี Thinking Walkthrough, Completed Example, Model Answer, Checklist และ Rubric
+- Assessment แบบ release ใช้ application/judgement 90% และ retrieval 10%
+- Source Mapping ระบุ canonical/scenario/opinion boundaries ของ lesson และ learning assets
+- Scenario และ terminology ผ่าน Batch 1 Integration Review
+- Narrative ไม่มี Reflection/Bridge ปิดบทก่อน mandatory learning path อีกต่อไป
+
+## Historical Pre-Rebuild Baseline — Superseded
+
+คะแนนด้านล่างบันทึกสภาพก่อน Batch 1 rebuild เท่านั้น ไม่ใช่สถานะ release ปัจจุบัน
 
 ---
 

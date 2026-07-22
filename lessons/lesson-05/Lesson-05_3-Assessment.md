@@ -3,12 +3,40 @@ lesson: 5
 sequence: 5.3
 title: Project Integration Management — Assessment
 document_type: Assessment
-status: Draft
+status: Active
+validation_status: Validated
 ---
 
 # Lesson 05_3 — Assessment
 
-## ส่วนที่ 1: Concept Check
+## Release Assessment Structure — 100 Points
+
+| ส่วน | งาน | คะแนน |
+|---|---|---:|
+| Change Decision Case | ERP Approval Workflow | 40 |
+| Artifact Construction | Charter/Governance/Change Pack | 30 |
+| Artifact Review | ตรวจ Charter และ Change Record ที่ผิด | 20 |
+| Retrieval Check | Charter, Plan, Issue, Change | 10 |
+
+### Change Decision Case
+
+ใช้ [Workshop](learner/Workshop.md). วิเคราะห์คำขอ 2 ล้านบาท/เพิ่ม UAT 3 สัปดาห์ โดยขอ missing evidence, สร้าง ≥3 options, ระบุ baselines, authority, decision evidence และ update หลังอนุมัติ.
+
+### Artifact Construction
+
+ส่ง [Integration Artifact Pack](learner/Artifact-Template.md) โดยใช้ Inputs จาก Lessons 02–04 และรักษาตัวเลข Scenario Master.
+
+### Artifact Review
+
+ตรวจ Charter ที่มี activity รายวันแต่ไม่มี Business Need/PM Authority และ Change Record ที่มีแค่ “อนุมัติแล้ว” โดยไม่มี impact, options หรือ baseline update ระบุข้อผิดพลาดและเขียนส่วนสำคัญใหม่.
+
+### Grading
+
+ใช้ [Model Answer](instructor/Model-Answer.md), [Review Checklist](instructor/Review-Checklist.md) และ [Scoring Rubric](instructor/Scoring-Rubric.md). ต้องได้อย่างน้อย 70/100 และทุกมิติไม่ต่ำกว่า `Usable`.
+
+## Supplementary Practice Question Bank — Ungraded
+
+### ส่วนที่ 1: Concept Check
 
 ### ข้อ 1
 

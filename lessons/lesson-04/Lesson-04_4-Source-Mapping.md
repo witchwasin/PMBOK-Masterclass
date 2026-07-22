@@ -3,7 +3,8 @@ lesson: 4
 sequence: 4.4
 title: 10 Project Management Knowledge Areas Overview — Source Mapping
 document_type: Source Mapping
-status: Draft
+status: Active
+validation_status: Validated
 canonical_source:
   - ../../references/PMBOK-Overview.md
 ---
@@ -216,3 +217,12 @@ Lesson 04 ต้อง:
 - ใช้ ERP และ Hotel Booking
 - ไม่ลงลึกแย่งบทถัดไป
 - เชื่อมไป Lesson 05
+
+## 8. Learning Asset Mapping
+
+| Asset | Classification | Source boundary |
+|---|---|---|
+| Coverage/Cross-impact Template | `[PMBOK 6]` / `[Best Practice]` | Knowledge Areas from PMBOK 6; integrated tool is course design |
+| Hotel Corporate Booking Example | `[Teaching Scenario]` | Scenario contrast, not an external claim |
+| Thinking Walkthrough / Model Answer | `[Professional Opinion]` | Decision guidance |
+| Rubric / Checklist | `[Best Practice]` | Course acceptance standard |

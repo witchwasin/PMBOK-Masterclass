@@ -9,11 +9,11 @@ last_updated: 2026-07-22
 
 | Lesson | Title | Difficulty | Status | Validation | Last Reviewed |
 |---|---|---|---|---|---|
-| 01 | ทำไม Project Manager ต้องรู้ PMBOK | Foundation | Draft | Not Validated | — |
-| 02 | Project Management Overview | Foundation | Draft | Not Validated | — |
-| 03 | 5 Project Management Process Groups | Foundation | Draft | Not Validated | — |
-| 04 | 10 Project Management Knowledge Areas Overview | Foundation | Draft | Not Validated | — |
-| 05 | Project Integration Management | Core | Draft | Not Validated | — |
+| 01 | ทำไม Project Manager ต้องรู้ PMBOK | Foundation | Active | Validated | 2026-07-22 |
+| 02 | Project Management Overview | Foundation | Active | Validated | 2026-07-22 |
+| 03 | 5 Project Management Process Groups | Foundation | Active | Validated | 2026-07-22 |
+| 04 | 10 Project Management Knowledge Areas Overview | Foundation | Active | Validated | 2026-07-22 |
+| 05 | Project Integration Management | Core | Active | Validated | 2026-07-22 |
 | 06 | Project Stakeholder Management | Core | Draft | Not Validated | — |
 | 07 | Project Scope Management and WBS | Core | Draft | Not Validated | — |
 | 08 | Project Schedule Management | Core | Draft | Not Validated | — |
