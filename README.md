@@ -67,6 +67,12 @@ PMBOK-Masterclass/
     ├── lesson-04/
     ├── ...
     └── lesson-16/
+└── e-Book/
+    ├── chapters/            # บทเรียน 01–16 (learner / instructor / answer-key)
+    ├── integration-reviews/
+    ├── capstone/
+    ├── pdf/                 # เล่มรวม Learner + Instructor (PDF) + build script
+    └── release/             # แพ็กเกจ release สำหรับผู้เรียน
 ```
 
 ## Current Status
@@ -79,3 +85,4 @@ PMBOK-Masterclass/
 - Batch 1 Validation: [`repository/BATCH-1-VALIDATION-REPORT.md`](repository/BATCH-1-VALIDATION-REPORT.md)
 - Batch 2 Validation: [`repository/BATCH-2-VALIDATION-REPORT.md`](repository/BATCH-2-VALIDATION-REPORT.md)
 - Batch 3 Validation: [`repository/BATCH-3-VALIDATION-REPORT.md`](repository/BATCH-3-VALIDATION-REPORT.md)
+- e-Book: Released — Lessons 01–16 + Capstone รวมเล่ม พร้อม PDF (Learner + Instructor) และแพ็กเกจ release ดู [`e-Book/README.md`](e-Book/README.md) และ [`e-Book/release/RELEASE-MANIFEST.md`](e-Book/release/RELEASE-MANIFEST.md)

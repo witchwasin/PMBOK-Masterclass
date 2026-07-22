@@ -16,6 +16,7 @@ e-Book/
 ├── chapters/
 ├── integration-reviews/
 ├── capstone/
+├── pdf/
 └── release/
 ```
 
@@ -31,7 +32,7 @@ Internal production-tracking files (editorial control package, per-chapter sourc
 
 ## Current Gate
 
-Learner e-book content, instructor companion, capstone and release packaging are complete. PDF/EPUB export depends on local conversion tooling availability.
+Learner e-book content, instructor companion, capstone and release packaging are complete. A combined Learner + Instructor book-style PDF is produced by `pdf/build_pdf.py` (weasyprint if available, Chrome headless otherwise) and stored at `pdf/PMBOK-Masterclass-Complete-Edition.pdf`. EPUB export still depends on local conversion tooling availability.
 
 ## Release Package
 
