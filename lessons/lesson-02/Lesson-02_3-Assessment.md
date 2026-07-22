@@ -1,7 +1,7 @@
 ---
 lesson: 2
 sequence: 2.3
-title: Project Management Overview — Assessment
+title: ภาพรวมการบริหารโครงการ — แบบประเมิน
 document_type: Assessment
 difficulty: Foundation
 estimated_study_time: 45
@@ -25,204 +25,204 @@ core_scenarios:
   - Hotel Booking Digital Platform
 ---
 
-# Lesson 02_3 — Assessment
+# Lesson 02_3 — แบบประเมิน: ภาพรวมการบริหารโครงการ
 
-> ส่ง [Project vs Operation Analysis and Value Chain](learner/Artifact-Template.md) ก่อนเปิด [Model Answer](instructor/Model-Answer.md). ใช้ [Scoring Rubric](instructor/Scoring-Rubric.md) ร่วมกับคะแนนด้านล่าง.
+> ส่ง [Project vs Operation Analysis and Value Chain](learner/Artifact-Template.md) ก่อนเปิด [Model Answer](instructor/Model-Answer.md) และใช้ [Scoring Rubric](instructor/Scoring-Rubric.md) ร่วมกับเกณฑ์ด้านล่าง
 
-## Assessment Purpose
+## วัตถุประสงค์ของแบบประเมิน
 
-This assessment checks whether learners can distinguish project, operation, output, outcome, value, organization structure, and professional PM judgement. At least half of the score requires scenario judgement rather than recall.
+ตรวจว่าผู้เรียนแยก project, operation, output, outcome, value, โครงสร้างองค์กร และการใช้ดุลยพินิจของ PM ได้หรือไม่ โดยอย่างน้อยครึ่งหนึ่งของคะแนนต้องมาจากการวิเคราะห์สถานการณ์ ไม่ใช่การท่องจำ
 
-## Source Labels
+## ป้ายกำกับแหล่งที่มา
 
-- **[PMBOK 6]** Project definition, project management definition, organization structure, and project manager role.
-- **[PMBOK 7]** Value delivery, outcome thinking, tailoring, stewardship, stakeholder engagement, and systems thinking.
-- **[Teaching Scenario]** ERP Transformation and Hotel Booking Platform continuity cases.
-- **[Professional Opinion]** Teaching prompts, scoring rubrics, and decision debriefs.
+- **[PMBOK 6]** นิยาม project, project management, โครงสร้างองค์กร และบทบาท Project Manager
+- **[PMBOK 7]** value delivery, outcome thinking, tailoring, stewardship, stakeholder engagement และ systems thinking
+- **[Teaching Scenario]** กรณีต่อเนื่อง ERP Transformation และ Hotel Booking Platform
+- **[Professional Opinion]** โจทย์การสอน rubric และ decision debrief
 
-## Scoring Summary
+## สรุปคะแนน
 
-| Section | Type | Score |
-|---|---:|---:|
-| A. Core Concept Check | Recall + understanding | 20 |
-| B. ERP Decision Case | Judgement | 30 |
-| C. Hotel Booking Decision Case | Judgement | 25 |
-| D. Organization Structure and PM Authority | Judgement | 15 |
-| E. Executive Brief | Synthesis | 10 |
-| **Total** |  | **100** |
+| ส่วน | รูปแบบ | คะแนน |
+|---|---|---:|
+| A. ตรวจแนวคิดหลัก | ความจำและความเข้าใจ | 20 |
+| B. กรณีตัดสินใจ ERP | การใช้ดุลยพินิจ | 30 |
+| C. กรณีตัดสินใจ Hotel Booking | การใช้ดุลยพินิจ | 25 |
+| D. โครงสร้างองค์กรและอำนาจ PM | การใช้ดุลยพินิจ | 15 |
+| E. Executive Brief | การสังเคราะห์ | 10 |
+| **รวม** |  | **100** |
 
-Judgement-based scoring: 80/100 points.
+คะแนนจากการใช้ดุลยพินิจ: 80/100 คะแนน
 
-## Section A — Core Concept Check (20 points)
+## ส่วน A — ตรวจแนวคิดหลัก (20 คะแนน)
 
-Choose the best answer. Each question is worth 2 points.
+เลือกคำตอบที่ดีที่สุด ข้อละ 2 คะแนน
 
-1. A project is best described as:
-   - A. any task with a deadline
-   - B. a temporary effort that creates a unique product, service, or result
-   - C. a large operation with many people
-   - D. a department's recurring monthly work
+1. Project ควรอธิบายอย่างเหมาะสมที่สุดว่าอะไร
+   - A. งานทุกอย่างที่มี deadline
+   - B. ความพยายามชั่วคราวเพื่อสร้างผลิตภัณฑ์ บริการ หรือผลลัพธ์ที่มีลักษณะเฉพาะ
+   - C. งาน operation ขนาดใหญ่ที่มีคนจำนวนมาก
+   - D. งานประจำรายเดือนของแผนก
 
-   **Answer:** B
+   **คำตอบ:** B
 
-2. Closing monthly financial accounts is usually:
-   - A. a project
-   - B. an operation
-   - C. a portfolio
-   - D. a product launch
+2. การปิดบัญชีการเงินรายเดือนโดยปกติคืออะไร
+   - A. project
+   - B. operation
+   - C. portfolio
+   - D. product launch
 
-   **Answer:** B
+   **คำตอบ:** B
 
-3. Go-live is usually best treated as:
-   - A. proof that business value has been realized
-   - B. an output milestone that still needs adoption and operation readiness
-   - C. the end of all PM accountability
-   - D. the same thing as long-term outcome
+3. โดยทั่วไป Go-live ควรมองว่าเป็นอะไร
+   - A. หลักฐานว่า business value เกิดขึ้นแล้ว
+   - B. milestone ของ output ที่ยังต้องพิสูจน์ adoption และ operation readiness
+   - C. จุดสิ้นสุดความรับผิดชอบของ PM ทุกด้าน
+   - D. สิ่งเดียวกับ outcome ระยะยาว
 
-   **Answer:** B
+   **คำตอบ:** B
 
-4. A hotel booking platform increasing direct booking from 10% to 35% is an example of:
+4. Platform จองโรงแรมที่เพิ่ม direct booking จาก 10% เป็น 35% เป็นตัวอย่างของอะไร
    - A. output
    - B. activity
-   - C. outcome/value indicator
+   - C. ตัวชี้วัด outcome/value
    - D. project charter
 
-   **Answer:** C
+   **คำตอบ:** C
 
-5. In a functional organization, a PM often needs more:
-   - A. direct authority over everyone
-   - B. influence, negotiation, and clear escalation paths
-   - C. budget ownership over all departments
-   - D. freedom from sponsor involvement
+5. ใน functional organization PM มักต้องใช้สิ่งใดมากขึ้น
+   - A. อำนาจสั่งการตรงต่อทุกคน
+   - B. อิทธิพล การเจรจา และ escalation path ที่ชัดเจน
+   - C. อำนาจงบประมาณเหนือทุกแผนก
+   - D. การทำงานโดยไม่ต้องมี sponsor
 
-   **Answer:** B
+   **คำตอบ:** B
 
-6. Which statement is most professional?
-   - A. The ERP project is successful because the vendor delivered the system.
-   - B. The ERP project is successful only when all users like it.
-   - C. Delivery status and outcome/adoption status should be reported separately.
-   - D. Outcome is outside any project's concern.
+6. ข้อใดเป็นข้อความเชิงวิชาชีพมากที่สุด
+   - A. ERP สำเร็จเพราะ vendor ส่งระบบแล้ว
+   - B. ERP สำเร็จเมื่อผู้ใช้ทุกคนชอบระบบเท่านั้น
+   - C. ควรรายงานสถานะการส่งมอบและสถานะ outcome/adoption แยกกัน
+   - D. Outcome ไม่เกี่ยวกับโครงการเลย
 
-   **Answer:** C
+   **คำตอบ:** C
 
-7. Which item is an output?
-   - A. tested ERP finance module
-   - B. shorter month-end close
-   - C. higher direct booking rate
-   - D. lower OTA commission
+7. ข้อใดเป็น output
+   - A. ERP finance module ที่ผ่านการทดสอบ
+   - B. ระยะเวลาปิดบัญชีที่สั้นลง
+   - C. อัตรา direct booking ที่สูงขึ้น
+   - D. ค่าคอมมิชชั่น OTA ที่ลดลง
 
-   **Answer:** A
+   **คำตอบ:** A
 
-8. Which item is most likely an operation?
-   - A. migrating six legacy databases into ERP
-   - B. running daily booking support after go-live
-   - C. designing a new payment integration
-   - D. implementing a new back-office workflow
+8. ข้อใดน่าจะเป็น operation มากที่สุด
+   - A. ย้ายฐานข้อมูลเดิม 6 ระบบเข้าสู่ ERP
+   - B. ให้บริการสนับสนุนการจองรายวันหลัง go-live
+   - C. ออกแบบ payment integration ใหม่
+   - D. นำ workflow back-office ใหม่ไปใช้
 
-   **Answer:** B
+   **คำตอบ:** B
 
-9. Which statement about organization structure is correct?
-   - A. Projectized is always best.
-   - B. Functional organizations cannot run projects.
-   - C. Structure affects PM authority, resource availability, and escalation design.
-   - D. Matrix organizations remove all conflict.
+9. ข้อใดเกี่ยวกับโครงสร้างองค์กรถูกต้อง
+   - A. Projectized ดีที่สุดเสมอ
+   - B. Functional organization ทำ project ไม่ได้
+   - C. โครงสร้างกระทบอำนาจ PM ความพร้อมของ resource และการออกแบบ escalation
+   - D. Matrix organization ขจัด conflict ได้ทั้งหมด
 
-   **Answer:** C
+   **คำตอบ:** C
 
-10. Which is a weak success measure for Lesson 02 thinking?
+10. ข้อใดเป็นตัววัดความสำเร็จที่อ่อนสำหรับแนวคิดใน Lesson 02
     - A. adoption baseline
     - B. benefit owner
-    - C. number of documents produced
+    - C. จำนวนเอกสารที่ผลิต
     - D. outcome metric
 
-    **Answer:** C
+    **คำตอบ:** C
 
-## Section B — ERP Decision Case (30 points)
+## ส่วน B — กรณีตัดสินใจ ERP (30 คะแนน)
 
-### Scenario
+### สถานการณ์
 
-The CEO, คุณสมชาย, supports a 12-month ERP transformation with five modules and a working delivery budget of 45 ล้านบาท. The CFO wants the finance team to reduce monthly close from 15 days within the next quarter. TechConsult says ERP implementation can solve reporting issues after go-live, but key users are already overloaded.
+CEO คุณสมชายสนับสนุน ERP transformation ระยะ 12 เดือน มี 5 โมดูล และ Working Budget 45 ล้านบาท CFO ต้องการให้ฝ่ายการเงินลดระยะเวลาปิดบัญชีรายเดือนจาก 15 วันภายในไตรมาสถัดไป TechConsult ระบุว่า ERP อาจแก้ปัญหารายงานหลัง go-live ได้ แต่ key users มีภาระงานเกินกำลังอยู่แล้ว
 
-### Task
+### โจทย์
 
-Write a decision brief that answers:
+เขียน decision brief ที่ตอบคำถามต่อไปนี้:
 
-1. Is the CFO request an operation improvement, an ERP project item, or a portfolio-level decision?
-2. What evidence is missing before deciding?
-3. What output and outcome should be separated?
-4. Who should own the outcome after go-live?
-5. What is the next action for the PM?
+1. คำขอของ CFO เป็นการปรับปรุง operation, รายการใน ERP project หรือการตัดสินใจระดับ portfolio
+2. ขาดหลักฐานใดก่อนตัดสินใจ
+3. ต้องแยก output และ outcome ใดออกจากกัน
+4. ใครควรเป็น owner ของ outcome หลัง go-live
+5. PM ควรทำอะไรต่อเป็นลำดับแรก
 
-### Scoring Rubric
+### เกณฑ์ให้คะแนน
 
-| Criteria | Points |
+| เกณฑ์ | คะแนน |
 |---|---:|
-| Correctly distinguishes operation improvement, ERP project, and portfolio interaction | 8 |
-| Separates output from outcome and does not treat go-live as automatic value | 6 |
-| Identifies missing evidence: root cause, cost of delay, owner, capacity, data baseline | 6 |
-| Assigns outcome ownership to business owner/sponsor, not only vendor or PM | 5 |
-| Proposes a concrete next action such as one-page option brief or steering decision | 5 |
+| แยก operation improvement, ERP project และ portfolio interaction ได้ถูกต้อง | 8 |
+| แยก output จาก outcome และไม่ถือว่า go-live คือ value โดยอัตโนมัติ | 6 |
+| ระบุหลักฐานที่ขาด เช่น root cause, cost of delay, owner, capacity และ data baseline | 6 |
+| มอบ ownership ของ outcome ให้ business owner/sponsor ไม่ใช่ vendor หรือ PM เพียงฝ่ายเดียว | 5 |
+| เสนอ next action ที่ทำได้จริง เช่น option brief หนึ่งหน้า หรือ steering decision | 5 |
 
-### Model Answer
+### แนวคำตอบ
 
-The CFO request should be framed as a portfolio-level decision because it may require a short-term finance improvement and a longer ERP capability build. The ERP output is a configured and tested finance/reporting capability; the intended outcome is a shorter, reliable close cycle with accountable data ownership. Missing evidence includes the root cause of the 15-day close, cost of delay, finance resource capacity, master-data ownership, and whether the same key users are needed for ERP design. The PM should prepare an option brief for the steering committee showing trade-offs between quick improvement, ERP-only, and combined approach. Outcome ownership should sit with the finance process owner and sponsor, while the PM manages delivery evidence and decision clarity.
+คำขอของ CFO ควรถูกวางเป็นการตัดสินใจระดับ portfolio เพราะอาจต้องมีทั้งการปรับปรุงระยะสั้นของฝ่ายการเงินและการสร้าง capability ผ่าน ERP ระยะยาว Output ของ ERP คือความสามารถด้าน finance/reporting ที่ configure และทดสอบแล้ว ส่วน outcome คือการปิดบัญชีที่เร็วและเชื่อถือได้พร้อม data ownership ที่ชัดเจน หลักฐานที่ขาดคือ root cause ของการปิดบัญชี 15 วัน, cost of delay, capacity ของฝ่ายการเงิน, ownership ของ master data และการใช้ key users ซ้ำกับงานออกแบบ ERP หรือไม่ PM ควรทำ option brief ให้ Steering Committee เปรียบเทียบ quick improvement, ERP-only และ combined approach โดย Finance Process Owner กับ Sponsor เป็น owner ของ outcome และ PM ดูแลหลักฐานการส่งมอบกับความชัดเจนของการตัดสินใจ
 
-## Section C — Hotel Booking Decision Case (25 points)
+## ส่วน C — กรณีตัดสินใจ Hotel Booking (25 คะแนน)
 
-### Scenario
+### สถานการณ์
 
-The hotel booking platform goes live after eight months. Mobile app, web booking, landing page, payment, and back office are delivered. After one month, traffic is strong, payment failure is 8%, hotel partners update inventory late, and direct booking has moved from 10% to only 14%. The target is 35% after 18 months.
+Hotel Booking Platform เปิดใช้หลัง 8 เดือน โดยส่งมอบ mobile app, web booking, landing page, payment และ back office แล้ว หลังเปิดใช้ 1 เดือน traffic สูง แต่ payment failure 8%, hotel partners อัปเดต inventory ล่าช้า และ direct booking เพิ่มจาก 10% เป็นเพียง 14% ทั้งที่เป้าหมายคือ 35% ภายใน 18 เดือน
 
-### Task
+### โจทย์
 
-Prepare a short analysis that answers:
+เขียนการวิเคราะห์สั้น ๆ ที่ตอบ:
 
-1. What outputs were delivered?
-2. Which outcomes are lagging?
-3. Which issue belongs to operation, and which might become a new project or improvement initiative?
-4. What would you report to the sponsor?
+1. Output ใดส่งมอบแล้ว
+2. Outcome ใดกำลังล่าช้า
+3. เรื่องใดเป็น operation และเรื่องใดอาจกลายเป็น project หรือ improvement initiative ใหม่
+4. คุณจะรายงานอะไรต่อ Sponsor
 
-### Scoring Rubric
+### เกณฑ์ให้คะแนน
 
-| Criteria | Points |
+| เกณฑ์ | คะแนน |
 |---|---:|
-| Correctly identifies delivered outputs | 5 |
-| Names lagging outcomes such as conversion, direct booking, payment reliability, partner adoption | 7 |
-| Distinguishes operation support from new improvement/project work | 6 |
-| Reports status honestly without calling the project fully successful only because go-live happened | 5 |
-| Provides practical next action | 2 |
+| ระบุ output ที่ส่งมอบแล้วถูกต้อง | 5 |
+| ระบุ outcome ที่ล่าช้า เช่น conversion, direct booking, payment reliability, partner adoption | 7 |
+| แยก operation support ออกจากงานปรับปรุง/project ใหม่ | 6 |
+| รายงานสถานะตรงไปตรงมา โดยไม่เรียกว่าโครงการสำเร็จเพียงเพราะ go-live | 5 |
+| เสนอ next action ที่ทำได้จริง | 2 |
 
-### Model Answer
+### แนวคำตอบ
 
-The delivered outputs are the live booking channels, payment integration, landing page, and back-office tools. The outcomes are not yet fully achieved because direct booking is only 14%, payment failures are high, and partner inventory behavior is weak. Daily customer support and partner inventory updates are operations; payment stabilization or partner inventory integration may become an improvement initiative or follow-on project. The sponsor should see a split report: delivery completed, outcome at risk, with a 30-day stabilization plan and owner for conversion, payment reliability, and partner adoption.
+Output ที่ส่งมอบคือช่องทางจองที่เปิดใช้แล้ว, payment integration, landing page และ back-office tools แต่ outcome ยังไม่ครบเพราะ direct booking อยู่ที่ 14%, payment failure สูง และ partner inventory ยังไม่เสถียร Customer support รายวันและการอัปเดต inventory ของ partner เป็น operation; การทำให้ payment เสถียรหรือเชื่อม inventory ของ partner อาจเป็น improvement initiative หรือ follow-on project Sponsor ควรได้รับรายงานแยกว่า delivery เสร็จแล้ว แต่ outcome มีความเสี่ยง พร้อมแผน stabilization 30 วัน และ owner ของ conversion, payment reliability และ partner adoption
 
-## Section D — Organization Structure and PM Authority (15 points)
+## ส่วน D — โครงสร้างองค์กรและอำนาจ PM (15 คะแนน)
 
-### Scenario
+### สถานการณ์
 
-คุณเอก is the ERP PM, but finance, sales, warehouse, production, and HR key users still report to their functional managers. Functional managers want to protect daily operations. The SI asks for faster sign-off to keep the 1 October go-live target.
+คุณเอกเป็น ERP PM แต่ key users จาก finance, sales, warehouse, production และ HR ยังรายงานต่อ Functional Managers ซึ่งต้องการปกป้องงานประจำ SI ต้องการ sign-off ที่เร็วขึ้นเพื่อรักษาเป้าหมาย go-live วันที่ 1 ตุลาคม
 
-### Task
+### โจทย์
 
-Recommend how the PM should work inside this structure.
+เสนอวิธีที่ PM ควรทำงานภายใต้โครงสร้างนี้
 
-### Scoring Rubric
+### เกณฑ์ให้คะแนน
 
-| Criteria | Points |
+| เกณฑ์ | คะแนน |
 |---|---:|
-| Identifies the structure as functional/matrix-like, not fully projectized | 4 |
-| Explains resource authority limitations | 3 |
-| Uses influence, escalation, sponsor support, and decision cadence | 4 |
-| Protects operation workload while preserving project evidence | 2 |
-| Avoids saying the PM can simply command all key users | 2 |
+| ระบุว่าเป็นโครงสร้าง functional/matrix-like ไม่ใช่ projectized เต็มรูปแบบ | 4 |
+| อธิบายข้อจำกัดเรื่องอำนาจ resource | 3 |
+| ใช้ influence, escalation, sponsor support และ decision cadence | 4 |
+| ปกป้องภาระ operation พร้อมรักษาหลักฐานโครงการ | 2 |
+| ไม่เสนอว่า PM สั่ง key users ทุกคนได้ทันที | 2 |
 
-### Model Answer
+### แนวคำตอบ
 
-The ERP context is matrix-like because key users still belong to functional departments. The PM should not assume direct command authority. A better approach is to agree on named key-user capacity, decision deadlines, escalation rules, and sponsor-backed priorities. When sign-off is late, the PM should show the effect on schedule, quality, and rework rather than pressuring teams blindly.
+บริบท ERP มีลักษณะ matrix-like เพราะ key users ยังสังกัดฝ่ายงาน PM ไม่ควรสมมติว่าตนมีอำนาจสั่งการโดยตรง ควรตกลง capacity ของ key user ที่ระบุชื่อชัดเจน กำหนด deadline ของการตัดสินใจ กติกา escalation และลำดับความสำคัญที่ Sponsor สนับสนุน เมื่อ sign-off ล่าช้า PM ต้องแสดงผลต่อ schedule, quality และ rework แทนการกดดันทีมโดยไม่มีข้อมูล
 
-## Section E — Executive Brief (10 points)
+## ส่วน E — Executive Brief (10 คะแนน)
 
-Write a five-sentence executive brief for either ERP or Hotel Booking. It must include:
+เขียน executive brief 5 ประโยคสำหรับ ERP หรือ Hotel Booking โดยต้องมี:
 
 - business need
 - output
@@ -230,21 +230,21 @@ Write a five-sentence executive brief for either ERP or Hotel Booking. It must i
 - owner
 - next decision
 
-### Scoring Rubric
+### เกณฑ์ให้คะแนน
 
-| Criteria | Points |
+| เกณฑ์ | คะแนน |
 |---|---:|
-| Includes all five required elements | 5 |
-| Uses clear executive language | 2 |
-| Separates delivery from value | 2 |
-| Names the next decision clearly | 1 |
+| มีองค์ประกอบครบทั้ง 5 ข้อ | 5 |
+| ใช้ภาษาที่ชัดเจนสำหรับผู้บริหาร | 2 |
+| แยก delivery ออกจาก value | 2 |
+| ระบุ next decision อย่างชัดเจน | 1 |
 
-## Pass Criteria
+## เกณฑ์ผ่าน
 
-- Minimum score: 70/100.
-- Learner must score at least 40/80 on judgement-based sections B–E.
-- If a learner scores high on recall but low on judgement, instructor should revisit output/outcome/value and organization authority before Lesson 03.
+- คะแนนรวมขั้นต่ำ: 70/100
+- ผู้เรียนต้องได้อย่างน้อย 40/80 จากส่วนที่ใช้ดุลยพินิจ B–E
+- หากได้คะแนนความจำสูงแต่คะแนนการใช้ดุลยพินิจต่ำ ผู้สอนควรทบทวนเรื่อง output/outcome/value และอำนาจในโครงสร้างองค์กรก่อนเข้าสู่ Lesson 03
 
-## AI Grading Guidance
+## แนวทางให้คะแนนด้วย AI
 
-An answer is strong when it avoids binary textbook classification and explains why context changes the decision. Do not reward answers that treat every deadline as a project, every system delivery as value, or every go-live as success.
+คำตอบที่ดีจะไม่จัดประเภทแบบตำราอย่างตายตัว แต่จะอธิบายว่าบริบทเปลี่ยนการตัดสินใจอย่างไร ไม่ควรให้รางวัลแก่คำตอบที่มองทุก deadline เป็น project, มองทุกการส่งระบบเป็น value หรือมองทุก go-live เป็นความสำเร็จ
