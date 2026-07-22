@@ -3,12 +3,43 @@ lesson: 7
 sequence: 7.3
 title: Project Scope Management and WBS — Assessment
 document_type: Assessment
-status: Draft
+difficulty: Core
+estimated_study_time: 75
+status: Active
+validation_status: Validated
+last_reviewed: 2026-07-22
+intended_learner_level: Beginner PM
+prerequisite:
+  - Lesson 07 — Project Scope Management and WBS
+related_lessons:
+  - Lesson 07 — Project Scope Management and WBS
+  - Lesson 08 — Project Schedule Management
+canonical_source:
+  - ../../references/PMBOK-Overview.md
+scenario_version:
+  erp: "1.0"
+  hotel_booking: "1.0"
+core_scenarios:
+  - ERP Transformation
+  - Hotel Booking Digital Platform
 ---
 
 # Lesson 07_3 — Assessment
 
-## ส่วนที่ 1: Concept Check
+## Release Assessment Structure — 100 Points
+
+| ส่วน | งาน | คะแนน |
+|---|---|---:|
+| Decision Case | “รายงานทั้งหมด” และ Scope boundary | 35 |
+| Artifact Construction | Requirements/Scope/WBS/Dictionary | 35 |
+| Artifact Review | WBS แตกตาม department/activity | 20 |
+| Retrieval Check | Requirement/Scope/Work Package | 10 |
+
+ส่ง [Artifact](learner/Artifact-Template.md) ก่อนเปิด [Model Answer](instructor/Model-Answer.md). ใช้ [Checklist](instructor/Review-Checklist.md) และ [Rubric](instructor/Scoring-Rubric.md); ต้อง ≥70/100 และทุกมิติอย่างน้อย `Usable`.
+
+## Supplementary Practice Question Bank — Ungraded
+
+### ส่วนที่ 1: Concept Check
 
 ### ข้อ 1
 

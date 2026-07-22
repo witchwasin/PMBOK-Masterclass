@@ -37,8 +37,8 @@ This assessment checks whether learners can distinguish project, operation, outp
 
 - **[PMBOK 6]** Project definition, project management definition, organization structure, and project manager role.
 - **[PMBOK 7]** Value delivery, outcome thinking, tailoring, stewardship, stakeholder engagement, and systems thinking.
-- **[Scenario]** ERP Transformation and Hotel Booking Platform continuity cases.
-- **[Instructor Interpretation]** Teaching prompts, scoring rubrics, and decision debriefs.
+- **[Teaching Scenario]** ERP Transformation and Hotel Booking Platform continuity cases.
+- **[Professional Opinion]** Teaching prompts, scoring rubrics, and decision debriefs.
 
 ## Scoring Summary
 

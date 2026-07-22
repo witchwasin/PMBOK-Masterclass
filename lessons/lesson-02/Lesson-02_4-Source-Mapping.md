@@ -37,8 +37,8 @@ This file records how Lesson 02 uses canonical PMBOK concepts, scenario continui
 |---|---|
 | **[PMBOK 6]** | Project definition, project management definition, organizational structures, PM role, success factors |
 | **[PMBOK 7]** | Value delivery, systems thinking, stakeholder engagement, tailoring, outcome orientation |
-| **[Scenario]** | ERP Transformation and Hotel Booking Platform narrative facts |
-| **[Instructor Interpretation]** | Teaching analogies, Thai executive framing, workshop design, and assessment rubrics |
+| **[Teaching Scenario]** | ERP Transformation and Hotel Booking Platform narrative facts |
+| **[Professional Opinion]** | Teaching analogies, Thai executive framing, workshop design, and assessment rubrics |
 
 ## Canonical Concept Mapping
 
@@ -57,25 +57,25 @@ This file records how Lesson 02 uses canonical PMBOK concepts, scenario continui
 
 | Lesson 02 Section | Primary Source Label | Notes |
 |---|---|---|
-| Opening Professional Question | [Instructor Interpretation] | Uses judgement prompt to start with business decision rather than definition recall |
-| Why This Matters | [PMBOK 7] + [Instructor Interpretation] | Connects project work to value leakage and executive reporting |
+| Opening Professional Question | [Professional Opinion] | Uses judgement prompt to start with business decision rather than definition recall |
+| Why This Matters | [PMBOK 7] + [Professional Opinion] | Connects project work to value leakage and executive reporting |
 | Learning Objectives | [PMBOK 6] + [PMBOK 7] | Defines expected learner capability |
-| Mental Model | [PMBOK 7] + [Instructor Interpretation] | Business Need to Project to Output to Outcome to Value |
+| Mental Model | [PMBOK 7] + [Professional Opinion] | Business Need to Project to Output to Outcome to Value |
 | Main Lesson | [PMBOK 6] + [PMBOK 7] | Explains core concepts and practical boundaries |
-| PM Thinking | [Instructor Interpretation] | Converts concepts into PM questions |
-| PM Decision Thinking | [PMBOK 7] + [Instructor Interpretation] | Uses decision record format with evidence, trade-offs, and next action |
-| ERP Scenario | [Scenario] | Uses คุณสมชาย, คุณเอก, TechConsult, 5 modules, 45 ล้านบาท working budget |
-| Hotel Booking Scenario | [Scenario] | Uses direct booking target, payment, inventory, back office, adoption |
-| Real Enterprise Example | [Instructor Interpretation] | Generic enterprise pattern, not a named factual case |
-| Common Mistakes | [Instructor Interpretation] | Teaching traps observed in PM practice |
-| Common Misconceptions | [Instructor Interpretation] | Corrects project = deadline, go-live = success, PM = coordinator |
-| Interview Questions | [PMBOK 6] + [PMBOK 7] + [Instructor Interpretation] | Mixes definition, judgement, behavioral, and scenario questions |
+| PM Thinking | [Professional Opinion] | Converts concepts into PM questions |
+| PM Decision Thinking | [PMBOK 7] + [Professional Opinion] | Uses decision record format with evidence, trade-offs, and next action |
+| ERP Scenario | [Teaching Scenario] | Uses คุณสมชาย, คุณเอก, TechConsult, 5 modules, 45 ล้านบาท working budget |
+| Hotel Booking Scenario | [Teaching Scenario] | Uses direct booking target, payment, inventory, back office, adoption |
+| Real Enterprise Example | [Professional Opinion] | Generic enterprise pattern, not a named factual case |
+| Common Mistakes | [Professional Opinion] | Teaching traps observed in PM practice |
+| Common Misconceptions | [Professional Opinion] | Corrects project = deadline, go-live = success, PM = coordinator |
+| Interview Questions | [PMBOK 6] + [PMBOK 7] + [Professional Opinion] | Mixes definition, judgement, behavioral, and scenario questions |
 | PM Dictionary | [PMBOK 6] + [PMBOK 7] | Defines terms with Thai learning notes |
-| Workshop | [Scenario] + [Instructor Interpretation] | Requires classification and decision brief |
-| Assessment | [PMBOK 6] + [PMBOK 7] + [Scenario] | At least 50% judgement-based |
-| Executive Summary | [Instructor Interpretation] | Condenses lesson for review |
-| Lesson Connection | [Instructor Interpretation] | Connects Lesson 01 to Lesson 03 |
-| AI Continuation Context | [Instructor Interpretation] | Directs future AI agents to preserve boundaries and scenario continuity |
+| Workshop | [Teaching Scenario] + [Professional Opinion] | Requires classification and decision brief |
+| Assessment | [PMBOK 6] + [PMBOK 7] + [Teaching Scenario] | At least 50% judgement-based |
+| Executive Summary | [Professional Opinion] | Condenses lesson for review |
+| Lesson Connection | [Professional Opinion] | Connects Lesson 01 to Lesson 03 |
+| AI Continuation Context | [Professional Opinion] | Directs future AI agents to preserve boundaries and scenario continuity |
 
 ## Scenario Fact Mapping
 

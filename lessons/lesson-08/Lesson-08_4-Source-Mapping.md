@@ -3,9 +3,25 @@ lesson: 8
 sequence: 8.4
 title: Project Schedule Management — Source Mapping
 document_type: Source Mapping
-status: Draft
+difficulty: Core
+estimated_study_time: 10
+status: Active
+validation_status: Validated
+last_reviewed: 2026-07-22
+intended_learner_level: Beginner PM
+prerequisite:
+  - Lesson 08 — Project Schedule Management
+related_lessons:
+  - Lesson 08 — Project Schedule Management
+  - Lesson 09 — Project Cost Management and Earned Value
 canonical_source:
   - ../../references/PMBOK-Overview.md
+scenario_version:
+  erp: "1.0"
+  hotel_booking: "1.0"
+core_scenarios:
+  - ERP Transformation
+  - Hotel Booking Digital Platform
 ---
 
 # Lesson 08_4 — Source Mapping
@@ -91,8 +107,8 @@ canonical_source:
 
 - **[PMBOK 6]** ใช้สำหรับ process, artifact, baseline, knowledge area และ governance vocabulary
 - **[PMBOK 7]** ใช้สำหรับ value delivery, systems thinking, tailoring, adaptability และ stewardship
-- **[Scenario]** ใช้สำหรับ ERP Transformation และ Hotel Booking Platform ที่มาจาก scenario master files
-- **[Instructor Interpretation]** ใช้สำหรับ workshop, decision prompt, misconception correction, rubric และ Thai executive framing
+- **[Teaching Scenario]** ใช้สำหรับ ERP Transformation และ Hotel Booking Platform ที่มาจาก scenario master files
+- **[Professional Opinion]** ใช้สำหรับ workshop, decision prompt, misconception correction, rubric และ Thai executive framing
 
 ## 9. Mapping Boundary and Continuation Notes
 
@@ -100,3 +116,12 @@ canonical_source:
 - บทนี้ต้องไม่แทนที่ policy, contract, law หรือ standard เฉพาะองค์กร
 - การเพิ่มเนื้อหาใหม่ต้องรักษา distinction ระหว่าง canonical concept, scenario fact และ instructor interpretation
 - Future AI agents must preserve the lesson-specific PM decision logic and keep scenario details aligned with the ERP and Hotel master scenario files
+
+## Learning Asset Mapping
+
+| Asset | Classification | Boundary |
+|---|---|---|
+| Activity/Network/Schedule Template | `[PMBOK 6]` / `[Best Practice]` | Schedule concepts; no vendor tool instruction |
+| ERP/Hotel examples | `[Teaching Scenario]` | Scenario Master v1.0 |
+| Walkthrough/Model Answer | `[Professional Opinion]` | Recovery guidance requires local evidence |
+| Checklist/Rubric | `[Best Practice]` | Course acceptance standard |

@@ -3,12 +3,43 @@ lesson: 9
 sequence: 9.3
 title: Project Cost Management and Earned Value — Assessment
 document_type: Assessment
-status: Draft
+difficulty: Core
+estimated_study_time: 75
+status: Active
+validation_status: Validated
+last_reviewed: 2026-07-22
+intended_learner_level: Beginner PM
+prerequisite:
+  - Lesson 09 — Project Cost Management and Earned Value
+related_lessons:
+  - Lesson 09 — Project Cost Management and Earned Value
+  - Lesson 10 — Project Quality Management
+canonical_source:
+  - ../../references/PMBOK-Overview.md
+scenario_version:
+  erp: "1.0"
+  hotel_booking: "1.0"
+core_scenarios:
+  - ERP Transformation
+  - Hotel Booking Digital Platform
 ---
 
 # Lesson 09_3 — Assessment
 
-## ส่วนที่ 1: Concept Check
+## Release Assessment Structure — 100 Points
+
+| ส่วน | งาน | คะแนน |
+|---|---|---:|
+| Decision Case | ERP EVM/change 2M | 40 |
+| Artifact Construction | Estimate/Baseline/Forecast | 30 |
+| Artifact Review | Report ปน funding/baseline/forecast | 20 |
+| Retrieval Check | PV/EV/AC/CPI/SPI/EAC | 10 |
+
+ส่ง [Artifact](learner/Artifact-Template.md) ก่อนเปิด [Model Answer](instructor/Model-Answer.md). ใช้ [Checklist](instructor/Review-Checklist.md) และ [Rubric](instructor/Scoring-Rubric.md); ต้อง ≥70/100 และทุกมิติอย่างน้อย `Usable`.
+
+## Supplementary Practice Question Bank — Ungraded
+
+### ส่วนที่ 1: Concept Check
 
 ### ข้อ 1
 

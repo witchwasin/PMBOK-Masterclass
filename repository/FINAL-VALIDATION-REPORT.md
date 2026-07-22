@@ -9,6 +9,7 @@ instructional_validation: In Progress
 lesson_release_validation: Not Completed
 validated_release_scope:
   - Lessons 01-05 (see BATCH-1-VALIDATION-REPORT.md)
+  - Lessons 06-10 (see BATCH-2-VALIDATION-REPORT.md)
 validated_on: 2026-07-22
 validator: scripts/validate-repository.sh
 ---

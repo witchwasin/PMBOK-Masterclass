@@ -29,6 +29,29 @@ L05 Project Charter + Governance + Change Decision Record
 L06 Stakeholder Register + Engagement Strategy
 ```
 
+## Batch 2 — Stakeholder Need to Acceptance
+
+```text
+L05 Charter + Governance
+        ↓
+L06 Stakeholder Register + Engagement Strategy
+  stakeholder need + influence + acceptance role
+        ↓
+L07 Requirements + Scope Statement + WBS + WBS Dictionary
+  testable need + boundary + work package
+        ↓
+L08 Activity List + Dependency Network + Master Schedule
+  activity logic + milestone + time-phased work
+        ↓
+L09 Cost Estimate + Cost Baseline + Performance Forecast
+  approved funding use + actual/earned work + forecast
+        ↓
+L10 Quality Plan + Acceptance Criteria + Test Strategy
+  requirement-to-test evidence + acceptance authority
+        ↓
+L11 Resource Plan + RACI
+```
+
 ## Traceability Rules
 
 1. ห้ามสร้าง Business Need หรือ Objective ใหม่ในบทหลังโดยไม่เปิด Change Decision

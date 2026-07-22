@@ -3,18 +3,41 @@ lesson: 8
 sequence: 8.1
 title: Project Schedule Management
 document_type: Blueprint
-level: Core
-status: Draft
-validation_status: Not Validated
+difficulty: Core
+estimated_study_time: 15
+status: Active
+validation_status: Validated
 last_reviewed: 2026-07-22
 intended_learner_level: Beginner PM
 prerequisite:
-  - Lesson 07
+  - Lesson 07 — Project Scope Management and WBS
+related_lessons:
+  - Lesson 07 — Project Scope Management and WBS
+  - Lesson 08 — Project Schedule Management
+  - Lesson 09 — Project Cost Management and Earned Value
 canonical_source:
   - ../../references/PMBOK-Overview.md
+scenario_version:
+  erp: "1.0"
+  hotel_booking: "1.0"
 core_scenarios:
   - ERP Transformation
   - Hotel Booking Digital Platform
+artifact_inputs:
+  - ../lesson-07/learner/Artifact-Template.md — WBS and WBS Dictionary
+artifact_outputs:
+  - name: Activity List, Dependency Network and Master Schedule
+    creator: Project Scheduler with Workstream Leads
+    artifact_owner: Project Manager
+    reviewer: Delivery Leads, Vendor Leads and Resource Managers
+    approval_authority: Steering Committee
+    approval_evidence: Approved schedule baseline and meeting decision record
+next_lesson_usage:
+  - Lesson 09 ใช้ time-phased activities, resource needs และ milestones เพื่อประมาณ Cost และสร้าง Cost Baseline
+acceptance_level:
+  incomplete: มีเพียงวันที่หรือ Gantt ที่ไม่มี dependency, owner, estimate basis และ baseline
+  usable: activities trace WBS, dependencies ถูกต้อง, critical path/float ตรวจได้ และมี milestone/owner
+  professional: มี estimate basis, uncertainty, resource constraint, recovery options และ approval evidence
 ---
 
 # Lesson 08_1 — Blueprint: Project Schedule Management

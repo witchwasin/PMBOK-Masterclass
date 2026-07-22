@@ -3,18 +3,42 @@ lesson: 9
 sequence: 9.1
 title: Project Cost Management and Earned Value
 document_type: Blueprint
-level: Core
-status: Draft
-validation_status: Not Validated
+difficulty: Core
+estimated_study_time: 15
+status: Active
+validation_status: Validated
 last_reviewed: 2026-07-22
 intended_learner_level: Beginner PM
 prerequisite:
-  - Lesson 08
+  - Lesson 08 — Project Schedule Management
+related_lessons:
+  - Lesson 08 — Project Schedule Management
+  - Lesson 09 — Project Cost Management and Earned Value
+  - Lesson 10 — Project Quality Management
 canonical_source:
   - ../../references/PMBOK-Overview.md
+scenario_version:
+  erp: "1.0"
+  hotel_booking: "1.0"
 core_scenarios:
   - ERP Transformation
   - Hotel Booking Digital Platform
+artifact_inputs:
+  - ../lesson-07/learner/Artifact-Template.md — WBS and WBS Dictionary
+  - ../lesson-08/learner/Artifact-Template.md — Master Schedule
+artifact_outputs:
+  - name: Cost Estimate, Cost Baseline and Cost Performance Forecast
+    creator: Cost Controller and Project Manager
+    artifact_owner: Project Manager
+    reviewer: Finance, Workstream Leads and Vendor Commercial Lead
+    approval_authority: Sponsor or Steering Committee
+    approval_evidence: Approved Cost Baseline and financial decision record
+next_lesson_usage:
+  - Lesson 10 ใช้ cost constraints, work packages และ schedule gates เพื่อวาง prevention, testing และ acceptance effort
+acceptance_level:
+  incomplete: ปน Working Budget, Funding Envelope, reserve, actual และ forecast หรือไม่ trace WBS/schedule
+  usable: estimate basis, time-phased baseline, reserves, actual, EAC และ variance แยกได้
+  professional: มี assumptions, confidence, EVM interpretation, forecast options และ approval evidence
 ---
 
 # Lesson 09_1 — Blueprint: Project Cost Management and Earned Value

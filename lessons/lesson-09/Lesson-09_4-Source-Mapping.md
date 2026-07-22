@@ -3,9 +3,25 @@ lesson: 9
 sequence: 9.4
 title: Project Cost Management and Earned Value — Source Mapping
 document_type: Source Mapping
-status: Draft
+difficulty: Core
+estimated_study_time: 10
+status: Active
+validation_status: Validated
+last_reviewed: 2026-07-22
+intended_learner_level: Beginner PM
+prerequisite:
+  - Lesson 09 — Project Cost Management and Earned Value
+related_lessons:
+  - Lesson 09 — Project Cost Management and Earned Value
+  - Lesson 10 — Project Quality Management
 canonical_source:
   - ../../references/PMBOK-Overview.md
+scenario_version:
+  erp: "1.0"
+  hotel_booking: "1.0"
+core_scenarios:
+  - ERP Transformation
+  - Hotel Booking Digital Platform
 ---
 
 # Lesson 09_4 — Source Mapping
@@ -91,8 +107,8 @@ canonical_source:
 
 - **[PMBOK 6]** ใช้สำหรับ process, artifact, baseline, knowledge area และ governance vocabulary
 - **[PMBOK 7]** ใช้สำหรับ value delivery, systems thinking, tailoring, adaptability และ stewardship
-- **[Scenario]** ใช้สำหรับ ERP Transformation และ Hotel Booking Platform ที่มาจาก scenario master files
-- **[Instructor Interpretation]** ใช้สำหรับ workshop, decision prompt, misconception correction, rubric และ Thai executive framing
+- **[Teaching Scenario]** ใช้สำหรับ ERP Transformation และ Hotel Booking Platform ที่มาจาก scenario master files
+- **[Professional Opinion]** ใช้สำหรับ workshop, decision prompt, misconception correction, rubric และ Thai executive framing
 
 ## 9. Mapping Boundary and Continuation Notes
 
@@ -100,3 +116,12 @@ canonical_source:
 - บทนี้ต้องไม่แทนที่ policy, contract, law หรือ standard เฉพาะองค์กร
 - การเพิ่มเนื้อหาใหม่ต้องรักษา distinction ระหว่าง canonical concept, scenario fact และ instructor interpretation
 - Future AI agents must preserve the lesson-specific PM decision logic and keep scenario details aligned with the ERP and Hotel master scenario files
+
+## Learning Asset Mapping
+
+| Asset | Classification | Boundary |
+|---|---|---|
+| Estimate/Baseline/EVM Template | `[PMBOK 6]` / `[Best Practice]` | Formula/concepts canonical; reporting layout course-specific |
+| ERP numbers | `[Teaching Scenario]` | 45M/60M locked; worked EVM values labelled assumptions |
+| Walkthrough/Model Answer | `[Professional Opinion]` | Forecast judgement depends on evidence |
+| Checklist/Rubric | `[Best Practice]` | Course acceptance standard |

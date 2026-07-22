@@ -3,18 +3,41 @@ lesson: 6
 sequence: 6.1
 title: Project Stakeholder Management
 document_type: Blueprint
-level: Core
-status: Draft
-validation_status: Not Validated
+difficulty: Core
+estimated_study_time: 15
+status: Active
+validation_status: Validated
 last_reviewed: 2026-07-22
 intended_learner_level: Beginner PM
 prerequisite:
-  - Lesson 05
+  - Lesson 05 — Project Integration Management
+related_lessons:
+  - Lesson 05 — Project Integration Management
+  - Lesson 06 — Project Stakeholder Management
+  - Lesson 07 — Project Scope Management and WBS
 canonical_source:
   - ../../references/PMBOK-Overview.md
+scenario_version:
+  erp: "1.0"
+  hotel_booking: "1.0"
 core_scenarios:
   - ERP Transformation
   - Hotel Booking Digital Platform
+artifact_inputs:
+  - ../lesson-05/learner/Artifact-Template.md — Project Charter and Governance Map
+artifact_outputs:
+  - name: Stakeholder Register and Engagement Strategy
+    creator: Project Manager with Business Analyst support
+    artifact_owner: Project Manager
+    reviewer: Sponsor and Business Change Leads
+    approval_authority: Sponsor
+    approval_evidence: Approved engagement strategy and recorded escalation route
+next_lesson_usage:
+  - Lesson 07 ใช้ stakeholder needs, decision rights และ acceptance roles เพื่อเก็บ Requirements และอนุมัติ Scope Baseline
+acceptance_level:
+  incomplete: มีเพียงรายชื่อ stakeholder หรือไม่มี influence, need, owner และ action
+  usable: ระบุ stakeholder, influence, current/desired engagement, action owner และ cadence ได้
+  professional: เชื่อม engagement action กับ project decisions, resistance evidence, escalation และ measurable adoption signal
 ---
 
 # Lesson 06_1 — Blueprint: Project Stakeholder Management

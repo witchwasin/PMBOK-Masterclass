@@ -3,18 +3,48 @@ lesson: 7
 sequence: 7.1
 title: Project Scope Management and WBS
 document_type: Blueprint
-level: Core
-status: Draft
-validation_status: Not Validated
+difficulty: Core
+estimated_study_time: 15
+status: Active
+validation_status: Validated
 last_reviewed: 2026-07-22
 intended_learner_level: Beginner PM
 prerequisite:
-  - Lesson 06
+  - Lesson 06 — Project Stakeholder Management
+related_lessons:
+  - Lesson 06 — Project Stakeholder Management
+  - Lesson 07 — Project Scope Management and WBS
+  - Lesson 08 — Project Schedule Management
 canonical_source:
   - ../../references/PMBOK-Overview.md
+scenario_version:
+  erp: "1.0"
+  hotel_booking: "1.0"
 core_scenarios:
   - ERP Transformation
   - Hotel Booking Digital Platform
+artifact_inputs:
+  - ../lesson-05/learner/Artifact-Template.md — Project Charter
+  - ../lesson-06/learner/Artifact-Template.md — Stakeholder Register and Engagement Strategy
+artifact_outputs:
+  - name: Requirements List and Scope Statement
+    creator: Business Analyst and Project Manager
+    artifact_owner: Business Process Owner and Project Manager
+    reviewer: Business Owners, Solution Architecture and System Integrator
+    approval_authority: Sponsor or Change Control Board
+    approval_evidence: Approved requirements and Scope Baseline
+  - name: WBS and WBS Dictionary
+    creator: Project Manager with Workstream Leads
+    artifact_owner: Project Manager
+    reviewer: Business Owners, Architecture and System Integrator
+    approval_authority: Sponsor or Change Control Board
+    approval_evidence: Approved Scope Baseline and WBS version record
+next_lesson_usage:
+  - Lesson 08 ใช้ work packages, owners, acceptance criteria และ constraints เพื่อสร้าง Activity List และ Schedule
+acceptance_level:
+  incomplete: requirement ไม่ testable, scope boundary ขาด หรือ WBS แตกตาม department/activity
+  usable: requirements, in/out scope, deliverables, WBS และ dictionary trace กลับ Objective ได้
+  professional: มี acceptance, owner, exclusions, change route และ 100 percent coverage ที่ตรวจสอบได้
 ---
 
 # Lesson 07_1 — Blueprint: Project Scope Management and WBS

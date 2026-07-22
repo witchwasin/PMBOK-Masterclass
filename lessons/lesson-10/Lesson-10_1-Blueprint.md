@@ -3,18 +3,43 @@ lesson: 10
 sequence: 10.1
 title: Project Quality Management
 document_type: Blueprint
-level: Core
-status: Draft
-validation_status: Not Validated
+difficulty: Core
+estimated_study_time: 15
+status: Active
+validation_status: Validated
 last_reviewed: 2026-07-22
 intended_learner_level: Beginner PM
 prerequisite:
-  - Lesson 09
+  - Lesson 09 — Project Cost Management and Earned Value
+related_lessons:
+  - Lesson 09 — Project Cost Management and Earned Value
+  - Lesson 10 — Project Quality Management
+  - Lesson 11 — Project Resource Management
 canonical_source:
   - ../../references/PMBOK-Overview.md
+scenario_version:
+  erp: "1.0"
+  hotel_booking: "1.0"
 core_scenarios:
   - ERP Transformation
   - Hotel Booking Digital Platform
+artifact_inputs:
+  - ../lesson-07/learner/Artifact-Template.md — Scope, WBS and Acceptance Inputs
+  - ../lesson-08/learner/Artifact-Template.md — Master Schedule and Quality Gates
+  - ../lesson-09/learner/Artifact-Template.md — Cost Baseline and Quality Budget Constraints
+artifact_outputs:
+  - name: Quality Plan, Acceptance Criteria and Test Strategy
+    creator: Quality Lead, Business Analyst and Project Manager
+    artifact_owner: Quality Manager and Project Manager
+    reviewer: Business Owners, IT Operations and System Integrator
+    approval_authority: Business Owner
+    approval_evidence: Approved quality/test strategy and signed acceptance criteria
+next_lesson_usage:
+  - Lesson 11 ใช้ quality roles, test workload และ approval responsibilities เพื่อสร้าง Resource Plan และ RACI
+acceptance_level:
+  incomplete: เท่ากับ quality กับไม่มี defect หรือไม่มี owner, criteria, coverage และ evidence
+  usable: quality objective, prevention, QA/QC, acceptance, test levels, severity และ sign-off ครบ
+  professional: trace requirement-to-test-to-acceptance, residual risk, go/no-go threshold และ operating handoff ได้
 ---
 
 # Lesson 10_1 — Blueprint: Project Quality Management

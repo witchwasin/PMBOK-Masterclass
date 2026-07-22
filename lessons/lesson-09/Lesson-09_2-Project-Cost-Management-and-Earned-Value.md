@@ -3,21 +3,36 @@ lesson: 9
 sequence: 9.2
 title: Project Cost Management and Earned Value
 document_type: Lesson
-level: Core
-status: Draft
-validation_status: Pending Final Repository Validation
+difficulty: Core
+estimated_study_time: 120
+status: Active
+validation_status: Validated
 version: 1.0
-last_updated: 2026-07-22
+last_reviewed: 2026-07-22
+intended_learner_level: Beginner PM
 prerequisite:
   - Lesson 08 — Project Schedule Management
+related_lessons:
+  - Lesson 08 — Project Schedule Management
+  - Lesson 10 — Project Quality Management
 canonical_source:
   - ../../references/PMBOK-Overview.md
+scenario_version:
+  erp: "1.0"
+  hotel_booking: "1.0"
 core_scenarios:
   - ERP Transformation
   - Hotel Booking Digital Platform
 ---
 
 # Lesson 09_2 — Project Cost Management and Earned Value
+
+## Beginner Safety
+
+- **ควรรู้แล้ว:** WBS, Activity และ Schedule Baseline จาก Lessons 07–08
+- **ยังไม่ต้องรู้:** Procurement contract control รายละเอียด
+- **คำศัพท์ใหม่:** Estimate, Budget, Cost Baseline, Reserve, PV, EV, AC, CPI, SPI, EAC
+- **Novice traps:** ปน Funding Envelope กับ Cost Baseline หรือสรุป performance จากเงินใช้เทียบเวลาผ่าน
 
 ## Opening Professional Question — ถ้างบประมาณถูกใช้ไปแล้ว 50% แต่เวลาผ่านไป 70% โครงการของคุณกำลังประหยัดเงิน หรือกำลังตกอยู่ในอันตราย?
 
@@ -160,17 +175,13 @@ Step 2: Calculate EAC (Estimate at Completion) -> คาดการณ์ว่
 
 ---
 
-## 9. Reflection & Assessment
+## Guided Reflection During Learning
 
 ### 📝 คำถามทบทวนตัวเอง (Self-Reflection):
 1. ในโครงการของคุณ คุณมีการวัดประสิทธิภาพงบประมาณด้วยตัวเลข **Earned Value (EV)** หรือดูเพียงแค่ยอดเงินเบิกจ่ายจากฝ่ายบัญชี?
 2. ค่า **CPI** และ **SPI** ของโครงการคุณในปัจจุบันอยู่ที่ระดับใด (สูงกว่า หรือ ต่ำกว่า 1.0)?
 
 ---
-
-## 🌉 Bridge to Next Lesson: Lesson 10 — Project Quality Management
-
-เมื่อเราบริหาร **Scope, Schedule, Cost (Triple Constraints)** ได้อย่างเข้มงวดแล้ว มิติสำคัญที่จะรับประกันว่างานที่ทำเสร็จนั้นสามารถใช้งานได้จริงคือ **Project Quality Management** ในบทถัดไป **Lesson 10** ครับ!
 
 ## PM Decision Thinking
 
@@ -193,7 +204,7 @@ Step 2: Calculate EAC (Estimate at Completion) -> คาดการณ์ว่
 
 ## ERP Scenario
 
-**[Scenario]** ERP Transformation ใช้คำงบแบบล็อก: Working Budget 45 ล้านบาท สำหรับ delivery costs และ Total Funding Envelope 60 ล้านบาท รวม license และ management reserve.
+**[Teaching Scenario]** ERP Transformation ใช้คำงบแบบล็อก: Working Budget 45 ล้านบาท สำหรับ delivery costs และ Total Funding Envelope 60 ล้านบาท รวม license และ management reserve.
 
 Cost decision:
 
@@ -204,7 +215,7 @@ Cost decision:
 
 ## Hotel Booking Scenario
 
-**[Scenario]** Hotel Booking Platform มี delivery budget 12 ล้านบาท และหลัง launch จะมี cloud/payment operating costs.
+**[Teaching Scenario]** Hotel Booking Platform มี delivery budget 12 ล้านบาท และหลัง launch จะมี cloud/payment operating costs.
 
 Cost decision:
 
@@ -215,7 +226,7 @@ Cost decision:
 
 ## Real Enterprise Example
 
-**[Instructor Interpretation]** รายงานงบหลายองค์กรบอกว่า “ใช้เงินไป 40%” โดยไม่บอกว่างานได้กี่เปอร์เซ็นต์. ถ้างานจริงได้ 20% โครงการไม่ได้ประหยัด แต่กำลังสะสม delay และอาจใช้เงินก้อนใหญ่ท้ายโครงการ. EVM บังคับให้ PM เอา money กับ earned work มาอยู่ในภาพเดียวกัน.
+**[Professional Opinion]** รายงานงบหลายองค์กรบอกว่า “ใช้เงินไป 40%” โดยไม่บอกว่างานได้กี่เปอร์เซ็นต์. ถ้างานจริงได้ 20% โครงการไม่ได้ประหยัด แต่กำลังสะสม delay และอาจใช้เงินก้อนใหญ่ท้ายโครงการ. EVM บังคับให้ PM เอา money กับ earned work มาอยู่ในภาพเดียวกัน.
 
 ## Common Mistakes
 
@@ -292,6 +303,12 @@ ERP มี BAC ใน working budget 45 ล้านบาท ตอนนี้
 
 คำตอบที่ดีต้องไม่หยุดที่ตัวเลข แต่เชื่อมตัวเลขกับ decision และ governance.
 
+### Artifact Learning Path
+
+- **Do:** สร้าง [Cost Estimate, Baseline and Forecast](learner/Artifact-Template.md)
+- **Checkpoint:** ทำ [Beginner Checkpoint](learner/Beginner-Checkpoint.md)
+- **Review หลังส่ง:** ใช้ [Thinking Walkthrough](instructor/Thinking-Walkthrough.md), [Completed Example](instructor/Completed-Example.md), [Checklist](instructor/Review-Checklist.md) และ [Rubric](instructor/Scoring-Rubric.md)
+
 ## Assessment
 
 ดูแบบประเมินหลักที่ [Lesson 09 Assessment](./Lesson-09_3-Assessment.md). แบบประเมินควรวัดการคำนวณ EVM และ judgement ว่าควร recover, forecast, request change หรือ escalate อย่างไร.
@@ -307,3 +324,11 @@ Lesson 08 สร้าง schedule baseline. Lesson 09 เพิ่ม cost base
 ## AI Continuation Context
 
 Future AI agents must preserve ERP budget terminology exactly: Working Budget 45 ล้านบาท for delivery, Total Funding Envelope 60 ล้านบาท including license and management reserve. Keep Hotel Booking cost examples clear between build budget and post-launch operation cost.
+
+## Artifact Handoff
+
+- **Inputs:** WBS and Master Schedule
+- **Output:** Cost Estimate, Cost Baseline and Cost Performance Forecast
+- **Governance:** Cost Controller/PM สร้าง; PM เป็น Owner; Finance/Workstream/Vendor ตรวจ; Sponsor/Steering Committee อนุมัติ
+- **Minimum acceptance:** `Usable`
+- **Next use:** Lesson 10 ใช้ cost constraints และ schedule gates วาง prevention/testing/acceptance effort

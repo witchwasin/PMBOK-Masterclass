@@ -73,5 +73,7 @@ PMBOK-Masterclass/
 
 - Repository foundation: Complete Structure
 - Lessons 01–05: Active / Validated (Batch 1)
-- Lessons 06–16: Structured Draft / Not Validated
+- Lessons 06–10: Active / Validated (Batch 2)
+- Lessons 11–16: Structured Draft / Not Validated
 - Batch 1 Validation: [`repository/BATCH-1-VALIDATION-REPORT.md`](repository/BATCH-1-VALIDATION-REPORT.md)
+- Batch 2 Validation: [`repository/BATCH-2-VALIDATION-REPORT.md`](repository/BATCH-2-VALIDATION-REPORT.md)

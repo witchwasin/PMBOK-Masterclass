@@ -18,7 +18,7 @@ for lesson_number in $(seq -w 1 16); do
   [[ -f "$assessment" ]] || fail "Lesson $lesson_number has no assessment"
   [[ -f "$mapping" ]] || fail "Lesson $lesson_number has no source mapping"
 
-  if (( 10#$lesson_number <= 5 )); then
+  if (( 10#$lesson_number <= 10 )); then
     for metadata_file in "$blueprint" "$lesson_file" "$assessment" "$mapping"; do
       for field in lesson sequence title document_type difficulty estimated_study_time status validation_status last_reviewed intended_learner_level prerequisite related_lessons canonical_source scenario_version core_scenarios; do
         rg -q "^${field}:" "$metadata_file" || fail "$(basename "$metadata_file") is missing metadata field: $field"
@@ -32,6 +32,9 @@ for lesson_number in $(seq -w 1 16); do
       if rg -q '^level:|^canonical_sources:|^last_updated:' "$metadata_file"; then
         fail "$(basename "$metadata_file") uses deprecated metadata fields"
       fi
+      if rg -q '\[Scenario\]|\[Instructor Interpretation\]' "$metadata_file"; then
+        fail "$(basename "$metadata_file") uses non-standard source labels"
+      fi
     done
     for asset in learner/Artifact-Template.md learner/Workshop.md learner/Beginner-Checkpoint.md instructor/Thinking-Walkthrough.md instructor/Completed-Example.md instructor/Model-Answer.md instructor/Review-Checklist.md instructor/Scoring-Rubric.md; do
       [[ -f "$lesson_dir/$asset" ]] || fail "Lesson $lesson_number is missing learning asset: $asset"
@@ -40,7 +43,7 @@ for lesson_number in $(seq -w 1 16); do
       rg -q "^${field}:|^[[:space:]]+${field}:" "$blueprint" || fail "Lesson $lesson_number blueprint is missing artifact field: $field"
     done
     for heading in 'Beginner Safety' 'Artifact Handoff'; do
-      rg -qi "^## .*${heading}" "$lesson_file" || fail "Lesson $lesson_number is missing Batch 1 heading: $heading"
+      rg -qi "^## .*${heading}" "$lesson_file" || fail "Lesson $lesson_number is missing release heading: $heading"
     done
     if rg -q '^## .*Bridge to Next Lesson|^## เชื่อมไปยัง' "$lesson_file"; then
       fail "Lesson $lesson_number still contains a premature bridge before the final Lesson Connection"

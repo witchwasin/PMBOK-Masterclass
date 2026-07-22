@@ -14,11 +14,11 @@ last_updated: 2026-07-22
 | 03 | 5 Project Management Process Groups | Foundation | Active | Validated | 2026-07-22 |
 | 04 | 10 Project Management Knowledge Areas Overview | Foundation | Active | Validated | 2026-07-22 |
 | 05 | Project Integration Management | Core | Active | Validated | 2026-07-22 |
-| 06 | Project Stakeholder Management | Core | Draft | Not Validated | — |
-| 07 | Project Scope Management and WBS | Core | Draft | Not Validated | — |
-| 08 | Project Schedule Management | Core | Draft | Not Validated | — |
-| 09 | Project Cost Management and Earned Value | Core | Draft | Not Validated | — |
-| 10 | Project Quality Management | Core | Draft | Not Validated | — |
+| 06 | Project Stakeholder Management | Core | Active | Validated | 2026-07-22 |
+| 07 | Project Scope Management and WBS | Core | Active | Validated | 2026-07-22 |
+| 08 | Project Schedule Management | Core | Active | Validated | 2026-07-22 |
+| 09 | Project Cost Management and Earned Value | Core | Active | Validated | 2026-07-22 |
+| 10 | Project Quality Management | Core | Active | Validated | 2026-07-22 |
 | 11 | Project Resource Management | Core | Draft | Not Validated | — |
 | 12 | Project Communications Management | Core | Draft | Not Validated | — |
 | 13 | Project Risk Management | Core | Draft | Not Validated | — |

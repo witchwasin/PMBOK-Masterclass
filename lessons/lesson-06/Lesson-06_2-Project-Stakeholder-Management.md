@@ -3,21 +3,36 @@ lesson: 6
 sequence: 6.2
 title: Project Stakeholder Management
 document_type: Lesson
-level: Core
-status: Draft
-validation_status: Pending Final Repository Validation
+difficulty: Core
+estimated_study_time: 105
+status: Active
+validation_status: Validated
 version: 1.0
-last_updated: 2026-07-22
+last_reviewed: 2026-07-22
+intended_learner_level: Beginner PM
 prerequisite:
   - Lesson 05 — Project Integration Management
+related_lessons:
+  - Lesson 05 — Project Integration Management
+  - Lesson 07 — Project Scope Management and WBS
 canonical_source:
   - ../../references/PMBOK-Overview.md
+scenario_version:
+  erp: "1.0"
+  hotel_booking: "1.0"
 core_scenarios:
   - ERP Transformation
   - Hotel Booking Digital Platform
 ---
 
 # Lesson 06_2 — Project Stakeholder Management
+
+## Beginner Safety
+
+- **ควรรู้แล้ว:** Charter, Governance และ decision rights จาก Lesson 05
+- **ยังไม่ต้องรู้:** Resource assignment หรือ Communication Plan รายละเอียด
+- **คำศัพท์ใหม่:** Stakeholder, Influence, Current/Desired Engagement, Resistance, Champion
+- **Novice traps:** มอง Stakeholder เป็นเพียงรายชื่อหรือคิดว่าทุก resistance แก้ด้วย communication
 
 ## Opening Professional Question — ถ้าส่งมอบระบบได้ตามสเปค แต่ผู้บริหารฝ่ายปฏิบัติการไม่ยอมให้พนักงานเข้าใช้อุปกรณ์ โครงการนี้ถือว่าสำเร็จหรือไม่?
 
@@ -153,17 +168,13 @@ Step 4: Execute Engagement Plan -> สื่อสารผ่านช่อง
 
 ---
 
-## 9. Reflection & Assessment
+## Guided Reflection During Learning
 
 ### 📝 คำถามทบทวนตัวเอง (Self-Reflection):
 1. ในโครงการปัจจุบัน คุณได้จัดทำ **Stakeholder Register** และวิเคราะห์ Power-Interest Grid ไว้แล้วหรือยัง?
 2. มี Stakeholder กลุ่มใดหรือไม่ที่คุณมองข้ามไปในวันแรก แล้วส่งผลกลับมารบกวนโครงการในวันนี้?
 
 ---
-
-## 🌉 Bridge to Next Lesson: Lesson 07 — Project Scope Management and WBS
-
-เมื่อเราบริหารความคาดหวังของผู้คน (**Stakeholders**) ได้แล้ว ขั้นตอนถัดไปคือการแปลงความคาดหวังเหล่านั้นให้กลายเป็น **"ขอบเขตงานที่ชัดเจน" (Project Scope & WBS)** ในบทถัดไป **Lesson 07** ครับ!
 
 ## PM Decision Thinking
 
@@ -186,7 +197,7 @@ Stakeholder management ไม่ใช่การเอาใจทุกคน
 
 ## ERP Scenario
 
-**[Scenario]** ERP Transformation มี sponsor คุณสมชาย, PM คุณเอก, TechConsult, 80 key users และ 5 modules ที่แตะหลายฝ่าย.
+**[Teaching Scenario]** ERP Transformation มี sponsor คุณสมชาย, PM คุณเอก, TechConsult, 80 key users และ 5 modules ที่แตะหลายฝ่าย.
 
 Stakeholder risk ที่ต้องจัดการ:
 
@@ -198,7 +209,7 @@ Stakeholder risk ที่ต้องจัดการ:
 
 ## Hotel Booking Scenario
 
-**[Scenario]** Hotel Booking Platform มี sponsor คุณจิรา, PO คุณนภา, PM คุณสุทธิ, hotel partners, customers, operations และ marketing.
+**[Teaching Scenario]** Hotel Booking Platform มี sponsor คุณจิรา, PO คุณนภา, PM คุณสุทธิ, hotel partners, customers, operations และ marketing.
 
 Stakeholder risk ที่ต้องจัดการ:
 
@@ -210,7 +221,7 @@ Stakeholder risk ที่ต้องจัดการ:
 
 ## Real Enterprise Example
 
-**[Instructor Interpretation]** โครงการที่ “ส่งตามสเปคแต่ไม่มีคนใช้” มักไม่ได้ล้มในวัน go-live แต่ล้มตั้งแต่ตอน stakeholder ที่มีผลต่อ operation ไม่ถูก engage. ผู้ใช้หน้างานไม่ถูกถาม, manager ไม่ได้เห็น benefit, support ไม่ได้เตรียม owner และ sponsor ได้ยินแต่รายงาน delivery.
+**[Professional Opinion]** โครงการที่ “ส่งตามสเปคแต่ไม่มีคนใช้” มักไม่ได้ล้มในวัน go-live แต่ล้มตั้งแต่ตอน stakeholder ที่มีผลต่อ operation ไม่ถูก engage. ผู้ใช้หน้างานไม่ถูกถาม, manager ไม่ได้เห็น benefit, support ไม่ได้เตรียม owner และ sponsor ได้ยินแต่รายงาน delivery.
 
 ## Common Mistakes
 
@@ -284,6 +295,12 @@ ERP key users ไม่เข้าร่วม UAT เพราะ functional m
 
 คำตอบที่ดีต้องไม่บอกแค่ “สื่อสารเพิ่ม” แต่ต้องบอกว่าใครต้องรู้อะไร ทำอะไร ตัดสินใจอะไร และ evidence ใดแปลว่า engagement ดีขึ้น.
 
+### Artifact Learning Path
+
+- **Do:** สร้าง [Stakeholder Register and Engagement Strategy](learner/Artifact-Template.md)
+- **Checkpoint:** ทำ [Beginner Checkpoint](learner/Beginner-Checkpoint.md)
+- **Review หลังส่ง:** ใช้ [Thinking Walkthrough](instructor/Thinking-Walkthrough.md), [Completed Example](instructor/Completed-Example.md), [Checklist](instructor/Review-Checklist.md) และ [Rubric](instructor/Scoring-Rubric.md)
+
 ## Assessment
 
 ดูแบบประเมินหลักที่ [Lesson 06 Assessment](./Lesson-06_3-Assessment.md). แบบประเมินควรให้คะแนน judgement จาก stakeholder mapping, resistance diagnosis และ engagement strategy มากกว่าการจำชื่อ grid.
@@ -299,3 +316,11 @@ Lesson 05 สอนให้ integrate decision. Lesson 06 สอนว่าค
 ## AI Continuation Context
 
 Future AI agents must keep stakeholder thinking tied to adoption and value, not just communication artifacts. Use ERP key-user participation and Hotel partner inventory behavior as recurring signals of stakeholder engagement quality.
+
+## Artifact Handoff
+
+- **Input:** Project Charter and Governance Map
+- **Output:** Stakeholder Register and Engagement Strategy
+- **Governance:** PM/BA สร้าง; PM เป็น Owner; Sponsor/Business Change Leads ตรวจ; Sponsor อนุมัติ
+- **Minimum acceptance:** `Usable`
+- **Next use:** Lesson 07 ใช้ stakeholder needs, decision rights และ acceptance roles เพื่อสร้าง Requirements/Scope

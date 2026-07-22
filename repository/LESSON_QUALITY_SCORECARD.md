@@ -3,7 +3,7 @@ title: Lesson Quality Scorecard
 document_type: Quality Scorecard
 baseline_audit_date: 2026-07-22
 latest_rescore_date: 2026-07-22
-current_release_scope: Lessons 01-05
+current_release_scope: Lessons 01-10
 scoring_standard: "§14.2 of REPOSITORY-VALIDATION-AND-FULL-REBUILD.md"
 scale: 0-5
 minimum_release_threshold:
@@ -50,6 +50,36 @@ minimum_release_threshold:
 - Source Mapping ระบุ canonical/scenario/opinion boundaries ของ lesson และ learning assets
 - Scenario และ terminology ผ่าน Batch 1 Integration Review
 - Narrative ไม่มี Reflection/Bridge ปิดบทก่อน mandatory learning path อีกต่อไป
+
+## Current Post-Rebuild Score — Batch 2
+
+| Dimension | L06 | L07 | L08 | L09 | L10 |
+|---|---:|---:|---:|---:|---:|
+| Accuracy | 5 | 5 | 5 | 5 | 5 |
+| Depth | 4 | 5 | 5 | 5 | 5 |
+| Why-before-What | 5 | 5 | 5 | 5 | 5 |
+| Mental Model | 5 | 5 | 5 | 5 | 5 |
+| Narrative Flow | 4 | 4 | 4 | 4 | 4 |
+| PM Thinking | 5 | 5 | 5 | 5 | 5 |
+| PM Decision Thinking | 5 | 5 | 5 | 5 | 5 |
+| ERP Continuity | 5 | 5 | 5 | 5 | 5 |
+| Hotel Booking Continuity | 4 | 4 | 4 | 4 | 4 |
+| Misconception Correction | 5 | 5 | 5 | 5 | 5 |
+| Assessment Quality | 5 | 5 | 5 | 5 | 5 |
+| Source Transparency | 5 | 5 | 5 | 5 | 5 |
+| Terminology Consistency | 5 | 5 | 5 | 5 | 5 |
+| Lesson Boundary | 5 | 5 | 5 | 5 | 5 |
+| Connection to Adjacent | 5 | 5 | 5 | 5 | 5 |
+| **Average** | **4.80** | **4.87** | **4.87** | **4.87** | **4.87** |
+| **Release Gate** | **PASS** | **PASS** | **PASS** | **PASS** | **PASS** |
+
+### Batch 2 Rescore Evidence
+
+- Strict Metadata และ Artifact Contract ผ่าน validator
+- ERP Primary Worked Examples แสดง reasoning จาก input ถึง approved output
+- Hotel Booking Contrast แสดง tailoring โดยไม่ล้ำ Lesson 15
+- Assessment วัด application/judgement 90%
+- Integration Review trace Need → Requirement → Scope → WBS → Activity → Schedule → Cost → Quality/Acceptance
 
 ## Historical Pre-Rebuild Baseline — Superseded
 

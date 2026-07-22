@@ -212,7 +212,7 @@ Knowledge Areas ไม่ได้มีไว้ให้ PM ท่องชื
 
 ## ERP Scenario
 
-**[Scenario]** ERP Transformation มี working delivery budget 45 ล้านบาท, scope 5 modules, data migration จาก 6 legacy systems, 80 key users และ go-live target ก่อน 1 ตุลาคม.
+**[Teaching Scenario]** ERP Transformation มี working delivery budget 45 ล้านบาท, scope 5 modules, data migration จาก 6 legacy systems, 80 key users และ go-live target ก่อน 1 ตุลาคม.
 
 เมื่อฝ่าย sales ขอเพิ่มรายงาน margin analysis ก่อน go-live PM ต้องดูผลกระทบข้าม Knowledge Areas:
 
@@ -227,7 +227,7 @@ Knowledge Areas ไม่ได้มีไว้ให้ PM ท่องชื
 
 ## Hotel Booking Scenario
 
-**[Scenario]** Hotel Booking Platform มีเป้าหมายเพิ่ม direct booking จาก 10% เป็น 35% หลัง 18 เดือน ภายใต้งบ 12 ล้านบาทและ timeline 8 เดือน.
+**[Teaching Scenario]** Hotel Booking Platform มีเป้าหมายเพิ่ม direct booking จาก 10% เป็น 35% หลัง 18 เดือน ภายใต้งบ 12 ล้านบาทและ timeline 8 เดือน.
 
 เมื่อ marketing ขอเพิ่ม corporate booking feature ก่อน launch:
 
@@ -242,7 +242,7 @@ Knowledge Areas ไม่ได้มีไว้ให้ PM ท่องชื
 
 ## Real Enterprise Example
 
-**[Instructor Interpretation]** โครงการจำนวนมากไม่ล้มเพราะ PM ไม่รู้ schedule แต่ล้มเพราะไม่มีใครมอง dependency รอบ schedule. ตัวอย่างเช่น vendor ส่งของทัน แต่ user training ไม่พร้อม, data quality ไม่ผ่าน, support team ไม่มี owner และ sponsor ยังบอกว่า project green เพราะ timeline ไม่หลุด. Lesson 04 ต้องทำให้ผู้เรียนอ่าน project health เป็นระบบ ไม่ใช่อ่านแค่วันที่และงบ.
+**[Professional Opinion]** โครงการจำนวนมากไม่ล้มเพราะ PM ไม่รู้ schedule แต่ล้มเพราะไม่มีใครมอง dependency รอบ schedule. ตัวอย่างเช่น vendor ส่งของทัน แต่ user training ไม่พร้อม, data quality ไม่ผ่าน, support team ไม่มี owner และ sponsor ยังบอกว่า project green เพราะ timeline ไม่หลุด. Lesson 04 ต้องทำให้ผู้เรียนอ่าน project health เป็นระบบ ไม่ใช่อ่านแค่วันที่และงบ.
 
 ## Common Mistakes
 
