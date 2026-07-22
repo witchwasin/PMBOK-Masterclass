@@ -5,6 +5,9 @@ title: Project Quality Management
 document_type: Blueprint
 level: Core
 status: Draft
+validation_status: Not Validated
+last_reviewed: 2026-07-22
+intended_learner_level: Beginner PM
 prerequisite:
   - Lesson 09
 canonical_source:
@@ -137,3 +140,11 @@ core_scenarios:
 - แก้ Misconception
 - มี Assessment และ Source Mapping
 - ไม่ขัดกับ Canonical Source
+
+---
+
+## 12. Learner State, Decision, Practice, and Sources
+
+**Learner state:** เข้าใจ scope/schedule/cost แล้ว แต่ยังเท่ากับ “ไม่มี defect” กับ quality. **Decision:** จะเลื่อน ERP go-live เพราะ UAT defects หรือ accept residual risk; owner คือ sponsor/business owner; inputs คือ acceptance criteria, defect severity, user readiness และ cost of delay; options คือ fix/defer/go-live with mitigation; evidence คือ quality report และ risk acceptance. **Workshop:** review UAT dashboard ที่สีเขียวแต่ไม่มี coverage/acceptance evidence. **Assessment:** Artifact Review 40%, ambiguous release decision 30%, prevention-versus-inspection trade-off 20%, recall 10%. **Sources:** quality processes `[PMBOK 6]`; prevention/metrics `[Best Practice]`; scenarios `[Teaching Scenario]`; recommendation `[Professional Opinion]`.
+
+**Handoff:** คุณภาพต้องมีคนและ capacity ที่ทำให้เกิดจริง จึงต่อ Lesson 11 เรื่อง resource responsibility และ team performance.

@@ -5,6 +5,9 @@ title: Project Procurement Management
 document_type: Blueprint
 level: Core
 status: Draft
+validation_status: Not Validated
+last_reviewed: 2026-07-22
+intended_learner_level: Beginner PM
 prerequisite:
   - Lesson 13
 canonical_source:
@@ -131,3 +134,11 @@ core_scenarios:
 - แก้ Misconception
 - มี Assessment และ Source Mapping
 - ไม่ขัดกับ Canonical Source
+
+---
+
+## 12. Learner State, Decision, Practice, and Sources
+
+**Learner state:** เข้าใจ vendor เป็นผู้ส่งงาน แต่ยังไม่อ่าน risk allocation และ acceptance ใน contract. **Decision:** จะใช้ fixed-price หรือ T&M สำหรับ ERP customization; owner คือ procurement authority/sponsor; inputs คือ scope maturity, uncertainty, supplier capability, budget tolerance; options คือ fixed/T&M/hybrid; evidence คือ statement of work, acceptance criteria, contract decision. **Workshop:** review change request ของ SI ที่ไม่มี scope boundary และ rate/card impact. **Assessment:** Contract-artifact review 40%, make-or-buy trade-off 30%, supplier-risk case 20%, recall 10%. **Sources:** procurement processes `[PMBOK 6]`; commercial practice `[Enterprise Practice]`; scenarios `[Teaching Scenario]`; advice `[Professional Opinion]`.
+
+**Handoff:** Procurement works differently when delivery is iterative; Lesson 15 introduces Agile mindset, Scrum, and Kanban without claiming one method fits all.

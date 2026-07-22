@@ -4,7 +4,10 @@ sequence: 5.2
 title: Project Integration Management
 document_type: Lesson
 level: Core
-status: Active
+status: Draft
+validation_status: Pending Final Repository Validation
+version: 1.0
+last_updated: 2026-07-22
 prerequisite:
   - Lesson 04 — 10 Project Management Knowledge Areas Overview
 canonical_source:
@@ -16,7 +19,7 @@ core_scenarios:
 
 # Lesson 05_2 — Project Integration Management
 
-## 1. คำถามเปิดบท: เมื่อทุกฝ่ายต้องการสิ่งที่ไม่ตรงกัน ใครคือผู้เชื่อมประสาน?
+## Opening Professional Question — เมื่อทุกฝ่ายต้องการสิ่งที่ไม่ตรงกัน ใครคือผู้เชื่อมประสาน?
 
 ลองจินตนาการถึงประชุมติดตามความคืบหน้าของโครงการขนาดใหญ่ที่มีผู้มีส่วนได้ส่วนเสียจากหลายฝ่ายเข้าร่วม:
 
@@ -35,7 +38,7 @@ core_scenarios:
 
 ---
 
-## 2. ปัญหาที่ต้องทำความเข้าใจ: การบูรณาการแบบผิวเผินและการตกเป็นเหยื่อของความขัดแย้ง
+## Why This Matters — การบูรณาการแบบผิวเผินและการตกเป็นเหยื่อของความขัดแย้ง
 
 เมื่อองค์กรหรือ PM ขาดความเข้าใจใน **Project Integration Management** มักเกิดปัญหาเชิงโครงสร้างดังนี้:
 
@@ -47,6 +50,16 @@ core_scenarios:
    * รายงานสถานะภายนอกเป็นสีเขียว (Green Status) เพราะแต่ละแผนกติ๊กส่งงานตามลิสต์ แต่เมื่อลึกลงไปกลับมีความขัดแย้งเชิงโครงสร้างสะสมอยู่ภายใน จนระบบพังทลายในวันเปิดตัว
 
 ---
+
+## Learning Objectives
+
+เมื่อเรียนจบบทนี้ ผู้เรียนควรสามารถ:
+
+1. อธิบายบทบาท Integration Management ในฐานะระบบเชื่อม decision ทั้งโครงการ
+2. ระบุ 7 core integration processes และหน้าที่ระดับภาพรวม
+3. ใช้ integrated change control เพื่อวิเคราะห์ scope, schedule, cost, quality, risk, resource และ stakeholder impact
+4. แยก project plan ที่รวมเอกสารออกจาก integrated project management plan ที่ใช้ตัดสินใจจริง
+5. ใช้ ERP และ Hotel Booking scenarios เพื่อเสนอ trade-off ต่อ sponsor/CCB
 
 ## 3. เหตุผลและที่มา: บทบาท System Integrator ของ Project Manager
 
@@ -89,7 +102,7 @@ core_scenarios:
 
 ## 5. คำศัพท์และ Framework (7 Core Processes ตาม Canonical Source)
 
-อ้างอิงจาก [references/PMBOK-Overview.md](file:///Users/arm/Documents/GitHub/PMBOK-Masterclass/references/PMBOK-Overview.md):
+อ้างอิงจาก [PMBOK Overview](../../references/PMBOK-Overview.md):
 
 ### 5.1 7 กระบวนการบูรณาการหลัก
 
@@ -166,3 +179,139 @@ Step 4: Governance & Decision -> เสนอข้อมูลให้ CCB / S
 เมื่อเราเข้าใจกระบวนการบูรณาการ (**Integration Management**) ซึ่งเป็นหัวใจในการเชื่อมโยงทุกมิติแล้ว ปัจจัยสำคัญที่สุดที่จะขับเคลื่อนให้การบูรณาการและการตัดสินใจประสบความสำเร็จก็คือ **"ผู้คน" (People)** 
 
 ในบทถัดไป **Lesson 06: Project Stakeholder Management** เราจะไปเจาะลึกวิธีระบุ วิเคราะห์ และบริหารความคาดหวังของผู้มีส่วนได้ส่วนเสียทุกกลุ่มอย่างมีกลยุทธ์!
+
+## PM Decision Thinking
+
+**[PMBOK 6]** Integration Management รวม charter, project management plan, execution, knowledge, monitoring, integrated change control และ closing. **[PMBOK 7]** PM ต้องเชื่อม decision กับ value และ stewardship.
+
+| Field | Lesson 05 Application |
+|---|---|
+| Decision | change request ควร approve, reject, defer, split phase หรือ escalate |
+| Owner | PM ทำ impact analysis; CCB/sponsor ตัดสินตาม governance |
+| Inputs | charter, baselines, work performance reports, change request, risk, quality, contract, stakeholder impact |
+| Options | keep baseline, rebaseline, manual workaround, phased release, add budget/resource, defer scope |
+| Trade-offs | business value vs delivery risk, speed vs stability, local request vs enterprise outcome |
+| Risk | PM กลายเป็นคนส่งข่าวโดยไม่ integrate impact |
+| Evidence | integrated impact log, decision record, updated plan, approved change |
+| Next Action | เสนอ option brief และบันทึก decision พร้อม owner |
+
+### PM Insight
+
+Integration คือการทำให้ “ทุกคนถูกในมุมตัวเอง” กลายเป็น “องค์กรตัดสินใจถูกในภาพรวม”. PM ไม่ต้องเป็นผู้เชี่ยวชาญทุกเรื่อง แต่ต้องทำให้ผลกระทบของทุกเรื่องถูกเห็นก่อนตัดสินใจ.
+
+## ERP Scenario
+
+**[Scenario]** ERP Transformation ของคุณสมชายมี working delivery budget 45 ล้านบาท, 5 modules, TechConsult เป็น SI, 80 key users และ go-live target ก่อน 1 ตุลาคม.
+
+ก่อน go-live 3 สัปดาห์ finance ขอเพิ่ม multi-level approval. PM ต้องทำ integrated change control:
+
+- Scope: ฟีเจอร์ใหม่อยู่ใน original scope หรือไม่
+- Schedule: หาก build/test เพิ่มกระทบ 1 ตุลาคมอย่างไร
+- Cost/Procurement: กระทบสัญญา TechConsult และ working budget 45 ล้านบาทหรือไม่
+- Quality/Risk: หาก workaround manual จะเสี่ยง audit หรือ adoption อย่างไร
+- Stakeholder: finance ได้ value แต่ operations และ testers มี capacity จำกัด
+- Decision: เสนอ CCB ว่า approve now, defer to phase 1.1 หรือ manual workaround พร้อม control
+
+## Hotel Booking Scenario
+
+**[Scenario]** Hotel Booking Platform ต้องรักษา launch 8 เดือนและเป้าหมาย direct booking 35% หลัง 18 เดือน.
+
+Marketing ต้องการ dynamic promotion engine ก่อน launch. PM ต้อง integrate:
+
+- Business value: feature ช่วย conversion จริงหรือเป็น nice-to-have
+- Quality: load test กับ payment gateway พร้อมหรือไม่
+- Schedule: launch delay กระทบ high season
+- Cost/resource: team ต้องหยุดแก้ payment failure หรือไม่
+- Stakeholder: marketing ต้องการ campaign แต่ operations ต้องการ stability
+- Decision: launch core booking พร้อม coupon workaround แล้วใส่ dynamic promotion ใน backlog หลัง stabilization
+
+## Real Enterprise Example
+
+**[Instructor Interpretation]** องค์กรที่มี project status เขียวแต่ go-live พังมักไม่ได้ขาด report แต่ขาด integration. แต่ละทีมบอกว่างานตนเองเสร็จ แต่ไม่มีใครรวมว่า data, training, vendor readiness, support model และ benefit owner พร้อมจริงหรือไม่.
+
+## Common Mistakes
+
+1. รวมเอกสารย่อยแล้วเรียกว่า integrated plan
+2. อนุมัติ change จากผู้บริหารปากเปล่าโดยไม่ดู impact
+3. ติดตามงานเสร็จตาม task แต่ไม่ดู readiness ทั้งระบบ
+4. ปิด project โดยไม่ส่ง knowledge และ operation ownership
+5. ใช้ tailoring เป็นข้ออ้างตัด governance ที่จำเป็น
+
+## Common Misconceptions
+
+| Misconception | Correction |
+|---|---|
+| Integration คือทำเอกสารรวม | Integration คือทำให้ decision และ baseline เชื่อมกัน |
+| PM ต้องตัดสินใจทุก change เอง | PM เสนอ evidence; authority ตัดสินตาม governance |
+| Change control ทำให้ช้าเสมอ | Change control ลด rework และทำให้ trade-off โปร่งใส |
+| Close project คือส่ง deliverable | Closing รวม acceptance, contract, knowledge และ transition |
+
+## Interview Questions
+
+### Definition
+
+1. Integration Management คืออะไร
+2. Integrated Change Control ต่างจากการรับ requirement เพิ่มทั่วไปอย่างไร
+
+### Judgement
+
+1. ถ้า sponsor ขอเพิ่ม scope แต่ budget ไม่เพิ่ม คุณจะทำ impact analysis อย่างไร
+2. ถ้า project status green แต่ adoption readiness ไม่พร้อม คุณจะรายงานอย่างไร
+
+### Behavioral
+
+1. เล่าครั้งหนึ่งที่คุณต้องรวมข้อมูลจากหลายทีมเพื่อให้ผู้บริหารตัดสินใจ
+2. คุณเคยปฏิเสธหรือ defer change อย่างไรโดยรักษาความสัมพันธ์กับ stakeholder
+
+### Scenario
+
+1. ใน ERP หาก TechConsult ขอเลื่อน data migration คุณจะใช้ ICC อย่างไร
+2. ใน Hotel Booking หาก marketing ขอ feature เพิ่มก่อน launch คุณจะเสนอ options อย่างไร
+
+## PM Dictionary
+
+| Term | Meaning |
+|---|---|
+| Project Charter | เอกสารอนุมัติโครงการและมอบอำนาจ PM |
+| Project Management Plan | แผนแม่บทที่รวม baselines และแผนย่อยเพื่อใช้บริหารจริง |
+| Direct and Manage Project Work | การขับเคลื่อนงานตามแผนและ approved changes |
+| Manage Project Knowledge | การจัดการความรู้ explicit และ tacit ของโครงการ |
+| Monitor and Control Project Work | การวิเคราะห์ performance เทียบ baseline และ forecast |
+| Integrated Change Control | การประเมินและตัดสิน change request แบบข้ามมิติ |
+| Close Project or Phase | การปิด project/phase อย่างเป็นทางการ รวม handover และ lessons learned |
+
+## Workshop
+
+### Scenario
+
+ERP finance ขอเพิ่ม approval workflow ก่อน go-live 3 สัปดาห์. Hotel Booking marketing ขอ dynamic promotion engine ก่อน launch 2 สัปดาห์.
+
+### Task
+
+ให้ผู้เรียนทำ integrated change option brief 1 หน้า โดยระบุ:
+
+1. change request และ business rationale
+2. affected baselines และ Knowledge Areas
+3. options อย่างน้อย 3 ทาง
+4. trade-off, risk และ recommendation
+5. decision owner และสิ่งที่ต้อง update หลัง decision
+
+### Debrief
+
+คำตอบที่ดีต้องไม่ใช่แค่ “ทำ/ไม่ทำ” แต่แสดงว่าทางเลือกใดรักษา value และควบคุม risk ได้ดีที่สุด.
+
+## Assessment
+
+ดูแบบประเมินหลักที่ [Lesson 05 Assessment](./Lesson-05_3-Assessment.md). แบบประเมินควรวัด judgement เรื่อง integrated change control, cross-impact analysis และ closing/transition มากกว่าการจำชื่อ 7 processes.
+
+## Executive Summary
+
+Project Integration Management คือหัวใจของ PM เพราะทำให้ charter, plan, execution, change, knowledge, control และ closing เดินเป็นระบบเดียวกัน. PM มืออาชีพไม่ใช่คนเดินข่าว แต่เป็นคนทำให้ผลกระทบและ trade-off เห็นชัดพอที่องค์กรจะตัดสินใจได้.
+
+## Lesson Connection
+
+Lesson 04 ให้แผนที่ 10 Knowledge Areas. Lesson 05 เจาะแกนกลางที่เชื่อมทุกด้านเข้าด้วยกัน. Lesson 06 จะต่อไปที่ Stakeholder Management เพราะ decision ที่ integrate ดีจะใช้ไม่ได้ถ้าคนสำคัญไม่เข้าใจ ไม่ยอมรับ หรือไม่ร่วมมือ.
+
+## AI Continuation Context
+
+Future AI agents must treat Integration Management as decision integration, not document aggregation. Preserve ERP budget terminology: Working Budget 45 ล้านบาท and Total Funding Envelope 60 ล้านบาท. Keep Hotel Booking examples tied to launch readiness and direct booking outcome.

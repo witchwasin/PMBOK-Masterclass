@@ -5,6 +5,9 @@ title: Project Integration Management
 document_type: Blueprint
 level: Core
 status: Draft
+validation_status: Not Validated
+last_reviewed: 2026-07-22
+intended_learner_level: Beginner PM
 prerequisite:
   - Lesson 04
 canonical_source:
@@ -15,6 +18,13 @@ core_scenarios:
 ---
 
 # Lesson 05_1 — Blueprint: Project Integration Management
+
+## 0. Learner Profile, Prerequisites, and Scenario State
+
+- **Learner profile:** PM ที่เห็น Knowledge Areas แล้ว แต่ยังไม่มีกลไกตัดสินใจเมื่อแผนหลายด้านขัดกัน.
+- **Required prerequisite:** Lesson 01–04; เข้าใจ Process Groups และ cross-knowledge impacts.
+- **Entry evidence:** ระบุได้ว่า change หนึ่งรายการต้องวิเคราะห์มากกว่า Scope เพียงด้านเดียว.
+- **Scenario state:** ERP อยู่ก่อน build baseline; Hotel Booking อยู่ก่อน MVP commitment. ใช้ Working Budget ERP 45 ล้านบาทหรือ Total Funding Envelope 60 ล้านบาทเฉพาะเมื่อระบุชื่อ baseline.
 
 ## 1. Purpose
 
@@ -127,3 +137,30 @@ core_scenarios:
 - แก้ Misconception
 - มี Assessment และ Source Mapping
 - ไม่ขัดกับ Canonical Source
+
+---
+
+## 12. PM Decisions to Practise
+
+| Decision | Owner | Inputs / missing information | Options and trade-off | Evidence / next action |
+|---|---|---|---|---|
+| อนุมัติ Approval Workflow เพิ่มก่อน ERP go-live หรือไม่ | Steering Committee | benefit, 5-module scope impact, SI estimate, data/UAT readiness; ยังไม่รู้ regulatory urgency | include now เพิ่ม value แต่เสี่ยง schedule/data quality; defer ลด risk แต่ใช้ workaround | integrated change request, impact analysis, recorded approval |
+| Launch Hotel Booking โดยตัด Promotion Engine หรือเลื่อน | Sponsor + Product Owner | conversion hypothesis, payment stability, support capacity, High Season date | launch MVP ได้เร็วแต่ conversion อาจต่ำ; delay เพิ่ม feature แต่เสีย market window | release decision, measurable outcome, rollback/support plan |
+| ปิด phase ได้หรือไม่ | Sponsor / business owner | acceptance, defects, handover, benefit owner | close ลด cost แต่ส่ง risk ต่อ operation; extend hypercare ใช้ budget แต่ลด adoption risk | closure/transition record and benefits review date |
+
+## 13. Workshop and Assessment Design
+
+**Workshop:** Steering Committee ได้ข้อเสนอจาก SI ให้เพิ่ม workflow มูลค่า 2 ล้านบาทและเพิ่ม UAT 3 สัปดาห์. ผู้เรียนเป็นคุณเอก ทำ decision record ระบุ baseline ที่กระทบ, options, trade-offs, missing evidence, decision owner, และ next action. ประเมิน evidence 30%, cross-area impact 30%, trade-off 25%, accountability 15%.
+
+**Assessment mix:** Decision Case 40%; Artifact Review ของ change request ที่ขาด acceptance criteria/impact 30%; Trade-off Case 20%; retrieval check 10%. อย่างน้อยหนึ่งคำตอบต้องอธิบายว่าเหตุใด “รวมเอกสาร” ไม่เท่ากับ integration.
+
+## 14. Source Coverage and Handoff
+
+| Coverage | Classification | Boundary |
+|---|---|---|
+| Charter, plan, integrated change control, close project/phase | `[PMBOK 6]` | ไม่สอน template เต็มหรือ tool vendor |
+| Governance, decision rights, benefits review | `[Best Practice]` / `[Enterprise Practice]` | ต้องไม่เสนอเป็นข้อบังคับสากล |
+| ERP/Hotel decisions | `[Teaching Scenario]` | Scenario Master v1.0 |
+| การตัดสินใจที่แนะนำ | `[Professional Opinion]` | เปิดเผย assumption |
+
+**Handoff to Lesson 06:** Integration ทำให้เห็นว่าการตัดสินใจจำนวนมากล้มเหลวเพราะคนไม่ได้รับการมีส่วนร่วมที่เหมาะสม; Lesson 06 จึงเจาะ stakeholder, influence และ engagement.

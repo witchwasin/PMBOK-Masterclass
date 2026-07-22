@@ -5,6 +5,9 @@ title: Project Schedule Management
 document_type: Blueprint
 level: Core
 status: Draft
+validation_status: Not Validated
+last_reviewed: 2026-07-22
+intended_learner_level: Beginner PM
 prerequisite:
   - Lesson 07
 canonical_source:
@@ -15,6 +18,13 @@ core_scenarios:
 ---
 
 # Lesson 08_1 — Blueprint: Project Schedule Management
+
+## 0. Learner Profile, Prerequisites, and Scenario State
+
+- **Learner profile:** ผู้เรียนที่มี scope/WBS แต่ยังมอง schedule เป็นรายการวันที่ ไม่ใช่ model ของ dependency และ uncertainty.
+- **Required prerequisite:** Lesson 01–07; ต้องอ่าน WBS เป็น deliverable/work package ได้.
+- **Entry evidence:** ระบุได้ว่างานที่ล่าช้า 1 งานอาจไม่กระทบ finish date หากมี float.
+- **Scenario state:** ERP baseline: Blueprint 8 สัปดาห์ → Build 12 → SIT 4 → UAT 4 → Final Migration 2 → Parallel Run 4 → Cutover 2; Hotel Booking baseline: Sprint 0–12 และ pilot 3 โรงแรมก่อน full launch.
 
 ## 1. Purpose
 
@@ -132,3 +142,30 @@ core_scenarios:
 - แก้ Misconception
 - มี Assessment และ Source Mapping
 - ไม่ขัดกับ Canonical Source
+
+---
+
+## 12. PM Decisions to Practise
+
+| Decision | Owner | Inputs / missing information | Options and trade-off | Evidence / next action |
+|---|---|---|---|---|
+| Data migration delay กระทบ go-live จริงหรือไม่ | PM / Steering Committee | network logic, float, data quality, SIT/UAT progress; ยังไม่รู้ rework volume | recover within float; fast-track เพิ่ม risk; move go-live ลด defect risk แต่กระทบ fiscal deadline | updated network, recovery plan, approved baseline change |
+| จะ lock Hotel launch date ก่อน payment test ผ่านหรือไม่ | Sponsor + Product Owner | payment reliability, High Season value, rollback/support readiness | hold date เพิ่ม marketing certainty แต่เสี่ยง failed booking; defer ลด risk แต่เสีย demand window | release criteria, risk acceptance, stakeholder message |
+| จะ compress schedule อย่างไร | PM with delivery leads | critical path, resource availability, quality/risk impact | crashing เร็วแต่เพิ่ม cost; fast-tracking เร็วแต่เพิ่ม rework; de-scope รักษา date แต่ลด value | compression analysis, named risk owner, decision log |
+
+## 13. Workshop and Assessment Design
+
+**Workshop:** SIT ของ ERP เลื่อน 2 สัปดาห์. ผู้เรียนทำ network sketch จาก baseline ระบุ critical path/float ที่ต้องยืนยัน, information gaps, และเสนอ 3 recovery options พร้อมผลต่อ UAT, migration, quality และ budget. ประเมิน schedule logic 35%, uncertainty handling 25%, trade-off 25%, governance 15%.
+
+**Assessment mix:** Critical-path decision case 40%; Artifact Review ของ Gantt ที่ไม่มี dependencies/baseline 30%; Trade-off case เรื่อง Hotel payment readiness 20%; estimation concept check 10%. ห้ามให้คำตอบจากวันที่อย่างเดียวโดยไม่แสดง logic.
+
+## 14. Source Coverage and Handoff
+
+| Coverage | Classification | Boundary |
+|---|---|---|
+| Activities, sequencing, estimating, develop/control schedule, CPM, float | `[PMBOK 6]` | ไม่สอนเครื่องมือ scheduling เฉพาะราย |
+| Rolling wave, release criteria, recovery planning | `[Best Practice]` | ไม่รับประกัน schedule outcome |
+| ERP/Hotel timeline | `[Teaching Scenario]` | Scenario Master v1.0 |
+| ตัวเลือก compression ที่แนะนำ | `[Professional Opinion]` | ต้องอิง evidence ของโครงการ |
+
+**Handoff to Lesson 09:** Schedule บอกเมื่อจะใช้ทรัพยากรและเงิน แต่ยังไม่บอกว่าค่าใช้จ่ายอยู่ใน baseline หรือมี performance เทียบแผนอย่างไร; Lesson 09 จึงต่อด้วย Cost Management และ Earned Value.

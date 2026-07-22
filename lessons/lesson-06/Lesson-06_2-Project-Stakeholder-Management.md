@@ -4,7 +4,10 @@ sequence: 6.2
 title: Project Stakeholder Management
 document_type: Lesson
 level: Core
-status: Active
+status: Draft
+validation_status: Pending Final Repository Validation
+version: 1.0
+last_updated: 2026-07-22
 prerequisite:
   - Lesson 05 — Project Integration Management
 canonical_source:
@@ -16,7 +19,7 @@ core_scenarios:
 
 # Lesson 06_2 — Project Stakeholder Management
 
-## 1. คำถามเปิดบท: ถ้าส่งมอบระบบได้ตามสเปค แต่ผู้บริหารฝ่ายปฏิบัติการไม่ยอมให้พนักงานเข้าใช้อุปกรณ์ โครงการนี้ถือว่าสำเร็จหรือไม่?
+## Opening Professional Question — ถ้าส่งมอบระบบได้ตามสเปค แต่ผู้บริหารฝ่ายปฏิบัติการไม่ยอมให้พนักงานเข้าใช้อุปกรณ์ โครงการนี้ถือว่าสำเร็จหรือไม่?
 
 ลองพิจารณาเหตุการณ์จริงที่มักเกิดขึ้นในหลายองค์กร:
 
@@ -29,7 +32,7 @@ core_scenarios:
 
 ---
 
-## 2. ปัญหาที่ต้องทำความเข้าใจ: การบริหารคนแบบตั้งรับและการมองคนเพียงกลุ่มเดียว
+## Why This Matters — การบริหารคนแบบตั้งรับและการมองคนเพียงกลุ่มเดียว
 
 ความผิดพลาดร้ายแรงเกี่ยวกับการบริหาร Stakeholder ในวิชาชีพ Project Management ได้แก่:
 
@@ -41,6 +44,16 @@ core_scenarios:
    * ไม่เข้าใจว่า Stakeholders แต่ละกลุ่มมีเป้าหมายและอำนาจที่ขัดแย้งกัน การบริหารที่ถูกต้องคือการจัดระดับความสำคัญและการสื่อสารอย่างเหมาะสม
 
 ---
+
+## Learning Objectives
+
+เมื่อเรียนจบบทนี้ ผู้เรียนควรสามารถ:
+
+1. ระบุ stakeholder ได้เกินกว่ากลุ่ม sponsor และผู้บริหาร
+2. ใช้ Power-Interest Grid เพื่อเลือก engagement strategy
+3. แยก stakeholder position ออกจาก underlying need
+4. ออกแบบ engagement plan ที่สอดคล้องกับอำนาจ ความสนใจ และผลกระทบ
+5. ใช้ ERP และ Hotel Booking scenarios เพื่อประเมิน stakeholder risk และ adoption readiness
 
 ## 3. เหตุผลและที่มา: ผู้คนคือปัจจัยหลักที่กำหนดความล้มเหลวหรือสำเร็จ
 
@@ -83,7 +96,7 @@ core_scenarios:
 
 ## 5. คำศัพท์และ Framework (อ้างอิงจาก Canonical Source)
 
-อ้างอิงจาก [references/PMBOK-Overview.md](file:///Users/arm/Documents/GitHub/PMBOK-Masterclass/references/PMBOK-Overview.md):
+อ้างอิงจาก [PMBOK Overview](../../references/PMBOK-Overview.md):
 
 ### 5.1 หมวดหมู่ของผู้มีส่วนได้ส่วนเสีย (Stakeholder Categories)
 1. **Internal Stakeholders:** Project Sponsor, คณะกรรมการบริหารโครงการ (Steering Committee), คณะทำงานอำนวยการ, คณะทำงานโครงการ, PM
@@ -151,3 +164,138 @@ Step 4: Execute Engagement Plan -> สื่อสารผ่านช่อง
 ## 🌉 Bridge to Next Lesson: Lesson 07 — Project Scope Management and WBS
 
 เมื่อเราบริหารความคาดหวังของผู้คน (**Stakeholders**) ได้แล้ว ขั้นตอนถัดไปคือการแปลงความคาดหวังเหล่านั้นให้กลายเป็น **"ขอบเขตงานที่ชัดเจน" (Project Scope & WBS)** ในบทถัดไป **Lesson 07** ครับ!
+
+## PM Decision Thinking
+
+**[PMBOK 6]** Stakeholder Management ประกอบด้วย identify, plan, manage และ monitor engagement. **[PMBOK 7]** stakeholder engagement เป็นเงื่อนไขสำคัญของ value delivery เพราะ outcome เกิดจากคนใช้และคนรับผลกระทบ.
+
+| Field | Lesson 06 Application |
+|---|---|
+| Decision | stakeholder กลุ่มใดต้อง manage closely, keep satisfied, keep informed หรือ monitor |
+| Owner | PM รับผิดชอบ stakeholder analysis; sponsor ช่วยเปิดทางเมื่อมี power conflict |
+| Inputs | stakeholder register, power-interest grid, engagement level, resistance signals, business impact |
+| Options | engage early, escalate sponsor, adjust communication, create champion network, defer decision |
+| Trade-offs | speed vs buy-in, transparency vs political sensitivity, standard message vs tailored engagement |
+| Risk | มองข้าม end users, regulators, vendors หรือ operations จน adoption ล้ม |
+| Evidence | attendance, sign-off quality, UAT participation, issue sentiment, training adoption, decision latency |
+| Next Action | update engagement plan และ owner ของแต่ละ stakeholder risk |
+
+### PM Insight
+
+Stakeholder management ไม่ใช่การเอาใจทุกคน แต่คือการทำให้คนที่กระทบ value ได้รับการ engage ในระดับที่เหมาะสม. PM ต้องฟังความกลัวและแรงจูงใจใต้คำคัดค้าน ไม่ใช่ดูแค่ตำแหน่งใน organization chart.
+
+## ERP Scenario
+
+**[Scenario]** ERP Transformation มี sponsor คุณสมชาย, PM คุณเอก, TechConsult, 80 key users และ 5 modules ที่แตะหลายฝ่าย.
+
+Stakeholder risk ที่ต้องจัดการ:
+
+- CFO/Finance: ต้องการ close เร็วและ reporting ถูกต้อง ต้อง manage closely
+- Warehouse/Production: อาจกลัว process ใหม่ทำให้งานช้า ต้อง engage ผ่าน UAT และ process walkthrough
+- HR: ต้องการ data privacy และ payroll accuracy ต้องมี acceptance criteria ชัด
+- IT legacy owners: อาจกังวลบทบาทหลัง ERP ต้อง keep satisfied และให้บทบาท transition
+- TechConsult: vendor ที่มี schedule pressure ต้อง manage ผ่าน contract, decision log และ escalation cadence
+
+## Hotel Booking Scenario
+
+**[Scenario]** Hotel Booking Platform มี sponsor คุณจิรา, PO คุณนภา, PM คุณสุทธิ, hotel partners, customers, operations และ marketing.
+
+Stakeholder risk ที่ต้องจัดการ:
+
+- Hotel partners: inventory accuracy และ commission concern ต้อง manage closely
+- Customers: conversion และ payment trust ต้องวัดผ่าน beta feedback
+- Operations/support: back office readiness ต้อง engage ก่อน launch
+- Marketing: ต้องการ launch campaign แต่ต้องเข้าใจ quality risk
+- Finance: ต้องเห็นว่า direct booking outcome ต้องใช้ adoption period ไม่ใช่แค่ go-live
+
+## Real Enterprise Example
+
+**[Instructor Interpretation]** โครงการที่ “ส่งตามสเปคแต่ไม่มีคนใช้” มักไม่ได้ล้มในวัน go-live แต่ล้มตั้งแต่ตอน stakeholder ที่มีผลต่อ operation ไม่ถูก engage. ผู้ใช้หน้างานไม่ถูกถาม, manager ไม่ได้เห็น benefit, support ไม่ได้เตรียม owner และ sponsor ได้ยินแต่รายงาน delivery.
+
+## Common Mistakes
+
+1. ทำ stakeholder register ครั้งเดียวแล้วไม่ update
+2. คิดว่า sponsor คนเดียวแทนเสียงผู้ใช้ทั้งหมดได้
+3. ส่ง communication เดียวกันให้ทุกกลุ่ม
+4. มอง resistance เป็นนิสัยคน ไม่ใช่ข้อมูลเรื่อง risk/value
+5. วัด engagement จากจำนวน meeting ไม่ใช่คุณภาพการตัดสินใจและ adoption evidence
+
+## Common Misconceptions
+
+| Misconception | Correction |
+|---|---|
+| Stakeholder คือ sponsor | Stakeholder คือทุกคนที่ส่งผลหรือได้รับผลจากโครงการ |
+| Engagement คือทำให้ทุกคน happy | Engagement คือจัดการ expectation, influence และ participation |
+| User involvement คือเชิญเข้าประชุม | ต้องมี input, validation, ownership และ readiness evidence |
+| Resistance เป็นเรื่องลบเสมอ | Resistance อาจเป็นสัญญาณ requirement, risk หรือ change impact |
+
+## Interview Questions
+
+### Definition
+
+1. Stakeholder คือใคร และทำไมไม่ใช่แค่ sponsor
+2. Power-Interest Grid ใช้ตัดสิน engagement strategy อย่างไร
+
+### Judgement
+
+1. ถ้า end users ไม่ร่วม UAT แต่ sponsor บอกให้ go-live คุณจะทำอย่างไร
+2. ถ้า stakeholder high power แต่ low interest เริ่มขัดขวาง project คุณจะปรับ plan อย่างไร
+
+### Behavioral
+
+1. เล่าครั้งหนึ่งที่คุณจัดการ stakeholder resistance ได้
+2. คุณเคยเปลี่ยนวิธีสื่อสารให้เหมาะกับ stakeholder ต่างกลุ่มอย่างไร
+
+### Scenario
+
+1. ใน ERP ถ้า warehouse manager ไม่ยอมปล่อย key users มาทดสอบ คุณจะ engage อย่างไร
+2. ใน Hotel Booking ถ้า hotel partners ไม่ update inventory คุณจะจัด stakeholder strategy อย่างไร
+
+## PM Dictionary
+
+| Term | Meaning |
+|---|---|
+| Stakeholder | บุคคลหรือกลุ่มที่ส่งผลหรือได้รับผลจากโครงการ |
+| Stakeholder Register | รายชื่อ ข้อมูล ความคาดหวัง อำนาจ และ strategy ของ stakeholder |
+| Power-Interest Grid | เครื่องมือจัดกลุ่ม stakeholder ตามอำนาจและความสนใจ |
+| Engagement Plan | แผนการสื่อสาร มีส่วนร่วม และจัดการความคาดหวัง |
+| Resistance | สัญญาณคัดค้านหรือไม่ร่วมมือที่ต้องวิเคราะห์สาเหตุ |
+| Champion | ผู้สนับสนุนในหน่วยงานที่ช่วยผลักดัน adoption |
+| Adoption Readiness | ความพร้อมของคน กระบวนการ และ support ที่จะใช้ผลส่งมอบจริง |
+
+## Workshop
+
+### Scenario
+
+ERP key users ไม่เข้าร่วม UAT เพราะ functional managers กังวลงานประจำ. Hotel partners ไม่ update inventory เพราะ back office ใหม่ดูยุ่งยากและกลัว overbooking.
+
+### Task
+
+ให้ผู้เรียนสร้าง stakeholder action plan 1 หน้า:
+
+1. stakeholder map อย่างน้อย 6 กลุ่ม
+2. power/interest classification
+3. current vs desired engagement
+4. key concern และ underlying need
+5. engagement action, owner, cadence และ success signal
+6. risk หากไม่ engage
+
+### Debrief
+
+คำตอบที่ดีต้องไม่บอกแค่ “สื่อสารเพิ่ม” แต่ต้องบอกว่าใครต้องรู้อะไร ทำอะไร ตัดสินใจอะไร และ evidence ใดแปลว่า engagement ดีขึ้น.
+
+## Assessment
+
+ดูแบบประเมินหลักที่ [Lesson 06 Assessment](./Lesson-06_3-Assessment.md). แบบประเมินควรให้คะแนน judgement จาก stakeholder mapping, resistance diagnosis และ engagement strategy มากกว่าการจำชื่อ grid.
+
+## Executive Summary
+
+Stakeholder Management คือการทำให้คนที่มีผลต่อ value ถูกมองเห็น ถูกเข้าใจ และถูก engage ด้วยวิธีที่เหมาะสม. PM ต้องไม่รอให้เกิดแรงต้านแล้วค่อยแก้ แต่ต้อง monitor engagement เหมือน monitor schedule และ risk.
+
+## Lesson Connection
+
+Lesson 05 สอนให้ integrate decision. Lesson 06 สอนว่าคนคือเงื่อนไขที่ทำให้ decision ใช้ได้จริง. Lesson 07 จะเปลี่ยนความคาดหวังของ stakeholder ให้เป็น scope และ WBS ที่ชัดเจน ตรวจรับได้ และควบคุมได้.
+
+## AI Continuation Context
+
+Future AI agents must keep stakeholder thinking tied to adoption and value, not just communication artifacts. Use ERP key-user participation and Hotel partner inventory behavior as recurring signals of stakeholder engagement quality.

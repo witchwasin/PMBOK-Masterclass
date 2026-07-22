@@ -5,6 +5,9 @@ title: 5 Project Management Process Groups
 document_type: Blueprint
 level: Foundation
 status: Draft
+validation_status: Not Validated
+last_reviewed: 2026-07-22
+intended_learner_level: Beginner PM
 prerequisite:
   - Lesson 01 — ทำไม Project Manager ต้องรู้ PMBOK
   - Lesson 02 — Project Management Overview
@@ -16,6 +19,13 @@ core_scenarios:
 ---
 
 # Lesson 03_1 — Blueprint: 5 Project Management Process Groups
+
+## 0. Learner Profile and Prerequisites
+
+- **Learner profile:** ผู้เรียนที่แยก Project จาก Operation ได้แล้ว แต่เสี่ยงเข้าใจ Process Groups เป็นเส้นตรงหรือเป็น phase ของทุกโครงการ
+- **Required prerequisite:** Lesson 01–02; รู้ value chain และความต่างระหว่าง output กับ outcome
+- **Entry evidence:** อธิบายได้ว่าเหตุใดงานที่เริ่ม execution แล้วอาจต้องกลับไป planning
+- **Scenario state:** ERP อยู่ช่วง initiation/planning; Hotel Booking อยู่ช่วง discovery และ backlog shaping. เหตุการณ์ตัวอย่างต้องไม่ข้าม baseline นี้
 
 ## 1. Purpose
 
@@ -207,3 +217,43 @@ Lesson 03 ถือว่าสมบูรณ์เมื่อ:
 - มี Misconception Correction
 - มี Assessment และ Scenario Analysis
 - เชื่อมไป 10 Knowledge Areas ได้
+
+---
+
+## 12. PM Decisions to Practise
+
+| Decision | Owner | Inputs / missing information | Options and trade-off | Evidence / next action |
+|---|---|---|---|---|
+| พร้อมออกจาก Initiating ไป Planning หรือยัง | Sponsor ร่วมกับ PM | business case, sponsor authority, high-level scope, success measures; ยังไม่รู้ key-user capacity | เริ่มเร็วช่วย deadline แต่เสี่ยง charter คลุมเครือ; รอข้อมูลเพิ่มลด rework แต่เสี่ยง delay | approved charter, named sponsor, planning mandate |
+| พบ requirement ใหม่ระหว่าง Executing ต้องทำอย่างไร | Change authority ตาม governance | baseline, impact scope/schedule/cost/risk, urgency; ยังไม่รู้ benefit และ acceptance criteria | ทำทันทีเร็วแต่เสี่ยง scope creep; defer ปลอดภัยแต่กระทบ value; submit change เพื่อมี traceability | change log, impact analysis, recorded decision |
+| ปิด phase ได้หรือไม่ | Sponsor / business owner | acceptance evidence, open defects, handover readiness, benefit owner | ปิดตรงเวลาแต่ส่งความเสี่ยงให้ operation; ขยาย hypercare ลด risk แต่ใช้ budget/capacity | acceptance record, transition checklist, lessons learned |
+
+## 13. Workshop Design
+
+**Scenario:** ERP พบว่า key users ยังไม่ยืนยัน master-data ownership แต่ SI ขอเริ่ม build เพื่อรักษา timeline ก่อน 1 ตุลาคม.
+**Role:** PM คุณเอกเสนอทางเลือกต่อ Steering Committee.
+**Available information:** total timeline 12 เดือน, SI contract, 5 modules, 80 key users ทำงานคู่ขนาน.
+**Missing information:** data quality baseline, cost of rework, decision authority ของแต่ละ data domain.
+**Decision:** ดำเนิน build, กลับไป planning เฉพาะ data workstream, หรือ change baseline.
+**Constraint:** ห้ามเรียก Process Group ว่า phase; ต้องแสดงงานที่ยังเดินคู่ขนาน.
+**Expected output:** one-page decision record และ process map ที่ชี้ feedback loop.
+**Debrief:** ข้อมูลใดทำให้ “เริ่มงาน” ต่างจาก “พร้อมเริ่มงาน”?
+**Evaluation:** logic ของ flow (25%), missing information (25%), trade-off (30%), governance/evidence (20%).
+
+## 14. Assessment Design
+
+- **Ambiguous decision case (40%):** Hotel Booking พบ PCI/payment integration uncertainty กลาง sprint; ระบุ process-group activities ที่ต้องเกิดพร้อมกันและสิ่งที่ต้อง escalate.
+- **Artifact review (30%):** Review charter ที่ไม่มี success measure, sponsor authority หรือ transition owner แล้วระบุว่าขาดอะไรเพื่อออกจาก Initiating.
+- **Trade-off (20%):** เปรียบเทียบ fast-track testing กับเลื่อน launch โดยวิเคราะห์คุณภาพ ความเสี่ยง และ business value.
+- **Retrieval check (10%):** แยก Process Group ออกจาก Project Phase ด้วยตัวอย่าง.
+
+## 15. Source Coverage and Lesson Handoff
+
+| Coverage | Source classification | Boundary |
+|---|---|---|
+| Five Process Groups, progressive elaboration, change control, closing | `[PMBOK 6]` | ไม่สอน 49 processes หรือ template ราย knowledge area |
+| Iteration, feedback loop, transition readiness | `[Best Practice]` | ไม่บอกว่าทุก project ต้องใช้ flow เดียวกัน |
+| ERP and Hotel circumstances | `[Teaching Scenario]` | ใช้ Scenario Master v1.0 เท่านั้น |
+| ข้อแนะนำว่าต้องมี decision evidence | `[Professional Opinion]` | ไม่อ้างเป็น mandatory PMBOK artifact |
+
+**Handoff to Lesson 04:** Process Groups บอกลักษณะกิจกรรมตามเวลา แต่ยังไม่บอกว่าจะต้องบริหารเรื่องใดบ้าง; Lesson 04 จึงสร้างแผนที่ Knowledge Areas และความเชื่อมโยงระหว่างกัน.

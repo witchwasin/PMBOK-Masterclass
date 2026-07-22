@@ -4,7 +4,10 @@ sequence: 14.2
 title: Project Procurement Management
 document_type: Lesson
 level: Core
-status: Active
+status: Draft
+validation_status: Pending Final Repository Validation
+version: 1.0
+last_updated: 2026-07-22
 prerequisite:
   - Lesson 13 — Project Risk Management
 canonical_source:
@@ -16,7 +19,7 @@ core_scenarios:
 
 # Lesson 14_2 — Project Procurement Management
 
-## 1. คำถามเปิดบท: ถ้า Vendor ส่งมอบงานล่าช้าไป 3 เดือน แล้วชี้หน้าบอกว่า "ในสัญญาไม่ได้ระบุสเปคเรื่องนี้ไว้" ใครคือคนที่ต้องรับผิดชอบ?
+## Opening Professional Question — ถ้า Vendor ส่งมอบงานล่าช้าไป 3 เดือน แล้วชี้หน้าบอกว่า "ในสัญญาไม่ได้ระบุสเปคเรื่องนี้ไว้" ใครคือคนที่ต้องรับผิดชอบ?
 
 ลองพิจารณาข้อพิพาทสัญญาคลาสสิกในโครงการจัดซื้อจัดจ้าง:
 
@@ -29,7 +32,7 @@ core_scenarios:
 
 ---
 
-## 2. ปัญหาที่ต้องทำความเข้าใจ: การปล่อยให้สัญญาเป็นเรื่องของฝ่ายกฎหมาย และการบริหารแบบทิ้งขว้าง
+## Why This Matters — การปล่อยให้สัญญาเป็นเรื่องของฝ่ายกฎหมาย และการบริหารแบบทิ้งขว้าง
 
 ปัญหาหลักในการบริหารการจัดซื้อจัดจ้าง ได้แก่:
 
@@ -41,6 +44,16 @@ core_scenarios:
    * ไม่เคยติดตามความก้าวหน้าของ Vendor ระหว่างทาง รอตรวจรับทีเดียววันสิ้นสุดสัญญา จนแก้ไขอะไรไม่ทัน
 
 ---
+
+## Learning Objectives
+
+เมื่อเรียนจบบทนี้ ผู้เรียนควรสามารถ:
+
+1. อธิบาย procurement lifecycle ตั้งแต่ plan, conduct ถึง control procurements
+2. ทำ make-or-buy analysis ในระดับ PM decision
+3. เลือก contract type ให้เหมาะกับ scope certainty และ risk allocation
+4. กำหนด acceptance criteria, milestone payment และ vendor performance control
+5. ใช้ ERP และ Hotel Booking scenarios เพื่อบริหาร SI/vendor/API/provider risk
 
 ## 3. เหตุผลและที่มา: สัญญาคือเครื่องมือบริหารความเสี่ยงและความสัมพันธ์
 
@@ -73,7 +86,7 @@ core_scenarios:
 
 ## 5. คำศัพท์และ Framework (อ้างอิงจาก Canonical Source)
 
-อ้างอิงจาก [references/PMBOK-Overview.md](file:///Users/arm/Documents/GitHub/PMBOK-Masterclass/references/PMBOK-Overview.md):
+อ้างอิงจาก [PMBOK Overview](../../references/PMBOK-Overview.md):
 
 ### 5.1 3 Sub-processes ของ Procurement Management
 1. **Plan Procurement Management:** กำหนดว่าจะซื้ออะไร ซื้ออย่างไร คัดเลือกประเภทสัญญา และจัดทำเอกสารประกวดราคา (TOR/RFP)
@@ -146,3 +159,139 @@ Step 3: Milestone-based Control -> แบ่งการจ่ายเงิน
 ## 🌉 Bridge to Next Lesson: Lesson 15 — Agile Project Management Frameworks (Scrum & Kanban)
 
 เมื่อเราเรียนรู้ 10 Knowledge Areas ในรูปแบบ Predictive (Waterfall) ครบถ้วนแล้ว ในบทถัดไป **Lesson 15** เราจะไปเจาะลึกโลกของ **Agile Project Management** (Scrum & Kanban) เพื่อดูแนวทางการบริหารโครงการที่มีความยืดหยุ่นสูงในยุคดิจิทัลครับ!
+
+## PM Decision Thinking
+
+**[PMBOK 6]** Procurement Management ครอบคลุม plan, conduct และ control procurements. **[PMBOK 7]** stewardship และ risk thinking ทำให้ contract เป็นเครื่องมือจัดการ value, risk และ accountability.
+
+| Field | Lesson 14 Application |
+|---|---|
+| Decision | งานนี้ควร make, buy, outsource บางส่วน หรือใช้ hybrid vendor model |
+| Owner | PM วิเคราะห์ delivery need; procurement/legal ดู process/contract; sponsor อนุมัติ commercial decision |
+| Inputs | scope certainty, requirements, acceptance criteria, market capability, risk, budget, timeline, IP/security needs |
+| Options | fixed price, T&M with cap, cost reimbursable, managed service, framework agreement |
+| Trade-offs | price certainty vs flexibility, vendor risk vs buyer control, speed vs contract clarity |
+| Risk | TOR ไม่ชัด ทำให้ vendor ส่งงานตามสัญญาแต่ไม่ตรง value |
+| Evidence | vendor proposal, evaluation criteria, contract terms, milestone acceptance, performance data |
+| Next Action | ทำ procurement decision record และ contract control plan |
+
+### PM Insight
+
+Procurement ไม่ใช่แค่ซื้อของ แต่คือการกำหนดว่า risk และ accountability จะอยู่ที่ใคร. สัญญาที่ดีต้องช่วยให้ project control ได้ ไม่ใช่แค่ชนะการประกวดราคา.
+
+## ERP Scenario
+
+**[Scenario]** ERP Transformation ใช้ SI TechConsult สำหรับ 5 modules, data migration และ go-live support.
+
+Procurement decision:
+
+- Module configuration ที่ scope ชัดอาจใช้ fixed price พร้อม milestone acceptance
+- Change requests และ uncertain integration อาจต้องมี rate card หรือ T&M with cap
+- Milestone payment ควรผูกกับ accepted deliverables เช่น blueprint, SIT, UAT, cutover readiness
+- Contract ต้องระบุ data migration quality, performance, support handover และ defect liability
+- PM ต้อง control procurement ร่วมกับ procurement committee ไม่ใช่รอตรวจรับงวดสุดท้าย
+
+## Hotel Booking Scenario
+
+**[Scenario]** Hotel Booking Platform พึ่ง payment gateway, cloud service, outsource/mobile team และ hotel partner integrations.
+
+Procurement decision:
+
+- Payment gateway ต้องมี SLA, uptime, incident response และ fallback rights
+- Agile development vendor อาจใช้ T&M with cap พร้อม sprint review และ acceptance criteria
+- Cloud cost ต้องแยก project build cost กับ operating run-rate
+- IP rights, source code access และ security/privacy clauses ต้องชัดก่อน launch
+
+## Real Enterprise Example
+
+**[Instructor Interpretation]** Vendor dispute มักไม่ได้เริ่มตอน vendor ส่งงาน แต่เริ่มตอน TOR ไม่ระบุ performance, security, data quality หรือ acceptance criteria. PM ต้องช่วยทำให้ requirement เชิงบริหารกลายเป็น contract language ที่ตรวจรับได้.
+
+## Common Mistakes
+
+1. ปล่อยให้ TOR ไม่มี non-functional requirements
+2. เลือก fixed price ทั้งที่ scope ยังไม่นิ่ง
+3. จ่าย milestone ตามเวลา ไม่ใช่ accepted deliverables
+4. ไม่กำหนด change order process
+5. ปิด project โดยไม่ปิด procurement/contract obligations
+
+## Common Misconceptions
+
+| Misconception | Correction |
+|---|---|
+| Procurement เป็นงานฝ่ายจัดซื้อเท่านั้น | PM ต้องดู requirement, deliverable และ acceptance |
+| Fixed price ปลอดภัยที่สุดเสมอ | Fixed price เสี่ยง conflict ถ้า scope ไม่ชัด |
+| T&M คุมไม่ได้ | T&M with cap, cadence และ acceptance controls คุมได้ |
+| Vendor รับ risk ทั้งหมดได้ | บาง risk ยังอยู่กับ buyer เช่น requirement clarity และ adoption |
+
+## Interview Questions
+
+### Definition
+
+1. Fixed price, T&M และ cost reimbursable ต่างกันอย่างไร
+2. Make-or-buy analysis คืออะไร
+
+### Judgement
+
+1. คุณจะเลือก fixed price เมื่อใด และจะหลีกเลี่ยงเมื่อใด
+2. ถ้า vendor ส่งงานตรง contract แต่ไม่ตรง business need คุณจะจัดการอย่างไร
+
+### Behavioral
+
+1. เล่าครั้งหนึ่งที่คุณบริหาร vendor performance
+2. คุณเคยทำ acceptance criteria ใน TOR อย่างไร
+
+### Scenario
+
+1. ใน ERP คุณจะกำหนด milestone payment ให้ TechConsult อย่างไร
+2. ใน Hotel Booking คุณจะกำหนด SLA ของ payment gateway อย่างไร
+
+## PM Dictionary
+
+| Term | Meaning |
+|---|---|
+| Procurement Management | การจัดหาและบริหารสินค้าหรือบริการจากภายนอก |
+| Make-or-Buy Analysis | การตัดสินใจทำเองหรือซื้อ/จ้างภายนอก |
+| TOR/RFP | เอกสารกำหนดขอบเขตและเชิญเสนอราคา |
+| Fixed Price | สัญญาราคาคงที่ เหมาะกับ scope ชัด |
+| Time and Material | สัญญาคิดตามเวลา/ทรัพยากร มักใช้กับงานยืดหยุ่น |
+| Cost Reimbursable | สัญญาจ่ายตามต้นทุนจริงบวก fee |
+| SLA | Service Level Agreement หรือระดับบริการที่ตกลง |
+| Acceptance Criteria | เกณฑ์ตรวจรับที่ vendor ต้องผ่าน |
+| Procurement Closure | การปิดสัญญาและ obligations อย่างเป็นทางการ |
+
+## Workshop
+
+### Scenario
+
+ERP ต้องทำสัญญากับ TechConsult. Hotel Booking ต้องเลือก payment gateway และ outsource mobile team.
+
+### Task
+
+ให้ผู้เรียนทำ procurement decision sheet 1 หน้า:
+
+1. make-or-buy rationale
+2. recommended contract type
+3. acceptance criteria
+4. milestone/payment controls
+5. vendor risks และ response
+6. procurement closure requirements
+
+### Debrief
+
+คำตอบที่ดีต้องผูก contract กับ deliverable, risk และ acceptance ไม่ใช่ดูราคาอย่างเดียว.
+
+## Assessment
+
+ดูแบบประเมินหลักที่ [Lesson 14 Assessment](./Lesson-14_3-Assessment.md). แบบประเมินควรวัด judgement เรื่อง contract type, vendor risk, acceptance criteria และ procurement control.
+
+## Executive Summary
+
+Procurement Management ทำให้การใช้ vendor เป็นระบบที่ควบคุม value และ risk ได้. PM ต้องมีส่วนกับ scope, TOR, contract type, acceptance และ vendor performance. สัญญาที่ชัดช่วยป้องกัน dispute และทำให้การตรวจรับเชื่อมกับผลส่งมอบจริง.
+
+## Lesson Connection
+
+Lesson 13 สอน risk response รวมถึง transfer. Lesson 14 แสดง procurement เป็นหนึ่งในกลไก transfer/control risk ผ่าน vendor และ contract. Lesson 15 จะต่อไปที่ Agile/Scrum/Kanban เพื่อบริหารงานที่มีความไม่แน่นอนสูงและต้องเรียนรู้เป็นรอบสั้น.
+
+## AI Continuation Context
+
+Future AI agents must keep procurement tied to PM decision, vendor risk and acceptance criteria. Use TechConsult ERP contract and Hotel Booking payment/development vendors as recurring procurement examples.

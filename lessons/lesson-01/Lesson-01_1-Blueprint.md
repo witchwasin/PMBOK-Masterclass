@@ -3,6 +3,9 @@ lesson: 1
 title: ทำไม Project Manager ต้องรู้ PMBOK
 level: Foundation
 status: Draft
+validation_status: Not Validated
+last_reviewed: 2026-07-22
+intended_learner_level: Beginner PM
 canonical_source:
   - ../../references/PMBOK-Overview.md
 core_scenarios:
@@ -474,3 +477,11 @@ Lesson 01 ถือว่าสมบูรณ์เมื่อ:
 - มี Misconception Correction
 - มี Reflection และ Mini Assessment
 - ไม่กลายเป็นบทสรุปเนื้อหาทั้งหลักสูตร
+
+---
+
+## 16. Learner State, Decision, Workshop, and Sources
+
+**Learner state:** ผู้เริ่มต้นที่อาจเห็น PMBOK เป็นหนังสือสอบหรือ checklist; ไม่มี prerequisite. **Decision:** จะ tailor governance ของโครงการใหม่อย่างไรโดยไม่ตัดสิ่งจำเป็น; owner คือ sponsor/PM; inputs คือ uncertainty, regulation, stakeholder, delivery context; options คือ predictive/agile/hybrid; evidence คือ documented tailoring rationale และ review trigger. **Workshop:** เปรียบเทียบ ERP ที่มี compliance/data migration กับ Hotel Booking MVP ที่ต้องทดลองตลาด แล้วเขียนคำถามที่ต้องถามก่อนเลือก approach. **Assessment mix:** decision/ambiguous scenario 50%, output-outcome artifact review 30%, concept check 20%. **Sources:** PMBOK purpose/framework `[PMBOK]`; edition distinction `[PMBOK 6]`/`[PMBOK 7]`; scenarios `[Teaching Scenario]`; advice `[Professional Opinion]`.
+
+**Handoff:** Lesson 02 เริ่มจากคำถามว่าอะไรทำให้งานหนึ่งเป็น project และ project สร้าง value หลังส่งมอบได้อย่างไร.

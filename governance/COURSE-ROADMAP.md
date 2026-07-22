@@ -84,7 +84,7 @@ total_lessons: 16
 
 ### Status
 
-Draft Created
+Draft — Not Validated
 
 ---
 
@@ -113,7 +113,7 @@ Draft Created
 
 ### Status
 
-Draft Created
+Draft — Not Validated
 
 ---
 
@@ -144,7 +144,7 @@ Draft Created
 
 ### Status
 
-Draft Created
+Draft — Not Validated
 
 ---
 
@@ -810,9 +810,9 @@ lesson-XX/
 
 | Lesson | Title | Status |
 |---|---|---|
-| 01 | ทำไม Project Manager ต้องรู้ PMBOK | Draft Created |
-| 02 | Project Management Overview | Draft Created |
-| 03 | 5 Project Management Process Groups | Draft Created |
+| 01 | ทำไม Project Manager ต้องรู้ PMBOK | Draft — Not Validated |
+| 02 | Project Management Overview | Draft — Not Validated |
+| 03 | 5 Project Management Process Groups | Draft — Not Validated |
 | 04 | 10 Knowledge Areas Overview | Planned |
 | 05 | Integration Management | Planned |
 | 06 | Stakeholder Management | Planned |

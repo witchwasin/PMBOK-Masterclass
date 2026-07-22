@@ -5,6 +5,9 @@ title: Project Stakeholder Management
 document_type: Blueprint
 level: Core
 status: Draft
+validation_status: Not Validated
+last_reviewed: 2026-07-22
+intended_learner_level: Beginner PM
 prerequisite:
   - Lesson 05
 canonical_source:
@@ -15,6 +18,13 @@ core_scenarios:
 ---
 
 # Lesson 06_1 — Blueprint: Project Stakeholder Management
+
+## 0. Learner Profile, Prerequisites, and Scenario State
+
+- **Learner profile:** ผู้เรียนที่รู้ว่าต้อง “สื่อสาร” แต่ยังไม่แยก authority, interest, resistance และ engagement outcome.
+- **Required prerequisite:** Lesson 01–05, โดยเฉพาะ decision rights และ cross-area impact.
+- **Entry evidence:** ระบุได้ว่า stakeholder ที่มี power สูงแต่สนใจต่ำต้องจัดการต่างจาก end user ที่ได้รับผลกระทบสูง.
+- **Scenario state:** ERP มี sponsor CEO, 5 functional leads, 80 key users และ SI; Hotel Booking มี CEO sponsor, PO, hotel partners, payment provider, marketing และ support ตาม Scenario Master v1.0.
 
 ## 1. Purpose
 
@@ -127,3 +137,30 @@ core_scenarios:
 - แก้ Misconception
 - มี Assessment และ Source Mapping
 - ไม่ขัดกับ Canonical Source
+
+---
+
+## 12. PM Decisions to Practise
+
+| Decision | Owner | Inputs / missing information | Options and trade-off | Evidence / next action |
+|---|---|---|---|---|
+| จะ engage Functional Manager ที่ไม่ปล่อย key users อย่างไร | PM ร่วม sponsor | UAT plan, capacity, manager incentive, consequence of delay; ยังไม่รู้ delegated authority | escalate เร็วแต่ทำลายสัมพันธ์; negotiate workload ช้ากว่าแต่ยั่งยืน; change plan อาจลด quality | engagement plan, resource commitment, escalation record |
+| ใครมีสิทธิ์ตัดสินใจเมื่อ hotel partner ไม่อัปเดต inventory | Product Owner / sponsor | partner contract, booking loss, support data; ยังไม่รู้ root cause | block listings ปกป้องลูกค้าแต่เสีย supply; manual workaround เร็วแต่ไม่ scale | decision log, partner communication, KPI follow-up |
+| resistance ใดต้องแก้ด้วย process change ไม่ใช่ communication | Business owner | current/desired engagement, workflow pain, training evidence, adoption data | เพิ่ม messaging ถูกแต่ไม่แก้ incentive; redesign process ใช้เวลาแต่แก้ root cause | stakeholder assessment, action owner, adoption measure |
+
+## 13. Workshop and Assessment Design
+
+**Workshop:** VP Operations ไม่ยอมปล่อย key users ให้ UAT เพราะเสี่ยงกระทบการผลิต. ผู้เรียนเป็น PM จัด stakeholder strategy: power/interest, desired engagement, missing facts, 3 options, trade-offs, sponsor ask และ communication cadence. ประเมิน diagnosis 30%, feasible action 30%, authority/respect 20%, measure 20%.
+
+**Assessment mix:** Ambiguous Scenario 40%; Artifact Review ของ stakeholder register ที่มีแต่รายชื่อ 30%; Executive Communication ถึง sponsor 20%; terminology check 10%. ต้องตอบว่าการ “ทำให้ทุกคนพอใจ” ไม่ใช่เป้าหมายของ stakeholder management.
+
+## 14. Source Coverage and Handoff
+
+| Coverage | Classification | Boundary |
+|---|---|---|
+| Identify, plan/manage/monitor stakeholder engagement | `[PMBOK 6]` | ไม่แทน change-management discipline ทั้งหมด |
+| Power–interest, influence without authority, cadence | `[Best Practice]` / `[Enterprise Practice]` | tailor ตาม context |
+| ERP/Hotel parties and facts | `[Teaching Scenario]` | Scenario Master v1.0 |
+| แนวทาง escalation / negotiation | `[Professional Opinion]` | ไม่อ้างเป็นสูตรตายตัว |
+
+**Handoff to Lesson 07:** เมื่อรู้ว่าใครต้องมีส่วนร่วมและใครยอมรับงานแล้ว ผู้เรียนจึงพร้อมแปลงความต้องการที่ขัดกันเป็น scope ที่ตรวจรับได้และ WBS ที่ทำงานได้จริง.

@@ -91,3 +91,17 @@ canonical_source:
 - มี Misconception Correction
 - มี Assessment
 - ระบุ Assumption อย่างชัดเจน
+
+## 8. Repository Standard Source Labels
+
+- **[PMBOK 6]** ใช้สำหรับ process, artifact, baseline, knowledge area และ governance vocabulary
+- **[PMBOK 7]** ใช้สำหรับ value delivery, systems thinking, tailoring, adaptability และ stewardship
+- **[Scenario]** ใช้สำหรับ ERP Transformation และ Hotel Booking Platform ที่มาจาก scenario master files
+- **[Instructor Interpretation]** ใช้สำหรับ workshop, decision prompt, misconception correction, rubric และ Thai executive framing
+
+## 9. Mapping Boundary and Continuation Notes
+
+- บทนี้ต้องไม่อ้างว่า teaching scenario เป็นข้อเท็จจริงภายนอก
+- บทนี้ต้องไม่แทนที่ policy, contract, law หรือ standard เฉพาะองค์กร
+- การเพิ่มเนื้อหาใหม่ต้องรักษา distinction ระหว่าง canonical concept, scenario fact และ instructor interpretation
+- Future AI agents must preserve the lesson-specific PM decision logic and keep scenario details aligned with the ERP and Hotel master scenario files

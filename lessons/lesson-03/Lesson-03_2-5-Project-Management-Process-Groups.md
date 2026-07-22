@@ -4,7 +4,10 @@ sequence: 3.2
 title: 5 Project Management Process Groups
 document_type: Lesson
 level: Foundation
-status: Active
+status: Draft
+validation_status: Pending Final Repository Validation
+version: 1.0
+last_updated: 2026-07-22
 prerequisite:
   - Lesson 01 — ทำไม Project Manager ต้องรู้ PMBOK
   - Lesson 02 — Project Management Overview
@@ -17,7 +20,7 @@ core_scenarios:
 
 # Lesson 03_2 — 5 Project Management Process Groups
 
-## 1. คำถามเปิดบท: ถ้าโครงการเริ่มทำงานจริงไปแล้ว แต่พบว่าขอบเขตไม่ชัด เราควรกลับไป Planning หรือเดินหน้าต่อ?
+## Opening Professional Question — ถ้าโครงการเริ่มทำงานจริงไปแล้ว แต่พบว่าขอบเขตไม่ชัด เราควรกลับไป Planning หรือเดินหน้าต่อ?
 
 ลองจินตนาการถึงสถานการณ์หน้างานของโครงการพัฒนาซอฟต์แวร์หรือการปรับเปลี่ยนระบบองค์กร:
 
@@ -31,7 +34,7 @@ core_scenarios:
 
 ---
 
-## 2. ปัญหาที่ต้องทำความเข้าใจ: การมอง Process Groups เป็น Waterfall Phase ที่ตายตัว
+## Why This Matters — การมอง Process Groups เป็น Waterfall Phase ที่ตายตัว
 
 จุดล้มเหลวเชิงความคิดที่พบได้บ่อยที่สุดในวิชาชีพ Project Management คือการสับสนระหว่าง **Process Groups** กับ **Project Phases**:
 
@@ -43,6 +46,16 @@ core_scenarios:
    * ไม่ได้ทำการส่งมอบเข้าสู่งานประจำ (Transition to Operation), ปิดสัญญา Vendor หรือถอดบทเรียน (Lessons Learned)
 
 ---
+
+## Learning Objectives
+
+เมื่อเรียนจบบทนี้ ผู้เรียนควรสามารถ:
+
+1. อธิบาย 5 Process Groups ได้โดยไม่สับสนกับ project phases
+2. แยก Initiating, Planning, Executing, Monitoring & Controlling และ Closing จากมุมมอง decision flow
+3. ตัดสินใจได้ว่าเมื่อพบข้อมูลใหม่ควร execute ต่อ, control, replan หรือ escalate
+4. ใช้ ERP และ Hotel Booking scenarios เพื่ออธิบาย feedback loop และ progressive elaboration
+5. เชื่อม Lesson 03 ไปสู่ Lesson 04 เรื่อง Knowledge Areas ได้อย่างถูกต้อง
 
 ## 3. เหตุผลและที่มา: วงจรชีวิตและการจัดการความไม่แน่นอน (Feedback & Iteration)
 
@@ -86,7 +99,7 @@ core_scenarios:
 
 ## 5. คำศัพท์และ Framework (อ้างอิงจาก Canonical Source)
 
-อ้างอิงจาก [references/PMBOK-Overview.md](file:///Users/arm/Documents/GitHub/PMBOK-Masterclass/references/PMBOK-Overview.md):
+อ้างอิงจาก [PMBOK Overview](../../references/PMBOK-Overview.md):
 
 ### 5.1 5 Process Groups และ Output สำคัญ
 
@@ -172,3 +185,144 @@ core_scenarios:
 ## 🌉 Bridge to Next Lesson: Lesson 04 — 10 Project Management Knowledge Areas Overview
 
 เมื่อเราเข้าใจการไหลของกระบวนการบริหารผ่าน **5 Process Groups** แล้ว ในบทถัดไป **Lesson 04** เราจะไปทำความรู้จักกับ **10 Knowledge Areas** (องค์ความรู้ทั้ง 10 ด้านที่ PM ต้องบริหาร) และดูว่าเมื่อนำ 5 Process Groups มาตัดกับ 10 Knowledge Areas จะเกิดเป็น **Process Matrix** ที่ช่วยให้ PM ไม่ลืมบริหารมิติใดมิติหนึ่งได้อย่างไร!
+
+## PM Decision Thinking
+
+**[PMBOK 6]** Process Groups เป็นกลุ่มกิจกรรมบริหาร ไม่ใช่ลำดับ phase แบบแข็งตัว. **[PMBOK 7]** มุมมอง value delivery ทำให้ PM ใช้ process เพื่อช่วยตัดสินใจ ไม่ใช่ทำเอกสารเพื่อให้ครบพิธี.
+
+| Field | Lesson 03 Application |
+|---|---|
+| Decision | ปัญหาที่พบควรแก้ใน Executing, ส่งเข้า Monitoring & Controlling, replan หรือ escalate กลับไป sponsor |
+| Owner | PM เสนอ analysis; sponsor, change authority, หรือ steering committee ตัดสินเมื่อกระทบ baseline/charter |
+| Inputs | charter, baseline, actual progress, work performance data, issue log, risk, impact analysis |
+| Options | execute ต่อ, corrective action, preventive action, change request, rebaseline, defer scope |
+| Trade-offs | speed vs control, local fix vs systemic fix, schedule protection vs adoption/readiness |
+| Risk | treating process groups as linear phases; bypassing change control; hiding variance |
+| Evidence | variance data, root cause, user impact, cost/schedule impact, go-live readiness |
+| Next Action | สร้าง decision brief และระบุ process group ที่ต้อง activate ต่อ |
+
+### PM Insight
+
+Process Groups ที่ดีช่วยให้ PM รู้ว่า “ตอนนี้ต้องใช้โหมดการบริหารแบบไหน” ไม่ใช่บอกว่า “ตอนนี้เราอยู่ขั้นไหนแล้วห้ามย้อนกลับ”. การย้อนกลับไป Planning เพราะมี evidence ใหม่ไม่ใช่ความล้มเหลว แต่เป็นสัญญาณของ control ที่ทำงาน.
+
+## ERP Scenario
+
+**[Scenario]** ใน ERP Transformation ของคุณสมชายและคุณเอก TechConsult ต้องการเริ่ม build เพื่อรักษา timeline go-live ก่อน 1 ตุลาคม แต่ key users ยังไม่ยืนยัน master-data ownership.
+
+ถ้า PM มอง Process Groups เป็น phase แข็งตัว เขาอาจตอบว่า “ผ่าน Planning แล้ว ต้อง build ต่อ”. แต่ถ้ามองแบบ professional PM เขาจะเห็นว่า:
+
+- Executing: SI พร้อม build configuration
+- Monitoring & Controlling: evidence ชี้ว่า data ownership ไม่พร้อม
+- Planning: ต้อง replan data workstream, decision authority และ quality gate
+- Initiating/Sponsor escalation: ถ้า replan กระทบ deadline หรือ charter-level objective ต้องเข้า steering committee
+- Closing risk: ถ้าไม่แก้ ownership ตอนนี้ handover หลัง go-live จะล้มเหลว
+
+Decision ที่ถูกต้องจึงไม่ใช่ “หยุดหรือไปต่อ” แบบง่าย ๆ แต่คือ “อนุญาตให้งานใดไปต่อได้ โดยงานใดต้อง replan และใครต้องตัดสินใจ”.
+
+## Hotel Booking Scenario
+
+**[Scenario]** ใน Hotel Booking Platform ทีมคุณสุทธิพบระหว่าง beta ว่า payment failure สูงและ checkout flow ทำให้ conversion ต่ำ ทั้งที่ launch date ถูกประกาศไว้แล้ว.
+
+Process Group thinking ช่วยจัดการดังนี้:
+
+- Executing: ทีมยังพัฒนา feature และแก้ bug
+- Monitoring & Controlling: beta metrics แสดง conversion และ payment risk
+- Planning: backlog, launch readiness, support plan และ release criteria ต้องถูกปรับ
+- Closing: หากเปิด MVP แล้ว ต้องมี transition ไป product operations และ post-launch stabilization
+
+สำหรับ product/digital work การ replan อาจเกิดทุก sprint แต่ยังต้องมี governance ชัดเจนว่า metric ใดทำให้ launch ได้, metric ใดทำให้ delay, และใครเป็น owner ของ outcome หลัง release.
+
+## Real Enterprise Example
+
+**[Instructor Interpretation]** องค์กรจำนวนมากมีปัญหาเพราะเริ่มจาก Executing ก่อนมี Initiating ที่ชัด เช่น “ซื้อระบบมาแล้วค่อยหาว่าใครเป็น sponsor”. ผลคือ PM ถูกบังคับให้ทำ schedule โดยไม่มี charter, stakeholder authority, benefit owner หรือ decision rule. Lesson 03 จึงต้องทำให้ผู้เรียนเห็นว่า Process Groups เป็นระบบป้องกันความสับสนเชิงอำนาจและความรับผิดชอบ.
+
+## Common Mistakes
+
+1. เรียก Process Groups ว่า phases และห้ามย้อนกลับไป planning
+2. ทำ charter แบบพิธีการ แต่ไม่ใช้กำหนด authority และ success criteria
+3. ทำแผนละเอียด แต่ไม่กำหนด change control
+4. ทำ status report โดยไม่วิเคราะห์ variance และ decision required
+5. ปิดโครงการเมื่อ vendor ส่งมอบ แต่ไม่ทำ transition to operation
+
+## Common Misconceptions
+
+| Misconception | Correction |
+|---|---|
+| Process Groups คือ waterfall | Process Groups เป็น management functions ที่เกิดซ้ำได้ |
+| Planning เสร็จครั้งเดียว | Planning ปรับได้ผ่าน evidence และ control |
+| Monitoring คือรายงานย้อนหลัง | Monitoring & Controlling ใช้ตัดสินใจตอบสนอง variance |
+| Closing คือเซ็นรับงาน | Closing รวม handover, contract closure, lessons learned และ ownership |
+| Agile ไม่ใช้ Process Groups | Agile ยังมี initiating, planning, executing, monitoring, closing เพียงเปลี่ยน cadence |
+
+## Interview Questions
+
+### Definition
+
+1. อธิบายความแตกต่างระหว่าง Process Groups กับ Project Phases
+2. Monitoring & Controlling ต่างจาก Executing อย่างไร
+
+### Judgement
+
+1. ถ้า UAT พบ requirement gap ก่อน go-live 3 สัปดาห์ คุณจะใช้ Process Groups อย่างไรในการตัดสินใจ
+2. เมื่อ sponsor กดดันให้ launch แต่ readiness metrics ไม่ผ่าน PM ควรทำอะไร
+
+### Behavioral
+
+1. เล่าครั้งหนึ่งที่คุณต้อง replan หลังพบข้อมูลใหม่ คุณสื่อสารกับ stakeholder อย่างไร
+2. คุณเคยปิด project แบบมี transition to operation อย่างไร
+
+### Scenario
+
+1. ใน ERP ถ้า data migration delay 2 สัปดาห์แต่ SI ขอ build ต่อ คุณจะเสนอ decision record อย่างไร
+2. ใน Hotel Booking ถ้า payment failure สูงแต่ marketing launch แล้ว คุณจะ activate process group ใดก่อน
+
+## PM Dictionary
+
+| Term | Meaning |
+|---|---|
+| Process Group | กลุ่มกิจกรรมบริหารโครงการ 5 กลุ่มที่ช่วยตั้งต้น วางแผน ทำงาน ควบคุม และปิดงาน |
+| Project Phase | ช่วงของ lifecycle/product delivery เช่น design, build, test, deploy |
+| Progressive Elaboration | การทำให้ข้อมูลและแผนชัดขึ้นเมื่อมี evidence ใหม่ |
+| Replanning | การปรับแผนอย่างเป็นระบบเมื่อข้อมูลจริงเปลี่ยน |
+| Work Performance Data | ข้อมูลดิบจากงานจริง เช่น progress, defect, effort, test result |
+| Change Request | คำขอปรับ scope, schedule, cost, quality หรือ baseline |
+| Corrective Action | การกระทำเพื่อดึง performance กลับเข้าแผน |
+| Preventive Action | การกระทำเพื่อลดโอกาสเกิดปัญหาก่อนเสียหาย |
+| Closing | การปิด project/phase อย่างเป็นทางการ รวม handover และ lessons learned |
+
+## Workshop
+
+### Scenario
+
+ERP workstream พบว่า master data ไม่พร้อม แต่ SI ขอเริ่ม build เพื่อรักษา deadline. Hotel Booking beta พบ payment failure สูงแต่ marketing ต้องการ launch ตามแผน.
+
+### Task
+
+ให้ผู้เรียนทำ decision brief 1 หน้า โดยระบุ:
+
+1. process group ที่เกี่ยวข้อง
+2. evidence ที่มีและ evidence ที่ยังขาด
+3. baseline หรือ charter ที่อาจถูกกระทบ
+4. options และ trade-offs
+5. owner ของ decision
+6. next action ภายใน 48 ชั่วโมง
+
+### Debrief
+
+คำตอบที่ดีต้องไม่ตอบแค่ว่า “กลับไป planning” หรือ “execute ต่อ” แต่ต้องแยกว่างานใดไปต่อได้ งานใดต้อง control และงานใดต้อง escalate.
+
+## Assessment
+
+ดูแบบประเมินหลักที่ [Lesson 03 Assessment](./Lesson-03_3-Assessment.md). ข้อสอบต้องวัดมากกว่าการจำชื่อ 5 Process Groups โดยให้ผู้เรียนตัดสินใจจาก ERP และ Hotel Booking scenarios ว่าควร execute, control, replan, escalate หรือ close อย่างไร.
+
+## Executive Summary
+
+5 Process Groups คือระบบคิดเพื่อกำกับโครงการตั้งแต่เริ่มต้นจนปิดงาน ไม่ใช่ phase แบบเดินเส้นตรง. PM มืออาชีพใช้ Initiating เพื่อทำให้ authority ชัด, Planning เพื่อสร้าง baseline, Executing เพื่อส่งมอบ, Monitoring & Controlling เพื่ออ่าน evidence และ Closing เพื่อส่งต่อ value ไป operation. เมื่อข้อมูลจริงเปลี่ยน การ replan อย่างมีหลักฐานคือความเป็นมืออาชีพ ไม่ใช่การถอยหลัง.
+
+## Lesson Connection
+
+Lesson 02 แยก project, operation, output, outcome และ value. Lesson 03 เพิ่มระบบบริหารให้ PM รู้ว่าต้องใช้ process group ใดในการควบคุมงานและตัดสินใจ. Lesson 04 จะต่อยอดด้วย 10 Knowledge Areas ซึ่งเป็นมิติเนื้อหาที่ PM ต้องบริหารในแต่ละ Process Group.
+
+## AI Continuation Context
+
+Future AI agents must preserve the distinction between Process Groups and Project Phases. Do not describe Initiating, Planning, Executing, Monitoring & Controlling, and Closing as rigid waterfall phases. Keep ERP and Hotel scenarios aligned with the scenario master files, and carry the Lesson 03 bridge into Lesson 04 Knowledge Areas.

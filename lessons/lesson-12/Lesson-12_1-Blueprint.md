@@ -5,6 +5,9 @@ title: Project Communications Management
 document_type: Blueprint
 level: Core
 status: Draft
+validation_status: Not Validated
+last_reviewed: 2026-07-22
+intended_learner_level: Beginner PM
 prerequisite:
   - Lesson 11
 canonical_source:
@@ -133,3 +136,11 @@ core_scenarios:
 - แก้ Misconception
 - มี Assessment และ Source Mapping
 - ไม่ขัดกับ Canonical Source
+
+---
+
+## 12. Learner State, Decision, Practice, and Sources
+
+**Learner state:** แยก stakeholder ได้ แต่ยังส่ง status report ชุดเดียวให้ทุกคน. **Decision:** จะ escalate ERP data-migration risk ต่อใคร ด้วยข้อมูลและ recommendation ใด; owner คือ PM ตาม escalation path; inputs คือ impact, confidence, options, decision deadline; options คือ dashboard-only/targeted brief/Steering Committee escalation; evidence คือ communication log และ decision record. **Workshop:** เปลี่ยน technical status สีแดงให้เป็น executive decision brief. **Assessment:** Executive Communication 40%, communications-plan artifact review 30%, channel/cadence trade-off 20%, recall 10%. **Sources:** communications processes `[PMBOK 6]`; audience-tailoring `[Best Practice]`; scenarios `[Teaching Scenario]`; advice `[Professional Opinion]`.
+
+**Handoff:** การสื่อสารที่ชัดทำให้ uncertainty ถูกเห็นทันเวลา ก่อน Lesson 13 แปลง uncertainty เป็น risk, response และ trigger.

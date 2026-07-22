@@ -5,6 +5,9 @@ title: Project Resource Management
 document_type: Blueprint
 level: Core
 status: Draft
+validation_status: Not Validated
+last_reviewed: 2026-07-22
+intended_learner_level: Beginner PM
 prerequisite:
   - Lesson 10
 canonical_source:
@@ -131,3 +134,11 @@ core_scenarios:
 - แก้ Misconception
 - มี Assessment และ Source Mapping
 - ไม่ขัดกับ Canonical Source
+
+---
+
+## 12. Learner State, Decision, Practice, and Sources
+
+**Learner state:** รู้แผนงาน แต่ยังคิดว่าการ assign คนเท่ากับมี capacity. **Decision:** จะย้าย ERP key user ออกจาก BAU เพื่อ UAT หรือปรับ schedule/scope; owner คือ functional manager กับ sponsor; inputs คือ UAT load, production impact, skill gap และ backfill; options คือ dedicate/part-time/backfill/defer; evidence คือ resource commitment และ updated schedule. **Workshop:** สร้าง capacity decision brief จาก key users 80 คนที่ทำงานคู่ขนาน. **Assessment:** resource-plan artifact review 35%, trade-off 35%, conflict/leadership case 20%, recall 10%. **Sources:** resource processes `[PMBOK 6]`; capacity/team practice `[Best Practice]`; scenarios `[Teaching Scenario]`; advice `[Professional Opinion]`.
+
+**Handoff:** เมื่อ roles และ capacity ชัด ผู้เรียนจึงต้องกำหนดว่าใครควรได้รับข้อมูลใด เมื่อใด และอย่างไรใน Lesson 12.

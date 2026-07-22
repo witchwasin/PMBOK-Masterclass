@@ -5,6 +5,9 @@ title: Project Scope Management and WBS
 document_type: Blueprint
 level: Core
 status: Draft
+validation_status: Not Validated
+last_reviewed: 2026-07-22
+intended_learner_level: Beginner PM
 prerequisite:
   - Lesson 06
 canonical_source:
@@ -15,6 +18,13 @@ core_scenarios:
 ---
 
 # Lesson 07_1 — Blueprint: Project Scope Management and WBS
+
+## 0. Learner Profile, Prerequisites, and Scenario State
+
+- **Learner profile:** ผู้เรียนที่รู้ stakeholder แล้ว แต่ยังรับคำขอเป็น “งานต้องทำ” โดยไม่ตรวจ requirement, acceptance และ boundary.
+- **Required prerequisite:** Lesson 01–06; เข้าใจ stakeholder engagement และ integrated change control.
+- **Entry evidence:** แยก Product Scope จาก Project Scope และแยก clarification จาก scope expansion ได้.
+- **Scenario state:** ERP in scope คือ 5 modules, migration 6 legacy systems, training, parallel run, cutover และ hypercare; Hotel Booking in scope คือ MVP ตาม Scenario Master. CRM/BI และ Phase 2 hotel features เป็น out of scope.
 
 ## 1. Purpose
 
@@ -131,3 +141,30 @@ core_scenarios:
 - แก้ Misconception
 - มี Assessment และ Source Mapping
 - ไม่ขัดกับ Canonical Source
+
+---
+
+## 12. PM Decisions to Practise
+
+| Decision | Owner | Inputs / missing information | Options and trade-off | Evidence / next action |
+|---|---|---|---|---|
+| คำขอ “รายงานทั้งหมด” เป็น requirement ที่พร้อมทำหรือไม่ | Process owner กับ PM | user decision, data source, frequency, acceptance criteria; ยังไม่รู้ report inventory | accept เร็วแต่สร้าง scope ไม่มีที่สิ้นสุด; refine ช้ากว่าแต่ testable; defer ลด load แต่เสี่ยง adoption | requirement record, acceptance criteria, prioritised backlog/WBS |
+| เพิ่ม corporate booking ใน Hotel MVP หรือ Phase 2 | Sponsor + Product Owner | value hypothesis, High Season date, payment/inventory impact, capacity; ยังไม่รู้ regulatory/partner need | include เพิ่ม value แต่กระทบ MVP; defer รักษา launch แต่เสีย segment | change request, release scope, stakeholder communication |
+| WBS แตกละเอียดถึงระดับใด | PM with workstream leads | deliverables, control needs, estimating maturity, ownership | ละเอียดมากช่วย control แต่เพิ่ม overhead; หยาบเกินไปซ่อน risk/owner | WBS dictionary, work-package owner, scope baseline |
+
+## 13. Workshop and Assessment Design
+
+**Workshop:** CFO ขอ “รายงานบริหารทั้งหมด” ระหว่าง ERP blueprint. ผู้เรียนเป็น PM แปลงคำขอเป็น question set, requirement slices, acceptance criteria และ WBS fragment; ระบุสิ่งที่ยังต้องถาม และเส้นทาง change control. ประเมิน requirement quality 30%, boundary 25%, WBS logic 25%, decision evidence 20%.
+
+**Assessment mix:** Artifact Review ของ WBS ที่แตกตาม department แทน deliverable 35%; Decision Case เรื่อง corporate booking 35%; Cross-Knowledge Analysis ของ scope change 20%; terminology check 10%. ต้องอธิบายว่ารายละเอียดมากไม่เท่ากับ scope ชัด.
+
+## 14. Source Coverage and Handoff
+
+| Coverage | Classification | Boundary |
+|---|---|---|
+| Plan/collect/define/validate/control scope, WBS, scope baseline | `[PMBOK 6]` | ไม่สอน schedule network หรือ cost estimating แบบเต็ม |
+| Requirement quality, WBS dictionary, prioritisation | `[Best Practice]` | tailor ตาม delivery approach |
+| ERP/Hotel scope facts | `[Teaching Scenario]` | Scenario Master v1.0 |
+| วิธีถามกลับเมื่อข้อมูลไม่พอ | `[Professional Opinion]` | ไม่ใช่ mandatory script |
+
+**Handoff to Lesson 08:** Scope ที่ตรวจรับได้และ WBS ที่มี work packages ทำให้สามารถแตกงานเป็นกิจกรรม ลำดับ dependency และสร้าง schedule ที่น่าเชื่อถือได้.

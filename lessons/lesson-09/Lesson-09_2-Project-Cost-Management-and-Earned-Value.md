@@ -4,7 +4,10 @@ sequence: 9.2
 title: Project Cost Management and Earned Value
 document_type: Lesson
 level: Core
-status: Active
+status: Draft
+validation_status: Pending Final Repository Validation
+version: 1.0
+last_updated: 2026-07-22
 prerequisite:
   - Lesson 08 — Project Schedule Management
 canonical_source:
@@ -16,7 +19,7 @@ core_scenarios:
 
 # Lesson 09_2 — Project Cost Management and Earned Value
 
-## 1. คำถามเปิดบท: ถ้างบประมาณถูกใช้ไปแล้ว 50% แต่เวลาผ่านไป 70% โครงการของคุณกำลังประหยัดเงิน หรือกำลังตกอยู่ในอันตราย?
+## Opening Professional Question — ถ้างบประมาณถูกใช้ไปแล้ว 50% แต่เวลาผ่านไป 70% โครงการของคุณกำลังประหยัดเงิน หรือกำลังตกอยู่ในอันตราย?
 
 ลองพิจารณาตัวเลขในรายงานงบประมาณของโครงการ:
 
@@ -29,7 +32,7 @@ core_scenarios:
 
 ---
 
-## 2. ปัญหาที่ต้องทำความเข้าใจ: การบริหารงบประมาณแบบการบัญชีหน้าเดียว
+## Why This Matters — การบริหารงบประมาณแบบการบัญชีหน้าเดียว
 
 จุดล้มเหลวในการบริหารงบประมาณของโครงการ ได้แก่:
 
@@ -41,6 +44,16 @@ core_scenarios:
    * รายงานว่างานเสร็จ 50% โดยไม่มีหลักฐานเชิงปริมาณของผลส่งมอบ (Deliverables) ที่วัดผลได้จริง
 
 ---
+
+## Learning Objectives
+
+เมื่อเรียนจบบทนี้ ผู้เรียนควรสามารถ:
+
+1. แยก cost estimate, cost baseline, contingency reserve และ management reserve
+2. อธิบาย PV, EV, AC, CV, SV, CPI, SPI และ EAC ในระดับใช้งาน
+3. อ่านสถานะ cost/schedule จาก EVM โดยไม่ถูกหลอกด้วยยอดเงินเบิกจ่าย
+4. ตัดสินใจเมื่อ CPI/SPI ต่ำกว่า 1.0 และต้อง recover, reforecast หรือ escalate
+5. ใช้ ERP และ Hotel Booking scenarios เพื่อแยก delivery working budget, funding envelope และ operating cost
 
 ## 3. เหตุผลและที่มา: ต้นทุนคือวินัยทางการเงินที่สร้างความเชื่อมั่น
 
@@ -80,7 +93,7 @@ core_scenarios:
 
 ## 5. คำศัพท์และ Framework (อ้างอิงจาก Canonical Source)
 
-อ้างอิงจาก [references/PMBOK-Overview.md](file:///Users/arm/Documents/GitHub/PMBOK-Masterclass/references/PMBOK-Overview.md):
+อ้างอิงจาก [PMBOK Overview](../../references/PMBOK-Overview.md):
 
 ### 5.1 4 Sub-processes ของ Cost Management
 1. **Plan Cost Management:** กำหนดแนวทางการประมาณการ จัดทำงบประมาณ และควบคุม Cost
@@ -158,3 +171,139 @@ Step 2: Calculate EAC (Estimate at Completion) -> คาดการณ์ว่
 ## 🌉 Bridge to Next Lesson: Lesson 10 — Project Quality Management
 
 เมื่อเราบริหาร **Scope, Schedule, Cost (Triple Constraints)** ได้อย่างเข้มงวดแล้ว มิติสำคัญที่จะรับประกันว่างานที่ทำเสร็จนั้นสามารถใช้งานได้จริงคือ **Project Quality Management** ในบทถัดไป **Lesson 10** ครับ!
+
+## PM Decision Thinking
+
+**[PMBOK 6]** Cost Management ครอบคลุม estimate, budget และ control costs. **[PMBOK 7]** value delivery เตือนว่า cost performance ต้องถูกอ่านร่วมกับ progress, risk และ outcome.
+
+| Field | Lesson 09 Application |
+|---|---|
+| Decision | cost variance เป็นปัญหาจริง, timing issue, reserve usage หรือ value trade-off |
+| Owner | PM วิเคราะห์ EVM; sponsor/finance/change authority ตัดสินเมื่อเกิน baseline หรือใช้ reserve |
+| Inputs | BAC, PV, EV, AC, CPI, SPI, EAC, reserve status, procurement claims, work completion evidence |
+| Options | continue, cost control, crash schedule, reduce scope, use contingency, request change, reforecast |
+| Trade-offs | save cash vs delay value, crash schedule vs higher cost, reduce scope vs lower outcome |
+| Risk | ดูแค่ AC ต่ำแล้วเข้าใจว่าประหยัด ทั้งที่ EV ต่ำกว่าแผนมาก |
+| Evidence | accepted deliverables, EVM metrics, forecast, cost variance root cause |
+| Next Action | ทำ EVM diagnostic brief และ update forecast/EAC |
+
+### PM Insight
+
+เงินที่ยังไม่จ่ายไม่ใช่เงินที่ประหยัดเสมอไป. ถ้า EV ต่ำกว่า PV มาก โครงการอาจ “ดูใช้เงินน้อย” เพราะยังทำงานไม่เสร็จ. PM ต้องวัดเงินคู่กับเนื้องานที่ได้รับจริง.
+
+## ERP Scenario
+
+**[Scenario]** ERP Transformation ใช้คำงบแบบล็อก: Working Budget 45 ล้านบาท สำหรับ delivery costs และ Total Funding Envelope 60 ล้านบาท รวม license และ management reserve.
+
+Cost decision:
+
+- หาก AC ใช้ไป 22 ล้านบาท แต่ EV เท่ากับงานมูลค่า 16 ล้านบาท CPI ต่ำกว่า 1.0 แปลว่าใช้เงินไม่มีประสิทธิภาพ
+- หาก SPI ต่ำพร้อม CPI ต่ำ ต้องวิเคราะห์ vendor productivity, rework, data quality และ change scope
+- ห้ามนำ Total Funding Envelope 60 ล้านบาทมาอ้างว่า working delivery budget ยังไม่เกินโดยไม่ขอ governance
+- ถ้าต้องใช้ reserve ต้องระบุ risk trigger, approval และผลต่อ EAC
+
+## Hotel Booking Scenario
+
+**[Scenario]** Hotel Booking Platform มี delivery budget 12 ล้านบาท และหลัง launch จะมี cloud/payment operating costs.
+
+Cost decision:
+
+- ค่า cloud ระหว่าง development อาจอยู่ใน project cost แต่ run-rate หลัง launch เป็น operation/product cost
+- ถ้า payment failure ทำให้ต้องเพิ่ม vendor support ต้องวิเคราะห์ว่าเป็น quality recovery หรือ scope growth
+- Direct booking outcome 35% หลัง 18 เดือนต้องเทียบ benefit กับ total cost of ownership ไม่ใช่แค่ build budget
+- PM ต้องรายงาน delivery cost, forecast, และ post-launch operating cost boundary ให้ชัด
+
+## Real Enterprise Example
+
+**[Instructor Interpretation]** รายงานงบหลายองค์กรบอกว่า “ใช้เงินไป 40%” โดยไม่บอกว่างานได้กี่เปอร์เซ็นต์. ถ้างานจริงได้ 20% โครงการไม่ได้ประหยัด แต่กำลังสะสม delay และอาจใช้เงินก้อนใหญ่ท้ายโครงการ. EVM บังคับให้ PM เอา money กับ earned work มาอยู่ในภาพเดียวกัน.
+
+## Common Mistakes
+
+1. อ่าน cost status จาก actual spend อย่างเดียว
+2. ไม่แยก contingency reserve กับ management reserve
+3. ไม่ผูก EV กับ accepted deliverables
+4. ใช้ CPI/SPI เป็นตัวเลขรายงานแต่ไม่วิเคราะห์ root cause
+5. ปะปน project delivery budget กับ operation cost หรือ license envelope
+
+## Common Misconceptions
+
+| Misconception | Correction |
+|---|---|
+| ใช้เงินน้อยกว่าแผนแปลว่าดี | ต้องดู EV/PV/AC พร้อมกัน |
+| CPI ดีแปลว่าทุกอย่างดี | ต้องดู SPI, quality และ scope completion ด้วย |
+| Reserve ใช้ได้ตามใจ PM | Reserve ต้องมี trigger และ approval ตาม governance |
+| EVM ใช้เฉพาะงานก่อสร้าง | ใช้กับงานที่วัด deliverable completion ได้ รวมถึง ERP/digital |
+
+## Interview Questions
+
+### Definition
+
+1. PV, EV และ AC ต่างกันอย่างไร
+2. Cost baseline ต่างจาก total funding envelope อย่างไร
+
+### Judgement
+
+1. ถ้า CPI > 1 แต่ SPI < 1 คุณจะตีความอย่างไร
+2. ถ้า EAC เกิน budget คุณจะเสนอ decision ต่อ sponsor อย่างไร
+
+### Behavioral
+
+1. เล่าครั้งหนึ่งที่คุณต้องอธิบาย cost variance ให้ผู้บริหาร
+2. คุณเคยแก้ปัญหางบล้นโดยไม่ทำลาย quality หรือ scope อย่างไร
+
+### Scenario
+
+1. ใน ERP ถ้า working budget 45 ล้านบาทเริ่มเสี่ยงเกิน คุณจะทำ EVM diagnostic อย่างไร
+2. ใน Hotel Booking ถ้า cloud cost สูงหลัง beta คุณจะแยก project cost กับ operation cost อย่างไร
+
+## PM Dictionary
+
+| Term | Meaning |
+|---|---|
+| BAC | Budget at Completion หรืองบรวมตาม baseline |
+| PV | Planned Value มูลค่างานที่ควรเสร็จตามแผน |
+| EV | Earned Value มูลค่างานที่เสร็จจริง |
+| AC | Actual Cost เงินที่ใช้จริง |
+| CV | Cost Variance = EV - AC |
+| SV | Schedule Variance = EV - PV |
+| CPI | Cost Performance Index = EV / AC |
+| SPI | Schedule Performance Index = EV / PV |
+| EAC | Estimate at Completion forecast งบเมื่อจบ |
+| Contingency Reserve | เงินสำรองสำหรับ risk ที่ระบุแล้ว |
+| Management Reserve | เงินสำรองระดับบริหารสำหรับ unknown unknowns |
+
+## Workshop
+
+### Scenario
+
+ERP มี BAC ใน working budget 45 ล้านบาท ตอนนี้ PV 20, EV 15, AC 18 ล้านบาท. Hotel Booking ใช้งบ build ไป 7 ล้านบาท แต่ payment defect ทำให้ต้องใช้ vendor support เพิ่ม.
+
+### Task
+
+ให้ผู้เรียนทำ cost diagnostic brief 1 หน้า:
+
+1. คำนวณ CV, SV, CPI, SPI
+2. ตีความว่าปัญหาคือ cost, schedule หรือทั้งคู่
+3. ระบุ root cause ที่ต้องตรวจ
+4. เสนอ options และ trade-offs
+5. ระบุว่าใช้ contingency/management reserve ได้หรือไม่ และต้องขออนุมัติใคร
+
+### Debrief
+
+คำตอบที่ดีต้องไม่หยุดที่ตัวเลข แต่เชื่อมตัวเลขกับ decision และ governance.
+
+## Assessment
+
+ดูแบบประเมินหลักที่ [Lesson 09 Assessment](./Lesson-09_3-Assessment.md). แบบประเมินควรวัดการคำนวณ EVM และ judgement ว่าควร recover, forecast, request change หรือ escalate อย่างไร.
+
+## Executive Summary
+
+Cost Management ทำให้เงินของโครงการถูกประมาณ ตั้งงบ ควบคุม และ forecast อย่างมีวินัย. EVM ช่วยให้ PM อ่านเงินคู่กับงานที่เสร็จจริง. สถานะงบที่ดีต้องแปลว่าใช้เงินเพื่อสร้าง earned work ไม่ใช่แค่ยังไม่ได้จ่าย.
+
+## Lesson Connection
+
+Lesson 08 สร้าง schedule baseline. Lesson 09 เพิ่ม cost baseline และ EVM เพื่ออ่าน performance ทั้งเวลาและเงิน. Lesson 10 จะต่อไปที่ Quality Management เพราะโครงการที่ตรงเวลาและไม่เกินงบยังล้มได้ถ้าผลงานใช้จริงไม่ได้.
+
+## AI Continuation Context
+
+Future AI agents must preserve ERP budget terminology exactly: Working Budget 45 ล้านบาท for delivery, Total Funding Envelope 60 ล้านบาท including license and management reserve. Keep Hotel Booking cost examples clear between build budget and post-launch operation cost.

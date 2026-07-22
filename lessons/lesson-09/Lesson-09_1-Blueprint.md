@@ -5,6 +5,9 @@ title: Project Cost Management and Earned Value
 document_type: Blueprint
 level: Core
 status: Draft
+validation_status: Not Validated
+last_reviewed: 2026-07-22
+intended_learner_level: Beginner PM
 prerequisite:
   - Lesson 08
 canonical_source:
@@ -132,3 +135,11 @@ core_scenarios:
 - แก้ Misconception
 - มี Assessment และ Source Mapping
 - ไม่ขัดกับ Canonical Source
+
+---
+
+## 12. Learner State, Decision, Practice, and Sources
+
+**Learner state:** ใช้ Lesson 07–08 เพื่ออ่าน WBS/schedule ได้ แต่ยังไม่แยก budget, forecast และ performance. **Decision:** CFO จะอนุมัติ ERP change 2 ล้านบาทหรือไม่; owner คือ Steering Committee; inputs คือ cost baseline, EAC, benefit และ contingency ที่เหลือ; options คือ approve/defer/de-scope พร้อมผลต่อ go-live และ value; evidence คือ change log กับ updated forecast. **Workshop:** วิเคราะห์ ERP CPI/SPI ที่ต่ำกว่า 1 และเขียน executive brief ที่ไม่สรุปจากตัวเลขเดียว. **Assessment:** EVM interpretation 40%, cost-report artifact review 30%, trade-off 20%, recall 10%. **Sources:** cost processes/EVM `[PMBOK 6]`; forecasting `[Best Practice]`; scenario figures `[Teaching Scenario]`; recommendation `[Professional Opinion]`.
+
+**Handoff:** เมื่อรู้ผลของเงินและ performance แล้ว Lesson 10 ถามต่อว่า “ส่งมอบตามงบ” มีความหมายหรือไม่หากคุณภาพไม่ตอบ acceptance.

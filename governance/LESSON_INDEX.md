@@ -1,0 +1,27 @@
+---
+title: Lesson Index
+document_type: Lesson Index
+version: 1.0
+last_updated: 2026-07-22
+---
+
+# PMBOK Masterclass — Lesson Index
+
+| Lesson | Title | Difficulty | Status | Validation | Last Reviewed |
+|---|---|---|---|---|---|
+| 01 | ทำไม Project Manager ต้องรู้ PMBOK | Foundation | Draft | Not Validated | — |
+| 02 | Project Management Overview | Foundation | Draft | Not Validated | — |
+| 03 | 5 Project Management Process Groups | Foundation | Draft | Not Validated | — |
+| 04 | 10 Project Management Knowledge Areas Overview | Foundation | Draft | Not Validated | — |
+| 05 | Project Integration Management | Core | Draft | Not Validated | — |
+| 06 | Project Stakeholder Management | Core | Draft | Not Validated | — |
+| 07 | Project Scope Management and WBS | Core | Draft | Not Validated | — |
+| 08 | Project Schedule Management | Core | Draft | Not Validated | — |
+| 09 | Project Cost Management and Earned Value | Core | Draft | Not Validated | — |
+| 10 | Project Quality Management | Core | Draft | Not Validated | — |
+| 11 | Project Resource Management | Core | Draft | Not Validated | — |
+| 12 | Project Communications Management | Core | Draft | Not Validated | — |
+| 13 | Project Risk Management | Core | Draft | Not Validated | — |
+| 14 | Project Procurement Management | Core | Draft | Not Validated | — |
+| 15 | Agile Project Management: Scrum and Kanban | Advanced | Draft | Not Validated | — |
+| 16 | Predictive vs Agile vs Hybrid and Tailoring | Advanced | Draft | Not Validated | — |

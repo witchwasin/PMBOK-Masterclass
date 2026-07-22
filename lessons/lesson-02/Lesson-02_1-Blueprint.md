@@ -5,6 +5,9 @@ title: Project Management Overview
 document_type: Blueprint
 level: Foundation
 status: Draft
+validation_status: Not Validated
+last_reviewed: 2026-07-22
+intended_learner_level: Beginner PM
 prerequisite:
   - Lesson 01 — ทำไม Project Manager ต้องรู้ PMBOK
 canonical_source:
@@ -15,6 +18,13 @@ core_scenarios:
 ---
 
 # Lesson 02_1 — Blueprint: Project Management Overview
+
+## 0. Learner Profile and Prerequisites
+
+- **Learner profile:** ผู้เริ่มต้นหรือผู้ทำงานที่ได้รับมอบหมายให้ช่วยโครงการ แต่ยังแยกงานโครงการออกจากงานประจำและผลลัพธ์ทางธุรกิจไม่ชัด
+- **Required prerequisite:** Lesson 01; รู้ว่า PMBOK เป็น framework ไม่ใช่ checklist ที่ใช้แทน judgement
+- **Entry evidence:** ผู้เรียนเล่าโครงการหนึ่งโครงการและระบุผู้สนับสนุน ผู้ใช้ และผลที่ธุรกิจคาดหวังได้
+- **Scenario state:** ERP และ Hotel Booking อยู่ก่อนการอนุมัติ/เริ่มส่งมอบ จึงห้ามสมมติว่า Go-live สำเร็จแล้ว
 
 ## 1. Purpose
 
@@ -213,3 +223,43 @@ Lesson 02 ถือว่าสมบูรณ์เมื่อ:
 - มี Misconception Correction
 - มี Reflection และ Assessment
 - เชื่อมไป Lesson 03 ได้ชัดเจน
+
+---
+
+## 12. PM Decisions to Practise
+
+| Decision | Owner | Inputs / missing information | Options and trade-off | Evidence / next action |
+|---|---|---|---|---|
+| งานนี้ควรตั้งเป็น project, operation improvement หรือทั้งสองส่วนหรือไม่ | Sponsor ร่วมกับ functional owner | Business need, uniqueness, duration, operational impact; ยังไม่รู้ capacity ของทีม | ตั้ง project ให้เกิด governance แต่เพิ่ม overhead; ทำเป็น BAU เร็วแต่เสี่ยงไม่มี owner | Business case / charter หรือ operating improvement plan; แต่งตั้ง owner |
+| จะวัดความสำเร็จด้วย output หรือ outcome ใด | Sponsor และ business owner | Baseline เช่น 15 วันปิดงบ / 10% direct booking; ยังไม่รู้ adoption baseline | วัดแค่ delivery ควบคุมง่ายแต่ไม่สะท้อน value; วัด outcome ต้องมี owner หลัง handover | Benefits map, KPI owner, review date หลัง transition |
+| โครงสร้างองค์กรใดให้ PM ตัดสินใจได้พอ | Sponsor / executive | อำนาจ PM, resource availability, dependency; ยังไม่รู้ functional capacity | Functional ใช้ expertise ดีแต่ช้า; matrix สมดุลแต่ต้อง negotiate; projectized เร็วแต่แพง | RACI, escalation route, resource commitment |
+
+## 13. Workshop Design
+
+**Scenario:** CFO เสนอ “ลดเวลาปิดงบ” โดยให้ทีม IT แก้รายงานเฉพาะหน้า ขณะที่ CEO ต้องการ ERP ตาม Scenario Master.
+**Role:** ผู้เรียนเป็น PM analyst ในทีมคุณเอก.
+**Available information:** baseline ปิดงบ 15 วัน, working budget 45 ล้านบาท, ERP scope 5 modules, go-live ก่อน 1 ตุลาคม.
+**Missing information:** root cause ของความล่าช้า, cost of delay, capacity key users, benefit owner.
+**Decision:** แนะนำว่าเป็น operation improvement, ERP project, หรือ portfolio ที่มีทั้งสองงาน พร้อมสิ่งที่ต้องถามก่อนตัดสินใจ.
+**Constraint:** ห้ามสมมติว่าระบบใหม่จะสร้าง value โดยอัตโนมัติ.
+**Expected output:** decision brief 1 หน้า: classification, evidence, trade-off, outcome metric, accountable owner.
+**Debrief:** แผนใดแยก output จาก outcome ได้จริง และใครเป็นเจ้าของหลังส่งมอบ?
+**Evaluation:** ใช้ข้อมูลจริง (30%), ระบุข้อมูลที่ขาด (25%), trade-off (25%), owner/next action (20%).
+
+## 14. Assessment Design
+
+- **Decision case (40%):** แยกงาน launch ใหม่ของ Hotel Booking ออกจากการดูแล booking รายวัน โดยถามข้อมูลที่ขาดก่อนเลือก governance.
+- **Artifact review (30%):** ตรวจ success statement ที่ระบุเพียง “เปิด app ตามกำหนด” แล้วเขียน outcome และ benefit measure ใหม่.
+- **Trade-off case (20%):** เลือก functional, matrix, หรือ dedicated squad สำหรับ integration ที่มี deadline ตายตัว พร้อมผลกระทบ.
+- **Retrieval check (10%):** แยก Output, Outcome, Benefit, Value จากตัวอย่างที่กำหนด.
+
+## 15. Source Coverage and Lesson Handoff
+
+| Coverage | Source classification | Boundary |
+|---|---|---|
+| Project characteristics, value chain, transition to operation | `[PMBOK]` | อธิบายภาพรวม ไม่สอน process รายละเอียด |
+| Organization structures and success measures | `[Best Practice]` / `[Enterprise Practice]` | ไม่กำหนดว่าโครงสร้างใดดีที่สุด |
+| ERP / Hotel details | `[Teaching Scenario]` | ต้องตรง Scenario Master v1.0 |
+| คำแนะนำให้ตั้ง outcome owner | `[Professional Opinion]` | ให้เหตุผล ไม่เสนอเป็นกฎ PMBOK |
+
+**Handoff to Lesson 03:** เมื่อผู้เรียนเห็นว่าโครงการเปลี่ยน business need ไปสู่ value ได้อย่างไร บทถัดไปจึงสอนวงจรการบริหารงานโดยไม่ทำให้ Process Groups กลายเป็น phase ที่ตายตัว.

@@ -14,10 +14,10 @@ status: Draft
 
 แก่นสำคัญของ Project Schedule Management คือข้อใด?
 
-A. ผลิตเอกสารให้ครบ  
-B. ทำตาม Template เดียวกันทุกโครงการ  
-C. ทำให้ข้อมูล Owner Decision และผลกระทบถูกบริหารอย่างมีระบบ  
-D. ให้ PM ทำแทน Specialist
+A. วาด Gantt chart ให้สวยและละเอียด
+B. สร้าง activity logic, dependencies, critical path และ schedule baseline ที่ใช้ forecast/recover ได้
+C. กำหนดวันจบก่อนแล้วบีบทุกงานให้ลงตาราง
+D. ติดตามงานทุกงานเท่ากันโดยไม่สน critical path
 
 **คำตอบ:** C
 
@@ -120,39 +120,39 @@ D. Risk มี Trigger
 
 ### Current State
 
-...
+สรุปสถานะปัจจุบันของโครงการเป็นข้อเท็จจริง ไม่เกิน 5 บรรทัด ระบุ baseline, delivery status, decision ที่ค้างอยู่ และ stakeholder ที่ได้รับผลกระทบ
 
 ### Problem / Opportunity
 
-...
+ระบุประเด็นที่ต้องตัดสินใจในภาษาธุรกิจ เช่น change request, quality gap, schedule risk, vendor issue, adoption risk หรือ opportunity ที่อาจเพิ่ม value
 
 ### Owner
 
-...
+ระบุ owner ที่ accountable เพียงหนึ่งคน และระบุผู้ที่ต้อง consulted/informed ตาม RACI หรือ governance
 
 ### Key Decision
 
-...
+เขียน decision statement หนึ่งประโยคว่า PM ต้องเสนอให้ approve, reject, defer, replan, escalate, tailor หรือ split phase/release
 
 ### Required Evidence
 
-...
+ระบุ evidence ขั้นต่ำที่ต้องมีก่อนตัดสินใจ เช่น baseline, impact analysis, cost/schedule forecast, risk trigger, acceptance criteria, stakeholder readiness หรือ contract clause
 
 ### Cross-Knowledge Impact
 
-...
+วิเคราะห์ผลกระทบอย่างน้อย 4 ด้านจาก scope, schedule, cost, quality, risk, resource, communications, stakeholder, procurement และ integration
 
 ### Risk
 
-...
+ระบุ risk หากตัดสินใจผิด พร้อม probability, impact, trigger และ owner
 
 ### Outcome
 
-...
+ระบุ outcome หรือ business value ที่ decision นี้ควรปกป้องหรือสร้างให้เกิด ไม่ใช่แค่ activity/output
 
 ### Tailoring Decision
 
-...
+ระบุว่าต้องเพิ่ม ลด หรือปรับ process/artifact ใดให้เหมาะกับความเสี่ยงและบริบท โดยต้องยังรักษาวัตถุประสงค์การควบคุมเดิม
 
 ## ส่วนที่ 7: Final Reflection
 

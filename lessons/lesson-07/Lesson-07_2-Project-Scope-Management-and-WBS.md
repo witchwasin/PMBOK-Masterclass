@@ -4,7 +4,10 @@ sequence: 7.2
 title: Project Scope Management and WBS
 document_type: Lesson
 level: Core
-status: Active
+status: Draft
+validation_status: Pending Final Repository Validation
+version: 1.0
+last_updated: 2026-07-22
 prerequisite:
   - Lesson 06 — Project Stakeholder Management
 canonical_source:
@@ -16,7 +19,7 @@ core_scenarios:
 
 # Lesson 07_2 — Project Scope Management and WBS
 
-## 1. คำถามเปิดบท: ถ้าลูกค้าขอเพิ่มฟีเจอร์เล็กๆ อีก 5 อย่างโดยไม่ขอเพิ่มงบประมาณและเวลา โครงการของคุณจะลงเอยอย่างไร?
+## Opening Professional Question — ถ้าลูกค้าขอเพิ่มฟีเจอร์เล็กๆ อีก 5 อย่างโดยไม่ขอเพิ่มงบประมาณและเวลา โครงการของคุณจะลงเอยอย่างไร?
 
 ลองพิจารณาเหตุการณ์คลาสสิกที่เกิดขึ้นในแทบทุกโครงการ:
 
@@ -30,7 +33,7 @@ core_scenarios:
 
 ---
 
-## 2. ปัญหาที่ต้องทำความเข้าใจ: การไม่แยกแยะความต้องการ และขาดโครงสร้างแตกงาน (WBS)
+## Why This Matters — การไม่แยกแยะความต้องการ และขาดโครงสร้างแตกงาน (WBS)
 
 ปัญหาหลักที่ทำให้โครงการเสียการควบคุมด้าน Scope ได้แก่:
 
@@ -43,6 +46,16 @@ core_scenarios:
    * ไม่มีเกณฑ์การตรวจรับ (Acceptance Criteria) ที่ตกลงกันล่วงหน้า ทำให้เกิดการโต้แย้งในวันส่งมอบงาน
 
 ---
+
+## Learning Objectives
+
+เมื่อเรียนจบบทนี้ ผู้เรียนควรสามารถ:
+
+1. แยก product scope ออกจาก project scope
+2. อธิบาย scope baseline, WBS และ WBS dictionary
+3. ใช้ 100% Rule เพื่อตรวจว่างานครบ ไม่หล่น และไม่เกิน
+4. ตัดสินใจเมื่อมี scope change โดยใช้ baseline, impact analysis และ change control
+5. ใช้ ERP และ Hotel Booking scenarios เพื่อแยก in scope, out of scope และ phase/release trade-off
 
 ## 3. เหตุผลและที่มา: Scope คือฐานรากของ Triple Constraints
 
@@ -78,7 +91,7 @@ core_scenarios:
 
 ## 5. คำศัพท์และ Framework (อ้างอิงจาก Canonical Source)
 
-อ้างอิงจาก [references/PMBOK-Overview.md](file:///Users/arm/Documents/GitHub/PMBOK-Masterclass/references/PMBOK-Overview.md):
+อ้างอิงจาก [PMBOK Overview](../../references/PMBOK-Overview.md):
 
 ### 5.1 6 Sub-processes ของ Scope Management
 1. **Plan Scope Management:** วางแผนแนวทางการกำหนดและควบคุม Scope
@@ -101,8 +114,8 @@ core_scenarios:
 ### 🏢 Core Scenario A: ERP Transformation (WBS & In/Out of Scope)
 
 - **Define Scope:**
-  * *In Scope:* ระบบบัญชีการเงิน (Finance), การจัดซื้อ (Procurement), การย้ายข้อมูลย้อนหลัง 3 ปี
-  * *Out of Scope:* ระบบบริหารทรัพยากรบุคคล (HRM Phase 2), การย้ายข้อมูลย้อนหลังเกิน 3 ปี
+  * *In Scope:* ระบบบัญชีการเงิน (Finance), การขาย (Sales), คลัง/จัดซื้อ (Materials Management), การผลิต (Production), HCM และการย้ายข้อมูลย้อนหลัง 3 ปี
+  * *Out of Scope:* CRM, Advanced Analytics / BI หลัง Stabilization, Mobile Application สำหรับ Field Sales และการย้ายข้อมูลย้อนหลังเกิน 3 ปี
 - **WBS Decomposition:**
   * แตกย่อยงานย้ายข้อมูลออกเป็น: *สกัดข้อมูลเก่า (Extract) → ล้างข้อมูล (Cleans) → แปลงฟอร์แมต (Transform) → นำเข้า ERP (Load)*
 
@@ -152,3 +165,139 @@ Step 3: Propose Options ->
 ## 🌉 Bridge to Next Lesson: Lesson 08 — Project Schedule Management
 
 เมื่อเรามี **Scope Baseline (WBS)** ที่ระบุงานทั้งหมด 100% แล้ว ขั้นตอนถัดไปคือการนำงานเหล่านั้นมาจัดลำดับการทำงาน ประเมินระยะเวลา และสร้าง **Schedule Baseline** ในบทถัดไป **Lesson 08** ครับ!
+
+## PM Decision Thinking
+
+**[PMBOK 6]** Scope Management ครอบคลุม plan scope, collect requirements, define scope, create WBS, validate scope และ control scope. **[PMBOK 7]** value thinking เตือนว่า scope ต้องผูกกับ outcome ไม่ใช่แค่เก็บ feature.
+
+| Field | Lesson 07 Application |
+|---|---|
+| Decision | คำขอใหม่นี้อยู่ใน scope baseline หรือเป็น change request |
+| Owner | PM วิเคราะห์และควบคุม scope; sponsor/customer/change authority ตัดสิน scope change |
+| Inputs | scope statement, WBS, WBS dictionary, requirements, acceptance criteria, baseline, impact analysis |
+| Options | accept in current scope, reject, defer to next phase, swap scope, approve with added time/cost |
+| Trade-offs | customer satisfaction vs scope creep, feature value vs schedule/cost/quality impact |
+| Risk | รับ “งานเล็ก ๆ” ซ้ำจน WBS และ baseline ใช้ควบคุมไม่ได้ |
+| Evidence | traceability, acceptance criteria, impact on work packages, change decision |
+| Next Action | บันทึก scope decision และ update baseline หากอนุมัติ change |
+
+### PM Insight
+
+Scope Management ที่ดีไม่ใช่การพูดว่า “ไม่ได้” แต่คือการพูดว่า “ได้ ถ้าองค์กรยอมรับ trade-off นี้” หรือ “ควรเลื่อน เพราะ value ยังไม่คุ้มกับ risk”. WBS ทำให้การคุยเรื่องงานไม่ลอยอยู่ในความรู้สึก.
+
+## ERP Scenario
+
+**[Scenario]** ERP Transformation มี 5 modules และ data migration จาก 6 legacy systems. Sales ขอเพิ่ม margin dashboard ก่อน go-live.
+
+Scope decision:
+
+- ถ้า dashboard อยู่ใน original reporting scope และมี acceptance criteria แล้ว ให้จัดเข้ากับ work package เดิม
+- ถ้าเป็น report ใหม่ที่ต้องดึง data เพิ่ม ต้องเป็น change request
+- ถ้า value สำคัญแต่กระทบ go-live ก่อน 1 ตุลาคม อาจ defer เป็น phase 1.1
+- ถ้า sponsor ต้องการทำทันที ต้องประเมิน impact ต่อ schedule, cost, quality, testing และ key-user workload
+
+## Hotel Booking Scenario
+
+**[Scenario]** Hotel Booking MVP มี search, room selection, booking, payment และ back office. Marketing ขอ loyalty points ก่อน launch.
+
+Scope decision:
+
+- Product scope: loyalty points เพิ่ม capability ให้ลูกค้า
+- Project scope: ต้องเพิ่ม design, build, test, integration, support และ partner communication
+- MVP boundary: หาก direct booking outcome ยังขึ้นกับ payment stability มากกว่า loyalty ควร defer loyalty
+- Trade-off: ทำ loyalty ตอนนี้อาจเพิ่ม conversion แต่ทำให้ launch readiness และ quality risk สูงขึ้น
+
+## Real Enterprise Example
+
+**[Instructor Interpretation]** Scope creep มักเริ่มจากคำว่า “แค่นิดเดียว”. ปัญหาไม่ใช่คำขอหนึ่งข้อ แต่คือไม่มีใครนับผลสะสมของคำขอนั้นใน WBS, schedule, test effort, training และ support. PM ที่ดีทำให้ขอบเขตเป็น visible contract ไม่ใช่ memory ของทีม.
+
+## Common Mistakes
+
+1. ใช้ WBS เป็น task list ตามเวลาแทน deliverable-oriented breakdown
+2. เขียน in scope แต่ไม่เขียน out of scope
+3. ไม่มี acceptance criteria ก่อน validate scope
+4. รับ change ด้วยวาจาโดยไม่ update baseline
+5. คิดว่า Agile ไม่ต้อง control scope ทั้งที่ต้อง control release/value boundary
+
+## Common Misconceptions
+
+| Misconception | Correction |
+|---|---|
+| WBS คือ Gantt chart | WBS คือโครงสร้าง deliverables/work packages ไม่ใช่ timeline |
+| Scope control คือปฏิเสธลูกค้า | Scope control คือทำให้ trade-off โปร่งใส |
+| Requirement ทุกอย่างต้องทำทันที | Requirement ต้องถูกจัดลำดับ value, risk และ release |
+| Validate Scope ทำวันสุดท้าย | ควรตรวจรับเป็นระยะตาม deliverables |
+
+## Interview Questions
+
+### Definition
+
+1. Product scope ต่างจาก project scope อย่างไร
+2. Scope baseline ประกอบด้วยอะไรบ้าง
+
+### Judgement
+
+1. ถ้าผู้บริหารขอ feature เพิ่มโดยไม่เพิ่มงบ/เวลา คุณจะตอบอย่างไร
+2. ถ้า requirement unclear แต่ทีม dev ขอเริ่ม build คุณจะจัดการ scope risk อย่างไร
+
+### Behavioral
+
+1. เล่าครั้งหนึ่งที่คุณจัดการ scope creep
+2. คุณเคยทำให้ stakeholder ยอมรับ out-of-scope decision อย่างไร
+
+### Scenario
+
+1. ใน ERP ถ้า report ใหม่ต้องใช้ data จาก legacy system ที่ยังไม่ cleanse คุณจะตัดสินใจอย่างไร
+2. ใน Hotel Booking ถ้า loyalty feature ถูกขอเพิ่มก่อน launch คุณจะจัด release boundary อย่างไร
+
+## PM Dictionary
+
+| Term | Meaning |
+|---|---|
+| Product Scope | คุณสมบัติของ product/service/result ที่จะสร้าง |
+| Project Scope | งานทั้งหมดที่ต้องทำเพื่อส่งมอบ product scope |
+| Scope Statement | เอกสารระบุ in scope, out of scope, assumptions, constraints และ deliverables |
+| WBS | Work Breakdown Structure หรือโครงสร้างแตกงานแบบ deliverable-oriented |
+| Work Package | งานระดับล่างสุดใน WBS ที่วางแผนและควบคุมได้ |
+| WBS Dictionary | รายละเอียดของ work package เช่น owner, description, acceptance criteria |
+| Scope Baseline | Scope statement + WBS + WBS dictionary ที่อนุมัติแล้ว |
+| Scope Creep | ขอบเขตงานเพิ่มโดยไม่มีการควบคุม change |
+| Validate Scope | การตรวจรับ deliverables อย่างเป็นทางการ |
+| Control Scope | การติดตามและควบคุมการเปลี่ยนแปลง scope |
+
+## Workshop
+
+### Scenario
+
+ERP sales ขอ margin dashboard ก่อน go-live. Hotel Booking marketing ขอ loyalty points ก่อน launch.
+
+### Task
+
+ให้ผู้เรียนทำ scope decision sheet 1 หน้า:
+
+1. classify product scope vs project scope
+2. ระบุ work packages ที่ได้รับผลกระทบ
+3. in scope/out of scope/current phase/next phase
+4. acceptance criteria ที่ต้องมี
+5. impact ต่อ schedule, cost, quality, risk, stakeholder
+6. recommendation และ change control path
+
+### Debrief
+
+คำตอบที่ดีต้องชี้ว่า “งานที่เพิ่ม” ไม่ใช่แค่ feature แต่รวม analysis, build, test, training, support และ acceptance.
+
+## Assessment
+
+ดูแบบประเมินหลักที่ [Lesson 07 Assessment](./Lesson-07_3-Assessment.md). แบบประเมินควรวัด scope boundary judgement, WBS decomposition และ change control มากกว่าการจำ 6 processes.
+
+## Executive Summary
+
+Scope Management ทำให้โครงการรู้ว่าจะทำอะไร ไม่ทำอะไร และตรวจรับอย่างไร. WBS ทำให้ scope กลายเป็นโครงสร้างงานที่ควบคุมได้. เมื่อมีคำขอเพิ่มงาน PM ต้องพา stakeholder ไปดู baseline, impact และ trade-off ไม่ใช่ตอบจากความเกรงใจ.
+
+## Lesson Connection
+
+Lesson 06 เปลี่ยน stakeholder expectations เป็น input. Lesson 07 เปลี่ยน input เหล่านั้นเป็น scope baseline และ WBS. Lesson 08 จะใช้ WBS เป็นฐานในการจัดลำดับงาน ประเมินเวลา และสร้าง schedule baseline.
+
+## AI Continuation Context
+
+Future AI agents must preserve the distinction between product scope and project scope. Keep WBS deliverable-oriented and tie scope decisions to ERP data/reporting changes and Hotel Booking MVP/release boundary decisions.

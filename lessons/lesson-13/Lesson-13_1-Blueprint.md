@@ -5,6 +5,9 @@ title: Project Risk Management
 document_type: Blueprint
 level: Core
 status: Draft
+validation_status: Not Validated
+last_reviewed: 2026-07-22
+intended_learner_level: Beginner PM
 prerequisite:
   - Lesson 12
 canonical_source:
@@ -137,3 +140,11 @@ core_scenarios:
 - แก้ Misconception
 - มี Assessment และ Source Mapping
 - ไม่ขัดกับ Canonical Source
+
+---
+
+## 12. Learner State, Decision, Practice, and Sources
+
+**Learner state:** เห็น issue แล้วแต่ยังไม่แยก risk, issue, assumption และ trigger. **Decision:** จะตอบสนองต่อ data-migration quality risk อย่างไร; owner คือ PM กับ data owner; inputs คือ likelihood, impact, trigger, reserve และ deadline; options คือ cleanse early/add specialists/accept risk; evidence คือ risk register, response owner และ trigger review. **Workshop:** review risk register ที่มีแต่คำว่า “ทีมไม่พร้อม” แล้วทำให้เป็น actionable risks. **Assessment:** Risk-register artifact review 40%, ambiguous response case 30%, reserve trade-off 20%, recall 10%. **Sources:** risk processes `[PMBOK 6]`; trigger/early-warning practice `[Best Practice]`; scenarios `[Teaching Scenario]`; advice `[Professional Opinion]`.
+
+**Handoff:** Risk response บางอย่างต้องซื้อ expertise หรือ transfer responsibility; Lesson 14 จึงต่อด้วย make-or-buy, contract และ vendor governance.

@@ -5,6 +5,9 @@ title: Agile Project Management: Mindset, Scrum and Kanban
 document_type: Blueprint
 level: Core
 status: Draft
+validation_status: Not Validated
+last_reviewed: 2026-07-22
+intended_learner_level: Beginner PM
 prerequisite:
   - Lesson 14
 canonical_source:
@@ -139,3 +142,11 @@ core_scenarios:
 - แก้ Misconception
 - มี Assessment และ Source Mapping
 - ไม่ขัดกับ Canonical Source
+
+---
+
+## 12. Learner State, Decision, Practice, and Sources
+
+**Learner state:** รู้คำว่า Scrum/Kanban แต่เสี่ยงใช้ rituals โดยไม่เปลี่ยน feedback and prioritisation. **Decision:** Hotel Booking MVP ควรใช้ Scrum, Kanban หรือผสม; owner คือ Product Owner กับ delivery lead; inputs คือ uncertainty, flow type, release cadence, team stability; options คือ Scrum/Kanban/hybrid; evidence คือ working agreement, backlog policy, outcome review. **Workshop:** จัด backlog ใหม่เมื่อ payment risk ทำให้ sprint goal เสี่ยง และระบุข้อมูลที่ต้องถาม PO. **Assessment:** delivery-method decision case 40%, board/backlog artifact review 30%, predictability-versus-flexibility trade-off 20%, recall 10%. **Sources:** Agile concepts `[PMBOK 7]` / canonical source; practices `[Best Practice]`; scenario `[Teaching Scenario]`; advice `[Professional Opinion]`.
+
+**Handoff:** Agile tools เป็นเพียงตัวเลือก; Lesson 16 สรุปการเลือก Predictive, Agile หรือ Hybrid ให้เหมาะกับ context และ governance.

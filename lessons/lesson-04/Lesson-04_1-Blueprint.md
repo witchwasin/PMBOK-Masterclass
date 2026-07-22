@@ -5,6 +5,9 @@ title: 10 Project Management Knowledge Areas Overview
 document_type: Blueprint
 level: Foundation
 status: Draft
+validation_status: Not Validated
+last_reviewed: 2026-07-22
+intended_learner_level: Beginner PM
 prerequisite:
   - Lesson 01 — ทำไม Project Manager ต้องรู้ PMBOK
   - Lesson 02 — Project Management Overview
@@ -17,6 +20,13 @@ core_scenarios:
 ---
 
 # Lesson 04_1 — Blueprint: 10 Project Management Knowledge Areas Overview
+
+## 0. Learner Profile and Prerequisites
+
+- **Learner profile:** ผู้เรียนที่เข้าใจ flow ของ Process Groups แต่ยังมอง scope, schedule, cost และคนเป็นเรื่องแยกส่วน
+- **Required prerequisite:** Lesson 01–03
+- **Entry evidence:** อธิบายได้ว่า requirement ใหม่หนึ่งข้ออาจกระทบงานมากกว่า timeline
+- **Scenario state:** ใช้ baseline ERP v1.0 และ Hotel Booking v1.0 เพื่อแสดง dependency เท่านั้น; ไม่ลงลึก process ของแต่ละ Knowledge Area
 
 ## 1. Purpose
 
@@ -193,3 +203,30 @@ Lesson 04 ถือว่าสมบูรณ์เมื่อ:
 - ไม่ลงลึกเกินขอบเขต
 - มี Assessment และ Source Mapping
 - เชื่อมไป Lesson 05 ได้
+
+---
+
+## 13. PM Decisions to Practise
+
+| Decision | Owner | Inputs / missing information | Options and trade-off | Evidence / next action |
+|---|---|---|---|---|
+| จะประเมิน scope change แบบแยกทีม หรือ integrated impact review | PM กับ change authority | requirement, WBS, schedule, cost, quality, risk, stakeholder, procurement impacts; ยังไม่รู้ acceptance criteria | แยกทีมเร็วแต่พลาด dependency; integrated review ช้ากว่าแต่เห็นผลกระทบจริง | impact log, change decision, updated baselines |
+| ความเสี่ยงใดต้อง escalate | PM / sponsor | probability, impact, risk appetite, contingency; ยังไม่รู้ tolerance ของ sponsor | รับไว้ในทีมรวดเร็วแต่เกิน authority; escalate ปลอดภัยแต่ทำให้ช้า | risk register, escalation record, response owner |
+| ใครควรเป็น owner ของ cross-area decision | Sponsor / PM ตาม governance | RACI, authority, affected owners | PM ตัดสินใจเร็วแต่เกิน mandate; committee ตัดสินใจช้ากว่าแต่มี legitimacy | decision rights matrix, meeting decision log |
+
+## 14. Workshop and Assessment Design
+
+**Workshop:** Hotel Booking ต้องเพิ่ม “corporate booking” ก่อน High Season. ผู้เรียนเป็น PM และทำ one-page integrated impact map ครอบคลุม Scope, Schedule, Cost, Quality, Resource, Communication, Risk, Procurement, Stakeholder และ Integration. ระบุข้อมูลที่ขาด, owner, trade-off, และ escalation path. ประเมินจาก dependency (35%), missing information (25%), decision logic (25%), clarity (15%).
+
+**Assessment mix:** Cross-Knowledge Analysis 45%; Artifact Review ของ change request ที่ไม่มี risk/stakeholder impact 30%; Trade-off Case 15%; terminology check 10%. คำตอบต้องแยก “knowledge area ที่ได้รับผลกระทบ” ออกจาก “process group ที่กำลังทำงาน”.
+
+## 15. Source Coverage and Lesson Handoff
+
+| Coverage | Source classification | Boundary |
+|---|---|---|
+| Ten Knowledge Areas and Integration relationship | `[PMBOK 6]` | ใช้เป็น conceptual map ไม่อ้างว่าเป็น PMBOK 7 structure |
+| Cross-functional impact review | `[Best Practice]` | ไม่แทน detailed techniques ใน Lesson 05–14 |
+| ERP / Hotel examples | `[Teaching Scenario]` | Scenario Master v1.0 |
+| Priority and escalation advice | `[Professional Opinion]` | ต้องเปิดเผย assumption |
+
+**Handoff to Lesson 05:** เมื่อผู้เรียนเห็นความสัมพันธ์ของ areas แล้ว Lesson 05 จะสอน Integration Management ในฐานะการตัดสินใจที่เชื่อมแผนและผลกระทบทั้งหมด ไม่ใช่ “area ที่สิบเอ็ด”.

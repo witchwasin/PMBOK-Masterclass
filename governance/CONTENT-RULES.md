@@ -1,62 +1,102 @@
-# Content Rules
+# PMBOK Masterclass — Content Rules
 
-## Canonical Source
+> Operational rules for all course files. `COURSE_STANDARD.md` defines the release gate; this document explains how contributors meet it.
 
-`references/PMBOK-Overview.md` คือแหล่งอ้างอิงเนื้อหาหลักของหลักสูตร
+## 1. Authority and source hierarchy
 
-ทุกบทเรียนต้องรักษาความหมายของต้นฉบับ และแยกให้ชัดระหว่างสาระจากต้นฉบับกับคำอธิบายเพื่อการสอน
+1. `references/PMBOK-Overview.md` is the canonical content source.
+2. `governance/COURSE_STANDARD.md`, `STYLE_GUIDE.md`, `LESSON_TEMPLATE.md`, and `PM_GLOSSARY.md` control quality and terminology.
+3. `scenarios/` is the only authority for ERP and Hotel Booking facts, figures, people, milestones, and scenario versions.
+4. `repository/REPOSITORY_DECISION_LOG.md` records decisions that change course scope or interpretation.
 
-## Teaching Transformation
+Never turn a teaching assumption, professional opinion, or enterprise pattern into a PMBOK claim.
 
-ห้ามนำต้นฉบับมาเรียงใหม่โดยไม่มีการสอน บทเรียนควรพาผู้เรียนผ่าน:
+## 2. PMBOK edition position
 
-1. คำถามหรือสถานการณ์
-2. ปัญหาที่ต้องทำความเข้าใจ
-3. เหตุผลและที่มา
-4. Mental Model
-5. คำศัพท์และ Framework
-6. ตัวอย่างจริง
-7. ความเข้าใจผิดที่พบบ่อย
-8. PM Thinking
-9. Reflection หรือ Assessment
+The course uses the existing canonical source: PMBOK 6 process-based structures plus PMBOK 7 value, principle, and tailoring context. Apply labels precisely:
 
-## Enrichment Policy
+- `[PMBOK 6]` for Process Groups, Knowledge Areas, and process-oriented material.
+- `[PMBOK 7]` for principles, value delivery, and performance-domain-oriented material.
+- `[PMBOK]` only when the statement is safe across editions or the edition is immaterial.
 
-เสริมได้:
+The course is practice-oriented, not a claim of complete PMP-exam coverage. Do not present the PMBOK 6 structure as the structure of PMBOK 7.
 
-- คำอธิบายที่ง่ายขึ้น
-- ERP Transformation
-- Hotel Booking Digital Platform
-- มุมมอง Enterprise และ Digital Product
-- Output, Outcome, Benefit และ Value
-- Misconception และข้อควรระวัง
-- คำถามชวนคิดและแบบฝึกหัด
+## 3. Required lesson metadata
 
-ห้าม:
+Every blueprint, lesson, assessment, and source-mapping file must use the metadata standard in `LESSON_TEMPLATE.md`. Full lessons must state difficulty, estimated study time, prerequisites, related lessons, canonical source, both scenario versions, status, validation status, review date, and intended learner level.
 
-- บิดความหมายของแหล่งอ้างอิง
-- นำสมมติฐานไปเขียนเป็นข้อเท็จจริง
-- ลงลึกจนแย่งเนื้อหาของบทถัดไป
-- ทำให้ PMBOK ดูเป็นขั้นตอนตายตัว
-- ตัดสินว่า Predictive หรือ Agile เหนือกว่าเสมอ
+Until a lesson passes its release gate, use `status: Draft` and `validation_status: Not Validated`. `Active` is reserved for a reviewed and released lesson.
 
-## Terminology
+## 4. Teaching sequence and depth
 
-ใช้คำเต็มครั้งแรกก่อนคำย่อ เช่น Project Management Body of Knowledge (PMBOK), Project Management Institute (PMI) และ Back Office Web Application
+Write a lesson as an instructor-led reasoning journey:
 
-## Lesson 01 Boundary
+```text
+Real problem → why it matters → mental model → concept → how it works
+→ decision thinking → applied scenario → misconception correction → practice → reflection → next lesson
+```
 
-Lesson 01 สร้างเหตุผลและ Mental Model ว่าเหตุใด PM ต้องรู้ PMBOK
+Do not use `definition → bullet list → generic example → quiz` as the primary structure. Explain why before terminology, then build from a concrete tension to the framework. Each lesson owns its stated boundary; it may prepare a later concept but must not teach that later lesson in full.
 
-กล่าวถึง 5 Process Groups, 10 Knowledge Areas, Predictive, Agile และ Hybrid ได้ในระดับภาพรวม แต่ยังไม่ลงรายละเอียดเชิงกระบวนการ
+## 5. Decision thinking standard
 
-## Quality Gate
+Each full lesson contains at least one substantive decision record and teaches the learner how to reason, not which answer to memorize. Use this format:
 
-บทเรียนถือว่าผ่านเมื่อ:
+```text
+Decision:
+Owner:
+Inputs and missing information:
+Assumptions:
+Options:
+Trade-offs:
+Risk of delay or wrong decision:
+Evidence of decision:
+Next action and follow-up:
+```
 
-- ถูกต้องตาม Canonical Source
-- พาผู้เรียนคิด ไม่ใช่เทข้อมูล
-- ตัวอย่างช่วยให้เข้าใจจริง
-- มี ERP และ Hotel Booking ในจุดที่เหมาะสม
-- ไม่กล่าวเกินขอบเขตบท
-- มี Reflection หรือ Assessment
+Do not recommend an option without showing the decision authority, information limits, alternatives, trade-offs, and evidence that would justify it.
+
+## 6. Scenario continuity
+
+- Cite the scenario version in front matter and identify the source scenario in the section.
+- Reuse locked names, scope, budget, timeline, risks, contracts, and decisions from the Scenario Master files.
+- Label invented lesson-specific details `[Teaching Scenario]` and add them to the lesson's AI Continuation Context when they affect later lessons.
+- Do not silently change a baseline. Propose a versioned scenario update and log the decision first.
+
+## 7. Source classification
+
+Apply a visible label to every substantive explanation, decision example, workshop, and assessment rationale:
+
+- `[PMBOK]`, `[PMBOK 6]`, `[PMBOK 7]`
+- `[Best Practice]`
+- `[Enterprise Practice]`
+- `[Teaching Scenario]`
+- `[Professional Opinion]`
+
+Source Mapping files must map the actual lesson sections, not repeat generic labels.
+
+## 8. Workshops and assessments
+
+Every workshop states the scenario, learner role, available and missing information, decision, constraints, expected output, debrief questions, and evaluation criteria.
+
+At least half of each assessment must test application or judgement. Across the course, include Decision Cases, Trade-off Cases, Artifact Reviews, Executive Communication, Cross-Knowledge Analysis, and Ambiguous Scenarios. Recall questions may support learning but cannot be the dominant assessment method.
+
+## 9. Interview questions and dictionary
+
+Each full lesson includes Foundational, Scenario, Senior PM, and Executive interview questions, with answer direction and warning signs. Its PM Dictionary must match `PM_GLOSSARY.md`: English term, Thai explanation, practical meaning, common misuse, and related terms. Add a glossary term before using a new core term inconsistently.
+
+## 10. Writing, links, and claims
+
+- Use Thai narrative with standard English PM terms; expand an acronym on first use.
+- Use relative Markdown links only. `file:///`, local-machine paths, and machine-specific references are prohibited.
+- Prefer short paragraphs and purposeful tables; use lists only when the learner benefits from comparison or action steps.
+- Distinguish fact, assumption, and professional opinion explicitly.
+- Preserve Lesson 01's narrative quality; never reduce it merely to match a template.
+
+## 11. Definition of Done
+
+A lesson is ready for validation only when it has all 21 mandatory sections, a companion assessment and source mapping, aligned metadata, valid relative links, scenario continuity, source labels, glossary alignment, and no boundary violation. It is releasable only when it meets the `COURSE_STANDARD.md` Release Gate and the quality scorecard threshold.
+
+## 12. Contributor checklist
+
+Before editing: read the canonical source, scenario master, glossary, adjacent lessons, and decision log. After editing: validate headings and metadata, check links, check terminology, update the index/coverage matrix/scorecard as appropriate, and record material decisions.

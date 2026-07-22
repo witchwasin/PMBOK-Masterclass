@@ -5,6 +5,9 @@ title: Predictive vs Agile vs Hybrid and Tailoring
 document_type: Blueprint
 level: Core
 status: Draft
+validation_status: Not Validated
+last_reviewed: 2026-07-22
+intended_learner_level: Beginner PM
 prerequisite:
   - Lesson 15
 canonical_source:
@@ -135,3 +138,11 @@ core_scenarios:
 - แก้ Misconception
 - มี Assessment และ Source Mapping
 - ไม่ขัดกับ Canonical Source
+
+---
+
+## 12. Learner State, Decision, Practice, and Sources
+
+**Learner state:** รู้ความต่างของ delivery approaches แต่ยังเลือกจาก fashion หรือชื่อ framework. **Decision:** ERP และ Hotel Booking ควร tailor approach อย่างไร; owner คือ sponsor/PM/Product Owner ตาม governance; inputs คือ uncertainty, compliance, scope stability, release needs, stakeholder availability; options คือ predictive/agile/hybrid; evidence คือ tailoring rationale, governance model และ review triggers. **Workshop:** เปรียบเทียบ ERP regulatory integration กับ Hotel MVP แล้วสร้าง tailoring canvas ที่ระบุ assumptions และ failure signals. **Assessment:** cross-knowledge decision case 45%, tailoring-canvas artifact review 30%, executive recommendation 15%, recall 10%. **Sources:** tailoring/value delivery `[PMBOK 7]`; predictive structures `[PMBOK 6]`; scenarios `[Teaching Scenario]`; advice `[Professional Opinion]`.
+
+**Handoff / course synthesis:** ผู้เรียนต้องเชื่อม decision thinking, scope, schedule, cost, quality, people, communication, risk และ procurement เพื่อเลือก delivery approach—not use a label as a substitute for judgement.
