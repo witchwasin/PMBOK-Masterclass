@@ -13,23 +13,13 @@
 ```text
 e-Book/
 ├── README.md
-├── editorial/
-│   ├── EBOOK-SOURCE-READINESS-REPORT.md
-│   ├── EBOOK-SOURCE-MANIFEST.md
-│   ├── EBOOK-STYLE-GUIDE.md
-│   ├── EBOOK-CHAPTER-CONTRACT.md
-│   ├── EBOOK-CONTENT-MAP.md
-│   ├── EBOOK-SCENARIO-FACT-REGISTER.md
-│   ├── EBOOK-TERMINOLOGY-REGISTER.md
-│   ├── EBOOK-TRACEABILITY-MATRIX.md
-│   ├── EBOOK-PRODUCTION-STATUS.md
-│   └── EBOOK-CONTROL-PACKAGE-VALIDATION.md
 ├── chapters/
 ├── integration-reviews/
 ├── capstone/
-├── final/
 └── release/
 ```
+
+Internal production-tracking files (editorial control package, per-chapter source maps, traceability matrices and validation reports) were used to build and QA each chapter and have been cleared after release packaging; they are not part of the shipped learner/instructor content.
 
 ## Production Phases
 
@@ -37,11 +27,11 @@ e-Book/
 2. Phase 2: Produce one lesson chapter per execution
 3. Phase 3: Review integration every four chapters
 4. Phase 4: Produce capstone
-5. Phase 5: Compile final learner and instructor editions
+5. Phase 5: Compile learner and instructor editions into the release package
 
 ## Current Gate
 
-Learner e-book content, instructor companion, capstone and final editorial review are ready for release packaging. PDF/EPUB export depends on local conversion tooling availability.
+Learner e-book content, instructor companion, capstone and release packaging are complete. PDF/EPUB export depends on local conversion tooling availability.
 
 ## Release Package
 
