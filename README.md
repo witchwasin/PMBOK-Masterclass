@@ -23,7 +23,7 @@ Beginner Safety → Learn → Watch PM Think → Watch Completed Artifact
 - **Canonical Reference:** [`references/PMBOK-Overview.md`](references/PMBOK-Overview.md) (ทุกบทเรียนอ้างอิงจากเอกสารนี้)
 - **Course Roadmap:** [`governance/COURSE-ROADMAP.md`](governance/COURSE-ROADMAP.md)
 - **Content Rules:** [`governance/CONTENT-RULES.md`](governance/CONTENT-RULES.md)
-- **Validation & Audit Guideline:** [`governance/REPOSITORY-VALIDATION-AND-FULL-REBUILD.md`](governance/REPOSITORY-VALIDATION-AND-FULL-REBUILD.md)
+- **Course Standard:** [`governance/COURSE_STANDARD.md`](governance/COURSE_STANDARD.md)
 - **Execution Baseline:** [`governance/EXECUTION-BASELINE.md`](governance/EXECUTION-BASELINE.md)
 - **Artifact Dependency Map:** [`governance/ARTIFACT_DEPENDENCY_MAP.md`](governance/ARTIFACT_DEPENDENCY_MAP.md)
 
@@ -51,7 +51,7 @@ PMBOK-Masterclass/
 ├── governance/
 │   ├── CONTENT-RULES.md
 │   ├── COURSE-ROADMAP.md
-│   └── REPOSITORY-VALIDATION-AND-FULL-REBUILD.md
+│   └── COURSE_STANDARD.md
 └── lessons/
     ├── lesson-01/
     │   ├── Lesson-01_1-Blueprint.md
@@ -71,9 +71,11 @@ PMBOK-Masterclass/
 
 ## Current Status
 
-- Repository foundation: Complete Structure
+- Repository release: Active / Validated through Lessons 01–16 and Capstone
 - Lessons 01–05: Active / Validated (Batch 1)
 - Lessons 06–10: Active / Validated (Batch 2)
-- Lessons 11–16: Structured Draft / Not Validated
+- Lessons 11–16: Active / Validated (Batch 3)
+- Capstone: Active / Validated
 - Batch 1 Validation: [`repository/BATCH-1-VALIDATION-REPORT.md`](repository/BATCH-1-VALIDATION-REPORT.md)
 - Batch 2 Validation: [`repository/BATCH-2-VALIDATION-REPORT.md`](repository/BATCH-2-VALIDATION-REPORT.md)
+- Batch 3 Validation: [`repository/BATCH-3-VALIDATION-REPORT.md`](repository/BATCH-3-VALIDATION-REPORT.md)

@@ -6,7 +6,7 @@ auditor: AI (Claude Opus 4.6)
 repository_status: Structured Draft
 ---
 
-# PMBOK Masterclass — Repository Audit Report
+# PMBOK Masterclass — Repository Audit Report (Pre-Rebuild Historical Record)
 
 > **Pass 0 Deliverable** — ตรวจสอบก่อนแก้ไข ห้ามเขียน Lesson content ก่อน Audit เสร็จ
 

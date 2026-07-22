@@ -1,4 +1,4 @@
-# PMBOK Masterclass — Repository Validation and Full Rebuild Instruction
+# PMBOK Masterclass — Repository Validation and Full Rebuild Instruction (Completed Historical Playbook)
 
 > **Document Type:** Repository-wide validation, instructional design audit, and controlled rebuild instruction  
 > **Execution Mode:** Audit first, then rebuild  

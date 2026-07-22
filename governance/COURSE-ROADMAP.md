@@ -1,8 +1,8 @@
 ---
 title: PMBOK Masterclass — Course Roadmap
 document_type: Course Roadmap
-version: 1.0
-status: Draft for Review
+version: 2.0
+status: Active
 language: Thai
 canonical_source:
   - references/PMBOK-Overview.md
@@ -86,7 +86,7 @@ total_lessons: 16
 
 ### Status
 
-Draft — Not Validated
+Active — Validated
 
 ---
 
@@ -115,7 +115,7 @@ Draft — Not Validated
 
 ### Status
 
-Draft — Not Validated
+Active — Validated
 
 ---
 
@@ -146,7 +146,7 @@ Draft — Not Validated
 
 ### Status
 
-Draft — Not Validated
+Active — Validated
 
 ---
 
@@ -812,22 +812,23 @@ lesson-XX/
 
 | Lesson | Title | Status |
 |---|---|---|
-| 01 | ทำไม Project Manager ต้องรู้ PMBOK | Draft — Not Validated |
-| 02 | Project Management Overview | Draft — Not Validated |
-| 03 | 5 Project Management Process Groups | Draft — Not Validated |
-| 04 | 10 Knowledge Areas Overview | Planned |
-| 05 | Integration Management | Planned |
-| 06 | Stakeholder Management | Planned |
-| 07 | Scope Management and WBS | Planned |
-| 08 | Schedule Management | Planned |
-| 09 | Cost Management and EVM | Planned |
-| 10 | Quality Management | Planned |
-| 11 | Resource Management | Planned |
-| 12 | Communications Management | Planned |
-| 13 | Risk Management | Planned |
-| 14 | Procurement Management | Planned |
-| 15 | Agile, Scrum and Kanban | Planned |
-| 16 | Predictive vs Agile vs Hybrid and Tailoring | Planned |
+| 01 | ทำไม Project Manager ต้องรู้ PMBOK | Active — Validated |
+| 02 | Project Management Overview | Active — Validated |
+| 03 | 5 Project Management Process Groups | Active — Validated |
+| 04 | 10 Knowledge Areas Overview | Active — Validated |
+| 05 | Integration Management | Active — Validated |
+| 06 | Stakeholder Management | Active — Validated |
+| 07 | Scope Management and WBS | Active — Validated |
+| 08 | Schedule Management | Active — Validated |
+| 09 | Cost Management and EVM | Active — Validated |
+| 10 | Quality Management | Active — Validated |
+| 11 | Resource Management | Active — Validated |
+| 12 | Communications Management | Active — Validated |
+| 13 | Risk Management | Active — Validated |
+| 14 | Procurement Management | Active — Validated |
+| 15 | Agile, Scrum and Kanban | Active — Validated |
+| 16 | Predictive vs Agile vs Hybrid and Tailoring | Active — Validated |
+| Capstone | Full Project Management Handover and Launch | Active — Validated |
 
 ---
 
@@ -843,5 +844,6 @@ lesson-XX/
 - Terminology สอดคล้องกัน
 - Cross-reference ระหว่างบทถูกต้อง
 - ทุก Lesson ผ่าน Quality Review
+- Capstone ผ่าน Artifact Completeness, Scenario Consistency, Integration และ Executive Defense gates
 - Course Roadmap ตรงกับเนื้อหาจริง
 - Final Repository พร้อมสำหรับอ่าน เรียน และพัฒนาต่อ
