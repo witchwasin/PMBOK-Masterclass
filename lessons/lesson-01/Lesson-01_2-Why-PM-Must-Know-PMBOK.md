@@ -1,11 +1,14 @@
 ---
 lesson: 1
+sequence: 1.2
 title: ทำไม Project Manager ต้องรู้ PMBOK
-level: Foundation
+document_type: Lesson
+difficulty: Foundation
 status: Active
 validation_status: Validated
 last_reviewed: 2026-07-22
 estimated_study_time: 75
+prerequisite: []
 related_lessons:
   - Lesson 02 — Project Management Overview
 scenario_version:

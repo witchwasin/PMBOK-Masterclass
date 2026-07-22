@@ -3,10 +3,25 @@ lesson: 4
 sequence: 4.4
 title: 10 Project Management Knowledge Areas Overview — Source Mapping
 document_type: Source Mapping
+difficulty: Foundation
+estimated_study_time: 10
 status: Active
 validation_status: Validated
+last_reviewed: 2026-07-22
+intended_learner_level: Beginner PM
+prerequisite:
+  - Lesson 04 — 10 Project Management Knowledge Areas Overview
+related_lessons:
+  - Lesson 04 — 10 Project Management Knowledge Areas Overview
+  - Lesson 05 — Project Integration Management
 canonical_source:
   - ../../references/PMBOK-Overview.md
+scenario_version:
+  erp: "1.0"
+  hotel_booking: "1.0"
+core_scenarios:
+  - ERP Transformation
+  - Hotel Booking Digital Platform
 ---
 
 # Lesson 04_4 — Source Mapping

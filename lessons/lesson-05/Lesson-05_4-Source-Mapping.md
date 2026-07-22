@@ -3,10 +3,25 @@ lesson: 5
 sequence: 5.4
 title: Project Integration Management — Source Mapping
 document_type: Source Mapping
+difficulty: Core
+estimated_study_time: 10
 status: Active
 validation_status: Validated
+last_reviewed: 2026-07-22
+intended_learner_level: Beginner PM
+prerequisite:
+  - Lesson 05 — Project Integration Management
+related_lessons:
+  - Lesson 05 — Project Integration Management
+  - Lesson 06 — Project Stakeholder Management
 canonical_source:
   - ../../references/PMBOK-Overview.md
+scenario_version:
+  erp: "1.0"
+  hotel_booking: "1.0"
+core_scenarios:
+  - ERP Transformation
+  - Hotel Booking Digital Platform
 ---
 
 # Lesson 05_4 — Source Mapping

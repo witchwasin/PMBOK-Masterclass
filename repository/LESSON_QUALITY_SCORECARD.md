@@ -44,6 +44,7 @@ minimum_release_threshold:
 ### Rescore Evidence
 
 - Artifact Contract และ governance roles อยู่ใน Blueprint ทุกบท
+- Metadata Contract ครบทั้ง Blueprint, Main Lesson, Assessment และ Source Mapping; Strict validator ปฏิเสธ deprecated fields
 - learner/instructor assets แยกกันและมี Thinking Walkthrough, Completed Example, Model Answer, Checklist และ Rubric
 - Assessment แบบ release ใช้ application/judgement 90% และ retrieval 10%
 - Source Mapping ระบุ canonical/scenario/opinion boundaries ของ lesson และ learning assets

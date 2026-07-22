@@ -3,17 +3,25 @@ lesson: 4
 sequence: 4.2
 title: 10 Project Management Knowledge Areas Overview
 document_type: Lesson
-level: Foundation
+difficulty: Foundation
+estimated_study_time: 90
 status: Active
 validation_status: Validated
 version: 1.0
-last_updated: 2026-07-22
+last_reviewed: 2026-07-22
+intended_learner_level: Beginner PM
 prerequisite:
   - Lesson 01 — ทำไม Project Manager ต้องรู้ PMBOK
   - Lesson 02 — Project Management Overview
   - Lesson 03 — 5 Project Management Process Groups
+related_lessons:
+  - Lesson 03 — 5 Project Management Process Groups
+  - Lesson 05 — Project Integration Management
 canonical_source:
   - ../../references/PMBOK-Overview.md
+scenario_version:
+  erp: "1.0"
+  hotel_booking: "1.0"
 core_scenarios:
   - ERP Transformation
   - Hotel Booking Digital Platform

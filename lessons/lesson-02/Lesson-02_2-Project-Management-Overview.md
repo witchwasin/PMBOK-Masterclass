@@ -3,7 +3,7 @@ lesson: 2
 sequence: 2.2
 title: Project Management Overview
 document_type: Lesson
-level: Foundation
+difficulty: Foundation
 status: Active
 validation_status: Validated
 last_reviewed: 2026-07-22

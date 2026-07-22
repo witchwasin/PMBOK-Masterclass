@@ -3,15 +3,23 @@ lesson: 2
 sequence: 2.1
 title: Project Management Overview
 document_type: Blueprint
-level: Foundation
+difficulty: Foundation
+estimated_study_time: 15
 status: Active
 validation_status: Validated
 last_reviewed: 2026-07-22
 intended_learner_level: Beginner PM
 prerequisite:
   - Lesson 01 — ทำไม Project Manager ต้องรู้ PMBOK
+related_lessons:
+  - Lesson 01 — ทำไม Project Manager ต้องรู้ PMBOK
+  - Lesson 02 — Project Management Overview
+  - Lesson 03 — 5 Project Management Process Groups
 canonical_source:
   - ../../references/PMBOK-Overview.md
+scenario_version:
+  erp: "1.0"
+  hotel_booking: "1.0"
 core_scenarios:
   - ERP Transformation
   - Hotel Booking Digital Platform

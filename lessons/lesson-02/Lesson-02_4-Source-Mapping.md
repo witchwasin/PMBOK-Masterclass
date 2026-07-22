@@ -3,15 +3,26 @@ lesson: 2
 sequence: 2.4
 title: Project Management Overview — Source Mapping
 document_type: Source Mapping
+difficulty: Foundation
+estimated_study_time: 10
 status: Active
 validation_status: Validated
 version: 1.0
-last_updated: 2026-07-22
-canonical_sources:
+last_reviewed: 2026-07-22
+intended_learner_level: Beginner PM
+prerequisite:
+  - Lesson 02 — Project Management Overview
+related_lessons:
+  - Lesson 02 — Project Management Overview
+  - Lesson 03 — 5 Project Management Process Groups
+canonical_source:
   - ../../references/PMBOK-Overview.md
-scenario_sources:
-  - ../../scenarios/ERP-TRANSFORMATION-CASE.md
-  - ../../scenarios/HOTEL-BOOKING-PLATFORM-CASE.md
+scenario_version:
+  erp: "1.0"
+  hotel_booking: "1.0"
+core_scenarios:
+  - ERP Transformation
+  - Hotel Booking Digital Platform
 ---
 
 # Lesson 02_4 — Source Mapping

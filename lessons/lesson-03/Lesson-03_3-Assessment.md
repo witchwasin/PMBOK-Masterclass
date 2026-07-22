@@ -3,8 +3,25 @@ lesson: 3
 sequence: 3.3
 title: 5 Project Management Process Groups — Assessment
 document_type: Assessment
+difficulty: Foundation
+estimated_study_time: 60
 status: Active
 validation_status: Validated
+last_reviewed: 2026-07-22
+intended_learner_level: Beginner PM
+prerequisite:
+  - Lesson 03 — 5 Project Management Process Groups
+related_lessons:
+  - Lesson 03 — 5 Project Management Process Groups
+  - Lesson 04 — 10 Project Management Knowledge Areas Overview
+canonical_source:
+  - ../../references/PMBOK-Overview.md
+scenario_version:
+  erp: "1.0"
+  hotel_booking: "1.0"
+core_scenarios:
+  - ERP Transformation
+  - Hotel Booking Digital Platform
 ---
 
 # Lesson 03_3 — Assessment
