@@ -93,6 +93,16 @@
     color: #3a4450;
   }
   footer b { color: #1c2430; }
+  .callout {
+    margin-top: 5pt;
+    padding: 5pt 7pt;
+    background: #eef1f4;
+    border-left: 2.5pt solid #3d5a80;
+    font-size: 7.3pt;
+    line-height: 1.4;
+    color: #2a323c;
+  }
+  .callout b { color: #1c2430; }
 </style>
 </head>
 <body>
@@ -133,14 +143,14 @@
       <tr>
         <td class="phase-cell"><span class="letter">C</span><span class="name">Detailed Planning</span></td>
         <td>เลือก Delivery Approach, รวม Plan เป็น Integrated Plan, เสนอ Baseline Gate</td>
-        <td>BA (Scope/Requirement) &middot; QA (Test Strategy) &middot; Planner (CPM) &middot; Finance (Cost) &middot; Architect &middot; DevOps (Environment)</td>
-        <td>WBS, Schedule/Cost Baseline, Risk Register, Integrated PM Plan <span class="arrow">&rarr;</span> พิมพ์เขียว Execution และฐานวัด Variance</td>
+        <td>BA (Requirements/SRS/FSD) &middot; Architect (Tech Design/TDD-SDD) &middot; QA (Test Strategy/Plan) &middot; Planner (CPM) &middot; Finance (Cost) &middot; DevOps (Environment)</td>
+        <td>WBS, <b>SRS/FSD (ตามเงื่อนไข), Technical Design (TDD/SDD), Test Strategy/Test Plan, RTM</b>, Schedule/Cost Baseline, Risk Register, Integrated PM Plan <span class="arrow">&rarr;</span> พิมพ์เขียว Execution และฐานวัด Variance</td>
       </tr>
       <tr>
         <td class="phase-cell"><span class="letter">D</span><span class="name">Execution</span></td>
         <td>Confirm Definition of Ready, จัดการ Blocker, ติดตามความคืบหน้า</td>
-        <td>Delivery Team (Build) &middot; Tech Lead (Peer Review) &middot; QA (Test) &middot; Workstream Lead</td>
-        <td>Deliverables, Work Performance Data <span class="arrow">&rarr;</span> เข้า Monitoring (E) และเตรียม UAT (F)</td>
+        <td>Delivery Team (Build ตาม Tech Spec) &middot; Tech Lead (Peer Review) &middot; QA (รัน Test ตาม Test Plan) &middot; Workstream Lead</td>
+        <td>Deliverables, Work Performance Data, Test Execution Evidence <span class="arrow">&rarr;</span> เข้า Monitoring (E) และเตรียม UAT (F)</td>
       </tr>
       <tr>
         <td class="phase-cell"><span class="letter">E</span><span class="name">Monitoring &amp; Change</span></td>
@@ -151,8 +161,8 @@
       <tr>
         <td class="phase-cell"><span class="letter">F</span><span class="name">Verification / UAT</span></td>
         <td>ประสาน Release Readiness, สรุปเสนอ Go/No-Go</td>
-        <td>QA (Test/SIT) &middot; Business Users (UAT) &middot; Product Owner (อนุมัติ Business) &middot; Sponsor (Go/No-Go)</td>
-        <td>UAT Sign-off, Release Readiness Report, Go/No-Go Decision <span class="arrow">&rarr;</span> เงื่อนไขเปิดทาง Go-Live</td>
+        <td>QA (Test/SIT ตาม Test Plan จาก C) &middot; Business Users (UAT) &middot; Product Owner (อนุมัติ Business) &middot; Sponsor (Go/No-Go)</td>
+        <td><b>Test Results (SIT/System Test)</b>, UAT Sign-off, Release Readiness Report, Go/No-Go Decision <span class="arrow">&rarr;</span> เงื่อนไขเปิดทาง Go-Live</td>
       </tr>
       <tr>
         <td class="phase-cell"><span class="letter">G</span><span class="name">Go-Live &amp; Hypercare</span></td>
@@ -173,6 +183,10 @@
     <b>Pattern ที่เห็นซ้ำทุก Phase:</b> PM แทบไม่ได้ "ลงมือทำเนื้องาน" เองเลย บทบาทหลักของ PM คือ ประสาน &rarr; ตัดสินใจในกรอบอำนาจ &rarr; ผลักดันให้ได้ Output &rarr; ส่งต่อ
     ส่วนเนื้องานจริง (วิเคราะห์ ออกแบบ เขียน ทดสอบ อนุมัติเชิงธุรกิจ) เป็นของ Role เฉพาะทางเสมอ และ Output ของแต่ละ Phase จะกลายเป็น Input บังคับของ Phase ถัดไปเป็นทอดๆ ตลอดสาย A&rarr;H
   </footer>
+  <div class="callout">
+    <b>SRS / FSD / Tech Spec / Test Plan อยู่ตรงไหน?</b> ทั้งหมดเป็น Output ของ <b>Phase C (Detailed Planning)</b> ไม่ใช่ Phase D — ออกแบบ+อนุมัติก่อนลงมือ Build/Test เสมอ
+    Test Plan (แผน, จาก C) กับ Test Results (ผลรัน, จาก D/F) จึงคนละ Phase กัน &middot; PMBOK ไม่บังคับชื่อไฟล์ — ถ้าตัด SRS/FSD ต้องมีเอกสารทดแทน Coverage เทียบเท่า (User Story+AC, ADR ฯลฯ)
+  </div>
 </div>
 </body>
 </html>
