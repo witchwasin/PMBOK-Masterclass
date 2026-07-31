@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<title>Appendix E — SDLC Role & Output Matrix</title>
+<style>
+  @page {
+    size: A4 landscape;
+    margin: 9mm 11mm;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Thonburi", "Ayuthaya", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #1c2430;
+  }
+  .sheet {
+    width: 100%;
+  }
+  header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    border-bottom: 2.2pt solid #1c2430;
+    padding-bottom: 4pt;
+    margin-bottom: 6pt;
+  }
+  header h1 {
+    font-size: 15pt;
+    margin: 0;
+    letter-spacing: 0.2pt;
+  }
+  header .sub {
+    font-size: 8pt;
+    color: #55606e;
+    text-align: right;
+    line-height: 1.35;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+  }
+  col.phase { width: 12%; }
+  col.pm { width: 21%; }
+  col.team { width: 27%; }
+  col.output { width: 40%; }
+  thead th {
+    background: #1c2430;
+    color: #ffffff;
+    font-size: 8.3pt;
+    text-align: left;
+    padding: 4pt 6pt;
+    font-weight: 600;
+  }
+  tbody td {
+    font-size: 7.6pt;
+    line-height: 1.32;
+    padding: 5pt 6pt;
+    vertical-align: top;
+    border-bottom: 0.6pt solid #d7dce2;
+  }
+  tbody tr:nth-child(even) td {
+    background: #f3f5f7;
+  }
+  td.phase-cell {
+    font-weight: 700;
+    font-size: 8pt;
+    color: #ffffff;
+    background: #3d5a80 !important;
+    border-radius: 2pt;
+  }
+  td.phase-cell .letter {
+    display: block;
+    font-size: 12pt;
+    line-height: 1.1;
+  }
+  td.phase-cell .name {
+    display: block;
+    font-size: 6.6pt;
+    font-weight: 400;
+    margin-top: 1pt;
+    opacity: 0.92;
+  }
+  .arrow { color: #b5451b; font-weight: 700; }
+  footer {
+    margin-top: 6pt;
+    padding-top: 4pt;
+    border-top: 0.8pt solid #d7dce2;
+    font-size: 7.4pt;
+    line-height: 1.4;
+    color: #3a4450;
+  }
+  footer b { color: #1c2430; }
+</style>
+</head>
+<body>
+<div class="sheet">
+  <header>
+    <h1>Appendix E — SDLC Role &amp; Output Matrix</h1>
+    <div class="sub">
+      PM Delivery Field Guide (PMBOK 8, A–H) &middot; ที่มา: PMBOK-Aligned End-to-End Delivery Playbook V2<br>
+      PMBOK-Masterclass Repository &middot; 31 July 2026
+    </div>
+  </header>
+
+  <table>
+    <colgroup>
+      <col class="phase"><col class="pm"><col class="team"><col class="output">
+    </colgroup>
+    <thead>
+      <tr>
+        <th>Phase</th>
+        <th>PM ทำ</th>
+        <th>ทีมทำ (ไม่ใช่ PM)</th>
+        <th>Output <span class="arrow">&rarr;</span> ใช้ทำอะไรต่อ</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="phase-cell"><span class="letter">A</span><span class="name">Pre-sales</span></td>
+        <td>ประสาน Discovery, คุม Estimate, ทำ Proposal, วิเคราะห์ Impact ตอน Negotiate</td>
+        <td>Sales (รับ Opportunity, เจรจา) &middot; BA (Discovery/Root Cause) &middot; Architect (Solution Options) &middot; Finance (ตั้งราคา) &middot; Legal (SOW)</td>
+        <td>Opportunity Brief, ROM Estimate, Proposal, Signed SOW <span class="arrow">&rarr;</span> ตัดสิน Bid/No-Bid และเป็นฐานทำ Charter</td>
+      </tr>
+      <tr>
+        <td class="phase-cell"><span class="letter">B</span><span class="name">Initiation</span></td>
+        <td>ทำ Charter, วิเคราะห์ Stakeholder, ตั้ง Governance, เปิด RAID, จัด Kickoff</td>
+        <td>Sponsor (อนุมัติ Charter) &middot; BA (ช่วยวิเคราะห์ Stakeholder)</td>
+        <td>Project Charter, Stakeholder Register, Governance Model, RAID Log <span class="arrow">&rarr;</span> ใบอนุญาตเริ่มวางแผนละเอียด</td>
+      </tr>
+      <tr>
+        <td class="phase-cell"><span class="letter">C</span><span class="name">Detailed Planning</span></td>
+        <td>เลือก Delivery Approach, รวม Plan เป็น Integrated Plan, เสนอ Baseline Gate</td>
+        <td>BA (Scope/Requirement) &middot; QA (Test Strategy) &middot; Planner (CPM) &middot; Finance (Cost) &middot; Architect &middot; DevOps (Environment)</td>
+        <td>WBS, Schedule/Cost Baseline, Risk Register, Integrated PM Plan <span class="arrow">&rarr;</span> พิมพ์เขียว Execution และฐานวัด Variance</td>
+      </tr>
+      <tr>
+        <td class="phase-cell"><span class="letter">D</span><span class="name">Execution</span></td>
+        <td>Confirm Definition of Ready, จัดการ Blocker, ติดตามความคืบหน้า</td>
+        <td>Delivery Team (Build) &middot; Tech Lead (Peer Review) &middot; QA (Test) &middot; Workstream Lead</td>
+        <td>Deliverables, Work Performance Data <span class="arrow">&rarr;</span> เข้า Monitoring (E) และเตรียม UAT (F)</td>
+      </tr>
+      <tr>
+        <td class="phase-cell"><span class="letter">E</span><span class="name">Monitoring &amp; Change</span></td>
+        <td>เก็บ Actual เทียบ Baseline, วิเคราะห์ Variance, คุม Change Control</td>
+        <td>Workstream Leads (รายงาน) &middot; CCB/Sponsor (ตัดสิน Change) &middot; Customer (Validate Scope)</td>
+        <td>Variance/Forecast Report, Change Decision, Updated RAID <span class="arrow">&rarr;</span> Baseline ทันสถานะ + หลักฐาน Go/No-Go</td>
+      </tr>
+      <tr>
+        <td class="phase-cell"><span class="letter">F</span><span class="name">Verification / UAT</span></td>
+        <td>ประสาน Release Readiness, สรุปเสนอ Go/No-Go</td>
+        <td>QA (Test/SIT) &middot; Business Users (UAT) &middot; Product Owner (อนุมัติ Business) &middot; Sponsor (Go/No-Go)</td>
+        <td>UAT Sign-off, Release Readiness Report, Go/No-Go Decision <span class="arrow">&rarr;</span> เงื่อนไขเปิดทาง Go-Live</td>
+      </tr>
+      <tr>
+        <td class="phase-cell"><span class="letter">G</span><span class="name">Go-Live &amp; Hypercare</span></td>
+        <td>คุม Cutover, ตัดสินใจร่วมเรื่อง Rollback ถ้าจำเป็น</td>
+        <td>DevOps (Deploy/Migrate) &middot; QA+Business (Smoke Test) &middot; Support (Monitor/Triage)</td>
+        <td>Deployment Evidence, Hypercare Report, Stabilization Acceptance <span class="arrow">&rarr;</span> ส่งต่อ Operations</td>
+      </tr>
+      <tr>
+        <td class="phase-cell"><span class="letter">H</span><span class="name">Transition &amp; Closure</span></td>
+        <td>ประสานปิดโครงการ, จัด Lessons Learned</td>
+        <td>Operations (รับ Handover) &middot; Finance/Legal (ปิดสัญญา) &middot; Business Owner (Benefit)</td>
+        <td>Handover Pack, Closure Report, Benefits Handover Plan <span class="arrow">&rarr;</span> จบโครงการ + เริ่มวัด Benefit</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <footer>
+    <b>Pattern ที่เห็นซ้ำทุก Phase:</b> PM แทบไม่ได้ "ลงมือทำเนื้องาน" เองเลย บทบาทหลักของ PM คือ ประสาน &rarr; ตัดสินใจในกรอบอำนาจ &rarr; ผลักดันให้ได้ Output &rarr; ส่งต่อ
+    ส่วนเนื้องานจริง (วิเคราะห์ ออกแบบ เขียน ทดสอบ อนุมัติเชิงธุรกิจ) เป็นของ Role เฉพาะทางเสมอ และ Output ของแต่ละ Phase จะกลายเป็น Input บังคับของ Phase ถัดไปเป็นทอดๆ ตลอดสาย A&rarr;H
+  </footer>
+</div>
+</body>
+</html>

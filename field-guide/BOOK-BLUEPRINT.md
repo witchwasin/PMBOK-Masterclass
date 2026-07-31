@@ -73,9 +73,12 @@ Repo มี [e-Book/](../e-Book) อยู่แล้ว (16 บทตาม PM
 - **Appendix B:** Golden Rules Poster (20 ข้อจาก Playbook §9 พิมพ์เป็น 1 หน้า)
 - **Appendix C:** PM Glossary เพิ่มเติม — เทียบกับ [governance/PM_GLOSSARY.md](../governance/PM_GLOSSARY.md) แล้วพบว่ายังไม่มีคำว่า ROM, SOW, Cutover, Hypercare, Rollback, Go/No-Go ฯลฯ ต้องเพิ่มใหม่ ไม่ใช่ใช้ glossary เดิมตรงๆ
 - **Appendix D:** Master Answer Key รวมทุกบท
-- **Appendix E ("เปิดเมื่อมีปัญหา"):** ตาราง Problem → Chapter index เช่น "ลูกค้าขอเพิ่ม Scope กะทันหัน → บทที่ 7", "พรุ่งนี้จะขึ้น Production → บทที่ 9 + Checklist ท้ายบท"
+- **Appendix E — SDLC Role & Output Matrix ✅ เขียนแล้ว:** ตาราง PM ทำ vs ทีมทำ vs Output→ใช้ทำอะไร ต่อทุก Phase A–H สรุปจาก [Playbook V2](../repository/PMBOK-Aligned-End-to-End-Project-Delivery-Playbook-V2.md) — ดูไฟล์ [field-guide/appendices/Appendix-E-SDLC-Role-Output-Matrix.md](appendices/Appendix-E-SDLC-Role-Output-Matrix.md) และฉบับพิมพ์ 1 หน้าแนวนอน [field-guide/pdf/Appendix-E-SDLC-Role-Output-Matrix.pdf](pdf/Appendix-E-SDLC-Role-Output-Matrix.pdf)
+- **Appendix F ("เปิดเมื่อมีปัญหา"):** ตาราง Problem → Chapter index เช่น "ลูกค้าขอเพิ่ม Scope กะทันหัน → บทที่ 7", "พรุ่งนี้จะขึ้น Production → บทที่ 9 + Checklist ท้ายบท"
 
-**รวม: 11 บทเนื้อหา (Ch.0–10) + Front matter + 5 Appendix** — ใหญ่กว่า Playbook ต้นทาง (8 ส่วน) เพราะแตก Part C ออกเป็น 3 บทเพื่อย่อยง่ายขึ้น
+**รวม: 11 บทเนื้อหา (Ch.0–10) + Front matter + 6 Appendix** — ใหญ่กว่า Playbook ต้นทาง (8 ส่วน) เพราะแตก Part C ออกเป็น 3 บทเพื่อย่อยง่ายขึ้น
+
+> **หมายเหตุ:** Appendix E คือ Appendix แรกของเล่มที่ถูกเขียนขึ้นจริง (นอกเหนือจาก Blueprint) — เกิดจากการสรุปบทบาทหน้าที่ตลอด SDLC ในบทสนทนา ผู้ใช้ประเมินว่าคุณภาพดีพอจะใช้ได้เลยโดยไม่ต้องรอ Phase 1 Pilot Chapter
 
 ---
 
