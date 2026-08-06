@@ -1,14 +1,17 @@
 ---
 title: PM Delivery Field Guide — Book Blueprint
+aka: "ebook v2" (ชื่อเล่นที่ผู้ใช้เรียกในบทสนทนา — โปรเจกต์เดียวกัน ไม่ใช่ V2 ของ e-Book/ เดิม)
 document_type: Book Blueprint
-version: 0.1
-status: Draft — Outline Only, No Chapters Written
+version: 0.2
+status: Draft — Outline Locked, Appendix E Written, Chapters Not Started
 last_updated: 2026-07-31
-related_decision_log: repository/REPOSITORY_DECISION_LOG.md (#8, #9)
-related_reference: repository/PMBOK-Aligned-End-to-End-Project-Delivery-Playbook-V2.md (preferred source; V1 also available)
+related_decision_log: repository/REPOSITORY_DECISION_LOG.md (#8, #9, #10, #11)
+related_reference: references/PMBOK-Aligned-End-to-End-Project-Delivery-Playbook-V2.md (preferred source, in references/; V1 and repository/ copies also available)
 ---
 
-# แผนโครงเล่มใหม่: PM Delivery Field Guide (ชื่อชั่วคราว)
+# แผนโครงเล่มใหม่: PM Delivery Field Guide a.k.a. "ebook v2" (ชื่อชั่วคราว)
+
+> **หมายเหตุชื่อ:** ในบทสนทนาเรียกโปรเจกต์นี้ว่า "ebook v2" — ยืนยันแล้วว่าหมายถึงเล่มนี้ (แยกต่างหากจาก `e-Book/` เดิม ไม่ใช่การอัปเกรด e-Book เดิม) ชื่อทางการของเล่มยังไม่ล็อก ดูตัวเลือกในหัวข้อ "ชื่อเล่ม" ด้านล่าง
 
 > สถานะ: **ร่างโครง (Draft Outline)** สำหรับให้ปรับในอนาคต — ยังไม่เริ่มเขียนเนื้อหาจริง ไม่มีบทใดถูกเขียนขึ้นเลย
 
@@ -19,7 +22,7 @@ related_reference: repository/PMBOK-Aligned-End-to-End-Project-Delivery-Playbook
 1. สอนคนทั่วไปให้เข้าใจ PM ด้วยภาษาง่าย มีตัวอย่างที่จับต้องได้ มีแบบทดสอบ อ่านจบแล้วเป็น PM ได้จริง
 2. **ใช้เป็น field manual** — เวลามีปัญหาหน้างาน เปิดเล่มนี้อ่านแล้วแก้ปัญหาได้เลย
 
-ต้นทางคือ [repository/PMBOK-Aligned-End-to-End-Project-Delivery-Playbook-V2.md](../repository/PMBOK-Aligned-End-to-End-Project-Delivery-Playbook-V2.md) ที่เก็บไว้เป็น Pending External Reference (อ้างอิง PMBOK 8th Edition, ดู [Decision Log #8](../repository/REPOSITORY_DECISION_LOG.md) และ [#9](../repository/REPOSITORY_DECISION_LOG.md)) — เป็น operational playbook สาย A–H (Pre-sales → Closure) เขียนแบบ dense/checklist ยังไม่มีชั้นการสอน V2 เพิ่มชั้น Execution Ownership (RACI ต่อกิจกรรม, Action Flow table ทุกช่วง, Quick Role-to-Action Reference) เหนือกว่า V1 — ใช้ V2 เป็นแหล่งอ้างอิงหลัก V1 ([repository/PMBOK-Aligned-End-to-End-Project-Delivery-Playbook.md](../repository/PMBOK-Aligned-End-to-End-Project-Delivery-Playbook.md)) เก็บไว้เป็น fallback/cross-check
+ต้นทางคือ [references/PMBOK-Aligned-End-to-End-Project-Delivery-Playbook-V2.md](../references/PMBOK-Aligned-End-to-End-Project-Delivery-Playbook-V2.md) ที่เก็บไว้เป็น Pending External Reference (อ้างอิง PMBOK 8th Edition, ดู [Decision Log #8](../repository/REPOSITORY_DECISION_LOG.md), [#9](../repository/REPOSITORY_DECISION_LOG.md) และ [#10](../repository/REPOSITORY_DECISION_LOG.md)) — เป็น operational playbook สาย A–H (Pre-sales → Closure) เขียนแบบ dense/checklist ยังไม่มีชั้นการสอน V2 เพิ่มชั้น Execution Ownership (RACI ต่อกิจกรรม, Action Flow table ทุกช่วง, Quick Role-to-Action Reference) เหนือกว่า V1 — ใช้ V2 เป็นแหล่งอ้างอิงหลัก มีสำเนาซ้ำอยู่ทั้งใน `references/` และ `repository/` โดยตั้งใจ (Decision Log #10) V1 ([references/PMBOK-Aligned-End-to-End-Project-Delivery-Playbook.md](../references/PMBOK-Aligned-End-to-End-Project-Delivery-Playbook.md)) เก็บไว้เป็น fallback/cross-check
 
 Repo มี [e-Book/](../e-Book) อยู่แล้ว (16 บทตาม PMBOK 6+7 Knowledge Areas, pedagogy-first) — ผู้ใช้ยืนยันแล้วว่า **เล่มใหม่นี้แยกต่างหากจาก e-Book เดิม ไม่ใช่ replacement** จึงมี identity, โครงสร้าง, และ edition label ของตัวเอง (PMBOK 8) โดยไม่แตะของเดิม
 
@@ -137,6 +140,9 @@ Playbook ต้นฉบับ Section A (Pre-sales) สมมติว่า **
 
 ---
 
-## สถานะปัจจุบัน
+## สถานะปัจจุบัน (อัปเดต 2026-07-31)
 
-**ไฟล์นี้คือ Blueprint เท่านั้น** ยังไม่มีบทใดถูกเขียน ไม่มีการแก้ policy ใดๆ ใน `governance/` หรือ `repository/` ยัง ไม่ commit/push จนกว่าจะได้รับคำสั่ง
+- Blueprint นี้ล็อกโครงเรื่องแล้ว (11 บท + 6 Appendix) — **ยังไม่ได้ล็อกชื่อเล่มและจุดตัดสินใจเรื่อง Scenario** (ดูหัวข้อด้านบน)
+- **Appendix E (SDLC Role & Output Matrix) เขียนและ commit/push แล้วจริง** — เป็นเนื้อหาชิ้นเดียวของเล่มที่มีอยู่ตอนนี้ นอกนั้นยังเป็น Blueprint ล้วนๆ ไม่มี Chapter ใดถูกเขียน
+- ไม่มีการแก้ policy ใดๆ ใน `governance/` — ยังไม่เพิ่ม label `[PMBOK 8]` อย่างเป็นทางการ
+- ขั้นต่อไปเมื่อพร้อม: ล็อกชื่อเล่ม + ตัดสินใจเรื่อง Scenario (Phase 0) แล้วค่อยเริ่ม Phase 1 (เขียน Ch.1 นำร่อง) — รอคำสั่งเริ่มจากผู้ใช้ก่อนเสมอ
