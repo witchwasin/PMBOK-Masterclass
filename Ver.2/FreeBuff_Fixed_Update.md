@@ -46,6 +46,25 @@
 
 ---
 
+## 2026-08-14 — Round 7 (แก้ตาม Claude Review — Decision Log #13→#16 + Commit งานทั้งหมด)
+
+**ทำอะไรไปแล้ว:**
+- **แก้ Decision Log ซ้ำ:** `repository/REPOSITORY_DECISION_LOG.md` มีแถว #13 ซ้ำ 2 แถว — แก้ตาม feedback โดยเปลี่ยนแถวที่ผมเพิ่ม (2026-08-13, สรุปการ execute) จาก #13 → **#16** และย้ายไปต่อท้ายแถว #15 แล้ว; แถวเดิม (2026-07-31, กลับคำตัดสินใจรวมเล่ม) คงเป็น #13 ตามเดิม — ตรวจแล้วเลขเรียง 1–16 ครบ ไม่ซ้ำ
+- **Commit งานทั้งหมดบน branch `Ver.2`** (ไม่ push remote): `6c729c7` — "Complete PM Delivery Guide Ver.2: merge e-Book + field-guide into one book" — **50 ไฟล์, +9,243 บรรทัด** (33 ไฟล์บท + 5 appendix + PDF 2 ฉบับ + build_pdf.py + HTML 2 + governance 4 + blueprint + logs 2)
+- ตรวจหลัง commit: working tree สะอาด, `e-Book/` ยัง untouched (0 diff กับ HEAD)
+
+**Output/ไฟล์ที่สร้างหรือแก้:**
+- `repository/REPOSITORY_DECISION_LOG.md` (#16 ย้ายท้าย, #13 เดิมคงที่)
+- Commit `6c729c7` บน branch `Ver.2` (local)
+
+**การตัดสินใจที่ทำเอง:**
+- ใช้วิธี commit ผ่านไฟล์ข้อความชั่วคราว (heredoc ตีความ emoji ผิดใน bash) — ข้อความ commit ปกติตาม convention ของ repo, ไม่มีผลต่อเนื้อหา
+
+**ติดตรงไหน / ยังไม่แน่ใจ:**
+- ไม่มี — รอ Claude ตรวจซ้ำสั้นๆ ตามที่แจ้งไว้
+
+**พร้อมให้ review: ใช่**
+
 ## 2026-08-14 — Round 6 (Phase 3 + 4 — Appendices ครบ + รวมเล่มตรวจ cross-reference)
 
 **ทำอะไรไปแล้ว:**
