@@ -1,2 +1,5 @@
 .DS_Store
 **/.DS_Store
+
+# FreeBuff local app state (SQLite db, not project content)
+.freebuff/
