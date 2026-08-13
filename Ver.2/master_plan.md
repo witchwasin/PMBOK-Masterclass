@@ -1,18 +1,23 @@
 ---
 title: "PM Delivery Guide Ver.2 — Master Plan"
 document_type: Master Plan (Execution Handoff)
-version: 1.0
-status: Approved — Ready for FreeBuff to Execute
+version: 1.1
+status: Approved — Ready for FreeBuff to Execute End-to-End
 owner: User (Owner) — approved 2026-07-31
 planner: Claude (this session)
 executor: FreeBuff
-reviewer: Claude (separate review pass, via Claude_Review_Feedback.md)
+run_mode: "End-to-end autonomous — FreeBuff completes Phase 0 through 5 without stopping for interim review; Claude reviews once at the very end"
+reviewer: Claude (single comprehensive review pass at completion, via Claude_Review_Feedback.md)
 last_updated: 2026-07-31
 ---
 
 # PM Delivery Guide Ver.2 — Master Plan
 
-> **อ่านก่อนเริ่มทำ (สำหรับ FreeBuff):** เอกสารนี้คือแผนที่ได้รับอนุมัติจากเจ้าของ repo แล้ว งานของคุณคือ**ทำตามแผนนี้** ไม่ใช่ออกแบบใหม่ ถ้ามีจุดไม่ชัดเจน ติดปัญหา หรือไม่เห็นด้วยกับจุดไหน **ให้เขียนคำถาม/ข้อกังวลลงใน `FreeBuff_Fixed_Update.md`** (ไฟล์ในโฟลเดอร์เดียวกันนี้) แล้วรอ Claude ตอบใน `Claude_Review_Feedback.md` — ดูหัวข้อ "Collaboration Protocol" ท้ายเอกสารนี้สำหรับวิธีทำงานร่วมกัน
+> **อ่านก่อนเริ่มทำ (สำหรับ FreeBuff):** เอกสารนี้คือแผนที่ได้รับอนุมัติจากเจ้าของ repo แล้ว งานของคุณคือ**ทำตามแผนนี้** ไม่ใช่ออกแบบใหม่
+>
+> **โหมดการทำงาน: End-to-end — ทำให้จบทีเดียว ไม่ต้องหยุดรอ review ระหว่างทาง** ทำ Phase 0 ถึง Phase 5 ต่อเนื่องจนจบ (ดูข้อ 6) จุดไหนไม่ชัดให้ตัดสินใจเองตาม default/คำแนะนำที่ให้ไว้ในแผนนี้แล้วเดินต่อ (เช่น Scenario decision ข้อ 4 — ใช้ default ที่แนะนำไว้ได้เลยถ้าไม่มีเหตุผลจะเปลี่ยน) **บันทึกทุกการตัดสินใจและความคืบหน้าลงใน `FreeBuff_Fixed_Update.md` ไปเรื่อยๆ ระหว่างทำงาน** (ไม่ต้องรอคำตอบ) เพื่อให้ Claude ตรวจสอบย้อนหลังได้ทีเดียวตอนจบงาน — ดูหัวข้อ "Collaboration Protocol" ท้ายเอกสารนี้
+>
+> **ข้อยกเว้นเดียวที่ต้องหยุดจริง:** ห้ามแตะไฟล์ใดๆ ใน `e-Book/` (Phase 6) จนกว่าเจ้าของ repo จะ approve เป็นลายลักษณ์อักษร — นี่คือกฎเหล็กข้อเดียวที่ยังต้องรอ ไม่ใช่แค่ checkpoint ธรรมดา
 
 ---
 
@@ -71,7 +76,7 @@ Repo `PMBOK-Masterclass` มีเอกสารสอน PM สองสาย
 
 ---
 
-## 4. Scenario — ต้องล็อกก่อนเขียน Ch.1 (ยังไม่ได้ล็อก — FreeBuff ต้องเสนอทางเลือกใน FreeBuff_Fixed_Update.md ก่อนเริ่ม Ch.1)
+## 4. Scenario — ล็อกด้วย default แล้วเดินหน้าต่อเลย (ไม่ต้องรอ review)
 
 Playbook V2 §A สมมติความสัมพันธ์ Vendor–Client (Proposal, SOW, Contract) แต่ Scenario ที่ล็อกไว้ในนี่ (`scenarios/HOTEL-BOOKING-PLATFORM-CASE.md` — Siri Hospitality Group, 12 โรงแรม, งบ Phase 1 = 12 ล้านบาท) เป็นโครงการ **internal** ไม่มี vendor — Ch.1 ใช้ scenario เดิมตรงๆ ไม่ได้
 
@@ -80,7 +85,7 @@ Playbook V2 §A สมมติความสัมพันธ์ Vendor–Cli
 
 **ทางเลือกอื่น:** ตัด vendor framing ออกจาก Ch.1 (เขียนเป็น "Internal Business Case Approval" แทน) หรือสร้าง scenario คู่ขนานใหม่ทั้งเล่ม (ไม่แนะนำ — ใหญ่สุด เสี่ยงสุด)
 
-**FreeBuff ต้องเลือกและประกาศการตัดสินใจนี้ใน `FreeBuff_Fixed_Update.md` ก่อนเริ่มเขียน Ch.1 จริง** — ไม่ใช่ตัดสินใจเงียบๆ
+**FreeBuff: ใช้ default ที่แนะนำไว้ด้านบนได้เลย** — แค่บันทึกว่าเลือกอะไรลงใน `FreeBuff_Fixed_Update.md` (ไม่ต้องรอคำตอบก่อนไปต่อ) ยกเว้นมีเหตุผลที่ทำให้ default ใช้ไม่ได้จริง ค่อยหยุดถามในไฟล์เดียวกัน
 
 ---
 
@@ -106,19 +111,21 @@ Playbook V2 §A สมมติความสัมพันธ์ Vendor–Cli
 
 ---
 
-## 6. Production Pipeline — Phase ที่ต้องทำตามลำดับ
+## 6. Production Pipeline — ทำต่อเนื่องจน Phase 5 จบ ไม่หยุดรอ review ระหว่างทาง
+
+**สรุปสั้นๆ: Phase 0 → 1 → 2 → 3 → 4 → 5 ทำรวดเดียวจนจบ** บันทึกความคืบหน้าใน `FreeBuff_Fixed_Update.md` ไปเรื่อยๆ ระหว่างทำ (เพื่อให้ Claude ตรวจย้อนหลังได้) แต่ **ไม่ต้องหยุดรอคำตอบก่อนไป Phase ถัดไป** — หยุดจริงแค่ก่อน Phase 6 เท่านั้น (ดูกฎเหล็กด้านล่าง)
 
 | Phase | งาน | Output |
 |---|---|---|
-| **0 — Lock** | ล็อกชื่อเล่ม (ดูตัวเลือกใน `field-guide/BOOK-BLUEPRINT.md`) + ล็อก Scenario decision (ข้อ 4) + เพิ่ม label `[PMBOK 8]` เข้า `governance/CONTENT-RULES.md` §2/§7 | ประกาศใน `FreeBuff_Fixed_Update.md` |
-| **1 — Pilot** | เขียน Ch.1 เต็มรูปแบบด้วย Template 15 หัวข้อ (ข้อ 5) | 1 บทสมบูรณ์ ส่งให้ Claude review ก่อนขยายบทอื่น |
-| **2 — Batch Production** | เขียนบทที่เหลือเป็นชุด (แนะนำ 3 บทต่อรอบ) — ทุกบทที่ผ่า KA มาต้องเทียบกับ `lessons/lesson-NN/` เดิมให้ครบ (ใช้ `repository/CONTENT_COVERAGE_MATRIX.md` เป็นเช็คลิสต์) | Batch ละ 3 บท + self-check ก่อนส่ง review |
+| **0 — Lock** | ล็อกชื่อเล่ม (ดูตัวเลือกใน `field-guide/BOOK-BLUEPRINT.md`) + ล็อก Scenario decision ด้วย default (ข้อ 4) + เพิ่ม label `[PMBOK 8]` เข้า `governance/CONTENT-RULES.md` §2/§7 | บันทึกไว้ใน `FreeBuff_Fixed_Update.md` แล้วไปต่อ Phase 1 ทันที |
+| **1 — Pilot** | เขียน Ch.1 เต็มรูปแบบด้วย Template 15 หัวข้อ (ข้อ 5) | 1 บทสมบูรณ์ — ไปต่อ Phase 2 ทันที ไม่ต้องรอ review |
+| **2 — Batch Production** | เขียนบทที่เหลือทั้งหมด Ch.2–10 (แนะนำทำเป็นชุด 3 บทต่อรอบเพื่อความเป็นระเบียบ แต่ไม่ต้องหยุดรอ review ระหว่างชุด) — ทุกบทที่ผ่า KA มาต้องเทียบกับ `lessons/lesson-NN/` เดิมให้ครบ (ใช้ `repository/CONTENT_COVERAGE_MATRIX.md` เป็นเช็คลิสต์อ้างอิงด้วยตัวเอง) | Ch.2–10 ครบทุกบท |
 | **3 — Appendices** | ทำ Appendix A, B, C, D, F ที่เหลือ (E เขียนเสร็จแล้วที่ `field-guide/appendices/Appendix-E-SDLC-Role-Output-Matrix.md`) | 5 ไฟล์ Appendix ใหม่ |
-| **4 — รวมเล่ม** | ตรวจ cross-reference ทั้งเล่ม โดยเฉพาะจุด Quality/Integration ที่ถูกผ่า (ข้อ 3) | เล่มสมบูรณ์ 1 ก้อน |
-| **5 — Export PDF** | Learner + Instructor edition ต่อยอดจาก `e-Book/pdf/build_pdf.py` | PDF 2 ฉบับ |
-| **6 — Retirement decision** | **ทำหลัง Phase 5 validate ผ่านเท่านั้น** — เสนอว่าจะ archive `e-Book/` ไปที่ไหน (เช่น `repository/archive/`) — ห้าม archive/ลบก่อนได้ approval จากเจ้าของ repo | ข้อเสนอ ไม่ใช่การลงมือทำ |
+| **4 — รวมเล่ม** | ตรวจ cross-reference ทั้งเล่มด้วยตัวเอง โดยเฉพาะจุด Quality/Integration ที่ถูกผ่า (ข้อ 3) | เล่มสมบูรณ์ 1 ก้อน |
+| **5 — Export PDF** | Learner + Instructor edition ต่อยอดจาก `e-Book/pdf/build_pdf.py` | PDF 2 ฉบับ — **เมื่อ Phase 5 เสร็จ ให้เขียนสรุปจบงานลง `FreeBuff_Fixed_Update.md` แล้วหยุดรอ Claude review รอบเดียวตรงนี้** |
+| **6 — Retirement decision** | **ห้ามทำเองแม้ Phase 5 จะเสร็จแล้ว** — เสนอว่าจะ archive `e-Book/` ไปที่ไหน (เช่น `repository/archive/`) ไว้ใน update log เท่านั้น รอ Claude review ผ่าน + เจ้าของ repo approve เป็นลายลักษณ์อักษรก่อนถึงลงมือทำได้ | ข้อเสนอ ไม่ใช่การลงมือทำ |
 
-**ที่ทำงาน:** ทำทั้งหมดใน `field-guide/` (ห้ามแก้ `e-Book/` จนกว่าจะถึง Phase 6 และได้ approve) — โครงสร้างที่มีอยู่แล้ว: `field-guide/BOOK-BLUEPRINT.md`, `field-guide/appendices/`, `field-guide/pdf/` — เพิ่มใหม่ตามที่เขียนบทจริง: `field-guide/chapters/ch-00/` ... `field-guide/chapters/ch-10/` (mirror โครงสร้าง `e-Book/chapters/lesson-NN/` เดิมที่มีไฟล์ learner/instructor/answer-key แยกกัน)
+**ที่ทำงาน:** ทำทั้งหมดใน `field-guide/` (ห้ามแก้ `e-Book/` จนกว่าจะถึง Phase 6 และได้ approve — ข้อนี้ยังเป็นกฎเหล็กเหมือนเดิม ไม่เปลี่ยนตามโหมด end-to-end) — โครงสร้างที่มีอยู่แล้ว: `field-guide/BOOK-BLUEPRINT.md`, `field-guide/appendices/`, `field-guide/pdf/` — เพิ่มใหม่ตามที่เขียนบทจริง: `field-guide/chapters/ch-00/` ... `field-guide/chapters/ch-10/` (mirror โครงสร้าง `e-Book/chapters/lesson-NN/` เดิมที่มีไฟล์ learner/instructor/answer-key แยกกัน)
 
 ---
 
@@ -147,35 +154,36 @@ Playbook V2 §A สมมติความสัมพันธ์ Vendor–Cli
 
 ---
 
-## 9. Collaboration Protocol — วิธีทำงานร่วมกันผ่าน 3 ไฟล์นี้
+## 9. Collaboration Protocol — End-to-end run, review รอบเดียวตอนจบ
 
 โฟลเดอร์ `Ver.2/` มี 3 ไฟล์:
 
-1. **`master_plan.md`** (ไฟล์นี้) — Claude เขียน, เป็นแผนหลักที่อนุมัติแล้ว FreeBuff อ่านไฟล์นี้เป็นหลักในการทำงาน ไม่ควรถูกแก้โดย FreeBuff (ถ้าคิดว่าแผนต้องปรับ ให้เสนอใน `FreeBuff_Fixed_Update.md` แทน)
-2. **`Claude_Review_Feedback.md`** — Claude เขียน เป็น log การรีวิวแต่ละรอบ (ถูก/ผิด/ต้องแก้อะไร) เขียนเป็นรายการวันที่ + รอบ ใหม่สุดอยู่บนสุด
-3. **`FreeBuff_Fixed_Update.md`** — **FreeBuff เขียน** รายงานว่าทำอะไรไปแล้ว ติดตรงไหน มีคำถามอะไร เขียนเป็นรายการวันที่ + รอบ ใหม่สุดอยู่บนสุด
+1. **`master_plan.md`** (ไฟล์นี้) — Claude เขียน, เป็นแผนหลักที่อนุมัติแล้ว FreeBuff อ่านไฟล์นี้เป็นหลักในการทำงาน ไม่ควรถูกแก้โดย FreeBuff (ถ้าคิดว่าแผนต้องปรับ ให้บันทึกเหตุผลใน `FreeBuff_Fixed_Update.md` แล้วเดินหน้าต่อตามดุลยพินิจตัวเอง ไม่ต้องรอคำตอบ)
+2. **`FreeBuff_Fixed_Update.md`** — **FreeBuff เขียน** ระหว่างทำงาน (running log) — ทุก Phase ที่ทำเสร็จ บันทึกว่าทำอะไรไปแล้ว ตัดสินใจอะไรบ้าง (เช่น ชื่อเล่ม, Scenario decision), ติดตรงไหน — เขียนไปเรื่อยๆ **ไม่ต้องหยุดรอคำตอบ** จบด้วยสรุปรวมเมื่อ Phase 5 เสร็จ
+3. **`Claude_Review_Feedback.md`** — Claude เขียน **ครั้งเดียวตอนจบ** หลัง FreeBuff ประกาศว่า Phase 5 เสร็จสมบูรณ์แล้วเท่านั้น เป็นการรีวิวทั้งเล่มทีเดียว ไม่ใช่ทีละ Phase
 
-### Loop การทำงาน
+### ขั้นตอนการทำงาน (End-to-end)
 
 ```
-FreeBuff อ่าน master_plan.md
+FreeBuff อ่าน master_plan.md ครั้งเดียว
     ↓
-FreeBuff ลงมือทำตาม Phase ที่กำหนด
+FreeBuff ทำ Phase 0 → 1 → 2 → 3 → 4 → 5 รวดเดียวจนจบ
+   (บันทึกความคืบหน้า/การตัดสินใจ/ปัญหาลง FreeBuff_Fixed_Update.md ไปเรื่อยๆ ระหว่างทาง
+    แต่ไม่หยุดรอคำตอบระหว่าง Phase)
     ↓
-FreeBuff เขียนรายงานลง FreeBuff_Fixed_Update.md
-   (ทำอะไรไปแล้ว / ติดตรงไหน / คำถาม)
+เมื่อ Phase 5 (Export PDF) เสร็จ → เขียนสรุปจบงานลง FreeBuff_Fixed_Update.md
     ↓
-เจ้าของ repo แจ้ง Claude ว่ามีอัปเดตใหม่
+เจ้าของ repo แจ้ง Claude ว่างานเสร็จแล้ว พร้อมให้ตรวจ
     ↓
-Claude อ่าน FreeBuff_Fixed_Update.md เทียบกับ master_plan.md §8 (Definition of Done)
+Claude อ่านทั้งเล่ม + FreeBuff_Fixed_Update.md ทั้งหมด เทียบกับ master_plan.md §8 (Definition of Done)
     ↓
-Claude เขียนผลรีวิวลง Claude_Review_Feedback.md
-   (ถูก/ผิด/ต้องแก้อะไร/อนุมัติให้ไป Phase ถัดไปได้หรือยัง)
+Claude เขียนผลรีวิวรวมลง Claude_Review_Feedback.md ครั้งเดียว
+   (ภาพรวมถูก/ผิด, จุดที่ต้องแก้, สรุปว่าพร้อมเสนอ Phase 6 (e-Book retirement) หรือยัง)
     ↓
-FreeBuff อ่าน Claude_Review_Feedback.md แล้วแก้ไข/ทำต่อ → วนกลับไปข้อ 3
+ถ้ามีจุดต้องแก้ → FreeBuff แก้ตามนั้นแล้วรายงานอีกครั้งใน FreeBuff_Fixed_Update.md → Claude review รอบ 2 (ยังคงเป็นรอบเดียวจบต่อรอบ ไม่ใช่ทีละ Phase)
 ```
 
 **กติกา:**
-- ห้ามข้าม Phase (ข้อ 6) โดยไม่ผ่าน review ก่อน โดยเฉพาะ Phase 0→1 (ต้องล็อก Scenario+ชื่อเล่มก่อน) และ Phase 5→6 (ห้ามแตะ `e-Book/` ก่อนอนุมัติ)
+- **กฎเหล็กข้อเดียวที่ยังหยุดจริง:** ห้ามแตะ `e-Book/` (Phase 6) จนกว่า Claude review ผ่าน + เจ้าของ repo approve เป็นลายลักษณ์อักษร — นอกนั้นทำต่อเนื่องได้หมด
 - ทุกรายการใน log ต้องมีวันที่กำกับ
-- ถ้า FreeBuff ไม่เห็นด้วยกับจุดไหนใน master plan ให้เขียนเหตุผลใน `FreeBuff_Fixed_Update.md` แทนที่จะเบี่ยงเบนจากแผนเงียบๆ — Claude จะพิจารณาและตอบใน `Claude_Review_Feedback.md`
+- ถ้า FreeBuff ไม่เห็นด้วยกับจุดไหนใน master plan ให้บันทึกเหตุผลใน `FreeBuff_Fixed_Update.md` ไว้ (เพื่อให้ Claude เห็นตอน review รอบสุดท้าย) แต่ไม่ต้องรอคำตอบก่อนเดินหน้าต่อ — ใช้ดุลยพินิจตามคำแนะนำ/default ที่ให้ไว้ในแผนนี้
