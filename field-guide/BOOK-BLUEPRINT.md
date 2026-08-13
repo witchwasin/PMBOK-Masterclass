@@ -3,7 +3,7 @@ title: PM Delivery Field Guide — Book Blueprint
 aka: "ebook v2" (ชื่อเล่นที่ผู้ใช้เรียกในบทสนทนา — โปรเจกต์เดียวกัน ไม่ใช่ V2 ของ e-Book/ เดิม)
 document_type: Book Blueprint
 version: 0.2
-status: Draft — Outline Locked, Appendix E Written, Chapters Not Started
+status: Complete — ทั้ง 11 บท (Ch.0–10) + Appendix A–F เขียนครบ, PDF Learner + Combined สร้างแล้ว (ดู field-guide/pdf/), รอ Claude review (Ver.2/FreeBuff_Fixed_Update.md)
 last_updated: 2026-07-31
 related_decision_log: repository/REPOSITORY_DECISION_LOG.md (#8, #9, #10, #11)
 related_reference: references/PMBOK-Aligned-End-to-End-Project-Delivery-Playbook-V2.md (preferred source, in references/; V1 and repository/ copies also available)
@@ -24,7 +24,7 @@ related_reference: references/PMBOK-Aligned-End-to-End-Project-Delivery-Playbook
 
 ต้นทางคือ [references/PMBOK-Aligned-End-to-End-Project-Delivery-Playbook-V2.md](../references/PMBOK-Aligned-End-to-End-Project-Delivery-Playbook-V2.md) ที่เก็บไว้เป็น Pending External Reference (อ้างอิง PMBOK 8th Edition, ดู [Decision Log #8](../repository/REPOSITORY_DECISION_LOG.md), [#9](../repository/REPOSITORY_DECISION_LOG.md) และ [#10](../repository/REPOSITORY_DECISION_LOG.md)) — เป็น operational playbook สาย A–H (Pre-sales → Closure) เขียนแบบ dense/checklist ยังไม่มีชั้นการสอน V2 เพิ่มชั้น Execution Ownership (RACI ต่อกิจกรรม, Action Flow table ทุกช่วง, Quick Role-to-Action Reference) เหนือกว่า V1 — ใช้ V2 เป็นแหล่งอ้างอิงหลัก มีสำเนาซ้ำอยู่ทั้งใน `references/` และ `repository/` โดยตั้งใจ (Decision Log #10) V1 ([references/PMBOK-Aligned-End-to-End-Project-Delivery-Playbook.md](../references/PMBOK-Aligned-End-to-End-Project-Delivery-Playbook.md)) เก็บไว้เป็น fallback/cross-check
 
-Repo มี [e-Book/](../e-Book) อยู่แล้ว (16 บทตาม PMBOK 6+7 Knowledge Areas, pedagogy-first) — ผู้ใช้ยืนยันแล้วว่า **เล่มใหม่นี้แยกต่างหากจาก e-Book เดิม ไม่ใช่ replacement** จึงมี identity, โครงสร้าง, และ edition label ของตัวเอง (PMBOK 8) โดยไม่แตะของเดิม
+Repo มี [e-Book/](../e-Book) อยู่แล้ว (16 บทตาม PMBOK 6+7 Knowledge Areas, pedagogy-first) — **Decision Log #13 (2026-08-13) กลับคำตัดสินใจเดิมที่เคย log ไว้ว่า "แยกเล่ม": ผู้ใช้ตัดสินใจรวม e-Book เดิม + field-guide เป็นเล่มเดียวสมบูรณ์** ("ebook v2") — เล่มใหม่มีทั้ง (ก) โครง workflow A→H ที่ blueprint นี้วางไว้ และ (ข) ความลึกเชิงวิชาการจาก e-Book เดิม (Workshop, Assessment, Interview Questions, PM Dictionary ฯลฯ) ตาม `Ver.2/master_plan.md` — นี่ไม่ใช่การคัดลอก e-Book มาเรียงใหม่ แต่เป็นการผ่า 10 Knowledge Areas แล้วเทลง 11 Chapters ตามลำดับเวลาจริงของงาน (ดูตาราง mapping ใน master_plan §3)
 
 สิ่งที่ยืนยันแล้วว่าทำได้จริงในโปรเจกต์นี้: e-Book เดิมพิสูจน์ว่า pipeline "lesson → learner/instructor/answer-key → compile → PDF" ใช้งานได้จริง ([e-Book/pdf/build_pdf.py](../e-Book/pdf/build_pdf.py)) เล่มใหม่ควรทำซ้ำแนวทางเดียวกัน ปรับ template ให้เบาลงและ workflow-first แทน KA-first
 
@@ -82,6 +82,8 @@ Repo มี [e-Book/](../e-Book) อยู่แล้ว (16 บทตาม PM
 **รวม: 11 บทเนื้อหา (Ch.0–10) + Front matter + 6 Appendix** — ใหญ่กว่า Playbook ต้นทาง (8 ส่วน) เพราะแตก Part C ออกเป็น 3 บทเพื่อย่อยง่ายขึ้น
 
 > **หมายเหตุ:** Appendix E คือ Appendix แรกของเล่มที่ถูกเขียนขึ้นจริง (นอกเหนือจาก Blueprint) — เกิดจากการสรุปบทบาทหน้าที่ตลอด SDLC ในบทสนทนา ผู้ใช้ประเมินว่าคุณภาพดีพอจะใช้ได้เลยโดยไม่ต้องรอ Phase 1 Pilot Chapter
+
+> **อัปเดต 2026-08-13:** Template ต่อบทเปลี่ยนจาก 10 หัวข้อ (ด้านล่าง) เป็น **Template ฉบับรวม 15 หัวข้อ** ตาม `Ver.2/master_plan.md` §5 (เพิ่ม PM Decision Thinking, Interview Questions, PM Dictionary, Workshop, Assessment, Executive Summary, Artifact Handoff เข้าไปจาก e-Book เดิม) — หัวข้อ 10 ข้อเดิมด้านล่างเก็บไว้เป็น reference ทางประวัติศาสตร์
 
 ---
 

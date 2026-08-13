@@ -19,6 +19,12 @@ The course uses the existing canonical source: PMBOK 6 process-based structures 
 - `[PMBOK 7]` for principles, value delivery, and performance-domain-oriented material.
 - `[PMBOK]` only when the statement is safe across editions or the edition is immaterial.
 
+**PMBOK 8th Edition (addendum for `field-guide/` — Ver.2 book):** The `field-guide/` book ("ebook v2") is written against **PMBOK 8th Edition** and uses the additional label:
+
+- `[PMBOK 8]` for content based on the PMBOK 8th Edition / The Standard for Project Management (8th ed.), including its Principles, Performance Domains, Focus Areas, and workflow-oriented delivery guidance.
+
+Do not remove or rewrite the `[PMBOK 6]` / `[PMBOK 7]` labels: the legacy `e-Book/` remains authoritative for PMBOK 6+7 content until the owner approves Phase 6 retirement (see `repository/REPOSITORY_DECISION_LOG.md` #13). The two label sets coexist: `[PMBOK 8]` is for content written into `field-guide/`; `[PMBOK 6]` / `[PMBOK 7]` remain for legacy lesson material.
+
 The course is practice-oriented, not a claim of complete PMP-exam coverage. Do not present the PMBOK 6 structure as the structure of PMBOK 7.
 
 ## 3. Required lesson metadata
@@ -67,7 +73,8 @@ Do not recommend an option without showing the decision authority, information l
 
 Apply a visible label to every substantive explanation, decision example, workshop, and assessment rationale:
 
-- `[PMBOK]`, `[PMBOK 6]`, `[PMBOK 7]`
+- `[PMBOK]`, `[PMBOK 6]`, `[PMBOK 7]`, `[PMBOK 8]` (PMBOK 8 label reserved for `field-guide/` content)
+- `[Teaching Scenario Extension]` (fictional extension layer locked for Ch.1–2 of `field-guide/`, see Decision Log #13 — never contradicts locked facts in `scenarios/`)
 - `[Best Practice]`
 - `[Enterprise Practice]`
 - `[Teaching Scenario]`

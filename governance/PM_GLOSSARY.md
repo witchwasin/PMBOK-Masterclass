@@ -137,5 +137,47 @@ last_updated: 2026-07-22
 | Term (EN) | คำอธิบาย (TH) | ความหมายเชิงปฏิบัติ | การใช้ผิดที่พบบ่อย | Term ที่เกี่ยวข้อง |
 |---|---|---|---|---|
 | WBS | Work Breakdown Structure — โครงสร้างจำแนกงาน | แตกตาม Deliverable ไม่ใช่ Department | แตกตาม Department แทน Deliverable | Work Package, Scope |
+| WBS Dictionary | พจนานุกรม WBS | เติมรายละเอียด owner, boundary, acceptance, dependency ให้ work package | คิดว่า WBS diagram พอแล้ว | WBS, Work Package |
 | WIP Limit | Work in Progress Limit (Kanban) | จำกัดงานที่ทำพร้อมกันเพื่อเพิ่ม Flow | คิดว่ายิ่งทำหลายงานพร้อมกันยิ่งเร็ว | Kanban, Flow |
 | Work Package | หน่วยงานระดับต่ำสุดใน WBS | สามารถ estimate cost + duration + assign owner ได้ | สับสนกับ Activity | WBS, Activity |
+
+---
+
+## Ver.2 — field-guide additions (PMBOK 8 / workflow A–H terms)
+
+> **Addendum 2026-08-13** — คำศัพท์ที่เพิ่มเข้า glossary กลางเพื่อรองรับเล่ม `field-guide/` ("ebook v2") ตาม `Ver.2/master_plan.md` §5 ข้อ 9 — ใช้ฟอร์แมตเดียวกับส่วนอื่นทั้งหมด
+
+| Term (EN) | คำอธิบาย (TH) | ความหมายเชิงปฏิบัติ | การใช้ผิดที่พบบ่อย | Term ที่เกี่ยวข้อง |
+|---|---|---|---|---|
+| Bid / No-Bid | การตัดสินใจเสนอราคาหรือไม่ | ตัดสินด้วย value, capability, capacity และ risk ไม่ใช่ความกลัวเสียโอกาส | คิดว่า No-Bid คือการแพ้ | Opportunity, Proposal |
+| Business Case | เหตุผลทางธุรกิจของโครงการ | ผูก value, cost, timeline, risk และ approval เข้าด้วยกัน | สับสนกับ Proposal | Benefit, Sponsor |
+| CCB | Change Control Board | คณะที่อนุมัติ change ที่กระทบ baseline ตาม threshold | คิดว่า PM อนุมัติเองได้ทุกเรื่อง | Change Request, Governance |
+| Cutover | การเปลี่ยนผ่านเข้าสู่ระบบใหม่ | การสลับจากระบบเดิมไประบบใหม่ใน Production | สับสนกับ Go-Live (Go-Live รวม cutover + enable users) | Rollback, Go/No-Go |
+| Definition of Done | เกณฑ์ว่างานเสร็จจริง | build + review + test + acceptance criteria + evidence ครบ | คิดว่าเขียน code เสร็จ = Done | Definition of Ready |
+| Definition of Ready | เกณฑ์ว่างานพร้อมเริ่ม | มี scope, AC, dependency, owner, estimate ชัดก่อนรับงาน | สับสนกับ Definition of Done | Definition of Done |
+| Discovery | การสำรวจทำความเข้าใจปัญหา | เก็บ fact, pain, root cause, outcome ก่อนออก solution | รีบข้ามไปเป็น feature | Opportunity, Business Case |
+| Fixed Price | ราคาคงที่ | เหมาะกับ scope ชัด vendor รับ cost risk | ใช้กับ scope ไม่ชัดแล้วเจอ dispute | T&M, Contract |
+| Go/No-Go | การตัดสินใจขึ้น Production | ตัดสินจาก readiness, risk, rollback, support, approval | ตัดสินจากความรู้สึกหรือแรงกดดัน | Release Readiness, Rollback |
+| Governance | กลไกตัดสินใจและอนุมัติ | ใครตัดสินใจอะไร ตาม threshold ใด มี evidence อะไร | สับสนกับ Meeting | CCB, RACI |
+| Hypercare | ช่วงสนับสนุนเข้มหลัง Go-live | monitor, triage, stabilize จนเข้าสู่สภาวะเสถียร | คิดว่า Go-live แล้วจบงาน | Go/No-Go, Stabilization |
+| Impact Analysis | การวิเคราะห์ผลกระทบ | ดู scope/schedule/cost/quality/risk/resource/contract | ทำแบบผิวเผินเป็น opinion | Change Request |
+| Issue | ปัญหาที่เกิดแล้ว | ต้องมี owner, action, escalation | สับสนกับ Risk | Risk |
+| Make-or-Buy | ทำเองหรือซื้อ | ตัดสินจาก core capability, cost, risk, capacity | เลือกจากความเคยชิน | Procurement, Vendor |
+| MVP | Minimum Viable Product | scope ต่ำสุดที่พิสูจน์ value ได้จริง | คิดว่า MVP คือ scope ตัดจนของไม่ดี | Product Backlog |
+| Opportunity | โอกาสทางธุรกิจ | lead/RFP/request ที่ยังไม่ใช่โครงการที่ได้รับอนุมัติ | สับสนกับ Project | Bid/No-Bid, Proposal |
+| PIR | Post-Implementation Review | ทบทวนผลหลัง implementation เทียบกับ target | ทำช้าเกินไปจนไม่มีใครจำ | Lessons Learned, Benefit |
+| Proposal | ข้อเสนอโครงการ | executive summary, scope, timeline, price, assumptions | สับสนกับ SOW (SOW คือสัญญาผูกพัน) | SOW, Bid/No-Bid |
+| RAID | Risks, Assumptions, Issues, Dependencies | log รวมที่ต้องมี owner และ review ต่อเนื่อง | ทำครั้งเดียวแล้วเก็บ | Risk Register, Issue |
+| Release Readiness | ความพร้อมขึ้น Production | scope, test, security, data, rollback, support, approval ครบ | เช็คเฉพาะ test ผ่าน | Go/No-Go |
+| Residual Risk | ความเสี่ยงคงเหลือหลัง response | ต้องมี owner และ trigger ยอมรับ | ลืมว่ายังเหลืออยู่ | Risk, Mitigate |
+| Rollback | การย้อนกลับระบบ | แผน restore เมื่อ go-live ผิดพลาด | ขึ้น Production โดยไม่มีแผนนี้ | Cutover, Go/No-Go |
+| ROM | Rough Order of Magnitude | ประมาณการระดับสูงสำหรับตัดสินใจ ไม่ใช่ commitment | คิดว่าเป็นราคาที่ผูกพัน | Estimate, Proposal |
+| RTM | Requirements Traceability Matrix | เชื่อม requirement → design → test → acceptance | ทำเพื่อให้ครบ template | Requirement, Test Case |
+| SIT | System Integration Test | ทดสอบรวมระบบ/การเชื่อมต่อระหว่างระบบ | ใช้แทน UAT | UAT, Test Strategy |
+| SOW | Statement of Work | ขอบเขตงานที่ผูกพันตามสัญญา | สับสนกับ Proposal | Contract, Proposal |
+| Stabilization | การทำให้ระบบเข้าสู่สภาวะเสถียร | incident ลด, performance คงที่, support รับช่วงได้ | คิดว่า 2 วันจบ | Hypercare |
+| T&M | Time and Material | จ่ายตามเวลา/วัสดุ เหมาะกับ scope ไม่ชัด | ไม่มี cap/rate/evidence แล้วบานปลาย | Fixed Price, Contract |
+| Test Strategy | แนวทางการทดสอบ | test levels, environment, data, entry/exit, defect process | คิดว่าเท่ากับ Test Plan รายละเอียด | Test Plan, RTM |
+| UAT | User Acceptance Test | ผู้ใช้ธุรกิจตรวจรับว่า solution รองรับ process จริง | ใช้แทน system test | SIT, Acceptance |
+| Workstream | สายงานย่อยของโครงการ | แยกตาม deliverable/function เช่น data, integration | คิดว่าเท่ากับ department | WBS, RACI |
+| Vendor | ผู้ขาย/คู่สัญญา | จัดการผ่าน contract, SLA, acceptance, payment control | คิดว่า vendor ทำงานเสร็จ = accept | Procurement, SOW |
