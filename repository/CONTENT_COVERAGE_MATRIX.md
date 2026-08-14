@@ -223,3 +223,39 @@ canonical_source: references/PMBOK-Overview.md
 > **สรุป: ✅ Deep coverage อยู่ที่ 2% เท่านั้น (เฉพาะ Lesson 01) — ที่เหลือ 98% อยู่ในระดับ Surface หรือต่ำกว่า**
 >
 > **PM Decision Thinking: 0% — ไม่มี lesson ใดมี structured Decision format ตาม §7.8**
+
+---
+
+## Section 7: Ver.2 (field-guide) — Knowledge Area → Chapter Mapping
+
+> **อัปเดต 2026-08-14** — หลังรวมเล่มเป็น "PM Delivery Guide (Ver.2)" (branch `Ver.2`): KA เดิมของ e-Book ถูกผ่าและเทลง chapter ใหม่ที่เรียงตาม workflow จริง A→H ของ `references/PMBOK-Aligned-End-to-End-Project-Delivery-Playbook-V2.md` — ตารางนี้คือ mapping อ้างอิงตารางใน `Ver.2/master_plan.md` §3 (Chapter ใหม่ ≠ KA เดิมแบบ 1:1 — ดูคำเตือน Quality/Integration ด้านล่าง)
+
+| Knowledge Area เดิม (e-Book) | ถูก map ไปที่ (field-guide/chapters/) | Source lesson เดิม |
+|---|---|---|
+| Integration Management — Business Case/Value (ส่วนต้น) | **Ch.1** (Pre-sales) | `lessons/lesson-05` (บางส่วน) |
+| Integration Management — Charter | **Ch.2** (Initiation) | `lessons/lesson-05` (บางส่วน) |
+| Integration Management — Perform Integrated Change Control | **Ch.7** (Monitoring & Change) | `lessons/lesson-05` (บางส่วน) |
+| Integration Management — Close Project or Phase | **Ch.10** (Transition & Closure) | `lessons/lesson-05` (บางส่วน) |
+| Stakeholder Management (เต็มบท) | **Ch.2** (Initiation) | `lessons/lesson-06` |
+| Scope Management and WBS (เต็มบท) | **Ch.3** (Requirements/Scope/WBS) | `lessons/lesson-07` |
+| Schedule Management (เต็มบท) | **Ch.4** (Schedule/Cost/Resource) | `lessons/lesson-08` |
+| Cost Management and EVM — วางแผนงบ | **Ch.4** (Schedule/Cost/Resource) | `lessons/lesson-09` (บางส่วน) |
+| Cost Management and EVM — ฝั่ง Control | **Ch.7** (Monitoring & Change) | `lessons/lesson-09` (บางส่วน) |
+| Resource Management — วางแผนทรัพยากร | **Ch.4** (Schedule/Cost/Resource) | `lessons/lesson-11` (บางส่วน) |
+| Resource Management — Develop/Manage Team | **Ch.6** (Execution) | `lessons/lesson-11` (บางส่วน) |
+| Quality Management — Plan Quality/Test Strategy | **Ch.5** (Risk/Procurement/Env + Quality Plan) | `lessons/lesson-10` (บางส่วน) |
+| Quality Management — Manage Quality (QA) | **Ch.6** (Execution) | `lessons/lesson-10` (บางส่วน) |
+| Quality Management — Control Quality/Validate (QC/UAT) | **Ch.8** (Verification/UAT) | `lessons/lesson-10` (บางส่วน) |
+| Communications Management (เต็มบท) | **Ch.5** (Risk/Procurement/Env/Comms) | `lessons/lesson-12` |
+| Risk Management (เต็มบท) | **Ch.5** (Risk/Procurement/Env/Comms) | `lessons/lesson-13` |
+| Procurement Management (เต็มบท) | **Ch.5** (Risk/Procurement/Env/Comms) | `lessons/lesson-14` |
+| Agile PM — Scrum and Kanban | **แทรกใน Ch.4 + Ch.6** (กล่อง "ถ้าโครงการเป็น Agile") | `lessons/lesson-15` |
+| Predictive vs Agile vs Hybrid | **แทรกใน Ch.4 + Ch.6** (กล่อง "ถ้าโครงการเป็น Agile") | `lessons/lesson-16` |
+| (เนื้อหาใหม่ — ไม่มี KA เดิม) Go-Live & Hypercare | **Ch.9** (Go-Live & Hypercare) | เขียนใหม่ทั้งหมด |
+| (บทปฐมบท — ภาพรวม PMBOK 8) | **Ch.0** (PMBOK Primer) | `references/PMBOK-Overview.md` (ปรับ) |
+
+**⚠️ KA ที่ถูกผ่า (เขียน cross-reference ชัดในเล่ม — master_plan §3 เตือน 2 จุด):**
+1. **Quality Management ถูกผ่าเป็น 3 ท่อน:** แผน Test/Quality → Ch.5, QA ระหว่าง build → Ch.6, ผลจริง/QC/UAT → Ch.8 — ทุกบทเขียน cross-ref ชัด (เช่น Ch.5 ชี้ว่า "ผลตรวจจริงอยู่ Ch.8")
+2. **Integration Management ถูกผ่าเป็น 3 ท่อน:** Charter → Ch.2, Change Control → Ch.7, Closure → Ch.10 — เป็น pattern ปกติของ PMBOK (Integration ทำงานตลอดโครงการ) ไม่ใช่ความผิดพลาด
+
+**ลิงก์ไฟล์บทจริง:** `field-guide/chapters/ch-00/` … `ch-10/` (แต่ละบทมี 3 ไฟล์: `*-learner.md`, `*-instructor.md`, `*-answer-key.md`)

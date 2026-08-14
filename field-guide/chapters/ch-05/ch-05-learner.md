@@ -332,7 +332,7 @@ Risk:     cause/event/impact + trigger + owner + response + residual
           Threat: Avoid > Mitigate > Transfer > Accept | Opp: Exploit/Enhance/Share
 Procure:  Make-or-Buy -> contract type ตาม scope maturity -> payment ผูก acceptance
 Comms:    5W1H + Push/Pull/Interactive | Status Report ≠ Decision Brief
-Quality:  Test Strategy วางแผนที่นี่ -> ผลจริง Ch.8 (V = ตาม spec, V = ตาม need)
+Quality:  Test Strategy วางแผนที่นี่ -> ผลจริง Ch.8 (Ver = ตาม spec, Val = ตาม need)
 Env:      Dev/Test/SIT/UAT/Staging/Prod/DR + Security + Transition (rollout = Ch.9)
 Gate:     C19 — Sponsor อนุมัติ baselines + gap log ก่อน Execution
 

@@ -260,12 +260,12 @@ def chapter_label(num):
     return names.get(num, num)
 
 
-def build_toc_entry(label, title, learner_id, instr_id=None, ans_id=None):
+def build_toc_entry(label, title, learner_id, instr_id=None, ans_id=None, with_subs=True):
     entry = f'<li><a href="#{learner_id}">{html.escape(label + " — " + title, quote=False)}</a>'
     subs = []
-    if instr_id:
+    if with_subs and instr_id:
         subs.append(f'<li><a href="#{instr_id}">Instructor Guide</a></li>')
-    if ans_id:
+    if with_subs and ans_id:
         subs.append(f'<li><a href="#{ans_id}">Answer Key</a></li>')
     if subs:
         entry += '<ul class="sub">' + "".join(subs) + "</ul>"
@@ -291,6 +291,7 @@ def main():
     seen_ids = set()
 
     toc_entries = []
+    toc_learner_entries = []
     body_parts = []
     learner_body_parts = []
 
@@ -310,6 +311,9 @@ def main():
         toc_entries.append(
             build_toc_entry(f"Ch.{num}", chapter_label(num), learner_id, instr_id, ans_id)
         )
+        toc_learner_entries.append(
+            build_toc_entry(f"Ch.{num}", chapter_label(num), learner_id, with_subs=False)
+        )
 
         learner_body_parts.append(f'<section class="chapter">{learner_html}</section>')
 
@@ -327,27 +331,40 @@ def main():
         path = os.path.join(APPENDICES_DIR, app)
         app_html = convert_file(path, "appendix-", seen_ids)
         app_id = re.search(r'<h1 id="([^"]+)"', app_html).group(1)
-        toc_entries.append(
-            f'<li><a href="#{app_id}">{html.escape(app.replace(".md", ""), quote=False)}</a></li>'
-        )
+        app_toc = f'<li><a href="#{app_id}">{html.escape(app.replace(".md", ""), quote=False)}</a></li>'
+        toc_entries.append(app_toc)
+        toc_learner_entries.append(app_toc)
         body_parts.append(f'<section class="chapter">{app_html}</section>')
         learner_body_parts.append(f'<section class="chapter">{app_html}</section>')
 
-    cover = f"""<section class="cover">
+    def build_cover(subtitle, edition):
+        return f"""<section class="cover">
 <h1>{html.escape(BOOK_TITLE, quote=False)}</h1>
-<p class="byline">{html.escape(BOOK_SUBTITLE, quote=False)}</p>
-<p class="edition">Learner Edition + Instructor Companion — Combined</p>
+<p class="byline">{html.escape(subtitle, quote=False)}</p>
+<p class="edition">{html.escape(edition, quote=False)}</p>
 <p class="disclaimer">อ้างอิง PMBOK 8th Edition (Principles / Domains / Focus Areas) ประกอบ Playbook V2<br>เอกสารนี้ไม่ใช่เอกสารทางการของ PMI — This is not official PMI material.</p>
 </section>"""
 
-    toc = f"""<section class="toc">
+    cover_combined = build_cover(
+        BOOK_SUBTITLE, "Learner Edition + Instructor Companion — Combined"
+    )
+    cover_learner = build_cover(
+        "Project Delivery Playbook + PM Masterclass — ฉบับผู้เรียน (Learner) (PMBOK 8-aligned)",
+        "Learner Edition",
+    )
+
+    def build_toc(entries):
+        return f"""<section class="toc">
 <h1>สารบัญ / Table of Contents</h1>
 <ol>
-{''.join(toc_entries)}
+{''.join(entries)}
 </ol>
 </section>"""
 
-    def full_page(body):
+    toc_combined = build_toc(toc_entries)
+    toc_learner = build_toc(toc_learner_entries)
+
+    def full_page(cover_html, toc_html, body):
         return f"""<!doctype html>
 <html lang="th">
 <head>
@@ -356,19 +373,19 @@ def main():
 <style>{PRINT_CSS}</style>
 </head>
 <body>
-{cover}
-{toc}
+{cover_html}
+{toc_html}
 {body}
 </body>
 </html>
 """
 
     with open(BOOK_HTML, "w", encoding="utf-8") as f:
-        f.write(full_page("".join(body_parts)))
+        f.write(full_page(cover_combined, toc_combined, "".join(body_parts)))
     print(f"Wrote {BOOK_HTML} ({os.path.getsize(BOOK_HTML)} bytes)")
 
     with open(BOOK_LEARNER_HTML, "w", encoding="utf-8") as f:
-        f.write(full_page("".join(learner_body_parts)))
+        f.write(full_page(cover_learner, toc_learner, "".join(learner_body_parts)))
     print(f"Wrote {BOOK_LEARNER_HTML} ({os.path.getsize(BOOK_LEARNER_HTML)} bytes)")
 
     render_pdf(BOOK_HTML, BOOK_PDF)

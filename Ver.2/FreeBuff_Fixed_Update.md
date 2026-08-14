@@ -46,6 +46,72 @@
 
 ---
 
+## 2026-08-14 — Round 8 (แก้ 4 ข้อ: Ch.5 Quick Ref + PDF bugs + Coverage Matrix + Phase 6 Proposal)
+
+**ทำอะไรไปแล้ว:**
+1. **แก้ Ch.5 Quick Reference Card** — `field-guide/chapters/ch-05/ch-05-learner.md` บรรทัดที่ 335: เดิม "(V = ตาม spec, V = ตาม need)" ซ้ำกันจนแยกไม่ออก → แก้เป็น "(Ver = ตาม spec, Val = ตาม need)" (Verification = ตาม spec, Validation = ตาม need) — ตรวจแล้วไม่มีบรรทัดอื่นใช้คำย่อซ้ำกัน
+2. **แก้บั๊ก PDF ใน `field-guide/pdf/build_pdf.py` + rebuild ทั้ง 2 ฉบับ:**
+   - Cover page แยกตาม edition จริง: Learner Edition มีข้อความ cover ว่าเป็นฉบับ Learner อย่างเดียว (ไม่ใช่ "Learner + Instructor Companion — Combined"), Complete Edition ยังเป็นเล่มรวมตามเดิม
+   - TOC ของ Learner Edition ตัด sub-entry "Instructor Guide" / "Answer Key" ออกทุกบท (เหลือ 17 entries = 11 บท + 6 Appendix, ไม่มี sub) — ตรวจด้วย regex ว่าไม่มี "Teaching Notes"/"Suggested Timing" ใน HTML ของ Learner
+   - Rebuild สำเร็จ: `PM-Delivery-Guide-Complete-Edition.pdf` + `PM-Delivery-Guide-Learner-Edition.pdf` (HTML 2 ไฟล์ regenerate ตาม — รวม fix "Ver/Val" จากข้อ 1 เข้า PDF ด้วย)
+3. **อัปเดต `repository/CONTENT_COVERAGE_MATRIX.md`** — เพิ่ม **Section 7: Ver.2 (field-guide) — Knowledge Area → Chapter Mapping**: ตาราง 20 แถว map ทุก KA เดิม (Integration 4 ท่อน, Stakeholder, Scope, Schedule, Cost 2 ท่อน, Resource 2 ท่อน, Quality 3 ท่อน, Comms, Risk, Procurement, Agile ×2) → chapter ใหม่ใน `field-guide/chapters/` พร้อม source lesson เดิม อ้างอิงตารางใน `Ver.2/master_plan.md` §3 + คำเตือน KA ที่ถูกผ่า (Quality 3 ท่อน / Integration 3 ท่อน) ตามเดิม
+4. **เตรียม Phase 6 Proposal (ข้อเสนอเท่านั้น — ไม่ลงมือ):** ดูรายละเอียดเต็มในหัวข้อ "## ข้อเสนอ Phase 6 — Archive e-Book/ (Proposal เท่านั้น)" ด้านล่าง
+
+**Output/ไฟล์ที่สร้างหรือแก้:**
+- `field-guide/chapters/ch-05/ch-05-learner.md` (Quick Ref fix)
+- `field-guide/pdf/build_pdf.py` (cover + TOC แยก edition)
+- `field-guide/pdf/PM-Delivery-Guide-Complete-Edition.pdf` + `field-guide/pdf/PM-Delivery-Guide-Learner-Edition.pdf` (rebuild)
+- `field-guide/pdf/book.html` + `field-guide/pdf/book-learner.html` (regenerate)
+- `repository/CONTENT_COVERAGE_MATRIX.md` (Section 7 ใหม่)
+- `Ver.2/FreeBuff_Fixed_Update.md` (ไฟล์นี้)
+
+**การตัดสินใจที่ทำเอง:**
+- ใช้คำย่อ "Ver/Val" ตามที่เจ้าของแนะนำ (Ver = ตาม spec / Val = ตาม need) และเขียนคำเต็มกำกับไว้ในบรรทัดด้วย
+- Coverage Matrix: เก็บตารางเดิม (audit 2026-07-22) ไว้ครบ เพิ่ม Section 7 ต่อท้าย ไม่แก้การประเมินเดิม
+
+**ติดตรงไหน / ยังไม่แน่ใจ:**
+- ไม่มี — รอ Claude ตรวจซ้ำรอบสั้นๆ
+
+**พร้อมให้ review: ใช่**
+
+---
+
+## ข้อเสนอ Phase 6 — Archive `e-Book/` (Proposal เท่านั้น — ห้ามลงมือจนกว่า approve)
+
+> **สถานะ: ข้อเสนอสำหรับเจ้าของ repo / Claude review — ยังไม่ได้ลงมือทำอะไรกับ `e-Book/` (0 diff กับ HEAD)**
+
+### 1) ปลายทางที่เสนอ: `repository/archive/e-Book/`
+
+- ย้ายทั้งโฟลเดอร์ `e-Book/` ไปที่ `repository/archive/e-Book/` (pattern มีอยู่แล้ว: `repository/archive/` มี `README.md` + `REPOSITORY_AUDIT_REPORT.md`)
+- ทำด้วย `git mv` เพื่อเก็บ history + ให้ diff ชัดเจน
+
+### 2) ไฟล์นอก `e-Book/` ที่ลิงก์ไปหา e-Book — จะพังถ้าย้าย (ต้องแก้พร้อม archive)
+
+ลิงก์ markdown จริง (จะ broken ถ้าไม่แก้):
+- `README.md:88` — 2 ลิงก์: [`e-Book/README.md`](e-Book/README.md), [`e-Book/release/RELEASE-MANIFEST.md`](e-Book/release/RELEASE-MANIFEST.md) → ต้องชี้ไป `repository/archive/e-Book/...` และปรับข้อความว่า "archived — replaced by field-guide"
+- `field-guide/BOOK-BLUEPRINT.md:29` — ลิงก์ `../e-Book/pdf/build_pdf.py` (อ้างอิงต้นแบบ pipeline) → ต้องชี้ไป `../repository/archive/e-Book/pdf/build_pdf.py`
+- `field-guide/BOOK-BLUEPRINT.md:92` — ลิงก์ `../e-Book/chapters/lesson-01/lesson-01-learner.md` (อ้างอิงโทน) → ต้องชี้ไป `../repository/archive/e-Book/chapters/lesson-01/lesson-01-learner.md`
+
+ไฟล์ที่**พูดถึง** `e-Book/` ในข้อความ (ไม่ใช่ลิงก์ — ไม่พัง แต่ควร update wording หลัง archive):
+- `governance/CONTENT-RULES.md`, `repository/PMBOK-EDITION-POSITION.md`, `repository/REPOSITORY_DECISION_LOG.md`, `Ver.2/*`, `field-guide/chapters/*` (หลายไฟล์), `field-guide/pdf/build_pdf.py` (comment อ้างอิงต้นแบบ) — ปรับเป็น "archived" หรือเพิ่ม note
+
+### 3) Checklist / หลักฐานที่ต้องเก็บไว้ก่อน archive
+
+ก่อนย้ายต้องยืนยันครบทุกข้อ:
+- [ ] `field-guide/pdf/` build ผ่านจริง 2 ฉบับ (Complete + Learner) — ขนาด/หน้า ตรวจแล้ว
+- [ ] Coverage ครบเทียบเท่า e-Book เดิม: `repository/CONTENT_COVERAGE_MATRIX.md` Section 7 mapping ครบทุก KA
+- [ ] เก็บ artifact เดิมไว้ใน archive ด้วย: PDF เดิม (`e-Book/pdf/PMBOK-Masterclass-Complete-Edition.pdf`), `e-Book/release/RELEASE-MANIFEST.md`, capstone, lessons 01–16 ทั้งหมด — เก็บแบบอ่านได้ ไม่ใช่ลบทิ้ง
+- [ ] บันทึก commit hash ใหม่ของเล่ม Ver.2 (6c729c7 + รอบแก้ 8) ลง archive README เพื่อ traceability
+- [ ] แก้ลิงก์ 3 จุด (ข้อ 2) + run link checker อีกครั้งทั้ง repo
+- [ ] เพิ่ม Decision Log แถวใหม่ใน `repository/REPOSITORY_DECISION_LOG.md` (หลัง #16) บันทึกการ archive
+- [ ] ขอ approve เป็นลายลักษณ์อักษรจากเจ้าของ repo ก่อน `git mv` ครั้งเดียว
+
+### 4) เงื่อนไข
+
+- ยังไม่ลงมือย้าย/ลบไฟล์ใดๆ ใน `e-Book/` จนกว่าจะได้รับ approve เป็นลายลักษณ์อักษรจากเจ้าของ repo — หลัง approve แล้วให้ทำเป็น commit แยก 1 ครั้ง (ไม่ push)
+
+---
+
 ## 2026-08-14 — Round 7 (แก้ตาม Claude Review — Decision Log #13→#16 + Commit งานทั้งหมด)
 
 **ทำอะไรไปแล้ว:**
