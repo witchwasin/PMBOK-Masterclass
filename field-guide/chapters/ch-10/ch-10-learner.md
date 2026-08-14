@@ -5,7 +5,7 @@ book: "PM Delivery Guide: From Pre-sales to Closure — คู่มือปฏ
 edition: Learner
 status: Draft
 validation_status: Not Validated
-last_reviewed: 2026-08-13
+last_reviewed: 2026-08-15
 intended_learner_level: Experienced PM
 difficulty: Core
 estimated_study_time: 90
@@ -72,6 +72,8 @@ Stabilization Acceptance (Ch.9)
 
 **[Best Practice]** ต้องมี: System Ownership, Support Model, SLA, Runbook, Monitoring, Incident Process, Backup, DR, Access, Vendor Contact, Known Issues, Maintenance
 
+**[Best Practice]** ทำไม handover ถึงไม่ใช่ "ส่งเอกสาร": เอกสารที่ไม่มีใครอ่านคือข้อมูล ไม่ใช่ความสามารถ — เป้าหมายคือทำให้ Ops **รับช่วงได้จริง** นั่นคือ: มีเจ้าของระบบชัดเจน (System Ownership), มี runbook ที่ใช้ได้กับระบบจริง (ไม่ใช่เขียนจากจินตนาการ), ทีม support ผ่าน training และลองทำจริง, และมี SLA ว่าใครตอบ incident ภายในกี่นาที — **ทดสอบว่า Ops ใช้ runbook แก้ incident จำลองได้ไหม** ก่อนประกาศ handover สำเร็จ เช่นเดียวกับที่ Ch.9 บอกว่า rollback ต้องทดสอบ ไม่ใช่แค่มีแผน
+
 **[Teaching Scenario]** SHG: ทีมเหลือ 6 คน (2 Frontend, 2 Backend, 1 QA, 1 DevOps) — PM ส่งมอบ runbook + monitoring + incident process ให้ Operations; hypercare (Ch.9) เปลี่ยนเป็น support ตาม SLA; known issues (เช่น PMS sync error 5%) มี plan + owner
 
 ### 4.2 Final Acceptance (H.4)
@@ -82,9 +84,13 @@ Stabilization Acceptance (Ch.9)
 
 **[Best Practice]** Final Invoice, Payment, Vendor Closure, Asset Transfer, License, PO Closure, Budget Reconciliation — ปิดกับ 2C2P, PMS vendors, AWS, Design Agency ตามสัญญา (Ch.1–2 ตั้งต้น vendor relationship, Ch.5 วาง procurement)
 
+**[Best Practice]** จุดที่คนมักลืมสองอย่าง: (1) **warranty เริ่มนับจากวันไหน** — ปกตินับจาก final acceptance ไม่ใช่จาก go-live เพราะช่วง hypercare (Ch.9) ยังเป็นความรับผิดชอบของทีม implement; (2) **resource release ต้องเป็นทางการ** — ทีมถูกปล่อย/ย้ายงานอย่างเป็นทางการพร้อมบันทึก ไม่ใช่ "ค่อย ๆ หายไป" — และ budget reconciliation ต้องปิดยอดจริง: งบ 12M ใช้ไปเท่าไหร่ เหลือเท่าไหร่ ใคร approve — เพื่อไม่ให้ใบแจ้งหนี้ vendor ตามมาทีหลังโดยไม่มีงบรองรับ
+
 ### 4.4 Lessons Learned (H.6)
 
 **[Best Practice]** เก็บ: What Worked, What Did Not, Root Causes, Decisions, Risk Outcomes, Estimate Accuracy, Stakeholder Lessons, Technical Lessons, Recommended Actions, Owner for Improvement — lessons ที่ไม่มี action owner = แค่บันทึก
+
+**[Best Practice]** ทำไม lessons ต้องเก็บ**ระหว่าง**โครงการ ไม่ใช่รอจบ: ความจำของทีมสั้น และทีมเริ่มแยกย้ายทันทีที่งานหลักจบ — เดือนที่ 8 ไม่มีใครจำได้แล้วว่า Sprint 3 ตัดสินใจอะไรและทำไม — เทคนิคที่ใช้จริง: ทำ **retrospective สั้น ๆ** หลัง milestone/sprint สำคัญ (What worked / What didn't / Root cause / Action + owner) เก็บเข้า register ทันที — ตอนปิดโครงการเหลือแค่รวบรวม + ทวน + ปิด action ในประชุมครั้งเดียว ไม่ใช่พยายามนึกย้อน 11 เดือน
 
 **[Teaching Scenario]** SHG lessons: PMS PoC ก่อน Sprint 1 ช่วยลด risk จริง, fast-track Back Office เพิ่ม defect (ควรประเมิน quality impact ให้ดี), test data readiness ต้องเข้า DoR ตั้งแต่แรก
 
@@ -92,11 +98,15 @@ Stabilization Acceptance (Ch.9)
 
 **[PMBOK 6]** ต้องระบุ: Benefit Owner, Benefit Measure, Baseline, Target, Measurement Date, Data Source, Review Cadence
 
+**[Best Practice]** ตรงนี้คือจุดที่ **Output กลายเป็น Outcome และ Benefit**: ระบบจองที่ส่งมอบ (Output) → คนใช้จริง (Outcome) → ตัวเลขธุรกิจที่เปลี่ยน (Benefit) — PM ปิดโครงการแล้วออกไป แต่ตัวเลข 35% ยังต้องถูกวัดต่อ: ต้องระบุ **ใครวัด (Benefit Owner = business), วัดจากข้อมูลอะไร (data source), เทียบกับอะไร (baseline 10%), และเมื่อไหร่ (measurement date + review cadence)** ก่อน Sponsor อนุมัติปิด — ถ้าไม่ล็อกตอนนี้ หลัง 6 เดือนจะไม่มีใครรู้ว่า "ควรจะถึงเท่าไหร่แล้ว และใครเป็นคนดู"
+
 **[Teaching Scenario]** SHG: Benefit = Direct Booking 10% → 35% ภายใน 18 เดือน — Owner = คุณภัทร (VP Marketing) + คุณนภา (PO) ตาม Operating Model — Measure = % direct booking จากระบบ — Baseline = 10% — Review = รายเดือน post-launch (ตรง Scenario Master §14–15) — **PM ไม่ใช่ benefit owner หลังปิดโครงการ**
 
 ### 4.6 Closure Report (H.8) + Exit Criteria (H.9)
 
 **[Best Practice]** Closure Report: Objectives, Scope Delivered, Acceptance, Schedule, Cost, Quality, Risks, Changes, Benefits, Outstanding, Lessons, Handover, Final Approval
+
+**[Best Practice]** Closure Report คือ**หลักฐานการปิดโครงการ** — ถ้าเกิดคำถามทีหลัง (ทำไมจบแบบนี้, ใครอนุมัติ, มีอะไรค้าง) ทุกคนเปิดรายงานนี้แล้วได้คำตอบเดียวกัน — หัวใจคือการ**เทียบ plan vs actual** (schedule, cost, scope ที่ promised ไว้ใน Charter/Ch.1–2 เทียบสิ่งที่เกิดขึ้นจริง) และบันทึก open items อย่างเป็นทางการ — ไม่ใช่แค่สรุปว่าสำเร็จ
 
 **Exit Criteria:** Deliverables Accepted, Operations Handover Complete, Support Ready, Financial Closure, Contract Closure, Lessons Captured, Resources Released, Benefit Owner Assigned, Sponsor Approves Closure
 
@@ -118,14 +128,19 @@ Next Action: หลังปิด -> PIR/benefit review ตาม cadence (ค�
 
 ## 6. ตัวอย่างจริงจาก Case ต่อเนื่อง (SHG)
 
-**[Teaching Scenario]**
+**[Teaching Scenario] Watch PM Think — สัปดาห์สุดท้ายก่อนปิดโครงการ**
 
-- **Handover:** runbook + monitoring + SLA ส่งให้ Operations; ทีมเหลือ 6 คน; known issues (PMS sync 5% → กำลังแก้ไปสู่ ≥98% ตาม Scenario Master §15)
-- **Final Acceptance:** คุณภัทร + คุณนภา เซ็น acceptance อ้าง UAT evidence (Ch.8) + waiver สำหรับ cosmetic defect
-- **Financial/Contract:** ปิด 2C2P (settlement reconciliation), PMS vendors (final T&M ตาม cap), AWS (transfer ownership ของ account), Design Agency (final payment ตาม milestone)
-- **Lessons:** 3 บทเรียนหลัก + action owners
-- **Benefit Handover:** Owner = คุณภัทร, Target = 35% ภายใน 18 เดือน, Baseline = 10%, Review = รายเดือน, Data source = booking analytics
-- **Closure:** Sponsor (คุณจิรา) อนุมัติ — PIR หลัง 6 เดือนตรวจ benefit
+คุณสุทธิ (PM) ไล่ทวนรายการปิดโครงการในใจ: "Handover ต้องไม่ใช่แค่ส่งไฟล์ — ให้ Ops ซ้อม runbook แก้ incident จำลองแล้วหรือยัง, known issue PMS sync 5% มี owner และ SLA ใน handover หรือยัง" — เขารู้ว่าตรงนี้คือจุดที่ "ส่งต่อได้จริง" ต่างจาก "ส่งเอกสาร"
+
+Final acceptance: เขาดึง UAT evidence จาก Ch.8 มาประกอบ ไม่ใช่ "คุณภัทรดูแล้วโอเค" — มี waiver อย่างเป็นทางการสำหรับ cosmetic defect ที่ยอมรับแบบเลื่อน — "ถ้าไม่มี evidence ตอนนี้ จะเถียงกันตอนจ่ายเงิน"
+
+Financial/contract: ปิด 2C2P (settlement reconciliation), PMS vendors (final T&M ตาม cap), AWS (โอน ownership ของ account), Design Agency (final payment ตาม milestone) — เขาเช็คว่า warranty นับจาก final acceptance และทีมถูก release อย่างเป็นทางการ
+
+Lessons: 3 บทเรียนหลักที่เก็บระหว่างทาง (PMS PoC ช่วยจริง, fast-track เพิ่ม defect, test data ต้องเข้า DoR) — แต่ละข้อมี action owner ไม่ใช่แค่ "เล่ากันฟัง"
+
+สุดท้าย — สิ่งที่เขาเน้นที่สุด: **Benefit Handover** — Owner = คุณภัทร, Target = 35% ภายใน 18 เดือน, Baseline = 10%, Review = รายเดือน, Data source = booking analytics — "PM ปิดแล้วออกไป แต่ตัวเลข 35% ต้องมีคนวัด — ถ้าไม่ล็อกตรงนี้ตอนนี้ หลัง 6 เดือนจะไม่มีใครรู้ว่าใครดูตัวเลขนี้"
+
+Sponsor (คุณจิรา) อนุมัติ closure — PIR หลัง 6 เดือนตรวจ benefit
 
 **[PMBOK 8]** สังเกตว่า "ความสำเร็จของโครงการ" ณ จุดนี้คือ "ส่งต่อได้อย่างเป็นระเบียบ" — benefit จริง (35%) จะวัดกันทีหลัง โดยคนที่รับผิดชอบคือ business ไม่ใช่ทีม project
 

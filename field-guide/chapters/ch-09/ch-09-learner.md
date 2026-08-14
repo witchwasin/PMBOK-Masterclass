@@ -5,7 +5,7 @@ book: "PM Delivery Guide: From Pre-sales to Closure — คู่มือปฏ
 edition: Learner
 status: Draft
 validation_status: Not Validated
-last_reviewed: 2026-08-13
+last_reviewed: 2026-08-15
 intended_learner_level: Experienced PM
 difficulty: Core
 estimated_study_time: 100
@@ -78,6 +78,20 @@ Go/No-Go Decision (Ch.8) + Cutover/Rollback Plan (Ch.5 C17)
 
 **[Best Practice]** ต้องระบุ: Task, Sequence, Start/End, Owner, Dependency, Validation, Decision Point, Rollback Trigger, Communication, Evidence — cutover เป็น sequence ที่ทุกขั้นตอนมี owner และจุดตรวจ
 
+**[Teaching Scenario]** ทำไม cutover ต้องเป็น **sequence ทีละขั้น** ไม่ใช่ "กด deploy พร้อมกันแล้วค่อยดู": แต่ละขั้นมีจุดที่ถ้าพลาดแล้วไม่รู้ตัว ปัญหาจะไหลไปสะสมที่ขั้นถัดไป — ยิ่งไกลจากจุดเริ่ม ยิ่งหาต้นตอยาก ตัวอย่าง: migrate ข้อมูลผิดแล้วไม่ reconcile ก่อน → โรงแรมเห็นห้องว่างผิด → ลูกค้าจองห้องที่ไม่มีจริง → payment ล่มตามมา ดังนั้นทุกขั้นต้องมี **จุดตรวจ (validation)** ก่อนเดินต่อ:
+
+| ขั้น | เสี่ยงอะไรถ้าพลาด | ต้องตรวจอะไรก่อนไปขั้นถัดไป |
+|---|---|---|
+| Freeze / Change Window | มีคนแก้ production พร้อมกัน → state ไม่นิ่ง | ยืนยันทุกทีมหยุด deploy แล้ว |
+| Backup | backup ไม่สมบูรณ์ → rollback ฟื้นไม่ได้ | restore-test จาก backup ล่าสุดผ่าน (ไม่ใช่แค่มีไฟล์) |
+| Deploy | version ผิด / ขึ้นไม่ครบ | artifact hash + version ตรงกับที่ approved |
+| Configure | config ผิด environment (เช่น ชี้ test DB) | smoke กับ env ใหม่ก่อน migrate |
+| Migrate Data | ข้อมูลหาย / ซ้ำ / ปนกัน | count + checksum ตรงกัน (ก่อน vs หลัง) |
+| Reconcile | ตัวเลขธุรกิจไม่ตรง (ยอดจอง, ห้องว่าง) | เทียบ key business tables กับระบบเดิม |
+| Smoke Test | ระบบลุก แต่ฟีเจอร์หลักพัง | booking + payment + PMS sync ผ่าน |
+| Business Verify | เทคนิคผ่าน แต่กระบวนการทำงานผิด | user ตัวจริง (front desk) ยืนยัน workflow |
+| Enable Users | เปิดก่อนพร้อม → ลูกค้าเจอ bug | support พร้อม + monitoring alert ตั้งแล้ว |
+
 ### 4.3 Deployment Steps (G.4)
 
 ```text
@@ -90,11 +104,15 @@ Freeze/Change Window -> Backup -> Deploy -> Configure -> Migrate Data
 
 **[Best Practice]** ต้องตอบ: Rollback Trigger (อะไร), Who Decides, Maximum Decision Time (กี่นาที), Backup Location, Restore Steps, Data Reconciliation, Communication, Business Continuity
 
-**[Teaching Scenario]** SHG: trigger = payment failure rate > threshold หรือ critical booking flow ล่ม ภายใน 30 นาทีหลัง enable — ผู้ตัดสินใจ = คุณวีระ (CTO) + PM ภายใน 15 นาที — restore จาก backup + message ถึงลูกค้า/โรงแรม
+**[Teaching Scenario]** SHG: trigger = payment failure rate > 4% หรือ critical booking flow ล่ม ภายใน 30 นาทีหลัง enable — ผู้ตัดสินใจ = คุณวีระ (CTO) + PM ภายใน 15 นาที — restore จาก backup + message ถึงลูกค้า/โรงแรม
+
+**[Best Practice]** ทำไม trigger ต้องเป็น **ตัวเลข** ไม่ใช่ "ดูสถานการณ์": ตัวเลขทำให้ทุกคนใน command center ตัดสินใจเหมือนกันตอน 03:00 โดยไม่ต้องรอหัวหน้า — "payment failure > 4%" หมายความว่าถึงเลขนี้ใครก็ตามเปิด rollback ได้ทันที และทำไมต้องมี **เวลาจำกัดในการตัดสินใจ**: ทุกนาทีที่ผ่านไป ลูกค้าเจอ error สะสม ข้อมูลค้างใน queue เพิ่มขึ้น และยิ่งนาน rollback ยิ่งยากเพราะ data ใหม่เริ่มปนกับของเดิม — การตั้ง maximum decision time ไว้ล่วงหน้าคือการ**ลด**ความกดดันตอนตัดสินใจ ไม่ใช่เพิ่ม (คุณไม่ต้องเดา "ควรจะรออีกไหม" ตอน 03:00)
 
 ### 4.5 Hypercare (G.6)
 
 **[Best Practice]** Hypercare = ช่วงสนับสนุนเข้มหลัง go-live: Command Center, Support Hours, Incident Priority, Triage, Technical/Business Owners, Daily Review, Metrics, Exit Criteria
+
+**[Teaching Scenario]** command center ของ SHG: ห้อง (จริง/เสมือน) ที่มี PM (คุณสุทธิ), CTO (คุณวีระ), QA lead, support lead และ hotline 2C2P — มี **escalation path 3 ระดับ** ชัดเจน: (1) support triage เบื้องต้น → (2) dev/QA on-call → (3) PM + CTO สำหรับ incident ที่กระทบ business (severity 1–2) — **daily review ดู 4 อย่าง**: incident ค้าง + severity, error rate เทียบ threshold, transaction/support volume เทียบวันก่อน, และ action items ที่ต้องปิดก่อนวันถัดไป — ทุกข้อมี owner และ deadline
 
 ### 4.6 Hypercare Metrics (G.7) + Stabilization Criteria (G.8)
 
@@ -102,7 +120,9 @@ Freeze/Change Window -> Backup -> Deploy -> Configure -> Migrate Data
 - **Metrics:** Incident Count, Severity, Response/Resolution Time, Transaction Success, Error Rate, Performance, User Adoption, Data Reconciliation, Support Volume
 - **Stabilization:** ไม่มี Critical Incident ค้าง, Error Rate ใน threshold, Performance Stable, Business Transaction ถูกต้อง, Support รับช่วงได้, Known Issues มี Plan, Operations ยอมรับ Handover
 
-**[Teaching Scenario]** SHG soft launch 3 โรงแรม: monitor payment success ≥ 99%, booking confirmation ≤ 5 วินาที, incident response ตาม SLA กับ 2C2P, daily review กับ hotel partners — stabilizaztion ผ่านเมื่อ 7 วันไม่มี critical incident + payment error < threshold
+**[Teaching Scenario]** SHG soft launch 3 โรงแรม: monitor payment success ≥ 99%, booking confirmation ≤ 5 วินาที, incident response ตาม SLA กับ 2C2P, daily review กับ hotel partners — stabilization ผ่านเมื่อ 7 วันไม่มี critical incident + payment error < threshold
+
+**[Best Practice]** หลักของ stabilization exit criteria: ต้อง **"วัดได้ + มีระยะเวลา"** ไม่ใช่ "รู้สึกว่านิ่งแล้ว" — "ระบบดูโอเค" ตีความต่างกันได้ แต่ "7 วันติดต่อกันไม่มี critical incident + payment error < 1%" ทุกคนวัดเหมือนกัน — ระยะเวลา (ไม่ใช่แค่ค่าชั่วขณะ) กันกับดัก "วันนั้นดี แต่สัปดาห์ถัดไปพัง" — ถ้ายังไม่ผ่าน criteria ให้ขยาย hypercare พร้อมบันทึกเหตุผล ไม่ใช่แค่นั่งรอให้ผ่าน
 
 ## 5. PM Decision Thinking
 
@@ -122,15 +142,17 @@ Next Action: ตาม decision -> stabilize -> monitor -> ขยาย/ถอ�
 
 ## 6. ตัวอย่างจริงจาก Case ต่อเนื่อง (SHG)
 
-**[Teaching Scenario]**
+**[Teaching Scenario] Watch PM Think — คืน cutover soft launch 3 โรงแรม (02:00–06:00)**
 
-- **Cutover (Soft Launch 3 โรงแรม):** คืนวันศุกร์ 02:00–06:00 — freeze, backup, deploy, migrate data 3 โรงแรม, reconcile (ตรงกับ Scenario Master Sprint 12)
-- **Smoke test:** booking flow + payment + PMS sync ผ่าน
-- **Enable users:** front desk + ลูกค้าเริ่มจอง — campaign ของคุณภัทรเปิดพร้อมกันแบบ pilot
-- **Monitor:** พบ payment failure 4% (ต่ำกว่า trigger) + 2 incident minor (confirmation email ช้า) — fix-in-place + monitor ต่อ
-- **Hypercare 2 สัปดาห์:** command center (PM, CTO, QA, support, 2C2P hotline), daily review, metrics tracking
-- **ขยาย:** หลัง 7 วันเสถียร → ขยายไปอีก 3 โรงแรม → ครบ 12 ตามแผน full launch
-- **Stabilization:** ผ่านเมื่อ error rate < threshold + support รับช่วงได้ → ส่งต่อ Ch.10
+ตีสองกว่า PM (คุณสุทธิ) นั่งใน command center พร้อมคุณวีระ (CTO) และ release manager — ก่อนกดเริ่ม เขาไล่ตรวจทีละจุด: "Freeze ยืนยันแล้วว่าทุกทีมหยุด deploy → Backup ต้องผ่าน restore-test เมื่อวาน ไม่ใช่แค่มีไฟล์ → Deploy: artifact hash ตรงกับที่ approved → Migrate: จำนวนห้องว่างของ 3 โรงแรมตรงกับ PMS เดิม"
+
+ขั้น Reconcile คือจุดที่เขากลั้นหายใจ: ยอดจองกับห้องว่างทั้ง 3 โรงแรมต้องตรงกับระบบเดิม**เป๊ะ** — ถ้าตัวเลขไม่ตรงตอนนี้ หมายถึงหลังเปิดใช้งานลูกค้าจะจองห้องที่ไม่มีจริง
+
+Smoke test ผ่าน: booking flow + payment + PMS sync ครบ — เขาปล่อย enable users ตอน 05:30 ให้ front desk และลูกค้าเริ่มจอง พร้อม campaign ของคุณภัทรแบบ pilot
+
+08:00 monitoring แจ้ง payment failure 4% — **ต่ำกว่า trigger** และเขารู้ว่า trigger คือตัวเลขที่ตกลงกันไว้ล่วงหน้า ไม่ใช่ "ดูอีกที" — ตัดสินใจ fix-in-place + monitor ต่อ พร้อมเปิด ticket 2 incident minor (confirmation email ช้า) และปิดภายในวันเดียวกัน
+
+ต่อจากนั้น hypercare 2 สัปดาห์: command center + daily review + metrics tracking — หลัง 7 วันเสถียร ขยายไปอีก 3 โรงแรม → ครบ 12 ตามแผน full launch — stabilization ผ่านเมื่อ error rate ในเกณฑ์ + support รับช่วงได้ → ส่งต่อ Ch.10
 
 **[PMBOK 8]** สังเกตว่า decision แต่ละจุดมี trigger, เวลาจำกัด และ evidence — ไม่มี "เดี๋ยวค่อยว่ากัน"
 
@@ -189,7 +211,7 @@ Next Action: ตาม decision -> stabilize -> monitor -> ขยาย/ถอ�
 | Hypercare | สนับสนุนเข้มหลัง Go-live | command center + triage + metrics + exit | คิดว่า = support ธรรมดา | Stabilization |
 | Command Center | ศูนย์บัญชาการเหตุการณ์ | จุดรวม incident/triage/decision หลัง go-live | ไม่มี escalation path | Incident |
 | Stabilization | การเข้าสู่สภาวะเสถียร | incident ลด, performance คงที่, support รับช่วงได้ | คิดว่า 2 วันจบ | Hypercare |
-| Smoke Test | ทดสอบขั้นพื้นฐาน | ตรวจว่าดีploy ผ่าน/ระบบลุกก่อน enable users | ใช้แทน full test | Deployment |
+| Smoke Test | ทดสอบขั้นพื้นฐาน | ตรวจว่า deploy ผ่าน/ระบบลุกก่อน enable users | ใช้แทน full test | Deployment |
 | Data Reconciliation | ตรวจสอบข้อมูล | เทียบ data หลัง migration ให้ตรงกัน | ข้ามไป | Migration |
 | Incident | เหตุการณ์ผิดปกติ | ต้องมี triage, severity, SLA, owner | สับสนกับ Defect (ช่วง dev) | Defect |
 | Rollback Trigger | เงื่อนไขย้อนกลับ | ตัวเลข/สัญญาณที่บอกว่า "ถอย" | ไม่กำหนด | Rollback |

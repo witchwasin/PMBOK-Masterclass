@@ -5,7 +5,7 @@ book: "PM Delivery Guide: From Pre-sales to Closure — คู่มือปฏ
 edition: Learner
 status: Draft
 validation_status: Not Validated
-last_reviewed: 2026-08-13
+last_reviewed: 2026-08-15
 intended_learner_level: Experienced PM
 difficulty: Advanced
 estimated_study_time: 120
@@ -90,6 +90,19 @@ Total Float: TF = LS - ES (หรือ LF - EF)
 Critical Path = เส้นทางที่กำหนด Project Duration (โดยทั่วไป TF ต่ำสุด/เป็นศูนย์)
 ```
 
+**[PMBOK 6]** Three-point Estimate (PERT): **E = (O + 4M + P) / 6** — O = optimistic, M = most likely, P = pessimistic — ทำไมต้องถ่วง M 4 เท่า: เพื่อ**ลดผลของ outlier** ปลายทั้งสองด้าน (worst case ที่หายากไม่ควรฉุดค่าเฉลี่ยมากเกินไป) — ตัวอย่าง: Payment Flow O = 4 วัน, M = 6 วัน, P = 14 วัน → E = (4 + 24 + 14)/6 = **7 วัน** (ไม่ใช่ (4+6+14)/3 = 8 วัน) — และจด range + assumption ไว้ด้วย (ป้อนให้ risk register ใน Ch.5)
+
+**[Teaching Scenario]** ตัวอย่างคำนวณ CPM จริง (ดัดแปลงจาก Playbook C11.5) — 4 กิจกรรมย่อยของ Payment Integration:
+
+| Activity | Duration (วัน) | Predecessor |
+|---|---:|---|
+| A API Design | 3 | - |
+| B Payment Flow Build | 5 | A |
+| C Gateway Contract | 4 | A |
+| D Integration Test | 4 | B, C |
+
+Forward Pass: A: ES=0, EF=3 → B: ES=3, EF=8 · C: ES=3, EF=7 → D: ES = max(8,7) = 8, EF=12 — Backward Pass: D: LF=12, LS=8 → B: LF=8, LS=3 · C: LF=8, LS=4 → A: LF = min(3,4) = 3, LS=0 — **Float: A=0, B=0, C=1, D=0** → **Critical Path = A→B→D (12 วัน)** — สรุปเชิงบริหาร: Gateway Contract (C) มี float 1 วัน — ช้าไม่เกิน 1 วันยังไม่กระทบ; แต่ A หรือ B ช้า 1 วัน = launch ล่าช้า 1 วันทันที — นี่คือสิ่งที่ Ch.7 จะใช้ตอน delay เกิดจริง
+
 **[Teaching Scenario]** SHG timeline 8 เดือน (Sprint 0–12): ถ้า Payment Integration (Sprint 3–4) ช้า กระทบ Mobile App (Sprint 5–6) และ Back Office (Sprint 7–8) ตาม dependency — แต่ถ้าล่าช้าอยู่บนเส้นที่มี float ก็อาจไม่กระทบ launch
 
 **Schedule Compression (C11):**
@@ -114,6 +127,8 @@ EAC = BAC / CPI (ถ้า trend เดิมต่อ) | VAC = BAC - EAC
 
 **[Best Practice]** ตัวเลขต่ำกว่า 1 ไม่ใช่คำตอบสุดท้าย แต่เป็นประตูเข้าสู่คำถาม: variance มาจาก cost/schedule/completion? EV มี acceptance evidence จริงหรือ? เป็น one-time หรือ trend?
 
+**[Best Practice]** อ่านผลเชิงบริหาร: **CPI < 1** = "ด้วยงานที่ทำได้จริง (EV) เราใช้เงินมากกว่าแผน (AC)" → ต้องตอบว่า EAC จะจบที่เท่าไร และต้องตัดสินใจอะไร (ลดงาน / หางบเพิ่ม / เพิ่ม efficiency) — **SPI < 1** = "งานเดินช้ากว่าแผน" → ต้องดู critical path ว่าจุดไหนรับได้ (มี float) จุดไหนรับไม่ได้ — ตัวเลขคือจุดเริ่มต้นของการตัดสินใจ ไม่ใช่จุดจบของการรายงาน
+
 ### 4.3 Resource — คน ทักษะ capacity และอำนาจ (C13)
 
 **[PMBOK 6]** แยก Role (บทบาท) / Person (คนจริง) / Assignment (การมอบหมาย) / Capacity (เวลาจริง) — RACI: Responsible (ลงมือ), Accountable (รับผิดชอบผลสุดท้าย — ต้อง 1 คน), Consulted (ให้ input), Informed (รับรู้)
@@ -129,6 +144,8 @@ EAC = BAC / CPI (ถ้า trend เดิมต่อ) | VAC = BAC - EAC
 - **Kanban** สำหรับ flow/support/incident: Flow Board (To Do/In Progress/Review/Done), WIP Limit, explicit policy — ใช้กับ defect triage, payment incident, support
 - **Predictive vs Agile vs Hybrid:** ดู Requirement Stability, Change Cost, Compliance, Feedback Need — **Hybrid** = budget/milestones คุมแบบ predictive แต่ build เป็น sprint (ตรงกับ SHG: 12M + launch 1 พ.ย. คุมแน่น, development เป็น sprint)
 - **Agile ไม่ได้แปลว่าไม่มีแผน** — เปลี่ยนจังหวะ planning ให้สั้นลง และต้องมี Definition of Done ที่รวม quality/security/acceptance
+
+**[Best Practice]** Schedule บน Agile ต่างจาก CPM ตรงไหน: CPM วางเส้นทางเดียวล่วงหน้าหมด (เหมาะกับงานที่ dependency ชัดและไม่เปลี่ยนบ่อย เช่น integration ระหว่างระบบ); Scrum/Kanban วางแค่ sprint ถัดไป (plan ระยะสั้น) แล้วปรับจาก velocity/feedback — **เมื่อไรใช้แบบไหน**: ถ้าต้องตอบคำถาม "ขึ้น production วันที่เท่าไร" (deadline แน่นอน) ยังต้องมี milestone + critical path ระดับสูงแม้ใช้ Agile ภายใน — SHG เลยเป็น Hybrid: ล็อก launch ก่อน 1 พ.ย. ด้วย critical path ระดับ high-level แต่ภายใน sprint วางด้วย velocity
 
 > **หมายเหตุ:** Tailoring ลึก ๆ กลับมาอีกครั้งใน Ch.6 (กล่อง Agile) — บทนี้แนะนำหลักการให้เห็นภาพการวางแผน
 
@@ -152,11 +169,13 @@ Next Action: เลือก option -> ประเมินผลต่อ cost
 
 ## 6. ตัวอย่างจริงจาก Case ต่อเนื่อง (SHG)
 
-**[Teaching Scenario]**
+**[Teaching Scenario] Watch PM Think — สัปดาห์วางแผน baseline**
 
-- **Schedule:** Sprint 0 (Setup, 2 สัปดาห์) → Sprint 1–10 (feature) → Sprint 11 (UAT/Performance/Security, 2 สัปดาห์) → Sprint 12 (Bug Fix + Soft Launch 3 โรงแรม) → Full Launch 12 โรงแรม → Post-Launch Support 3 เดือน — critical path ต้องผ่าน Payment Integration → Mobile App → Back Office → UAT → Launch
-- **Cost (12 ล้านบาท):** Dev Team 6.0, Cloud 1.0, Design 0.8, PMS Integration 0.5, Payment Setup 0.2, QA/Security 0.5, Contingency 1.5, Management Reserve 1.5 — Contingency = PM ใช้ได้ตาม governance, Management Reserve = Sponsor เท่านั้น
-- **Resource:** ทีม Projectized (PO, PM/SM, UX 2, Frontend 4, Backend 3, QA 2, DevOps 1, Business 3) + External (PMS Specialist, 2C2P) — 80 key users ต้องมี capacity commitment จาก functional managers
+คุณสุทธิ (PM) ไล่ตรวจ Gantt ที่ทีมวาด: มีแถบสีครบ 12 sprint ตาม Scenario Master แต่เขาถามคำถามเดียวที่ทำให้ทีมเงียบ: "ถ้า Payment Integration ช้า 1 สัปดาห์ กระทบ launch 1 พ.ย. หรือไม่" — ไม่มีใครตอบได้ เพราะไม่มี dependency network และ critical path — เขาสร้าง network ขึ้นมา: critical path ต้องผ่าน Payment Integration → Mobile App → Back Office → UAT → Launch — "Gantt ที่ไม่มี logic คือภาพสวยที่ตอบคำถาม 'ถ้า...แล้ว...' ไม่ได้"
+
+Cost: เขาแยก 12M ออกเป็น Dev 6.0 / Cloud 1.0 / Design 0.8 / PMS Integration 0.5 / Payment Setup 0.2 / QA-Security 0.5 / Contingency 1.5 / Management Reserve 1.5 — "Contingency ใช้ได้ตาม governance แต่ Management Reserve ต้อง Sponsor เท่านั้น" — เพราะสำรองคือกันชน ไม่ใช่เงินที่ใช้ก่อน
+
+Resource: 80 key users สำหรับ UAT — เขาไม่นับว่ามี capacity จนกว่า functional manager เซ็น commitment — "ชื่อในแผน ≠ เวลาจริง — ถ้า month-end ซ้อนกับ UAT wave ต้อง phased หรือ backfill"
 
 **[PMBOK 8]** ตัวอย่าง EVM ระหว่างทาง: ถ้า ณ เดือนที่ 4 PV = 6M, EV = 5M, AC = 6.5M → SPI = 0.83, CPI = 0.77 → ต้องถามต่อ: งานที่ "เสร็จ" มี evidence หรือไม่ สาเหตุคืออะไร และ EAC จะเป็นเท่าไร (รายละเอียดการควบคุมอยู่ Ch.7)
 

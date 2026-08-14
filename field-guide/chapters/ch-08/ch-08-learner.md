@@ -5,7 +5,7 @@ book: "PM Delivery Guide: From Pre-sales to Closure — คู่มือปฏ
 edition: Learner
 status: Draft
 validation_status: Not Validated
-last_reviewed: 2026-08-13
+last_reviewed: 2026-08-15
 intended_learner_level: Experienced PM
 difficulty: Core
 estimated_study_time: 100
@@ -76,11 +76,23 @@ Test Strategy (Ch.5) + Deliverables (Ch.6) + Baselines
 
 ### 4.1 Test Levels (F.2)
 
-**[Best Practice]** Unit → Component → Integration → System Test → SIT → Performance → Security → Regression → UAT → Production Verification — แต่ละ level มี purpose + owner + exit criteria
+**[Best Practice]** แต่ละ level มี purpose + owner + exit criteria ที่ต่างกัน — หลักสำคัญ: **ทดสอบเร็วพบเร็ว ราคาถูก; ทดสอบช้าพบช้า ราคาแพง** (bug ที่ QA พบใน 1 ชั่วโมง ต่างจากที่ลูกค้าเจอหลัง go-live หลายเท่า):
+
+| ระดับ | ทดสอบอะไร | ใครทำ | พบ defect แบบไหน |
+|---|---|---|---|
+| Unit / Component | ฟังก์ชันย่อย (เช่น คำนวณราคาห้อง) | Developer | logic ผิดในฟังก์ชันเดียว |
+| Integration / SIT | การเชื่อมต่อระหว่างระบบ (ระบบ ↔ PMS, ↔ payment gateway) | QA / DevOps | interface mismatch, data format, timing |
+| System Test | ทั้งระบบตาม spec ครบ | QA | ฟีเจอร์ไม่ตรง spec, workflow ผิด |
+| Performance / Security | โหลด, response time, PCI-DSS | QA + Security | ช้าภายใต้โหลด, ช่องโหว่ |
+| Regression | ฟีเจอร์เดิมยังทำงานหลังแก้ | QA (automation) | fix ใหม่พังของเดิม |
+| UAT | Business process ตาม acceptance criteria | Business Users | งานไม่รองรับกระบวนการจริงของ user |
+| Production Verification | ระบบทำงานจริงหลัง deploy | PM / Support | หลัง up: monitor + smoke |
 
 ### 4.2 QA vs UAT (F.3)
 
 **[PMBOK 6]** QA/SIT พิสูจน์ technical correctness; UAT พิสูจน์ business acceptance — UAT ไม่ใช้แทน system test; ถ้า SIT ยังไม่ผ่าน UAT จะกลายเป็นการทดสอบซ้ำที่แพงและไร้ความหมาย
+
+**[Best Practice]** จับคู่กับ Verification/Validation ที่บทนี้เปิดเรื่อง: **QA = Verification (สร้างถูกตาม spec — "Ver" ใน Ch.5), UAT = Validation (สร้างสิ่งที่ตอบ need — "Val")** — จำง่าย ๆ: QA ตอบคำถาม "ตรง spec ไหม" ส่วน UAT ตอบคำถาม "คนใช้ทำงานได้จริงไหม" — ต่างกันที่คำถาม ไม่ใช่แค่ "ใครเป็นคนกด"
 
 ### 4.3 UAT Planning (F.4)
 
@@ -92,11 +104,15 @@ Test Strategy (Ch.5) + Deliverables (Ch.6) + Baselines
 
 **[Best Practice]** RTM เชื่อม: Business Need → Requirement → Design → Build → Test Case → Test Result → Acceptance — ถ้า RTM ไม่ครบ แปลว่ามี requirement ที่ไม่ถูกทดสอบ (coverage gap)
 
+**[Teaching Scenario]** ตัวอย่างแถว RTM ของ SHG: **REQ-042** (ลูกค้าจองห้องแล้วได้รับ confirmation อีเมล) → Design (booking service + email queue) → Build (ฟีเจอร์ใน Sprint 6) → Test Case TC-118 (จอง + ตรวจอีเมล) → Result (ผ่าน + evidence) → Acceptance (UAT wave 1 เซ็น) — ถ้าแถวไหนช่อง Test Result ว่าง แปลว่า requirement นั้นยังไม่ถูกพิสูจน์ — นั่นคือ coverage gap ที่ต้องปิดก่อน Go/No-Go
+
 ### 4.5 Defect Management (F.6)
 
 **[Best Practice]** Defect ต้องมี: ID, Description, Environment, Steps, Expected, Actual, Severity, Priority, Owner, Fix Version, Retest, Status
 
 **[PMBOK 6]** **Severity ≠ Priority:** Tester/QA กำหนด Severity (ผลกระทบ: Critical/Major/Minor/Low); PO กำหนด Priority (ความเร่งด่วน: Immediate/High/Medium/Low) — defect 20 รายการที่เป็น cosmetic อาจน่ากังวลน้อยกว่า defect เดียวที่ทำให้ payment fail
+
+**[Best Practice]** ทำไมต้อง**แยกคนตั้ง** Severity และ Priority: เพราะเป็นคำถามคนละอย่าง — Severity = "ร้ายแรงแค่ไหน" (QA ตอบจากผลกระทบทางเทคนิค: ข้อมูลเสียหายไหม, payment พังไหม) ส่วน Priority = "ต้องแก้เมื่อไร" (PO ตอบจากผลต่อ business: campaign เปิดพรุ่งนี้ไหม) — defect ที่ critical แต่อยู่ในฟีเจอร์ที่ยังไม่ launch อาจ priority กลาง; defect ที่เล็กน้อยแต่ขวาง key user ทำงานอาจ priority สูง — ถ้าให้คนเดียวตั้งทั้งคู่ มักจบด้วยการโหวต "รู้สึก" แทนการตัดสินจากหลักฐาน
 
 ### 4.6 Release Readiness (F.7) + Go/No-Go (F.8)
 
@@ -124,14 +140,17 @@ Next Action: ตัดสินใจ -> ดำเนินการ (launch/cut
 
 ## 6. ตัวอย่างจริงจาก Case ต่อเนื่อง (SHG)
 
-**[Teaching Scenario]**
+**[Teaching Scenario] Watch PM Think — สัปดาห์ Go/No-Go**
 
-- **SIT:** booking flow + PMS sync ผ่าน แต่ payment sandbox พบ defect 2 รายการ (callback timeout, duplicate confirmation)
-- **UAT:** key users ทดสอบตาม scenarios — พบ payment failure 8% ใน beta (Risk: Low Conversion — Scenario Master §10) → triage: severity Critical (payment) / priority Immediate (PO)
-- **Defect ตัดสินใจ:** fix critical ก่อน, defer cosmetic, regression retest หลัง fix
-- **RTM:** พบ coverage gap — 3 โรงแรมยังไม่ได้ทดสอบ cancellation scenario → เพิ่ม wave
-- **Release Readiness:** security (PCI-DSS) ผ่าน, performance ผ่าน (3s/5s/99.5%), rollback plan ทดสอบแล้ว, support team พร้อม (Ch.9 hypercare)
-- **Go/No-Go:** เสนอ **Conditional Go — Soft Launch 3 โรงแรม** (ตาม Sprint 12 ของ Scenario Master) + ปิด defect critical ภายใน 1 สัปดาห์ + monitor payment failure rate < threshold — Sponsor (คุณจิรา) อนุมัติ
+คุณสุทธิ (PM) เปิด UAT dashboard — สีเขียว แต่เขารู้จากบทเรียนว่า **สีเขียวไม่ใช่หลักฐาน** เขาไล่ถาม QA lead 3 คำถาม: "RTM ครอบคลุมครบไหม?", "defect ที่ค้างมี severity อะไร?", "retest หลัง fix มี evidence ไหม?" — คำตอบแรกคือ coverage 85% และ 3 โรงแรมยังไม่ได้ทดสอบ cancellation scenario
+
+Payment defect 8% failure ใน UAT — เขาไม่สรุปทันที: triage แยก **severity (payment = Critical)** ออกจาก **priority (PO ตั้ง Immediate เพราะ campaign ใกล้)** — "defect 20 ตัวที่เป็น cosmetic อาจน่ากังวลน้อยกว่า defect เดียวที่ทำให้ payment ล่ม"
+
+SIT ผ่าน (booking + PMS sync) แต่ payment sandbox พบ 2 defect (callback timeout, duplicate confirmation) — เขาตัดสินใจ: fix critical ก่อน, defer cosmetic, แล้ว **regression retest หลัง fix** — "fix โดยไม่ retest = แก้ปัญหาเดิมแต่สร้างปัญหาใหม่"
+
+Release readiness: security (PCI-DSS) ผ่าน, performance ผ่าน (3s/5s/99.5%), **rollback plan ทดสอบแล้ว** (บทเรียนจาก Ch.9: rollback ที่ไม่ทดสอบ = ไม่มี rollback), support team พร้อม
+
+ข้อเสนอของเขา: **Conditional Go — Soft Launch 3 โรงแรม** (ตรง Sprint 12 ของ Scenario Master) + ปิด defect critical ภายใน 1 สัปดาห์ + monitor payment failure rate < threshold — Sponsor (คุณจิรา) อนุมัติ — "ไม่ใช่ 'ผ่านไปก่อน' แต่เป็นเงื่อนไขที่ชัดเจน มี owner และ due date"
 
 **[PMBOK 8]** สังเกตว่า decision มี evidence และเป็น conditional ที่มีเงื่อนไขชัด ไม่ใช่ "ผ่านไปก่อน"
 

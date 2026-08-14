@@ -5,7 +5,7 @@ book: "PM Delivery Guide: From Pre-sales to Closure — คู่มือปฏ
 edition: Learner
 status: Draft
 validation_status: Not Validated
-last_reviewed: 2026-08-13
+last_reviewed: 2026-08-15
 intended_learner_level: Beginner PM | Experienced PM
 difficulty: Core
 estimated_study_time: 90
@@ -95,6 +95,8 @@ Internal Handover (B1) — Sales -> Delivery: เอาสิ่งที่ร�
 
 **[PMBOK 8]** จำไว้ว่า **Charter ไม่ใช่ Detailed Plan** — เป็นเอกสารระดับสูงที่ให้อำนาจและทิศทาง ไม่ใช่ที่เก็บ schedule รายละเอียด (งานนั้นคือ Ch.4)
 
+**[Teaching Scenario]** ทำไม Charter ถึงเป็น "อำนาจของ PM" ไม่ใช่ "เอกสารพิธีกรรม": ลองภาพ PM ที่เริ่มงานโดยไม่มี Charter — สัปดาห์ที่ 3 ต้องขอข้อมูลจากฝ่ายการตลาด แต่หัวหน้าฝ่ายตอบว่า "โครงการนี้ใครสั่ง ทำไมต้องให้เวลาเรา" — ทุกครั้งที่ขอทรัพยากร/ข้อมูล จะต้องไล่ถามว่าใครอนุมัติ — Charter คือใบที่ Sponsor ออกให้ล่วงหน้าว่า "โครงการนี้มีเจ้าภาพ มีงบ มีทิศทาง และ PM คือคนที่รับผิดชอบ" — เวลาที่เสียไปกับการเขียน Charter หนึ่งหน้าถูกกว่าเวลาที่เสียไปกับการถามว่า "ใครมีสิทธิ์" ไปตลอดทั้งโครงการ
+
 **[Teaching Scenario]** Charter ของ SHG ควรระบุ: Purpose = เพิ่ม Direct Booking จาก 10% เป็น 35% ใน 18 เดือน, Budget = 12 ล้านบาท (Phase 1), Milestone = Launch ก่อน 1 พฤศจิกายน, Sponsor = คุณจิรา (CEO), PM = คุณสุทธิ, PO = คุณนภา, High-Level Risks = PMS API ไม่พร้อม, Payment Security, Conversion ต่ำ
 
 ### 4.3 Identify + Analyze Stakeholders (B3–B4) — จาก lesson-06
@@ -128,6 +130,8 @@ Stakeholder Register ที่ดีไม่ใช่ contact list — ต้�
 
 **[Best Practice]** เปิด RAID Log ตั้งแต่ตอนนี้: Risks, Assumptions, Issues, Dependencies — ทุก record ต้องมี ID, Description, Owner, Date, Impact, Response, Due Date, Status, Escalation
 
+**[Best Practice]** RAID ย่อมาจาก 4 ประเภทที่ต้องแยกดู: **Risk** (ยังไม่เกิด — มี trigger + response), **Assumption** (สมมติฐานที่เรายึด — ต้องทวนเสมอ), **Issue** (เกิดแล้ว — ต้องแก้/escalate), **Dependency** (ต้องพึ่งพาสิ่งนอกทีม/นอกโครงการ) — **ทำไมต้องแยก Assumption ออกมาดู**: เพราะสมมติฐานที่ผิดจะกลายเป็น Risk และถ้าไม่ทวน เราจะไม่รู้ว่ามันผิดตั้งแต่เมื่อไร — ตัวอย่าง SHG: "ทีม recruit ครบใน 2 สัปดาห์" เป็น assumption — ถ้าจริงก็ผ่านไปเฉย ๆ; ถ้าผิด จะกลายเป็น risk "งานเริ่มช้า" ที่ต้องมี owner + response — RAID ที่ดี = ทุก record มี ID, Owner, Due Date และถูก review เป็นประจำ (เริ่มตั้งแต่ Ch.7)
+
 ### 4.7 Kickoff (B7)
 
 **[Best Practice]** Kickoff ต้องยืนยัน: Business Objective, Scope/Deliverables, Out of Scope, Timeline/Milestones, Roles, Decision Rights, Communication, Working Approach, Dependencies, Risks, Change Process และ Immediate Actions — จบด้วย MoM + Action Register ที่มี owner และ due date
@@ -154,12 +158,15 @@ Next Action: เขียน Stakeholder Register + Governance Map -> เรี�
 
 ## 6. ตัวอย่างจริงจาก Case ต่อเนื่อง (SHG)
 
-**[Teaching Scenario]** หลัง Kickoff ระหว่าง BTS กับ SHG ทีมตกลงกันดังนี้:
+**[Teaching Scenario] Watch PM Think — สัปดาห์ Initiation หลัง Kickoff**
 
-- **Charter (SHG ฝั่ง):** Sponsor = คุณจิรา, PM = คุณสุทธิ, PO = คุณนภา, งบ 12 ล้านบาท, Launch ก่อน 1 พ.ย., Objective = 35% direct booking ใน 18 เดือน
-- **Stakeholder Register:** คุณภัทร (VP Marketing, Business Owner) = High/High, คุณสมศรี (VP Ops) = High/Medium, คุณกาญจนา (Revenue Mgr) = Medium/High, คุณวีระ (CTO) = High/High, 2C2P + PMS Vendors = Medium/Medium, Front Desk = Low/High
-- **Governance:** Steering Committee = คุณจิรา + คุณภัทร + คุณวีระ + PM; Change Authority = CCB (คุณจิรา อนุมัติ baseline change, PM อนุมัติ minor ≤ 500K); Acceptance Authority = คุณนภา (PO) + คุณภัทร สำหรับ UAT sign-off
-- **Initial RAID:** Risk #1 = PMS API ไม่พร้อม (High/High), Risk = Payment Security (Low/Critical), Assumption = ทีม recruit ครบใน 2 สัปดาห์, Dependency = 2C2P contract, PMS vendor API docs
+หลัง Kickoff ระหว่าง BTS กับ SHG คุณสุทธิ (PM ฝั่ง SHG) ไล่ตรวจว่า "เรามีสิทธิ์เริ่มจริงหรือยัง": Charter ผ่าน Sponsor (คุณจิรา) — งบ 12 ล้านบาท, launch ก่อน 1 พ.ย., objective = 35% direct booking ใน 18 เดือน — "ถ้าไม่มี Charter นี่ ทุกครั้งที่ขอข้อมูลจากฝ่ายการตลาดจะโดนถามว่า 'ใครสั่ง'"
+
+Stakeholder: เขาไม่ทำ register เป็นแค่ contact list — แต่ประเมิน power/interest ทีละคน: คุณภัทร (High/High → **Manage closely**), คุณสมศรี (High/Medium → **Keep satisfied**), คุณกาญจนา (Medium/High → **Keep informed**), คุณวีระ (High/High → **Manage closely**), 2C2P + PMS vendors (Medium/Medium → **Monitor**), front desk (Low/High → **Keep informed**) — "คนที่มี influence จริงไม่ใช่คนที่เข้าประชุมเสมอไป"
+
+Governance: Steering Committee = คุณจิรา + คุณภัทร + คุณวีระ + PM; Change Authority = CCB (คุณจิรา อนุมัติ baseline change, PM อนุมัติ minor ≤ 500K); Acceptance Authority = คุณนภา (PO) + คุณภัทร สำหรับ UAT sign-off — "ตอนมี conflict จะได้เปิดเอกสารว่าใครตัดสินใจ ไม่ใช่คนที่เสียงดังกว่า"
+
+RAID: R-01 PMS API (High/High), R-02 Payment Security (Low/Critical), **Assumption** = ทีม recruit ครบใน 2 สัปดาห์ ("ถ้าผิด จะกลายเป็น risk ที่ต้องมี owner"), **Dependency** = 2C2P contract + PMS vendor API docs
 
 **[PMBOK 8]** สังเกตว่า Ch.2 จบที่ทุกฝ่าย "เห็นภาพเดียวกัน" — ยังไม่มีการวางแผนรายละเอียด นั่นคืองาน Ch.3–5
 

@@ -5,7 +5,7 @@ book: "PM Delivery Guide: From Pre-sales to Closure — คู่มือปฏ
 edition: Learner
 status: Draft
 validation_status: Not Validated
-last_reviewed: 2026-08-13
+last_reviewed: 2026-08-15
 intended_learner_level: Experienced PM
 difficulty: Core
 estimated_study_time: 100
@@ -95,6 +95,8 @@ EAC = BAC/CPI (trend เดิม) | VAC = BAC - EAC
 
 **[Best Practice]** ตัวเลข < 1 เป็นประตูคำถาม ไม่ใช่คำตอบ — ถาม: variance มาจาก cost/schedule/completion? EV มี evidence จริง? one-time หรือ trend? reserve ใดใช้ได้ ใครอนุมัติ?
 
+**[Best Practice]** ความหมายเชิงบริหารของ CPI < 1: ด้วยงานที่ทำได้จริง (EV) เราใช้เงินมากกว่าแผน (AC) — คำถามที่ต้องตอบไม่ใช่ "เกินเท่าไร" แต่คือ **"จะจบด้วยงบเท่าไร (EAC) และต้องตัดสินใจอะไร"**: ลดงาน (scope cut), หางบเพิ่ม (reserve/sponsor), หรือเพิ่ม efficiency (re-plan) — เช่นเดียวกับ SPI < 1 ต้องตอบว่า "จะจบเมื่อไร และจะเร่งอะไรโดยไม่เสีย quality" — ตัวเลขคือจุดเริ่มต้นของการตัดสินใจ ไม่ใช่จุดจบของการรายงาน
+
 **[Teaching Scenario]** SHG ณ เดือนที่ 5: ถ้า PV = 7.5M, EV = 6.75M, AC = 7.5M → SPI = 0.90, CPI = 0.90, EAC ≈ 12/0.90 = 13.3M, VAC ≈ -1.3M → ยังพอรับได้ใน Contingency 1.5M แต่ต้องถามสาเหตุและตั้ง forecast ใหม่ — ห้ามเอา Management Reserve 1.5M มาใช้โดยไม่ผ่าน Sponsor
 
 ### 4.4 Validate Scope vs Control Scope (E.8)
@@ -112,7 +114,21 @@ Submit Request -> Log -> Check Baseline -> Clarify -> Impact Analysis
 -> Update Plan/Baseline -> Communicate -> Implement -> Verify -> Close
 ```
 
-**Impact Areas ต้องดูครบ:** Scope, Schedule, Cost, Quality, Resource, Risk, Contract, Operation, Benefits
+**[Teaching Scenario]** ตัวอย่าง change flow จริง: ลูกค้าขอเพิ่ม "ชำระด้วย TrueMoney" — **Submit** (PO เขียน change request + เหตุผล business) → **Log** → **Impact Analysis**: Scope (เพิ่ม payment gateway 1 ตัว), Schedule (Sprint 10 +2 วัน — อยู่บน critical path → เสี่ยง launch), Cost (+150K integration + T&M vendor), Quality (ต้องเพิ่ม load test + regression), Risk (ลด conversion risk — ตรงกับ Scenario Master §4), Contract (ต้องคุยกับ 2C2P) → **CCB ตัดสินใจ**: อนุมัติแบบมีเงื่อนไข (เลื่อนไป sprint หลัง launch เพื่อไม่กระทบ high season) → **Baseline Update + สื่อสาร** → **Implement → Verify** — ทุกขั้นมีบันทึก ไม่มีอะไร "ผ่านด้วยวาจา"
+
+**Impact Areas ต้องดูครบ** — change หนึ่งตัวกระทบอะไรบ้าง:
+
+| ด้าน | คำถามที่ต้องตอบ |
+|---|---|
+| Scope | งานเพิ่ม/ลดอะไร? deliverable เปลี่ยนไหม? |
+| Schedule | กระทบ critical path ไหม? ล่าช้ากี่วัน? |
+| Cost | งบเพิ่มเท่าไร? reserve ตัวไหนใช้ได้ ใครอนุมัติ? |
+| Quality | acceptance criteria เปลี่ยนไหม? ต้อง test อะไรเพิ่ม? |
+| Resource | ต้องคนเพิ่ม/ทักษะใหม่ไหม? มี capacity ไหม? |
+| Risk | สร้าง risk ใหม่ หรือลด risk เดิม? |
+| Contract | vendor scope/SOW เปลี่ยนไหม? ราคา/เงื่อนไข? |
+| Operation | กระทบกระบวนการใช้งาน/การดูแลหลัง go-live? |
+| Benefits | กระทบตัวเลข outcome (35% direct booking) หรือไม่? |
 
 **Change Authority:** PM อนุมัติ minor ตาม threshold; PO จัด priority; Sponsor/CCB อนุมัติ baseline change; Commercial/Legal อนุมัติ contract change
 
@@ -140,12 +156,13 @@ Next Action: ตัดสินใจ -> update plan/baseline/log -> สื่�
 
 ## 6. ตัวอย่างจริงจาก Case ต่อเนื่อง (SHG)
 
-**[Teaching Scenario]**
+**[Teaching Scenario] Watch PM Think — เดือนที่ 5 ก่อน CCB รอบเดือน**
 
-- **สถานะเดือนที่ 5:** SPI/CPI = 0.90, Sprint 7–8 ล่าช้า 1 สัปดาห์ (อยู่บน critical path — กระทบ launch) → เสนอ recovery: fast-track บางส่วนของ Back Office + เพิ่ม QA คู่ขนาน; monitor ใหม่ทุกสัปดาห์
-- **Change 1 — Flash Sale:** คุณภัทรต้องการ campaign ก่อน launch — Impact: scope + sprint 9–10 + payment load test → เสนอ defer ไป Phase 2 (ตาม Scenario Master §4) หรือทำเป็น pilot เล็กหลัง stabilization → CCB อนุมัติ defer
-- **Change 2 — PMS Adapter เพิ่ม:** vendor ขอ T&M เพิ่ม 300K เกิน cap — Impact: cost baseline + contingency → เสนอใช้ Contingency 1.5M ตาม governance + ขอ vendor แบ่ง milestone → Sponsor อนุมัติแบบมีเงื่อนไข
-- **RAID:** R-01 (PMS API) trigger ใกล้เกิดขึ้น → เพิ่ม daily data review + vendor SLA enforcement; 2C2P dependency update
+รายงานรายสัปดาห์เพิ่งออก: SPI = 0.90, CPI = 0.90 — คุณสุทธิ (PM) ไม่สรุปทันทีว่า "แย่" แต่ถามคำถามต่อ: "variance มาจากไหน — cost, schedule หรือ completion? Sprint 7–8 ที่ล่าช้า 1 สัปดาห์อยู่บน critical path หรือไม่?" — เขารู้จาก Ch.4 ว่าต้องเทียบกับ critical path ก่อนสรุป: ใช่ มันอยู่บนเส้นวิกฤติ กระทบ launch — เขาเสนอ recovery: fast-track บางส่วนของ Back Office + เพิ่ม QA คู่ขนาน แล้ว monitor ใหม่ทุกสัปดาห์
+
+พร้อมกันนั้นมี 2 change เข้ามา: flash sale ของคุณภัทร และ PMS adapter ที่ vendor ขอ T&M เพิ่ม 300K เกิน cap — เขาไม่ตอบตกลงทันที แต่ทำ impact analysis ทีละตัว: flash sale → กระทบ scope + sprint 9–10 + payment load test → เสนอ defer ไป Phase 2 (ตาม Scenario Master §4) หรือทำ pilot เล็กหลัง stabilization → CCB อนุมัติ defer; adapter → กระทบ cost baseline → เสนอใช้ Contingency 1.5M ตาม governance + ขอ vendor แบ่ง milestone → Sponsor อนุมัติแบบมีเงื่อนไข
+
+RAID: R-01 (PMS API) ใกล้ trigger — เขาเพิ่ม daily data review + บังคับ vendor SLA — "risk ที่ไม่ monitor คือ issue ที่กำลังก่อตัว"
 
 **[PMBOK 8]** สังเกต: ทุกการตัดสินใจมี decision record, baseline update และ communication — ไม่มีอะไรผ่าน "ด้วยวาจา"
 

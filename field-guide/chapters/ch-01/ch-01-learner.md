@@ -5,7 +5,7 @@ book: "PM Delivery Guide: From Pre-sales to Closure — คู่มือปฏ
 edition: Learner
 status: Draft
 validation_status: Not Validated
-last_reviewed: 2026-08-13
+last_reviewed: 2026-08-15
 intended_learner_level: Beginner PM | Experienced PM
 difficulty: Core
 estimated_study_time: 90
@@ -108,13 +108,39 @@ Opportunity Intake
 
 **[Best Practice]** ROM (Rough Order of Magnitude) ต้องมี Scope Basis, Assumptions, Team Model, Duration Range, Cost Range, Confidence, Major Unknowns, Contingency Logic และ Expiration/Validity — อย่าปล่อยให้ตัวเลขเดียวถูกส่งให้ลูกค้าโดยไม่มีช่วงและสมมติฐาน
 
+**[PMBOK 8]** ทำไม ROM ต้องเป็นช่วง ไม่ใช่ตัวเลขเดียว? เพราะถ้าส่งตัวเลขเดียวออกไป ลูกค้า (และฝ่ายขายของเราเอง) จะอ่านมันเป็นราคาที่ผูกพันทันที — พอ scope เปลี่ยนทีหลัง ทุกการเพิ่มงานจะถูกเทียบกับ "ราคาที่เคยบอก" และ margin ของโครงการก็ถูกกัดกินจากตรงนั้น ROM คือเครื่องมือช่วยตัดสินใจ (ควร Bid หรือไม่, ควรใช้ contract แบบไหน) ไม่ใช่ข้อผูกพันทางการค้า Confidence Level คือสิ่งที่บอกว่าช่วงนี้แน่นแค่ไหน — confidence ต่ำ = ช่วงกว้าง + ต้องมี Major Unknowns และ Contingency Logic กำกับ เพื่อให้ผู้ตัดสินใจเห็นว่ายังมีอะไรไม่รู้อีกเท่าไร ก่อนจะปล่อยให้ตัวเลขกลายเป็นราคา
+
+**[Teaching Scenario Extension]** จากงบที่ SHG แจกแจงไว้ (Dev 6.0, Cloud 1.0, Design 0.8, PMS Integration 0.5, Payment Setup 0.2, QA/Security 0.5, Contingency 1.5, Management Reserve 1.5) ROM ของ Functional Leads ออกมาเป็นช่วง 6.0–8.5 ล้านบาทสำหรับส่วน build — ไม่ใช่เลขเดียว เพราะช่วงนี้บอกว่า ถ้า PMS API ไม่ครบ ค่าใช้จ่ายจะวิ่งขึ้นไปทางปลายบนของช่วง ซึ่งคือเหตุผลที่ Proposal สุดท้าย (Fixed 6.5 + T&M cap 0.5 ใน §6) แยกส่วนที่ uncertainty สูงออกจากส่วนที่ล็อกได้
+
 ### 4.6 Internal Review ก่อนส่ง Proposal
 
 **[Best Practice]** ตรวจ Business fit, Technical feasibility, Delivery feasibility, Operational feasibility, Commercial feasibility, Security/Compliance, Contract risk, Resource availability และ Margin — ถ้าตรวจพบว่า Delivery Team ไม่มี capacity หรือ PMS integration มีความเสี่ยงสูง ต้องกลับไปปรับ Proposal หรือตัดสินใจ No-Bid
 
 ### 4.7 Proposal — 19 องค์ประกอบ
 
-**[Best Practice]** Proposal ที่ดีควรมี Executive Summary, Business Understanding, Problem and Desired Outcome, Proposed Solution, Scope and Deliverables, In Scope/Out of Scope, Delivery Approach, High-Level Timeline, Team Structure, Pricing, Assumptions, Dependencies, Client Responsibilities, Acceptance Approach, Payment Milestones, Change Approach, Warranty/Support, Proposal Validity และ Next Steps
+**[Best Practice]** Proposal ที่ดีคือเอกสารที่ทำให้ decision maker ของลูกค้าเห็น value + risk ได้ในหน้าครึ่ง ไม่ใช่กองเอกสารที่ครบทุกหัวข้อ แต่ละองค์ประกอบมีเหตุผลของมัน — ถ้าขาดไป มักจะระเบิดเป็นปัญหาที่ PM ต้องแบกตอนกลางโครงการ:
+
+| # | องค์ประกอบ | ทำไมต้องมี / พลาดแล้วเกิดอะไร |
+|---|---|---|
+| 1 | Executive Summary | Decision maker อ่านจบหน้าแรกต้องรู้ว่าเราจะแก้ปัญหาอะไรด้วยอะไร — ถ้าไม่มี ลูกค้าไม่รู้จะจดจำ Proposal ว่าอะไร |
+| 2 | Business Understanding | พิสูจน์ว่าเราเข้าใจธุรกิจเขา ไม่ใช่แค่รับโจทย์ — พลาดแล้ว Proposal ดูเป็น template ทั่วไป ต่างจากคู่แข่งไม่ได้ |
+| 3 | Problem and Desired Outcome | ผูกกับตัวเลข outcome (เช่น 35% direct booking) — พลาดแล้วซื้อขายกันที่ feature ไม่ใช่ value |
+| 4 | Proposed Solution | ภาพรวม solution + ทำไมทางเลือกนี้ — พลาดแล้วลูกค้าเข้าใจงานคนละแบบกับที่เราจะทำ |
+| 5 | Scope and Deliverables | สิ่งที่เราจะส่งมอบจริง — พลาดแล้วขอบเขตเลือนลางตั้งแต่ต้น |
+| 6 | In Scope / Out of Scope | ขอบเขตที่ชัดว่าอะไรไม่รวม — **พลาดแล้วงานทุกอย่างกลายเป็น "ใน scope" โดยปริยาย (กับดักอันดับหนึ่ง)** |
+| 7 | Delivery Approach | ทำแบบไหน (phased / hybrid / agile) — พลาดแล้วลูกค้าคาดหวัง delivery แบบอื่น |
+| 8 | High-Level Timeline | ระยะเวลาระดับรวม + milestone — พลาดแล้วลูกค้าจำวันที่ที่ไม่เคยถูกตกลง |
+| 9 | Team Structure | ใครทำอะไร ลูกค้าติดต่อใคร — พลาดแล้ว escalation วิ่งหาคนไม่มีเจ้าภาพ |
+| 10 | Pricing | ราคา + โครงสร้างการคิดเงิน — พลาดแล้ว dispute ตอนจ่ายเงิน |
+| 11 | Assumptions | สิ่งที่เราถือว่าจริงแต่ยังไม่พิสูจน์ — พลาดแล้ว assumption ที่ผิดกลายเป็น risk ที่เรารับเองเงียบ ๆ |
+| 12 | Dependencies | งานที่ต้องพึ่งใคร (เช่น PMS API จากลูกค้า) — พลาดแล้ว timeline ล่าช้าโดยเราไม่รู้ตัว |
+| 13 | Client Responsibilities | ลูกค้าต้องให้อะไร (ข้อมูล, การตัดสินใจ, ทีมร่วม) — พลาดแล้วโครงการชะงักรอลูกค้าแต่ถูกโทษว่าเราล่าช้า |
+| 14 | Acceptance Approach | วัดความสำเร็จของงานส่งมอบอย่างไร — พลาดแล้ว "เสร็จ" กับ "รับงาน" ไม่ตรงกันตอนท้าย |
+| 15 | Payment Milestones | จ่ายเงินเมื่อผ่านเกณฑ์ไหน — พลาดแล้ว cash flow กับ progress ไม่สัมพันธ์กัน |
+| 16 | Change Approach | scope เปลี่ยนจัดการยังไง — พลาดแล้วทุกการเปลี่ยนกลายเป็น "ที่ต้องทำฟรี" |
+| 17 | Warranty / Support | หลังส่งมอบดูแลแค่ไหน นานเท่าไร — พลาดแล้ว support ที่ไม่มีขอบเขตกลายเป็นงานฟรีตลอดชีพ |
+| 18 | Proposal Validity | ราคา/เงื่อนไขใช้ได้ถึงเมื่อไร — พลาดแล้วราคาเก่าถูกอ้างอิงนานเกินไป |
+| 19 | Next Steps | ขั้นต่อไปคืออะไร ใครทำอะไร — พลาดแล้ว Proposal จบแบบไร้ทิศทาง ไม่รู้ว่าจะปิดดีลเมื่อไร |
 
 **[PMBOK 6]** ที่นี่เองที่ Business Case และ Value ส่วนต้นของ Integration ถูกใช้: Proposal คือสะพานจาก Business Need ไปสู่ Project Charter ใน Ch.2
 
@@ -155,11 +181,17 @@ Next Action: ถ้า Bid -> เขียน Proposal ครบ 19 องค์
 
 ## 6. ตัวอย่างจริงจาก Case ต่อเนื่อง (SHG x BTS)
 
-**[Teaching Scenario Extension]** สมมติว่าหลัง Discovery ทีม BTS พบ:
+**[Teaching Scenario Extension] Watch PM Think — เจอ "PMS ต่างยี่ห้อ 3 ตัว API ไม่ครบ"**
 
-- PMS ของ 12 โรงแรมมียี่ห้อต่างกัน 3 ยี่ห้อหลัก มี API ไม่ครบทุกโรงแรม ต้องทำ Adapter แยก (ตรงกับ Risk #1 ใน Scenario Master: "PMS Integration ล่าช้าเพราะ API ไม่พร้อม")
-- งบ 12 ล้านบาทของ SHG แบ่งเป็น Dev Team 6.0, Cloud 1.0, Design 0.8, PMS Integration 0.5, Payment Setup 0.2, QA/Security 0.5, Contingency 1.5, Management Reserve 1.5
-- BTS จึงเสนอ **Option B (Hybrid)**: Fixed Price 6.5 ล้านบาทสำหรับ Development + QA/Security (ตรงกับสองแถวแรก) และ T&M แบบมี cap 0.5 ล้านบาทสำหรับ PMS Adapter ที่ scope ยังไม่ชัด — โดย Cloud, Design Agency และ Payment ยังคงเป็นค่าใช้จ่ายที่ SHG จัดการเอง เพื่อให้รวมแล้วไม่เกินกรอบ 12 ล้านบาท
+หลัง Discovery ทีม BTS เจอความจริงที่เปลี่ยนรูป Proposal: PMS ของ 12 โรงแรมมียี่ห้อต่างกัน 3 ยี่ห้อหลัก มี API ไม่ครบทุกโรงแรม ต้องทำ Adapter แยก (ตรงกับ Risk #1 ใน Scenario Master: "PMS Integration ล่าช้าเพราะ API ไม่พร้อม") — Pre-sales PM ไล่คิดในหัว:
+
+> "ถ้า PMS API ไม่ครบ งาน integration คือ major unknown — ถ้าฉันล็อกราคา Fixed ครอบส่วนนี้ไป ราคาที่ต้องเสนอจะบวมเพราะเผื่อทุกความเป็นไปได้ (เสีย competitiveness) หรือถ้าเสนอดุถูกก็เสี่ยง margin หาย (เสียเงิน) — สองทางนี้แพงทั้งคู่"
+
+เขาจึงจัดสรรงบที่ SHG แจกแจงไว้ (Dev 6.0, Cloud 1.0, Design 0.8, PMS Integration 0.5, Payment Setup 0.2, QA/Security 0.5, Contingency 1.5, Management Reserve 1.5 — รวม 12.0 ล้านบาท) เป็น **Option B (Hybrid)**: Fixed Price 6.5 ล้านบาทสำหรับ Development + QA/Security (งานที่ scope ชัด) และ T&M แบบมี cap 0.5 ล้านบาทสำหรับ PMS Adapter (งานที่ uncertainty สูง) — โดย Cloud, Design Agency และ Payment ยังคงเป็นค่าใช้จ่ายที่ SHG จัดการเอง เพื่อให้รวมแล้วไม่เกินกรอบ 12 ล้านบาท
+
+เหตุผลในหัวของเขา:
+
+> "การแยก T&M cap ออกมาไม่ใช่การอ้อมหนีราคา แต่คือการจัดสรรความเสี่ยงอย่างโปร่งใส — ส่วนที่ผมควบคุมได้ผมรับราคา Fixed, ส่วนที่ยังไม่ชัดผมแชร์ความเสี่ยงกับลูกค้าอย่างเปิดเผย มี cap กันบานปลาย และลูกค้าเห็นเหตุผล — ถ้าผมซ่อน uncertainty ไว้ใน Fixed price ราคาจะแพงขึ้นโดยไม่มีใครเข้าใจ หรือผมจะกิน loss เองตอน API มาไม่ตรง expectation"
 
 **[Best Practice]** ตัวอย่างนี้แสดงว่า Proposal ที่ดีไม่ใช่แค่เลขเดียว แต่คือการจัดสรรความเสี่ยง (risk allocation) ระหว่าง vendor กับลูกค้าอย่างโปร่งใส — ตรงกับหลัก "เลือก contract type จาก scope maturity และ risk" ที่จะเรียนลึกใน Ch.5
 

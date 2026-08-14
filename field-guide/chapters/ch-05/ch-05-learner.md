@@ -5,7 +5,7 @@ book: "PM Delivery Guide: From Pre-sales to Closure — คู่มือปฏ
 edition: Learner
 status: Draft
 validation_status: Not Validated
-last_reviewed: 2026-08-13
+last_reviewed: 2026-08-15
 intended_learner_level: Experienced PM
 difficulty: Advanced
 estimated_study_time: 110
@@ -100,9 +100,21 @@ UAT จะใช้ข้อมูลที่ไม่น่าเชื่อ�
 
 **Risk fields:** ID, Cause, Risk Event, Impact, Probability, Impact Rating, Exposure, Trigger, Owner, Response, Contingency, Residual Risk, Status
 
+**[Best Practice]** เส้นแบ่ง **Risk vs Issue**: Risk = **ยังไม่เกิด** (มี trigger, owner, response — ลงมือได้ล่วงหน้า) / Issue = **เกิดแล้ว** (ต้องแก้/escalate ตอนนี้) — ตัวอย่างจาก SHG: "PMS API ของโรงแรม 3 แห่งยังไม่รองรับ real-time sync" เป็น **Risk** ตอนวางแผน (มี trigger: API doc ล่าช้าเกิน X วัน) → พอถึง Sprint 7 มันเกิดจริง → กลายเป็น **Issue** ใน RAID (Ch.7) ที่ต้องแก้/escalate ทันที — ถ้ายังเรียกมันว่า risk ตอนที่มันเกิดแล้ว = กำลังเลี่ยงการตัดสินใจ
+
 **Response strategies:**
 - Threat: Avoid > Mitigate > Transfer > Accept (+ Escalate)
 - Opportunity: Exploit, Enhance, Share, Accept (+ Escalate)
+
+**[Best Practice]** เลือก strategy ตามบริบท — ตัวอย่างจาก risk ของ SHG:
+
+| Strategy | ใช้เมื่อ | ตัวอย่าง SHG |
+|---|---|---|
+| Avoid | ตัดสาเหตุได้จริงโดยไม่เสีย value มาก | R-02 Payment breach: ล็อกให้ผ่าน PCI-DSS audit ก่อน launch แทนการเสี่ยง |
+| Mitigate | ลด probability / impact ได้ | R-01 PMS API: PoC integration ก่อน Sprint 1 + daily data review |
+| Transfer | ย้ายผลกระทบให้อีกฝ่ายรับ (ประกัน / contract) | ใส่ SLA + penalty ใน contract กับ 2C2P |
+| Accept | ต้นทุน response สูงกว่าผลกระทบ | ยอมรับ cosmetic UI ที่ยังไม่ perfect (มี reserve + trigger ถ้าคอมเพลนต์เยอะ) |
+| Exploit / Enhance / Share | ทำให้โอกาสที่ดีเกิดมากขึ้น | ใช้ data direct booking เปิด pilot campaign เร็วขึ้น |
 
 **[Best Practice]** Accept ≠ ไม่ทำอะไร — Active acceptance มี contingency reserve, trigger และ fallback plan — Risk Owner ควรเป็นคนที่รู้/มีอำนาจต่อ risk นั้น ไม่ใช่ PM เสมอไป
 
@@ -116,6 +128,8 @@ UAT จะใช้ข้อมูลที่ไม่น่าเชื่อ�
 | Time and Material | Scope ไม่ชัด, ต้องเรียนรู้ | Rate, Cap, Approval Cadence, Acceptance |
 | Hybrid | บางส่วนชัด บางส่วนไม่ชัด | Fixed core + T&M cap สำหรับส่วน discovery |
 
+**[Best Practice]** ตัดสินใจ Make-or-Buy จาก: เป็น core ของ value หรือไม่ (ทำเองถ้าใช่), ต้นทุน/ความเสี่ยง, capacity, ความเร็ว — และมองจากมุม Ch.1 (BTS): ทำไม BTS เสนอ **Fixed core 6.5M + T&M cap 0.5M สำหรับ PMS adapter** — เพราะ PMS adapter มี scope ที่ยังไม่ชัด (API ของ 3 ยี่ห้อต่างกัน) ผู้ขายไม่กล้ารับ Fixed ในจุดที่ scope ยังไม่นิ่ง; แต่ core booking engine มี scope ชัด ควรล็อกราคา — **contract type ถูกเลือกจาก scope maturity + ว่าใครรับ cost risk ต่องานส่วนนั้น** ไม่ใช่ contract เดียวทั้งโปรเจกต์
+
 **[Teaching Scenario]** SHG: 2C2P (transaction fee 2.5% + 7 บาท/txn) — ต้องดูไม่แค่ fee แต่ SLA, security obligation, settlement, incident response, refund process และ integration support; PMS Vendors (T&M ~500K รวม) — ต้องมี cap + acceptance; AWS (pay-as-you-go ~120K/เดือน) — ต้องมี cost forecast + monitoring
 
 ### 4.3 Communications Planning (C14) — จาก lesson-12
@@ -125,6 +139,15 @@ UAT จะใช้ข้อมูลที่ไม่น่าเชื่อ�
 **3 รูปแบบ:** Push (email/report), Pull (dashboard/wiki), Interactive (meeting/workshop)
 
 **[Best Practice]** แยก **Status Report** (บอกสถานะตามรอบ) ออกจาก **Decision Brief** (ขอ decision พร้อม evidence + deadline) — Dashboard สีแดงไม่ใช่ escalation ถ้าไม่มี decision ask
+
+**[Best Practice]** ผูก **ระดับ stakeholder (จาก Ch.2)** กับข้อมูล/ความถี่ — คนละระดับได้ข้อมูลที่ต่างกัน:
+
+| ระดับ stakeholder | ข้อมูลที่ควรได้ | ความถี่ | ช่องทาง |
+|---|---|---|---|
+| Sponsor / Steering (คุณจิรา) | สถานะ + decision ask + risk ระดับ baseline | รายสัปดาห์ | Status Report + Steering Meeting |
+| PO / Business (คุณนภา, คุณภัทร) | sprint increment, acceptance progress | ทุก sprint | Sprint Review |
+| ทีม dev | งาน / blocker / plan ประจำวัน | รายวัน | Daily Sync |
+| Vendor (2C2P, PMS) | integration status, SLA issues | ตามรอบ / ตามเหตุการณ์ | Vendor touchpoint |
 
 **[Teaching Scenario]** SHG cadence: Daily Team Sync (dev), Weekly Status (Steering + Stakeholders), Sprint Review (PO/คุณนภา + business), Risk Review (รายสัปดาห์), UAT Defect Review (ช่วง Ch.8), Go-live Command Center (Ch.9)
 
@@ -167,15 +190,19 @@ Next Action: ถ้าผ่าน -> Kickoff Execution (Ch.6); ถ้าไม�
 
 ## 6. ตัวอย่างจริงจาก Case ต่อเนื่อง (SHG)
 
-**[Teaching Scenario]**
+**[Teaching Scenario] Watch PM Think — สัปดาห์ก่อน Planning Gate**
 
-- **Risk Register (ตัวอย่าง 2 รายการ):**
-  - R-01: PMS API ไม่พร้อม (High/High) — Mitigate: PoC integration ก่อน Sprint 1, daily data review, wave migration rehearsal — Owner: คุณวีระ (CTO)
-  - R-02: Payment Security Breach (Low/Critical) — Avoid: PCI-DSS audit ก่อน launch — Owner: คุณวีระ
-- **Procurement:** 2C2P (transaction fee + SLA + incident response), PMS Vendors (T&M cap 500K), AWS (pay-as-you-go + forecast), Design Agency (Fixed 800K)
-- **Communications:** Weekly Status ถึง Steering (คุณจิรา, คุณภัทร, คุณวีระ, PM), Sprint Review กับ PO + business, Daily Team Sync ภายในทีม, Risk Review รายสัปดาห์
-- **Test Strategy:** SIT + Performance (3s/5s/99.5%) + Security (PCI-DSS/PDPA) + UAT (key users 80) + Regression — ผลจริง → Ch.8
-- **Planning Gate:** Sponsor อนุมัติ baselines + เปิดรายการ gap (เช่น test data ยังไม่ครบ) พร้อม due date — ผ่านแบบ conditional
+คุณสุทธิ (PM) ไล่รวมแผนย่อยเข้าด้วยกัน: Schedule/Cost/Resource ผ่านแล้ว แต่เขายังไม่กล้าเสนอ Gate เพราะมี 3 คำถามค้าง: PMS risk (R-01) ยังไม่มี trigger ที่วัดได้, Test Strategy ยังไม่ล็อก UAT data source, และ 2C2P ยังไม่ยืนยัน SLA เรื่อง incident response — "ผ่าน Gate ทั้งที่ baseline อ่อน = เอา problem ไปถ่ายทอดให้ Execution"
+
+Risk: เขาเขียน R-01 ให้ชัด: "PMS API ไม่พร้อม" (High/High) → trigger = API doc ล่าช้าเกิน X วัน หรือ PoC ไม่ผ่าน → response = PoC ก่อน Sprint 1 + daily data review + wave migration rehearsal → owner คุณวีระ (CTO) — และ R-02 payment breach → Avoid ด้วย PCI-DSS audit ก่อน launch
+
+Procurement: เขาเลือก contract ตาม scope maturity — 2C2P ดูไม่แค่ fee แต่ดู SLA/incident response/settlement; PMS vendor T&M cap 500K ต้องมี acceptance evidence; AWS pay-as-you-go ต้องมี forecast + monitoring — "fee ต่ำแต่ incident กลาง campaign = เสียหายมากกว่า"
+
+Comms: เขาแยก Status Report (รายสัปดาห์ ถึง Steering) ออกจาก Decision Brief (ขอ decision พร้อม evidence + deadline) — "dashboard สีแดงไม่ใช่ escalation ถ้าไม่มี decision ask"
+
+Test Strategy: เขาล็อก scope/env/data/exit criteria ให้ครบก่อน Gate — "ผลจริงจะไปตรวจที่ Ch.8 แต่ต้องวางแผนที่นี่ ไม่งั้น Ch.8 จะเถียงกันว่าแบบไหนถึงจะผ่าน"
+
+Planning Gate: Sponsor อนุมัติแบบ **conditional** — gap (test data ยังไม่ครบ) มี owner + due date
 
 ## 7. จุดตัดสินใจและกับดักที่พบบ่อย
 

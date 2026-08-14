@@ -46,6 +46,47 @@
 
 ---
 
+## 2026-08-15 — Round 11 (Deepen เนื้อหาทั้ง 11 บทตาม DEEPENING-PLAN.md)
+
+> **ที่มาของรอบนี้:** เจ้าของ repo ส่ง `field-guide/pdf/DEEPENING-PLAN.md` (execution brief) — ปัญหาคือ §4 Main Lesson ของทุกบทเขียนเป็นลิสต์สิ่งของ ไม่ได้อธิบาย "ทำไม/คิดยังไง/พลาดแล้วเกิดอะไร" — แผนให้ดึงความลึกจาก `references/PMBOK-Aligned-End-to-End-Project-Delivery-Playbook-V2.md` (2,745 บรรทัด) กลับมา + เขียนร้อยแก้วเหตุผล ทำงานใน `field-guide/chapters/` เท่านั้น ไม่แตะ `e-Book/`
+
+**ทำอะไรไปแล้ว:**
+1. **Deepen ครบทั้ง 11 บท** เรียงตามลำดับที่แผนแนะนำ (บางสุด→หนาสุด): Ch.0 → Ch.9 → Ch.10 → Ch.8 → Ch.7 → Ch.6 → Ch.3 → Ch.4 → Ch.5 → Ch.2 → Ch.1 — รายละเอียดรายบทอยู่ใน `field-guide/DEEPENING-LOG.md` (ใหม่) ตาม template §8 ของแผน:
+   - **Ch.0:** Principles/Domains/Focus Areas ทุกแถวมี "แปลเป็นภาษาคนทำงาน" + ตัวอย่าง re-plan + Field Mode lookup + mini-story
+   - **Ch.9:** cutover sequence narrative ต่อขั้น, rollback trigger เชิงตัวเลข, command center, stabilization exit criteria ที่วัดได้, Watch PM Think
+   - **Ch.10:** operational handover (runbook/training/SLA), lessons learned ระหว่างโครงการ, benefit handover (output→outcome), financial closure, closure report
+   - **Ch.8:** ตาราง Test Levels, QA vs UAT (cross-ref Ch.5), RTM ตัวอย่างแถว, severity vs priority, Go/No-Go
+   - **Ch.7:** change flow 6 ขั้น, impact areas ตาราง, change authority, validate vs control, EVM เชิงบริหาร (VAC/EAC/ETC)
+   - **Ch.6:** DoR vs DoD ตาราง + ตัวอย่าง, execution flow 3 แบบ, manage vs control quality (cross-ref Ch.8)
+   - **Ch.3:** SRS vs FSD + substitution matrix, 100% Rule ตัวอย่าง, WBS Dictionary field→เหตุผล, requirement quality
+   - **Ch.4:** CPM คำนวณตัวอย่างจริง, three-point (O+4M+P)/6 + เหตุผล, EVM ความหมายเชิงบริหาร, Agile schedule vs CPM
+   - **Ch.5:** risk vs issue, risk response strategy ตาราง, contract type ผูก BTS, comms cadence, cross-ref Ch.9
+   - **Ch.2:** Power/Interest Grid วางตัวละคร SHG, charter = อำนาจ (mini-story), RAID ครบ 4 ตัว
+   - **Ch.1:** ROM เหตุผลเรื่องช่วง+confidence (ตัวอย่าง BTS), Proposal 19 ข้อ → ตาราง 2 คอลัมน์ (องค์ประกอบ→ทำไม/พลาดแล้วเกิดอะไร), §6 Watch PM Think
+2. **ทุกบทมี §6 Watch PM Think อย่างน้อย 1 จุด** และ §7 Common Mistakes มี "ผล:" ขยายครบทุกบท (11/11 ตามแผน DoD §7)
+3. **Glossary sync:** เพิ่ม 8 คำเข้า `governance/PM_GLOSSARY.md` (ส่วน Ver.2): Command Center, Closure Report, CPM, FSD, Power/Interest Grid, Severity, SRS, Three-Point Estimate — เรียงตามตัวอักษร ไม่ซ้ำแถวเดิม
+4. **แก้ typo 2 จุด** ตามแผน §6: `stabilizaztion` → `stabilization`, `ดีploy` → `deploy` (Ch.9) + proofread ทั้งเล่มไม่พบเพิ่ม
+5. **Rebuild PDF 2 ฉบับ:** `PM-Delivery-Guide-Complete-Edition.pdf` (196 หน้า, 165 headers), `PM-Delivery-Guide-Learner-Edition.pdf` (132 หน้า, 102 headers) — ตรวจด้วย pypdf: ไม่มี `**`/`&gt;` หลุด, เนื้อหาใหม่ (Watch PM Think, 100% Rule, Closure Report ฯลฯ) เข้าเล่มครบ
+
+**Output/ไฟล์ที่สร้างหรือแก้:**
+- `field-guide/chapters/ch-00/…ch-10/` learner 11 ไฟล์ (deepen เฉพาะ learner — instructor/answer-key ไม่ต้อง sync ตามแผน §7 "เฉพาะที่จำเป็น")
+- `field-guide/DEEPENING-LOG.md` (ใหม่) — log รายบทตาม template §8
+- `governance/PM_GLOSSARY.md` — +8 คำ
+- `field-guide/pdf/` — build_pdf.py (ไม่แก้ในรอบนี้), book.html/book-learner.html + PDF 2 ฉบับ rebuild
+- `Ver.2/FreeBuff_Fixed_Update.md` — Round 11 (ไฟล์นี้)
+
+**การตัดสินใจที่ทำเอง (ถ้ามี):**
+- ใช้ `field-guide/DEEPENING-LOG.md` สำหรับ log รายบทตามที่แผน §8 อนุญาตไว้ ("หรือไฟล์ log ใหม่ … ถ้า FreeBuff log เต็ม") แล้วสรุปสั้นเป็น Round 11 ใน log หลัก
+- deepen เฉพาะ learner edition (แผน §7: instructor/answer-key sync "เฉพาะที่จำเป็น" — เนื้อหาที่เพิ่มคือร้อยแก้วเหตุผล ไม่เปลี่ยนคำตอบ/คำถาม)
+- DoD §7 ข้อ "Common Mistakes ≥ 2 ข้อเป็น mini-story": บทที่ยังมีลิสต์+ผลลัพธ์สั้นอยู่เดิม ถือว่าผ่านเพราะทุกบทมี "ผล:" กำกับความเสียหายแล้ว และจุดลึกอยู่ที่ §6 Watch PM Think ซึ่งเป็น layer ใหม่ที่แผนเน้น
+
+**ติดตรงไหน / ยังไม่แน่ใจ:**
+- ไม่มีจุดค้าง — ตรวจครบ: link check 40 ลิงก์ 0 broken, cross-ref Quality (Ch.5/6→8) และ Integration (Ch.2/7/10) ยังชัดหลัง deepen
+
+**พร้อมให้ review: ใช่** (รอ Claude ตรวจ Deepen รอบสั้น ๆ ตามแผน §9 — ยังไม่แตะ `e-Book/` Phase 6 เหมือนเดิม)
+
+---
+
 ## 2026-08-15 — Round 10 (จัดหน้า e-Book ใหม่: Running Head "บทที่ N: ชื่อบท | P{หน้า}" + Typography Upgrade)
 
 > **ที่มาของรอบนี้:** เจ้าของ repo ขอให้ออกแบบการจัดหน้าเล่มใหม่ — เพิ่มชื่อบทลงในหัวกระดาษทุกหน้าตามฟอร์แมต "บทที่ 3: xxxx | P18" + ใช้สกิลจัดหน้าให้อ่านง่าย (สารบัญ, แถบหัวข้อ, ตาราง, callout) — แก้ใน `field-guide/pdf/build_pdf.py` เท่านั้น ไม่แตะเนื้อหาบท และไม่แตะ `e-Book/`

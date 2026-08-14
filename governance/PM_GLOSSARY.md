@@ -152,11 +152,15 @@ last_updated: 2026-07-22
 | Bid / No-Bid | การตัดสินใจเสนอราคาหรือไม่ | ตัดสินด้วย value, capability, capacity และ risk ไม่ใช่ความกลัวเสียโอกาส | คิดว่า No-Bid คือการแพ้ | Opportunity, Proposal |
 | Business Case | เหตุผลทางธุรกิจของโครงการ | ผูก value, cost, timeline, risk และ approval เข้าด้วยกัน | สับสนกับ Proposal | Benefit, Sponsor |
 | CCB | Change Control Board | คณะที่อนุมัติ change ที่กระทบ baseline ตาม threshold | คิดว่า PM อนุมัติเองได้ทุกเรื่อง | Change Request, Governance |
+| Closure Report | รายงานปิดโครงการ | สรุปผลเทียบเป้าหมาย, หลักฐานส่งมอบ, lessons learned, benefit handover | เขียนเฉพาะเมื่อถูกบังคับ ไม่มีหลักฐาน | Lessons Learned, PIR |
+| Command Center | ห้อง/ทีมควบคุมเหตุการณ์ช่วง Go-live | มี owner ต่อ incident, escalation path, decision timeline ชัดเจน | เปิดห้องแต่ไม่มีบทบาทใครทำอะไร | Hypercare, Incident |
+| CPM | Critical Path Method | เทคนิคหาเส้นทางวิกฤตจาก dependency + duration เพื่อหาว่างานไหนกำหนดเสร็จโครงการ | สับสนกับ Gantt (CPM คือการวิเคราะห์ ไม่ใช่ chart) | Critical Path, Float |
 | Cutover | การเปลี่ยนผ่านเข้าสู่ระบบใหม่ | การสลับจากระบบเดิมไประบบใหม่ใน Production | สับสนกับ Go-Live (Go-Live รวม cutover + enable users) | Rollback, Go/No-Go |
 | Definition of Done | เกณฑ์ว่างานเสร็จจริง | build + review + test + acceptance criteria + evidence ครบ | คิดว่าเขียน code เสร็จ = Done | Definition of Ready |
 | Definition of Ready | เกณฑ์ว่างานพร้อมเริ่ม | มี scope, AC, dependency, owner, estimate ชัดก่อนรับงาน | สับสนกับ Definition of Done | Definition of Done |
 | Discovery | การสำรวจทำความเข้าใจปัญหา | เก็บ fact, pain, root cause, outcome ก่อนออก solution | รีบข้ามไปเป็น feature | Opportunity, Business Case |
 | Fixed Price | ราคาคงที่ | เหมาะกับ scope ชัด vendor รับ cost risk | ใช้กับ scope ไม่ชัดแล้วเจอ dispute | T&M, Contract |
+| FSD | Functional Specification Document | รายละเอียดฟังก์ชัน/หน้าจอ/rule ระดับ implement | ตัด FSD โดยไม่มีสิ่งทดแทน (prototype + AC ที่ชัด) | SRS, Requirement |
 | Go/No-Go | การตัดสินใจขึ้น Production | ตัดสินจาก readiness, risk, rollback, support, approval | ตัดสินจากความรู้สึกหรือแรงกดดัน | Release Readiness, Rollback |
 | Governance | กลไกตัดสินใจและอนุมัติ | ใครตัดสินใจอะไร ตาม threshold ใด มี evidence อะไร | สับสนกับ Meeting | CCB, RACI |
 | Hypercare | ช่วงสนับสนุนเข้มหลัง Go-live | monitor, triage, stabilize จนเข้าสู่สภาวะเสถียร | คิดว่า Go-live แล้วจบงาน | Go/No-Go, Stabilization |
@@ -166,6 +170,7 @@ last_updated: 2026-07-22
 | MVP | Minimum Viable Product | scope ต่ำสุดที่พิสูจน์ value ได้จริง | คิดว่า MVP คือ scope ตัดจนของไม่ดี | Product Backlog |
 | Opportunity | โอกาสทางธุรกิจ | lead/RFP/request ที่ยังไม่ใช่โครงการที่ได้รับอนุมัติ | สับสนกับ Project | Bid/No-Bid, Proposal |
 | PIR | Post-Implementation Review | ทบทวนผลหลัง implementation เทียบกับ target | ทำช้าเกินไปจนไม่มีใครจำ | Lessons Learned, Benefit |
+| Power/Interest Grid | ตารางจัดลำดับ stakeholder ตามอำนาจและความสนใจ | 4 ช่อง: Manage Closely / Keep Satisfied / Keep Informed / Monitor | ทำเพื่อให้ครบ template แล้วไม่ใช้จัด engagement | Stakeholder, Engagement |
 | Proposal | ข้อเสนอโครงการ | executive summary, scope, timeline, price, assumptions | สับสนกับ SOW (SOW คือสัญญาผูกพัน) | SOW, Bid/No-Bid |
 | RAID | Risks, Assumptions, Issues, Dependencies | log รวมที่ต้องมี owner และ review ต่อเนื่อง | ทำครั้งเดียวแล้วเก็บ | Risk Register, Issue |
 | Release Readiness | ความพร้อมขึ้น Production | scope, test, security, data, rollback, support, approval ครบ | เช็คเฉพาะ test ผ่าน | Go/No-Go |
@@ -174,9 +179,12 @@ last_updated: 2026-07-22
 | ROM | Rough Order of Magnitude | ประมาณการระดับสูงสำหรับตัดสินใจ ไม่ใช่ commitment | คิดว่าเป็นราคาที่ผูกพัน | Estimate, Proposal |
 | RTM | Requirements Traceability Matrix | เชื่อม requirement → design → test → acceptance | ทำเพื่อให้ครบ template | Requirement, Test Case |
 | SIT | System Integration Test | ทดสอบรวมระบบ/การเชื่อมต่อระหว่างระบบ | ใช้แทน UAT | UAT, Test Strategy |
+| Severity | ความรุนแรงของ defect ต่อระบบ/ธุรกิจ | แยกจาก Priority (ลำดับเร่งด่วน) — Critical ตัวเดียวสำคัญกว่า cosmetic 20 ตัว | สับสนกับ Priority | Defect, Triage |
+| SRS | Software Requirements Specification | เอกสาร requirement ที่ testable + traceable | คิดว่า SRS ละเอียด = ดี โดยไม่เช็ค coverage/testability | FSD, RTM |
 | SOW | Statement of Work | ขอบเขตงานที่ผูกพันตามสัญญา | สับสนกับ Proposal | Contract, Proposal |
 | Stabilization | การทำให้ระบบเข้าสู่สภาวะเสถียร | incident ลด, performance คงที่, support รับช่วงได้ | คิดว่า 2 วันจบ | Hypercare |
 | T&M | Time and Material | จ่ายตามเวลา/วัสดุ เหมาะกับ scope ไม่ชัด | ไม่มี cap/rate/evidence แล้วบานปลาย | Fixed Price, Contract |
+| Three-Point Estimate | การประมาณ 3 ค่า (O/M/P) แล้วเฉลี่ยถ่วงน้ำหนัก (O+4M+P)/6 | ลดผลของ outlier และแสดง uncertainty | ใช้แค่ค่าเดียวหรือลืมบันทึก assumption | Estimate, PERT |
 | Test Strategy | แนวทางการทดสอบ | test levels, environment, data, entry/exit, defect process | คิดว่าเท่ากับ Test Plan รายละเอียด | Test Plan, RTM |
 | UAT | User Acceptance Test | ผู้ใช้ธุรกิจตรวจรับว่า solution รองรับ process จริง | ใช้แทน system test | SIT, Acceptance |
 | Workstream | สายงานย่อยของโครงการ | แยกตาม deliverable/function เช่น data, integration | คิดว่าเท่ากับ department | WBS, RACI |

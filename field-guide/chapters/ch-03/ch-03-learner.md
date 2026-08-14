@@ -5,7 +5,7 @@ book: "PM Delivery Guide: From Pre-sales to Closure — คู่มือปฏ
 edition: Learner
 status: Draft
 validation_status: Not Validated
-last_reviewed: 2026-08-13
+last_reviewed: 2026-08-15
 intended_learner_level: Beginner PM | Experienced PM
 difficulty: Core
 estimated_study_time: 100
@@ -93,11 +93,33 @@ Stakeholder Need (Ch.2)
 
 **Requirement ต้องมีคุณภาพ 9 ข้อ:** Clear, Complete, Consistent, Feasible, Testable, Traceable, Prioritized, Unambiguous, Necessary และ Owned
 
+**[Teaching Scenario]** ตัวอย่าง requirement ดี vs แย่ — กุญแจ: ถ้าอ่านแล้วยังตั้ง test case / UAT scenario ไม่ได้ แสดงว่ายังไม่ดีพอ:
+
+| แย่ (รับไม่ได้) | ดี (ตรวจรับได้) |
+|---|---|
+| "ระบบควรโหลดเร็ว" | "หน้าแรกโหลดเสร็จภายใน 3 วินาที บน 4G (วัดด้วย Lighthouse)" |
+| "ผู้ใช้จองห้องได้ง่าย" | "ผู้ใช้จองห้องได้ภายใน 5 ขั้นตอน และได้รับ confirmation email ภายใน 5 วินาทีหลังชำระเงินสำเร็จ" |
+| "รองรับหลายภาษา" | "รองรับภาษาไทยและอังกฤษ สลับภาษาได้โดยไม่ต้อง log in ใหม่" |
+
 ### 4.4 SRS/FSD — เอกสารหรือสิ่งทดแทน (C4)
 
 **[PMBOK 8]** PMBOK ไม่บังคับชื่อเอกสาร — บังคับว่า Requirement ถูก Elicit, Analyze, Document, Prioritize, Approve, Trace, Validate และ Control
 
 **[Best Practice]** SRS (Software Requirements Specification) ควรมีเมื่อ contract formal/ระบบซับซ้อน/หลายทีม/ต้อง sign-off/compliance; FSD (Functional Specification) ครอบคลุม behavior, business rules, screen behavior, validation, error handling — **ห้ามตัด FSD โดยไม่มีสิ่งทดแทน** เมื่อ logic ซับซ้อน/หลายระบบ/offshore/audit/ผูก payment (ดู Document Substitution Matrix ใน Playbook V2 §C4.4)
+
+**[Best Practice]** กฎเลือกเอกสาร: ดู **coverage** ไม่ใช่ชื่อไฟล์ — แต่ละหัวข้อต้องมี "เอกสารหลักหรือเอกสารทดแทน" อย่างใดอย่างหนึ่ง (Document Substitution Matrix):
+
+| Coverage | เอกสารหลัก | เอกสารทดแทน |
+|---|---|---|
+| Business Need | BRD / Business Case | Charter / Discovery Summary |
+| Functional Behavior | FSD | SRS / User Story / Use Case |
+| Business Rules | Rule Catalogue | SRS / Story AC |
+| API | Interface Spec | OpenAPI / Swagger |
+| Data | Data Spec | Data Dictionary / ERD |
+| Acceptance | Acceptance Criteria | Test Case / UAT Scenario |
+| Traceability | RTM | ALM Linkage |
+
+**[Teaching Scenario]** ใช้กับ SHG ตรงไหน: งาน **Payment** ผูกกับ 2C2P + PCI-DSS → ใช้ FSD จริง (logic ซับซ้อน + หลายระบบ + audit) — ห้ามแทนด้วย user story เปล่า ๆ; ส่วน **Landing Page** → User Story + Acceptance Criteria + Wireframe ก็พอ (ไม่ต้อง FSD) — การตัดสินใจต้องบันทึกเหตุผล ไม่ใช่ "ทำแบบไหนสะดวก"
 
 ### 4.5 Define Scope (C5)
 
@@ -112,6 +134,19 @@ Stakeholder Need (Ch.2)
 **ขั้นตอน:** ระบุ final product → ระบุ major deliverables → เลือก decomposition logic → แตก deliverables → ตรวจ 100% Rule → หยุดที่ work package → ระบุ owner → สร้าง WBS Dictionary → ตรวจ scope coverage → approve scope baseline
 
 **[Best Practice]** WBS Dictionary ต้องมี: WBS ID, Work Package, Description, Deliverable, Included/Excluded Work, Owner, Requirements, Acceptance Criteria, Quality Criteria, Assumptions, Constraints, Dependencies, Milestone, Resource, Estimate, Cost Account, Risk, Approval
+
+**[Teaching Scenario]** ตัวอย่าง 100% Rule กับ WBS ของ Direct Booking Platform: work package "Payment Integration" (parent) ต้องเท่ากับผลรวมของ child — Payment Gateway Contract + API Design + Payment Flow Implementation + Callback Handling + Security Review + Payment Testing + Reconciliation Setup — ถ้าเช็คแล้วพบว่า "Refund Logic" ยังไม่ได้แตกเป็น child แต่เป็นงานที่อยู่ใน scope → 100% Rule **ยังไม่ผ่าน (ขาด)** — และถ้ามี child "Loyalty Program" ทั้งที่ไม่อยู่ใน approved scope → **เกิน** → ต้องตัดออกหรือเข้า change process (Ch.7) — กฎนี้ทำให้ WBS เป็นภาพของ scope ที่อนุมัติแล้ว ไม่ใช่ภาพของทุกคำขอ
+
+**[Best Practice]** field ของ WBS Dictionary ที่คนมักข้าม (field → ทำไมต้องมี):
+
+| Field | ทำไมต้องมี |
+|---|---|
+| Included / Excluded Work | กันงานลากเข้าออกหลังอนุมัติ — ตอบได้ทันทีว่า "งานนี้เคยอยู่ใน work package นี้ไหม" |
+| Owner | งานที่ไม่มี owner = งานที่ไม่มีใครตอบ |
+| Acceptance Criteria | ผูกกับ Ch.8 — "ผ่าน" แปลว่าอะไร วัดได้ก่อนตรวจรับ |
+| Dependencies | รู้ว่าอะไรต้องมาก่อน — ป้อนเข้า Ch.4 (schedule) โดยตรง |
+| Cost Account | เชื่อมงานกับงบ — ดูว่า work package นี้ใช้เงินเท่าไร (EVM ใน Ch.7) |
+| Assumptions | สมมติฐานที่ผิดกลายเป็น risk (Ch.2/Ch.5) — บันทึกไว้เพื่อทวน |
 
 **[PMBOK 6]** อย่าแตก WBS ตาม department — แตกตาม deliverable (ไม่ใช่ "งานของแผนก IT" แต่เป็น "PMS Sync Adapter" หรือ "Payment Integration")
 
@@ -139,12 +174,15 @@ Next Action: แปลงคำขอเป็น requirement ที่ตรว
 
 ## 6. ตัวอย่างจริงจาก Case ต่อเนื่อง (SHG)
 
-**[Teaching Scenario]** ทีม SHG เก็บ requirements สำหรับ Direct Booking Platform:
+**[Teaching Scenario] Watch PM Think — ระหว่าง workshop requirements**
 
-- **Business Requirement:** เพิ่ม Direct Booking จาก 10% เป็น 35% ใน 18 เดือน, ลด OTA commission ≥ 3 ล้านบาท/ปี
-- **Functional (ตัวอย่าง):** ผู้ใช้ค้นหาห้องพักตามโรงแรม/วันที่/จำนวนผู้เข้าพัก, เปรียบเทียบราคา, จองและชำระเงินผ่าน 2C2P, รับ confirmation email/SMS
-- **Non-functional:** Page load ≤ 3 วินาที, Booking confirmation ≤ 5 วินาที, Uptime ≥ 99.5%, PCI-DSS + PDPA compliance
-- **WBS ตัวอย่าง (Payment Integration work package):** Payment Gateway Contract, API Design, Payment Flow Implementation, Callback Handling, Security Review, Payment Testing, Reconciliation Setup — แต่ละ item มี owner + acceptance criteria ใน WBS Dictionary
+คุณภัทรพูดว่า "dashboard ที่ดู conversion ทุกอย่าง" — คุณสุทธิ (PM) ไม่รับคำนั้นเข้าสู่ scope ทันที แต่ถามกลับ: "conversion ตัวไหน ใครใช้ ตัดสินใจอะไรจากมัน ข้อมูลมาจากระบบไหน" — เพราะเขารู้ว่า "ทุกอย่าง" ยังไม่ใช่ requirement; มันคือทิศทาง — เขาให้ BA แปลงเป็น requirement slices ที่ testable (เช่น "แสดง % direct booking ต่อโรงแรม ต่อเดือน โดย refresh รายวัน")
+
+Functional vs Non-functional: ทีมได้ "ผู้ใช้จองและชำระเงินผ่าน 2C2P" — เขาถามต่อว่า "แล้วต้องเร็วแค่ไหน? ต้องรองรับ PCI-DSS ไหม?" → ได้ non-functional กำกับ (page load ≤ 3 วินาที, confirmation ≤ 5 วินาที, uptime ≥ 99.5%) — เพราะ requirement ที่ไม่มีเกณฑ์ = ตอน UAT (Ch.8) จะเถียงกันว่า "แบบไหนถึงจะผ่าน"
+
+Business Requirement เป็นเข็มทิศ: เพิ่ม Direct Booking จาก 10% เป็น 35% ใน 18 เดือน, ลด OTA commission ≥ 3 ล้านบาท/ปี — เขาเอาไว้เช็คว่าทุก requirement ที่เก็บมานั้นสนับสนุนเป้าหมายนี้หรือไม่
+
+WBS: เขาแตก "Payment Integration" ตาม deliverable — Payment Gateway Contract, API Design, Payment Flow, Callback Handling, Security Review, Payment Testing, Reconciliation Setup — แล้วเช็ค 100% Rule: ครบทุกงานใน scope หรือยัง? มีอะไรเกินหรือไม่? — "WBS คือภาพของ scope ที่อนุมัติแล้ว ไม่ใช่ของทุกคำขอ"
 
 **[PMBOK 8]** WBS fragment นี้จะถูกใช้ต่อใน Ch.4 เพื่อนิยาม activities, dependencies และ duration
 

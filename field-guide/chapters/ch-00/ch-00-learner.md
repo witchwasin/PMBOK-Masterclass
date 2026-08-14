@@ -5,7 +5,7 @@ book: "PM Delivery Guide: From Pre-sales to Closure — คู่มือปฏ
 edition: Learner
 status: Draft
 validation_status: Not Validated
-last_reviewed: 2026-08-13
+last_reviewed: 2026-08-15
 intended_learner_level: Beginner PM | Experienced PM
 difficulty: Foundation
 estimated_study_time: 60
@@ -30,6 +30,8 @@ note: "บทปฐมบท — ตาม master_plan §5 ไม่มี Works
 **[PMBOK 8]** PMBOK เปลี่ยนจาก "ชุดกระบวนการที่ต้องทำครบ" เป็น "กรอบที่ช่วยให้ PM ตัดสินใจตามบริบท" — แต่การจะ tailor ได้ ต้องรู้จักส่วนประกอบก่อน: Principles (หลักคิด), Performance Domains (ด้านที่ต้องบริหาร), Focus Areas (จุดเน้น) และ Process Groups (วงจรบริหาร) — บทนี้ให้แผนที่ของส่วนประกอบเหล่านี้ เพื่อให้บทต่อ ๆ ไป (A→H) มีภาษากลาง
 
 **[Best Practice]** ประสบการณ์สำคัญ แต่ประสบการณ์อย่างเดียวทำให้ PM มองเฉพาะสิ่งที่เคยเจอ — PMBOK คือแผนที่ของคำถามสำคัญ: Business Need ชัดไหม, Stakeholder ใคร, Scope/Change ควบคุมได้ไหม, Risk มี owner ไหม, และหลังส่งมอบใครวัด benefit
+
+**[Teaching Scenario]** mini-story: PM สองคนดูแลโปรเจกต์หน้าตาคล้ายกัน — คนแรกไม่เคยใช้กรอบ คอยแต่ตามงาน: sprint ไหนมีงานก็จัด ทีมเก่งก็ใช้ ลูกค้าขอเพิ่มก็รับปากไปก่อน ปลายทางส่งมอบครบตาม spec แต่ direct booking ไม่เพิ่มขึ้น — เพราะเขาไม่เคยตั้งคำถามว่า "value ที่ต้องเกิดคืออะไร", "ใครคือ stakeholder ตัวจริง", "ตัวเลข 35% จะวัดจากอะไร" — คนที่สองเปิดกรอบถามคำถาม 5 ข้อก่อนเริ่ม (Business Need, Stakeholder, Scope/Change, Risk, Benefit) แล้ววางแผนบนคำตอบเดียวกัน — ผล: โปรเจกต์แรก "เสร็จแต่ไม่เกิดผล" โปรเจกต์หลัง "เสร็จและวัด value ได้" — กรอบไม่ได้ทำให้ PM เก่งขึ้น แต่มันทำให้ PM **ถามถูกคำถามก่อนลงมือ**
 
 ## 3. Mental Model
 
@@ -57,18 +59,20 @@ Business Need
 
 **[PMBOK 8]** ภาพรวมระดับสูงที่เล่มนี้ใช้:
 
-| องค์ประกอบ | จำนวน | บทบาท |
-|---|---|---|
-| Principles | 6 | หลักคิดที่ยึดตลอดโครงการ (เช่น value focus, stakeholder stewardship, systems thinking) |
-| Performance Domains | 7 | ด้านที่ต้องบริหารให้ครบ (เช่น stakeholders, team, development approach, delivery, planning, uncertainty, performance) |
-| Focus Areas | 5 | จุดเน้นการปฏิบัติ (เช่น tailoring, governance, quality, risk, value) |
-| Process Groups | 5 | Initiating → Planning → Executing → Monitoring & Controlling → Closing (จาก Process Groups: A Practice Guide) |
+| องค์ประกอบ | จำนวน | บทบาท | แปลเป็นภาษาคนทำงาน |
+|---|---|---|---|
+| Principles | 6 | หลักคิดที่ยึดตลอดโครงการ (เช่น value focus, stakeholder stewardship, systems thinking) | "งานที่ทำตอนนี้ทำให้ business ได้ผลลัพธ์อะไร ไม่ใช่แค่เสร็จตาม plan" — ประชุมไม่ใช่เพื่อ "ผ่านวาระ" แต่เพื่อตัดสินใจเรื่องที่กระทบ value |
+| Performance Domains | 7 | ด้านที่ต้องบริหารให้ครบ (เช่น stakeholders, team, development approach, delivery, planning, uncertainty, performance) | "เช็ควงจรให้ครบก่อน": stakeholder รู้เรื่องไหม, ทีมมีคนพอไหม, งานเดินตรงแผนไหม, ความเสี่ยงมีเจ้าของไหม — ด้านหนึ่งหาย โครงการพังได้แม้ด้านอื่นสมบูรณ์ |
+| Focus Areas | 5 | จุดเน้นการปฏิบัติ (เช่น tailoring, governance, quality, risk, value) | "ตอนนี้ต้องโฟกัสตรงไหน" — เช่น ใกล้ launch → โฟกัส quality/risk มากกว่าตกแต่ง UI; ช่วงเริ่ม → โฟกัส governance/scope |
+| Process Groups | 5 | Initiating → Planning → Executing → Monitoring & Controlling → Closing (จาก Process Groups: A Practice Guide) | "วงจรที่เกิดซ้ำ ไม่ใช่บันไดที่เดินขึ้นครั้งเดียว" — กลาง execution ยังต้องกลับไป planning อีกหลายรอบ |
 
 > **หมายเหตุ:** รายละเอียดระดับหัวข้อของ PMBOK 8 เป็นไปตาม reference basis ของเล่มนี้ (Playbook V2 §1) — ตัวเลขข้างต้นเป็นกรอบที่เล่มนี้ใช้; เนื้อหาหลักของเล่มเน้น "วิธีใช้" มากกว่า "จำจำนวน"
 
 ### 4.3 Process Groups ไม่ใช่ Project Phases
 
 **[PMBOK 8]** Planning, Executing และ Monitoring & Controlling เกิดซ้ำและทำงานร่วมกันตลอดโครงการ — ไม่ใช่ขั้นตอนที่เกิดครั้งเดียวแล้วจบ — เล่มนี้แยกเป็นช่วง A–H เพื่อให้เห็นงานจริง แต่ Process Group ทั้ง 5 ยังทำงานอยู่ข้างในทุกช่วง
+
+**[Teaching Scenario]** ตัวอย่างจริงจาก SHG: กลางเดือนที่ 7 ของการพัฒนา ลูกค้าขอเพิ่มช่องทางชำระเงินใหม่ — งานนี้ไม่ได้ "ผ่าน Planning ครั้งเดียวแล้วจบ" แต่ทีมต้อง**กลับไป re-plan** (ปรับ WBS, schedule, budget และ risk register ใหม่ — ดูวิธีทำใน Ch.7) แล้วเข้าสู่ Executing รอบใหม่ การ Planning เกิดซ้ำแบบนี้คือหัวใจของ Process Groups: มันคือวงจรที่หมุนตลอดโครงการ ไม่ใช่ขั้นตอนที่เดินผ่านแล้วผ่านเลย
 
 ### 4.4 ทำไมเล่มนี้เรียง A→H ไม่ใช่เรียงตาม Domain/KA
 
@@ -79,6 +83,8 @@ Business Need
 **[Best Practice]**
 - **Study Mode:** อ่านเรียงบท Ch.0 → Ch.10 เพื่อเรียนจบเป็น PM
 - **Field Mode:** ใช้ Appendix F (Problem → Chapter) + Quick Reference Card ท้ายบท + Appendix A (Artifact Catalogue) + Appendix E (Role/Output Matrix) เพื่อ lookup ตอนติดปัญหา
+
+**[Teaching Scenario]** ตัวอย่าง Field Mode จริง: บ่ายวันพุธ PO (คุณนภา) โทรมาว่า "ลูกค้าขอเพิ่มขอบเขตงาน ต้องทำยังไง" — PM เปิด Appendix F (Problem → Chapter) เจอหัวข้อ "ลูกค้าขอเพิ่ม scope → เปิด Ch.7" แล้วไปที่ **Quick Reference Card ท้าย Ch.7** ซึ่งสรุปขั้นตอน Submit Change → Impact Analysis → CCB Review ในหน้าเดียว — รู้ทันทีว่าต้องทำอะไรโดยไม่ต้องอ่านทั้งบท (Study Mode จะให้ความเข้าใจลึกกว่าแต่ช้ากว่า — เลือกโหมดตามความเร่งด่วนของสถานการณ์)
 
 ## 5. PM Decision Thinking
 

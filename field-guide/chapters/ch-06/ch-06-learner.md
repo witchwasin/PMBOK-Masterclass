@@ -5,7 +5,7 @@ book: "PM Delivery Guide: From Pre-sales to Closure — คู่มือปฏ
 edition: Learner
 status: Draft
 validation_status: Not Validated
-last_reviewed: 2026-08-13
+last_reviewed: 2026-08-15
 intended_learner_level: Experienced PM
 difficulty: Core
 estimated_study_time: 100
@@ -83,13 +83,24 @@ Integrated Plan (Ch.5) + Baselines (Ch.4)
 - **Agile:** Refine → Plan Sprint → Build/Test → Review → Retro → Release
 - **Hybrid:** Fixed Milestones + Iterative Development + Formal Gates (ตรงกับ SHG)
 
+**[Best Practice]** ทั้ง 3 แบบต่างกันที่ **จังหวะตรวจ/ปรับ (feedback cadence)** ไม่ใช่แค่ชื่อขั้นตอน: Predictive ตรวจ/ปรับน้อยครั้ง — plan ครั้งเดียว แล้วไป test/UAT ปลายทาง (ผิดพลาดพบช้า แก้แพง); Agile ตรวจทุก sprint — review + retro ทุก 2 สัปดาห์ (ผิดพลาดพบเร็ว ปรับทันที); Hybrid ตรวจสองจังหวะ: มี gate ตาม milestone (เหมือน predictive — ควบคุม deadline) แต่ภายในยังเป็น sprint รอบสั้น (เหมือน agile — ได้ feedback จาก user เร็ว) — SHG เลือก Hybrid เพราะต้องล็อก launch ก่อน 1 พ.ย. แต่ยังอยากเห็นหน้าจอจริงจาก user ทุก sprint
+
 ### 4.2 Definition of Ready (DoR) และ Definition of Done (DoD) (D.6–D.7)
 
 **[Best Practice]**
 - **DoR (พร้อมเริ่ม):** Purpose, Scope, Requirement, Acceptance Criteria, Dependencies, Design/Decision, Test Data, Owner, Estimate, Priority
 - **DoD (เสร็จจริง):** Build Complete, Code Review, Unit Test, Integration Test, Security Check, Documentation, Acceptance Criteria Pass, Defect Threshold Met, Deployed to Required Environment, Evidence Captured
 
-**[Teaching Scenario]** ที่ SHG: story "Payment Flow" ยังไม่ Done แม้ code เสร็จ เพราะยังขาด unit test, security check และ deployment ไป test environment — DoD ช่วยให้ทุกคนพูดคำว่า "เสร็จ" หมายถึงสิ่งเดียวกัน
+**[Best Practice]** จำง่าย ๆ: **DoR ตอบ "พร้อมเริ่มไหม" — DoD ตอบ "เสร็จจริงไหม"**:
+
+| | Definition of Ready (DoR) | Definition of Done (DoD) |
+|---|---|---|
+| ใช้ตอน | ก่อนรับงานเข้าสู่ sprint | ก่อนนับว่างานสำเร็จ |
+| ตอบคำถาม | งานนี้เริ่มได้หรือยัง | งานนี้เสร็จจริงหรือยัง |
+| ตัวอย่าง | scope ชัด, acceptance criteria มี, test data พร้อม, owner/estimate มี | build + review + unit test + integration + security + deploy + evidence ครบ |
+| ถ้าไม่ผ่าน | ยังไม่เข้า sprint (หรือเข้าแบบมีเงื่อนไข) | ยังไม่นับ Done — กลับไปทำให้ครบ |
+
+**[Teaching Scenario]** ตัวอย่าง DoD จริงของ SHG สำหรับ story "ชำระเงินด้วยบัตร (Payment Flow)": ( ) build เสร็จ ( ) peer review ผ่าน ( ) unit test ผ่าน ( ) integration test กับ 2C2P sandbox ผ่าน ( ) PCI-DSS checklist ผ่าน ( ) deploy ไป test environment ( ) evidence บันทึก (screenshot / test result) — ถ้าขาดข้อไหน ยังไม่ Done — อย่างกรณีใน opening scenario ที่ dev ตอบว่า "code เขียนเสร็จแล้วไง"
 
 ### 4.3 Manage Quality / QA — ฝั่งกระบวนการ (จาก lesson-10)
 
@@ -141,14 +152,17 @@ Next Action: นับตาม DoD -> update progress data -> Ch.7 (monitoring)
 
 ## 6. ตัวอย่างจริงจาก Case ต่อเนื่อง (SHG)
 
-**[Teaching Scenario]**
+**[Teaching Scenario] Watch PM Think — ระหว่าง Sprint 3 (Payment Flow)**
 
-- **Sprint 1–2 (Core Booking Flow):** ทีมทำ search → view → book บน web — QA วาง test cases คู่ขนานตั้งแต่ design (QA ใน Sprint ไม่ใช่หลัง Sprint)
-- **Sprint 3–4 (Payment):** DoR ต้องมี test data (card test จาก 2C2P sandbox) และ design decision — DoD รวม PCI-DSS checklist
-- **Sprint 5–6 (Mobile App):** ทีม mobile กับ backend ใช้ API contract review ก่อน integration เพื่อลด defect
-- **Sprint 7–8 (Back Office + Inventory Sync):** data migration checklist + PMS adapter test ก่อน merge
-- **Retro หลังทุก Sprint:** ปรับ WIP, แก้ bottleneck, ปรับปรุง test data readiness
-- **Blockers:** PMS API doc ล่าช้า → escalate ตาม RAID (Risk R-01, owner คุณวีระ) → vendor support เพิ่ม
+QA วาง test cases ตั้งแต่ช่วง design ไม่ใช่รอใกล้เสร็จ — คุณสุทธิ (PM) ยืนยันกับ QA lead: "payment ต้องเข้า DoR แบบมี test data ครบ: card test จาก 2C2P sandbox + design decision — ก่อนรับเข้าสู่ sprint" — เขารู้ว่าถ้า sandbox ไม่พร้อมตอนเริ่ม sprint จะกลายเป็น blocker กลางคัน
+
+Developer บอก "code เสร็จแล้ว" — เขาเปิด DoD checklist: "build เสร็จ แล้ว unit test? security check? deploy ไป test env? evidence?" — คำตอบขาด 3 ข้อ → ยังไม่นับ Done — "เสร็จ" ต้องหมายถึงสิ่งเดียวกันทั้งทีม ไม่ใช่คนละคำพูด
+
+Sprint 5–6: ทีม mobile กับ backend ใช้ API contract review ก่อน integration — เพราะ defect ที่พบตอน merge ระหว่างทีมแก้แพงกว่าที่พบตอน design
+
+Retro ทุก sprint จบด้วย action (ปรับ WIP, แก้ bottleneck, ปรับปรุง test data readiness) — ไม่ใช่แค่คุยกันเพลิน ๆ
+
+Blocker: PMS API doc ล่าช้า — เขา escalate ตาม RAID (R-01, owner คุณวีระ) ทันที ไม่รอให้ทีมติดค้างหลายวัน → vendor support เพิ่ม
 
 **[PMBOK 8]** สังเกตว่าการทดสอบไม่ได้ "รอตอนท้าย" — มันถูกฝังในทุก sprint ผ่าน DoD และ test readiness gate ส่วนการตรวจรับอย่างเป็นทางการยังเป็นหน้าที่ของ Ch.8
 
