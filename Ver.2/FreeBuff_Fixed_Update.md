@@ -46,6 +46,50 @@
 
 ---
 
+## 2026-08-15 — Round 10 (จัดหน้า e-Book ใหม่: Running Head "บทที่ N: ชื่อบท | P{หน้า}" + Typography Upgrade)
+
+> **ที่มาของรอบนี้:** เจ้าของ repo ขอให้ออกแบบการจัดหน้าเล่มใหม่ — เพิ่มชื่อบทลงในหัวกระดาษทุกหน้าตามฟอร์แมต "บทที่ 3: xxxx | P18" + ใช้สกิลจัดหน้าให้อ่านง่าย (สารบัญ, แถบหัวข้อ, ตาราง, callout) — แก้ใน `field-guide/pdf/build_pdf.py` เท่านั้น ไม่แตะเนื้อหาบท และไม่แตะ `e-Book/`
+
+**ทำอะไรไปแล้ว:**
+1. **Running Head "บทที่ N: ชื่อบท | P{เลขหน้า}" ทุกหน้า** — ใช้ CSS **named pages** (`@page ch03 { @top-left { content: "บทที่ 3: ... | P" counter(page); } }`) ซึ่ง Chrome 151 รองรับจริง (ทดสอบ empirical แล้ว — `string-set` ไม่รองรับใน Chrome เลยต้องใช้ named pages):
+   - บท → "บทที่ 0: PMBOK Primer — กรอบคิด A→H | P4" … "บทที่ 10: ... | P123"
+   - ภาคผนวก → "ภาคผนวก A — Artifact Catalogue | P87"
+   - สารบัญ → "สารบัญ / Table of Contents | P2"
+   - ส่วน Instructor/Answer Key → "... (Instructor) | P11" และ part-divider ก็ได้ header ด้วย
+   - **หน้าเปิดบทไม่มี header** (สะอาด): สร้าง page type แยก `chNN-o` เพราะ Chrome ตีความ `:first` = "หน้าแรกของเอกสารเท่านั้น" ไม่ใช่หน้าแรกของแต่ละบท — ทดสอบแล้ว ยืนยันด้วย pypdf ว่าแต่ละฉบับมีหน้าไร้ header = 12 (cover + 11 หน้าเปิดบท) ตรงเป๊ะ
+2. **แก้บั๊ก render markdown ที่มีอยู่ใน PDF เดิม (เจอตอนตรวจด้วยตา):**
+   - `**bold**` เดิมหลุดเป็นตัวอักษร `**` ถึง 499 จุดใน HTML → เพิ่มการแปลง bold/italic ใน `inline()` (พร้อม protect code span ไม่ให้โดน rewrite)
+   - blockquote `> **หมายเหตุ:**` เดิมกลายเป็น `&gt;` หน้าข้อความ → แปลงเป็น `<blockquote>` callout box จริง
+   - checkbox `- [ ]` เดิมหลุดเป็นตัวอักษร → แปลงเป็นกล่องติ๊ก (box จริง ผ่าน `::before`)
+3. **Typography / จัดหน้าใหม่ทั้งเล่ม:**
+   - **Cover:** เต็มหน้าน้ำเงินเข้ม gradient (margin 0 บนหน้าแรก) + brand + ชื่อเล่ม + rule + badge edition
+   - **หน้าเปิดบท:** kicker (เช่น "C · REQUIREMENTS & SCOPE") + แถบ title สี gradient น้ำเงินเข้ม + มุมโค้ง
+   - **หัวข้อ:** h2 มีแถบ accent น้ำเงินซ้าย, h3/h4 โทนน้ำเงินไล่ระดับ
+   - **ตาราง:** หัวตารางพื้นน้ำเงินเข้มตัวขาว + zebra แถวคู่ + header ซ้ำข้ามหน้า (`table-header-group`)
+   - **callout:** แถบซ้ายหนา + พื้นฟ้าอ่อน + กันไม่ให้ตัดกลางหน้า
+   - **สารบัญ:** เส้นประคั่นรายการ + sub-entry ชัดเจน (มีในทั้ง 2 ฉบับ)
+   - เพิ่ม `background: #fff` ให้ body, `print-color-adjust: exact` เพื่อให้สีพิมพ์ออกจริง
+4. **Rebuild + ตรวจยืนยันด้วย pypdf ครบ:** header เรียงลำดับถูกต้องทั้ง 2 ฉบับ (สารบัญ → บทที่ 0–10 → ภาคผนวก A–F), ทุก header ลงท้าย `| P{เลข}`, ไม่มี `**`/`&gt;`/`&amp;`/`- [ ]` หลุด, หน้าไร้ header = 12/ฉบับ — ดูภาพจริงผ่าน Preview แล้ว (cover, หน้าเปิดบท, ตาราง, checklist ผ่าน)
+
+**Output/ไฟล์ที่สร้างหรือแก้:**
+- `field-guide/pdf/build_pdf.py` (rewrite: named-page running heads + markdown fixes + typography CSS)
+- `field-guide/pdf/PM-Delivery-Guide-Complete-Edition.pdf` — **187 หน้า** (~3.25 MB)
+- `field-guide/pdf/PM-Delivery-Guide-Learner-Edition.pdf` — **123 หน้า** (~2.48 MB)
+- `field-guide/pdf/book.html` + `field-guide/pdf/book-learner.html` (regenerate)
+- `Ver.2/FreeBuff_Fixed_Update.md` (ไฟล์นี้)
+
+**การตัดสินใจที่ทำเอง:**
+- ใช้ named pages แทน `string-set` (Chrome ไม่รองรับ string-set — ทดสอบแล้ว) และแยก page type หน้าเปิดบท (`chNN-o`) แทน `:first` (Chrome ตีความ `:first` เป็นหน้าแรกของเอกสารเท่านั้น)
+- แก้บั๊ก bold/blockquote/checkbox ใน converter ด้วย — เป็นงานจัดหน้าโดยตรง (เดิม `**` โผล่เป็นตัวอักษรใน PDF)
+- หน้าเปิดบทไม่มี header (หน้าแรกของบทสะอาด) — ส่วนหน้าอื่นมี header ครบทุกหน้า ตามที่ขอ
+
+**ติดตรงไหน / ยังไม่แน่ใจ:**
+- ไม่มี — ตรวจยืนยันผ่าน pypdf + ดูภาพจริงผ่าน Preview เรียบร้อย
+
+**พร้อมให้ review: ใช่**
+
+---
+
 ## 2026-08-14 — Round 9 (Self-review ก่อนส่ง Claude — ผ่านครบ ไม่พบจุดต้องแก้)
 
 > **ที่มาของรอบนี้:** Claude เครดิตหมด เจ้าของ repo ให้ FreeBuff review เองก่อน — ตรวจเทียบ `master_plan.md` §8 (Definition of Done) ครบทุกข้อแล้ว ผ่านทั้งหมด ไม่มีการแก้เนื้อหา
