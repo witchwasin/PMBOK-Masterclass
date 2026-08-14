@@ -46,6 +46,33 @@
 
 ---
 
+## 2026-08-14 — Round 9 (Self-review ก่อนส่ง Claude — ผ่านครบ ไม่พบจุดต้องแก้)
+
+> **ที่มาของรอบนี้:** Claude เครดิตหมด เจ้าของ repo ให้ FreeBuff review เองก่อน — ตรวจเทียบ `master_plan.md` §8 (Definition of Done) ครบทุกข้อแล้ว ผ่านทั้งหมด ไม่มีการแก้เนื้อหา
+
+**ตรวจอะไรไปแล้ว (เทียบ DoD §8):**
+1. **Template 15 หัวข้อ:** Ch.0–10 ทุกบทมีครบ 15 section (ตรวจด้วย grep หัวข้อ `## 1.`–`## 15.`) — Ch.0 มี section ครบแต่เนื้อหา Workshop/Assessment ระบุชัดว่า "บทปฐมบทไม่มี" ตาม master_plan §5 ✓
+2. **Frontmatter:** ครบทั้ง 33 ไฟล์บท (ทุกไฟล์ขึ้นต้นด้วย `---`) ✓
+3. **Source labels:** `[PMBOK 8]` 39×, `[Teaching Scenario]` 47×, `[Best Practice]` 63×, `[Teaching Scenario Extension]` 8× — ไม่มี `[PMBOK 6]/[PMBOK 7]` หลงในไฟล์บทของเล่มใหม่ ✓
+4. **Relative links:** รัน link checker อัตโนมัติ — 40 ลิงก์ ALL LINKS OK (0 broken) ✓
+5. **Scenario ตรง Scenario Master:** 12M / 35% / 18 เดือน / 12 โรงแรม / NPS 40 / Sprint 0 / launch ก่อน 1 พ.ย. / roles (คุณจิรา, คุณสุทธิ, คุณนภา, คุณภัทร, คุณวีระ, คุณสมศรี) ตรง `scenarios/HOTEL-BOOKING-PLATFORM-CASE.md` ทุกจุด — vendor layer "Booking Tech Solutions" ใช้เฉพาะ Ch.1–2 ตามที่ล็อกไว้ ✓
+6. **Cross-reference KA ที่ถูกผ่า:** Quality — Ch.5 (Test Strategy วางแผน ↔ Ch.8 ผลจริง, Ch.6 QA) เขียนชัดทั้ง 3 บท; Integration — Ch.2 (Charter) / Ch.7 (Change, "ท่อนที่ 2 ของ 3") / Ch.10 (Close, "ท่อนที่ 3") ✓
+7. **Appendix ครบ 6 ตัว** (A–F) + **33 ไฟล์บท** (11 บท × learner/instructor/answer-key) + instructor ทุกบทมี Teaching Notes/Suggested Timing ✓
+8. **Assessment:** Ch.1–10 บทละ 7 ข้อ (อยู่ในช่วง 5–8 ตาม template §12) ✓
+9. **Governance:** glossary กลางมี "Ver.2 additions" (บรรทัด 146), `CONTENT-RULES.md` มี label `[PMBOK 8]` (3 จุด), `PMBOK-EDITION-POSITION.md` มี §8 ✓
+10. **PDF:** 2 ฉบับ build ผ่าน (Complete 2796 KB / Learner 2137 KB, rebuild 2026-08-14 02:44–02:45 หลังแก้ cover/TOC) + Appendix E PDF เดิมยังอยู่ ✓
+11. **`e-Book/` untouched:** `git diff HEAD --stat -- e-Book/` = ว่าง (0 ไฟล์) ✓
+
+**ผลการตัดสินใจ:** ไม่พบจุดที่ต้องแก้ — งานทั้งหมดผ่าน self-check เทียบ DoD §8 ครบทุกข้อ
+
+**Output/ไฟล์ที่สร้างหรือแก้:** ไม่แก้ไฟล์เนื้อหาใดๆ (รอบนี้เป็น review-only) — บันทึกผลไว้ในไฟล์นี้เท่านั้น
+
+**ติดตรงไหน / ยังไม่แน่ใจ:** ไม่มี — พร้อมให้ Claude ตรวจซ้ำวันถัดไปตามที่เจ้าของ repo นัด
+
+**พร้อมให้ review: ใช่**
+
+---
+
 ## 2026-08-14 — Round 8 (แก้ 4 ข้อ: Ch.5 Quick Ref + PDF bugs + Coverage Matrix + Phase 6 Proposal)
 
 **ทำอะไรไปแล้ว:**
