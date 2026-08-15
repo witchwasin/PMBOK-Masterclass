@@ -7,7 +7,7 @@ status: Draft
 validation_status: Not Validated
 last_reviewed: 2026-08-13
 learner_chapter: ./ch-00-learner.md
-note: "บทปฐมบท — ไม่มี Workshop/Assessment ตาม master_plan §5"
+note: "บทปฐมบท — ไม่มี Workshop/Assessment โดยการออกแบบ"
 ---
 
 # Instructor Guide — Chapter 00 (PMBOK Primer)
@@ -16,11 +16,11 @@ note: "บทปฐมบท — ไม่มี Workshop/Assessment ตาม m
 
 ## Teaching Notes
 
-บทปฐมบทสร้างภาษากลางและแนะนำโครง A→H — เนื้อหาปรับจาก `references/PMBOK-Overview.md` + Playbook V2 §1/§1.1 — ตาม master_plan §3 Ch.0 เป็น "เนื้อหาใหม่" ที่เล่มนี้สร้างเอง (e-Book เดิมไม่มี) — **บทนี้ไม่มี Workshop/Assessment (master_plan §5)**
+บทปฐมบทสร้างภาษากลางและแนะนำโครง A→H — เนื้อหาปรับจาก `references/PMBOK-Overview.md` + Playbook V2 §1/§1.1 — Ch.0 เป็นเนื้อหาที่เล่มนี้สร้างขึ้นใหม่ (`e-Book/` ไม่มีบทเทียบเท่า) — **บทนี้ไม่มี Workshop/Assessment**
 
-## ข้อควรระวัง (บันทึกใน FreeBuff_Fixed_Update.md Round 5)
+## ข้อควรระวัง
 
-ตัวเลข 6 Principles / 7 Performance Domains / 5 Focus Areas นำมาจาก `field-guide/BOOK-BLUEPRINT.md` และ master_plan §3 ตามที่เจ้าของ repo ระบุ — บทนี้เขียนเป็น "กรอบที่เล่มนี้ใช้" พร้อมหมายเหตุว่าเป็นไปตาม reference basis ของเล่ม (Playbook V2 §1) เพื่อไม่ให้อ้างเกินกว่าที่ source มี — Claude ตรวจได้ว่านี่คือ interpretation ที่ปลอดภัย
+ตัวเลข 6 Principles / 7 Performance Domains / 5 Focus Areas เป็นกรอบที่เล่มนี้ใช้ตาม reference basis ของเล่ม (Playbook V2 §1) — บทนี้เขียนกำกับไว้เสมอว่าเป็น "กรอบที่เล่มนี้ใช้" เพื่อไม่ให้อ้างเกินกว่าที่ source มี
 
 ## Learning Intent
 

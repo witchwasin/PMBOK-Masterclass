@@ -17,7 +17,7 @@ learner_chapter: ./ch-05-learner.md
 
 บทนี้ผสาน Risk (lesson-13), Procurement (lesson-14), Communications (lesson-12) + Quality ฝั่ง Plan/Test Strategy (lesson-10 บางส่วน) + Playbook C7/C14–C19 — ปิดจบการวางแผนด้วย Integrated Plan + Planning Gate
 
-**ข้อตีความ (บันทึกใน FreeBuff_Fixed_Update.md Round 3):** ตามคำเตือน Quality ใน master_plan §3 ("วางแผน Test/Quality → Ch.5"), Test Strategy/Quality Plan ถูกวางไว้ในบทนี้ ส่วนผลการทดสอบ/UAT Evidence อยู่ Ch.8 — เขียน cross-reference ทั้งสองฝั่งแล้ว
+**ข้อตีความ:** ตามหลัก "วางแผน Test/Quality → Ch.5", Test Strategy/Quality Plan ถูกวางไว้ในบทนี้ ส่วนผลการทดสอบ/UAT Evidence อยู่ Ch.8 — เขียน cross-reference ทั้งสองฝั่งแล้ว
 
 ## Learning Intent
 

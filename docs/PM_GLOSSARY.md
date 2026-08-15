@@ -143,9 +143,9 @@ last_updated: 2026-07-22
 
 ---
 
-## Ver.2 — field-guide additions (PMBOK 8 / workflow A–H terms)
+## field-guide additions (PMBOK 8 / workflow A–H terms)
 
-> **Addendum 2026-08-13** — คำศัพท์ที่เพิ่มเข้า glossary กลางเพื่อรองรับเล่ม `field-guide/` ("ebook v2") ตาม `Ver.2/master_plan.md` §5 ข้อ 9 — ใช้ฟอร์แมตเดียวกับส่วนอื่นทั้งหมด
+> คำศัพท์ในส่วนนี้เพิ่มเข้า glossary กลางเพื่อรองรับเล่ม `field-guide/` — ใช้ฟอร์แมตเดียวกับส่วนอื่นทั้งหมด
 
 | Term (EN) | คำอธิบาย (TH) | ความหมายเชิงปฏิบัติ | การใช้ผิดที่พบบ่อย | Term ที่เกี่ยวข้อง |
 |---|---|---|---|---|

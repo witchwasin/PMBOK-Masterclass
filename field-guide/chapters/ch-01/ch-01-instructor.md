@@ -54,7 +54,7 @@ Ch.1–2 ใช้ vendor layer `[Teaching Scenario Extension]`: BTS เป็�
 
 ## Checklist ของผู้สอนก่อนปล่อยบท
 
-- [ ] ครบ 15 หัวข้อตาม Template master_plan §5
+- [ ] ครบ 15 หัวข้อตาม Template ประจำบทของเล่ม
 - [ ] Source label ถูกต้อง (`[PMBOK 8]`, `[Best Practice]`, `[Teaching Scenario Extension]`)
 - [ ] ตัวเลข scenario ตรง Scenario Master (12M, 35%, 18 เดือน, NPS 40, 12 โรงแรม)
 - [ ] Relative links ใช้ได้จริง

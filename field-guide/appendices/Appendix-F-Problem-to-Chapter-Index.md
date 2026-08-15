@@ -54,7 +54,7 @@ related_reference: ../../references/PMBOK-Aligned-End-to-End-Project-Delivery-Pl
 | 29 | อยากรู้ภาพรวมว่า PM ต้องทำอะไรบ้างตลอดโครงการ | Ch.0 | Ch.0 §11 | Appendix E (role matrix) |
 | 30 | ไม่รู้ว่าต้องสร้าง/ส่งเอกสารอะไรตอนไหน | Appendix A | — | Appendix E |
 | 31 | ต้องการข้อควรระวังสรุป 1 หน้า | Appendix B | — | — |
-| 32 | ไม่รู้คำศัพท์ PM ที่ใช้ในเล่มนี้ | Appendix C | — | governance/PM_GLOSSARY.md |
+| 32 | ไม่รู้คำศัพท์ PM ที่ใช้ในเล่มนี้ | Appendix C | — | docs/PM_GLOSSARY.md |
 
 ## ดัชนีย้อนกลับ: บท → ปัญหาที่บทนั้นตอบ
 

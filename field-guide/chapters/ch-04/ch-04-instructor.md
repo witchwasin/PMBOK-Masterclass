@@ -17,7 +17,7 @@ learner_chapter: ./ch-04-learner.md
 
 บทนี้ผสาน 3 Knowledge Areas จาก lesson-08 (Schedule), lesson-09 (Cost/EVM), lesson-11 (Resource) + Agile inserts จาก lesson-15/16 (Scrum/Kanban/Predictive vs Agile vs Hybrid) — สอนให้อ่านพร้อมกัน: ถ้า schedule ช้า เงิน/resource เปลี่ยนตาม
 
-**Agile inserts:** ตาม master_plan §3, Agile ถูกแทรกเป็นกล่อง "ถ้าโครงการเป็น Agile" ใน Ch.4 และ Ch.6 — ไม่ทำเป็นบทแยก (ดูในบท: §4.4 และ Ch.6)
+**Agile inserts:** Agile ถูกแทรกเป็นกล่อง "ถ้าโครงการเป็น Agile" ใน Ch.4 และ Ch.6 — ไม่ทำเป็นบทแยก (ดูในบท: §4.4 และ Ch.6)
 
 ## Learning Intent
 

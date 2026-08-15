@@ -5,9 +5,8 @@
 ## 1. Authority and source hierarchy
 
 1. `references/PMBOK-Overview.md` is the canonical content source.
-2. `governance/COURSE_STANDARD.md`, `STYLE_GUIDE.md`, `LESSON_TEMPLATE.md`, and `PM_GLOSSARY.md` control quality and terminology.
+2. `docs/COURSE_STANDARD.md`, `STYLE_GUIDE.md`, `LESSON_TEMPLATE.md`, and `PM_GLOSSARY.md` control quality and terminology.
 3. `scenarios/` is the only authority for ERP and Hotel Booking facts, figures, people, milestones, and scenario versions.
-4. `repository/REPOSITORY_DECISION_LOG.md` records decisions that change course scope or interpretation.
 
 Never turn a teaching assumption, professional opinion, or enterprise pattern into a PMBOK claim.
 
@@ -19,11 +18,11 @@ The course uses the existing canonical source: PMBOK 6 process-based structures 
 - `[PMBOK 7]` for principles, value delivery, and performance-domain-oriented material.
 - `[PMBOK]` only when the statement is safe across editions or the edition is immaterial.
 
-**PMBOK 8th Edition (addendum for `field-guide/` — Ver.2 book):** The `field-guide/` book ("ebook v2") is written against **PMBOK 8th Edition** and uses the additional label:
+**PMBOK 8th Edition (for `field-guide/`):** The `field-guide/` book is written against **PMBOK 8th Edition** and uses the additional label:
 
 - `[PMBOK 8]` for content based on the PMBOK 8th Edition / The Standard for Project Management (8th ed.), including its Principles, Performance Domains, Focus Areas, and workflow-oriented delivery guidance.
 
-Do not remove or rewrite the `[PMBOK 6]` / `[PMBOK 7]` labels: the legacy `e-Book/` remains authoritative for PMBOK 6+7 content until the owner approves Phase 6 retirement (see `repository/REPOSITORY_DECISION_LOG.md` #13). The two label sets coexist: `[PMBOK 8]` is for content written into `field-guide/`; `[PMBOK 6]` / `[PMBOK 7]` remain for legacy lesson material.
+Do not remove or rewrite the `[PMBOK 6]` / `[PMBOK 7]` labels: `e-Book/` remains authoritative for PMBOK 6+7 content. The two label sets coexist: `[PMBOK 8]` is for content written into `field-guide/`; `[PMBOK 6]` / `[PMBOK 7]` remain for the PMBOK 6+7 lesson material.
 
 The course is practice-oriented, not a claim of complete PMP-exam coverage. Do not present the PMBOK 6 structure as the structure of PMBOK 7.
 
@@ -74,7 +73,7 @@ Do not recommend an option without showing the decision authority, information l
 Apply a visible label to every substantive explanation, decision example, workshop, and assessment rationale:
 
 - `[PMBOK]`, `[PMBOK 6]`, `[PMBOK 7]`, `[PMBOK 8]` (PMBOK 8 label reserved for `field-guide/` content)
-- `[Teaching Scenario Extension]` (fictional extension layer locked for Ch.1–2 of `field-guide/`, see Decision Log #13 — never contradicts locked facts in `scenarios/`)
+- `[Teaching Scenario Extension]` (fictional extension layer locked for Ch.1–2 of `field-guide/` — never contradicts locked facts in `scenarios/`)
 - `[Best Practice]`
 - `[Enterprise Practice]`
 - `[Teaching Scenario]`
@@ -102,8 +101,8 @@ Each full lesson includes Foundational, Scenario, Senior PM, and Executive inter
 
 ## 11. Definition of Done
 
-A lesson is ready for validation only when it has all 21 mandatory sections, a companion assessment and source mapping, aligned metadata, valid relative links, scenario continuity, source labels, glossary alignment, and no boundary violation. It is releasable only when it meets the `COURSE_STANDARD.md` Release Gate and the quality scorecard threshold.
+A lesson is ready for validation only when it has all 21 mandatory sections, a companion assessment and source mapping, aligned metadata, valid relative links, scenario continuity, source labels, glossary alignment, and no boundary violation. It is releasable only when it meets the `COURSE_STANDARD.md` Release Gate.
 
 ## 12. Contributor checklist
 
-Before editing: read the canonical source, scenario master, glossary, adjacent lessons, and decision log. After editing: validate headings and metadata, check links, check terminology, update the index/coverage matrix/scorecard as appropriate, and record material decisions.
+Before editing: read the canonical source, scenario master, glossary, and adjacent lessons. After editing: validate headings and metadata, check links, check terminology, and update `LESSON_INDEX.md` / `CONTENT_COVERAGE_MATRIX.md` as appropriate.

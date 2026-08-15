@@ -1,6 +1,6 @@
-> **Repository Status Note (added 2026-07-31):** เก็บไฟล์นี้ไว้เป็น **Pending External Reference** ยังไม่ใช่ Canonical Source ตาม [`governance/CONTENT-RULES.md`](../governance/CONTENT-RULES.md) — เนื้อหาด้านล่างเป็นต้นฉบับเดิมจากภายนอก ไม่ได้ผ่านการปรับ Style/Frontmatter/Scenario Lock ของ repo นี้ อ้างอิง PMBOK® Guide 8th Edition ซึ่งเป็นฉบับปัจจุบันจริง (วางขาย ม.ค. 2026) แต่ repo ยังยึด PMBOK 6th+7th ตาม [`repository/PMBOK-EDITION-POSITION.md`](../repository/PMBOK-EDITION-POSITION.md) — ดูบันทึกการตัดสินใจที่เกี่ยวข้องใน [`repository/REPOSITORY_DECISION_LOG.md`](../repository/REPOSITORY_DECISION_LOG.md) รายการที่ 8 — มีเก็บสำเนาไว้ที่ `repository/` ด้วย (ที่มาของ Decision Log/Blueprint links เดิม)
+> **สถานะของไฟล์นี้:** เป็น **External Reference** ไม่ใช่ Canonical Source ของหลักสูตร (ดู [`docs/CONTENT-RULES.md`](../docs/CONTENT-RULES.md)) — เนื้อหาด้านล่างเป็นต้นฉบับจากภายนอก ยังไม่ได้ผ่านการปรับ Style/Frontmatter/Scenario Lock ของ repo นี้ อ้างอิง PMBOK® Guide 8th Edition (วางขาย ม.ค. 2026) ขณะที่บทเรียนหลักยังยึด PMBOK 6th+7th ตาม [`docs/PMBOK-EDITION-POSITION.md`](../docs/PMBOK-EDITION-POSITION.md)
 >
-> **มี V2 ที่ actionable กว่า:** [`PMBOK-Aligned-End-to-End-Project-Delivery-Playbook-V2.md`](PMBOK-Aligned-End-to-End-Project-Delivery-Playbook-V2.md) — ประเมินแล้วว่าดีกว่า ใช้เป็น preferred source (ดู Decision Log #9)
+> **มี V2 ที่ actionable กว่า:** [`PMBOK-Aligned-End-to-End-Project-Delivery-Playbook-V2.md`](PMBOK-Aligned-End-to-End-Project-Delivery-Playbook-V2.md) — เพิ่มชั้น Execution Ownership ใช้เป็น preferred source, V1 นี้เก็บไว้เพื่อ cross-check
 >
 > **แผนในอนาคต:** จะปรับ repo (governance policy, edition label, และเนื้อหาบทเรียนที่เกี่ยวข้อง) ให้สอดคล้องกับไฟล์นี้และ PMBOK 8th Edition — ยังไม่เริ่มดำเนินการ
 

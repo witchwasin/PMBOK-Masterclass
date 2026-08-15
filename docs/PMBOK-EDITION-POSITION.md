@@ -103,22 +103,19 @@ PMBOK 7th Edition เปลี่ยนจาก process-based ไปเป็�
 
 ---
 
-## 8. PMBOK 8 Migration via field-guide ("ebook v2" / Ver.2)
+## 8. PMBOK 8 Migration via field-guide
 
-> **Addendum — 2026-08-13 (Decision Log #13)**
-
-Repo เริ่ม migration ไป **PMBOK 8th Edition** ผ่านการสร้างเล่มใหม่ใน `field-guide/` (ชื่อเล่น "ebook v2" / branch `Ver.2`) **ไม่ใช่การแก้ `e-Book/` เดิมในที่เดิม**
+Repo เริ่ม migration ไป **PMBOK 8th Edition** ผ่านการสร้างเล่มใหม่ใน `field-guide/` **ไม่ใช่การแก้ `e-Book/` เดิมในที่เดิม** — ทั้งสองเล่มอยู่คู่กัน คนละ edition คนละโครงสร้าง
 
 | มิติ | e-Book เดิม | field-guide (เล่มใหม่) |
 |---|---|---|
 | Edition | PMBOK 6+7 (Canonical Source) | **PMBOK 8** เป็นหลัก |
 | โครงสร้าง | 10 Knowledge Areas | Workflow A–H (Pre-sales → Closure) |
-| สถานะ | Validated + PDF แล้ว ห้ามแก้ | กำลังเขียน (branch `Ver.2`) |
+| สถานะ | Validated + PDF แล้ว | เขียนครบ Ch.0–10 + Appendix A–F + PDF |
 | Label | `[PMBOK 6]` / `[PMBOK 7]` | `[PMBOK 8]` เพิ่มใน CONTENT-RULES |
 
 **ผลต่อ repo:**
 
-- `[PMBOK 8]` เป็น label ที่ใช้ได้ใน `field-guide/` (เพิ่มเข้า `governance/CONTENT-RULES.md` §2/§7 แล้ว) โดยไม่ลบ label เดิม
-- เนื้อหา Knowledge Areas เดิมถูก map ใหม่เป็น 11 Chapters (ดูตาราง mapping ใน `Ver.2/master_plan.md` §3)
-- จนกว่า Phase 6 (retirement decision) จะผ่าน approval เจ้าของ repo, `e-Book/` ยังเป็น authoritative สำหรับ PMBOK 6+7 ตามเดิม
-- หลังเล่มใหม่ผ่านการตรวจสอบครบ (Definition of Done ใน `Ver.2/master_plan.md` §8) จึงค่อยเสนอ decision ว่า `e-Book/` ควร archive ที่ใด — **ห้ามลงมือ archive ก่อนได้รับ approval เป็นลายลักษณ์อักษร**
+- `[PMBOK 8]` เป็น label ที่ใช้ได้ใน `field-guide/` (เพิ่มเข้า `docs/CONTENT-RULES.md` §2/§7 แล้ว) โดยไม่ลบ label เดิม
+- เนื้อหา Knowledge Areas เดิมถูก map ใหม่เป็น 11 Chapters (ดูตาราง mapping ใน [`CONTENT_COVERAGE_MATRIX.md`](CONTENT_COVERAGE_MATRIX.md) §7)
+- `e-Book/` ยังเป็น authoritative สำหรับ PMBOK 6+7 — ไม่ถูกแทนที่ด้วย `field-guide/`

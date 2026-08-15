@@ -17,7 +17,7 @@ learner_chapter: ./ch-03-learner.md
 
 สอนว่าบทนี้แปลง Stakeholder needs → requirement → scope boundary → WBS ที่ Ch.4 ใช้ต่อได้จริง — เนื้อหาหลักจาก lesson-07 (Scope/WBS เต็มบท) + Playbook C1–C6
 
-**ข้อตีความที่บันทึกไว้ (ดู FreeBuff_Fixed_Update.md Round 3):** บทนี้ครอบคลุม C1–C6; ส่วน C7 (Plan Quality and Acceptance / Test Strategy) ถูกเลื่อนไป Ch.5 ตามคำเตือน Quality ใน master_plan §3 ("วางแผน Test/Quality → Ch.5, ผลจริง → Ch.8") — ชื่อบท C1–C7 ในแผนคือช่วง planning ทั้งหมด ไม่ใช่ข้อบังคับให้ C7 อยู่บทนี้ ต้องเขียน cross-reference ชัดเจนทั้ง Ch.3/Ch.5/Ch.8
+**ข้อตีความที่บันทึกไว้:** บทนี้ครอบคลุม C1–C6; ส่วน C7 (Plan Quality and Acceptance / Test Strategy) ถูกเลื่อนไป Ch.5 ตามหลัก "วางแผน Test/Quality → Ch.5, ผลจริง → Ch.8" — ชื่อช่วง C1–C7 ใน Playbook คือช่วง planning ทั้งหมด ไม่ใช่ข้อบังคับให้ C7 อยู่บทนี้ ต้องเขียน cross-reference ชัดเจนทั้ง Ch.3/Ch.5/Ch.8
 
 ## Learning Intent
 

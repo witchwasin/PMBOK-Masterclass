@@ -5,7 +5,7 @@ document_type: Appendix
 version: 1.0
 status: Draft
 last_reviewed: 2026-08-13
-related_reference: ../../governance/COURSE_STANDARD.md
+related_reference: ../../docs/COURSE_STANDARD.md
 ---
 
 # Appendix D — Master Answer Key (รวมทุกบท)

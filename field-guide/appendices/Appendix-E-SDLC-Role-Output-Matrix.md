@@ -4,7 +4,7 @@ document_type: Field Guide Appendix
 version: 1.0
 status: Draft
 last_updated: 2026-07-31
-source: repository/PMBOK-Aligned-End-to-End-Project-Delivery-Playbook-V2.md
+source: references/PMBOK-Aligned-End-to-End-Project-Delivery-Playbook-V2.md
 print_edition: field-guide/pdf/Appendix-E-SDLC-Role-Output-Matrix.pdf
 ---
 
@@ -38,4 +38,4 @@ PM แทบไม่ได้ "ลงมือทำเนื้องาน" �
 - **Test Strategy / Test Plan** — วางแผนใน Phase C (Plan Quality and Acceptance) แล้วนำไป **รันจริง** ใน Phase D และ F — ตัว Test Plan (แผน) กับ Test Results (ผลการรัน) จึงอยู่คนละ Phase กัน
 - **RTM (Requirements Traceability Matrix)** — เริ่มสร้างใน Phase C แล้วอัปเดตต่อเนื่องถึง Phase F เพื่อโยง Requirement → Design → Test → Acceptance
 
-PMBOK ไม่บังคับชื่อไฟล์เป๊ะ — สิ่งที่บังคับคือ "เนื้อหา" ต้องถูก Elicit, Analyze, Document, Approve, Trace ให้ครบ ไม่ว่าจะเก็บเป็นไฟล์แยกหรือรวมอยู่ใน Backlog/Wiki ก็ได้ (ดู [Playbook V2 §C4.1](../../repository/PMBOK-Aligned-End-to-End-Project-Delivery-Playbook-V2.md))
+PMBOK ไม่บังคับชื่อไฟล์เป๊ะ — สิ่งที่บังคับคือ "เนื้อหา" ต้องถูก Elicit, Analyze, Document, Approve, Trace ให้ครบ ไม่ว่าจะเก็บเป็นไฟล์แยกหรือรวมอยู่ใน Backlog/Wiki ก็ได้ (ดู [Playbook V2 §C4.1](../../references/PMBOK-Aligned-End-to-End-Project-Delivery-Playbook-V2.md))

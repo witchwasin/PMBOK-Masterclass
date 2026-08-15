@@ -226,9 +226,9 @@ canonical_source: references/PMBOK-Overview.md
 
 ---
 
-## Section 7: Ver.2 (field-guide) — Knowledge Area → Chapter Mapping
+## Section 7: field-guide — Knowledge Area → Chapter Mapping
 
-> **อัปเดต 2026-08-14** — หลังรวมเล่มเป็น "PM Delivery Guide (Ver.2)" (branch `Ver.2`): KA เดิมของ e-Book ถูกผ่าและเทลง chapter ใหม่ที่เรียงตาม workflow จริง A→H ของ `references/PMBOK-Aligned-End-to-End-Project-Delivery-Playbook-V2.md` — ตารางนี้คือ mapping อ้างอิงตารางใน `Ver.2/master_plan.md` §3 (Chapter ใหม่ ≠ KA เดิมแบบ 1:1 — ดูคำเตือน Quality/Integration ด้านล่าง)
+> ใน `field-guide/` ("PM Delivery Guide") KA เดิมของ `e-Book/` ถูกผ่าและเทลง chapter ใหม่ที่เรียงตาม workflow จริง A→H ของ `references/PMBOK-Aligned-End-to-End-Project-Delivery-Playbook-V2.md` — ตารางด้านล่างคือ mapping ระหว่างสองเล่ม (Chapter ใหม่ ≠ KA เดิมแบบ 1:1 — ดูคำเตือน Quality/Integration ด้านล่าง)
 
 | Knowledge Area เดิม (e-Book) | ถูก map ไปที่ (field-guide/chapters/) | Source lesson เดิม |
 |---|---|---|
@@ -254,7 +254,7 @@ canonical_source: references/PMBOK-Overview.md
 | (เนื้อหาใหม่ — ไม่มี KA เดิม) Go-Live & Hypercare | **Ch.9** (Go-Live & Hypercare) | เขียนใหม่ทั้งหมด |
 | (บทปฐมบท — ภาพรวม PMBOK 8) | **Ch.0** (PMBOK Primer) | `references/PMBOK-Overview.md` (ปรับ) |
 
-**⚠️ KA ที่ถูกผ่า (เขียน cross-reference ชัดในเล่ม — master_plan §3 เตือน 2 จุด):**
+**⚠️ KA ที่ถูกผ่า (เขียน cross-reference ชัดในเล่ม — มี 2 จุดที่ต้องระวัง):**
 1. **Quality Management ถูกผ่าเป็น 3 ท่อน:** แผน Test/Quality → Ch.5, QA ระหว่าง build → Ch.6, ผลจริง/QC/UAT → Ch.8 — ทุกบทเขียน cross-ref ชัด (เช่น Ch.5 ชี้ว่า "ผลตรวจจริงอยู่ Ch.8")
 2. **Integration Management ถูกผ่าเป็น 3 ท่อน:** Charter → Ch.2, Change Control → Ch.7, Closure → Ch.10 — เป็น pattern ปกติของ PMBOK (Integration ทำงานตลอดโครงการ) ไม่ใช่ความผิดพลาด
 

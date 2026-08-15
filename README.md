@@ -2,6 +2,29 @@
 
 หลักสูตร Project Management ภาษาไทยที่ออกแบบให้ผู้เรียน **เข้าใจเหตุผล คิดเชื่อมโยง และนำไปใช้กับงานจริง** ไม่ใช่เพียงท่องจำคำศัพท์หรือกระบวนการจาก PMBOK
 
+> ⚠️ เอกสารชุดนี้เป็นสื่อการสอนที่เรียบเรียงขึ้นเอง (PMBOK-aligned) **ไม่ใช่เอกสารทางการของ PMI** และไม่ได้อ้างว่าครอบคลุมเนื้อหาสอบ PMP ครบถ้วน — PMBOK® และ PMP® เป็นเครื่องหมายการค้าของ Project Management Institute, Inc.
+
+## เริ่มอ่านตรงไหน
+
+| ถ้าคุณคือ | เริ่มที่ |
+|---|---|
+| อยากอ่านรวดเดียวจบ แบบ PDF | [PM Delivery Guide — Learner Edition](field-guide/pdf/PM-Delivery-Guide-Learner-Edition.pdf) (เล่มใหม่, PMBOK 8) |
+| ผู้สอน / ต้องการเฉลย + rubric ด้วย | [PM Delivery Guide — Complete Edition](field-guide/pdf/PM-Delivery-Guide-Complete-Edition.pdf) |
+| อยากได้เนื้อหาตาม 10 Knowledge Areas | [PMBOK Masterclass — Complete Edition](e-Book/pdf/PMBOK-Masterclass-Complete-Edition.pdf) (เล่มเดิม, PMBOK 6+7) |
+| อยากอ่านเป็น Markdown ทีละบท | [`field-guide/chapters/`](field-guide/chapters) หรือ [`lessons/`](lessons) |
+| อยากรู้ศัพท์ PM ก่อน | [PM Glossary](docs/PM_GLOSSARY.md) |
+
+## เนื้อหาสองชุดในนี้ต่างกันอย่างไร
+
+| | `field-guide/` — PM Delivery Guide | `e-Book/` + `lessons/` — PMBOK Masterclass |
+|---|---|---|
+| อิง PMBOK | 8th Edition | 6th + 7th Edition |
+| จัดเรียงตาม | ลำดับงานจริง A→H (Pre-sales → Closure) | 10 Knowledge Areas |
+| จำนวน | 11 บท (Ch.0–10) + ภาคผนวก A–F | 16 บทเรียน + Capstone |
+| เหมาะกับ | คนที่อยากเดินตามโครงการจริงตั้งแต่ต้นจนจบ | คนที่อยากไล่ตามโครงสร้าง PMBOK แบบคลาสสิก |
+
+ทั้งสองชุดใช้ scenario เดียวกันและ glossary เดียวกัน อ่านชุดไหนก่อนก็ได้ — ดูตาราง mapping ระหว่างสองเล่มที่ [Content Coverage Matrix §7](docs/CONTENT_COVERAGE_MATRIX.md)
+
 ## แนวทางการสอน
 
 1. เริ่มจากคำถามว่า **ทำไมต้องรู้เรื่องนี้**
@@ -18,71 +41,50 @@ Beginner Safety → Learn → Watch PM Think → Watch Completed Artifact
 → Do → Checkpoint → Review → Approve → Handoff
 ```
 
-## Governance & Reference
+## กรณีศึกษาหลัก
 
-- **Canonical Reference:** [`references/PMBOK-Overview.md`](references/PMBOK-Overview.md) (ทุกบทเรียนอ้างอิงจากเอกสารนี้)
-- **Course Roadmap:** [`governance/COURSE-ROADMAP.md`](governance/COURSE-ROADMAP.md)
-- **Content Rules:** [`governance/CONTENT-RULES.md`](governance/CONTENT-RULES.md)
-- **Course Standard:** [`governance/COURSE_STANDARD.md`](governance/COURSE_STANDARD.md)
-- **Execution Baseline:** [`governance/EXECUTION-BASELINE.md`](governance/EXECUTION-BASELINE.md)
-- **Artifact Dependency Map:** [`governance/ARTIFACT_DEPENDENCY_MAP.md`](governance/ARTIFACT_DEPENDENCY_MAP.md)
+ทุกบทเรียนผูกกับสองกรณีศึกษานี้ตลอดเล่ม เพื่อให้เห็นผลของการตัดสินใจสะสมข้ามบท
 
-## Core Teaching Scenarios
+**ERP Transformation** — ใช้สอนบริบท Enterprise: Cross-functional Process, Data Migration, Integration, Governance, Vendor, Change Management, User Adoption และ Transition to Operation
 
-### ERP Transformation
+**Hotel Booking Digital Platform** — ระบบตัวอย่างประกอบด้วย Mobile App, Customer Web App, Landing Page และ Back Office สำหรับค้นหาโรงแรม ตรวจสอบห้องว่าง จอง ชำระเงิน ยืนยันการจอง และบริหารข้อมูลโรงแรม ใช้สอน Customer Journey, UX, Conversion, Transaction Flow, Product Adoption, Payment Integration และ Business Value
 
-ใช้สอนบริบท Enterprise ได้แก่ Cross-functional Process, Data Migration, Integration, Governance, Vendor, Change Management, User Adoption และ Transition to Operation
+รายละเอียดของทั้งสองกรณีศึกษาเป็น**ข้อสมมติเพื่อการเรียนรู้** ไม่ใช่ข้อมูลขององค์กรจริง — ดูไฟล์ต้นฉบับที่ [`scenarios/`](scenarios)
 
-### Hotel Booking Digital Platform
-
-ระบบตัวอย่างประกอบด้วย Mobile App, Customer Web App, Landing Page และ Back Office Web Application สำหรับค้นหาโรงแรม ตรวจสอบห้องว่าง จอง ชำระเงิน ยืนยันการจอง และบริหารข้อมูลโรงแรม
-
-ใช้สอน Customer Journey, UX, Conversion, Transaction Flow, Product Adoption, Payment Integration และ Business Value
-
-รายละเอียดของทั้งสองกรณีศึกษาเป็นข้อสมมติเพื่อการเรียนรู้ เว้นแต่จะมี Requirement จริงกำหนดไว้ชัดเจน
-
-## Structure
+## โครงสร้าง repository
 
 ```text
 PMBOK-Masterclass/
-├── README.md
-├── references/
-│   └── PMBOK-Overview.md
-├── governance/
-│   ├── CONTENT-RULES.md
-│   ├── COURSE-ROADMAP.md
-│   └── COURSE_STANDARD.md
-└── lessons/
-    ├── lesson-01/
-    │   ├── Lesson-01_1-Blueprint.md
-    │   ├── Lesson-01_2-Why-PM-Must-Know-PMBOK.md
-    │   ├── learner/
-    │   └── instructor/
-    ├── lesson-02/
-    │   ├── Lesson-02_1-Blueprint.md
-    │   ├── Lesson-02_2-Project-Management-Overview.md
-    │   ├── Lesson-02_3-Assessment.md
-    │   └── Lesson-02_4-Source-Mapping.md
-    ├── lesson-03/
-    ├── lesson-04/
-    ├── ...
-    └── lesson-16/
-└── e-Book/
-    ├── chapters/            # บทเรียน 01–16 (learner / instructor / answer-key)
-    ├── integration-reviews/
-    ├── capstone/
-    ├── pdf/                 # เล่มรวม Learner + Instructor (PDF) + build script
-    └── release/             # แพ็กเกจ release สำหรับผู้เรียน
+├── field-guide/        # PM Delivery Guide (PMBOK 8) — 11 บท เรียงตาม workflow A→H
+│   ├── chapters/       #   ch-00 … ch-10 (learner / instructor / answer-key)
+│   ├── appendices/     #   ภาคผนวก A–F (Artifact Catalogue, Golden Rules, Glossary ฯลฯ)
+│   └── pdf/            #   เล่ม PDF + build script
+├── e-Book/             # PMBOK Masterclass (PMBOK 6+7) — 16 บท ตาม Knowledge Areas
+│   ├── chapters/       #   lesson-01 … lesson-16
+│   ├── integration-reviews/
+│   ├── capstone/
+│   ├── pdf/
+│   └── release/        #   ไฟล์สำหรับอ่าน/แจก
+├── lessons/            # ต้นฉบับบทเรียน 01–16 (Blueprint / เนื้อหา / Assessment / Source Mapping)
+├── capstone/           # โจทย์ Capstone + เกณฑ์ประเมิน
+├── scenarios/          # Scenario Master — ERP และ Hotel Booking (แหล่งอ้างอิงข้อเท็จจริงเดียว)
+├── references/         # PMBOK Overview (canonical source) + Delivery Playbook
+└── docs/               # มาตรฐานและเอกสารอ้างอิงสำหรับคนที่จะเขียนต่อ
 ```
 
-## Current Status
+## เอกสารมาตรฐาน (สำหรับคนที่จะเขียนเนื้อหาต่อ)
 
-- Repository release: Active / Validated through Lessons 01–16 and Capstone
-- Lessons 01–05: Active / Validated (Batch 1)
-- Lessons 06–10: Active / Validated (Batch 2)
-- Lessons 11–16: Active / Validated (Batch 3)
-- Capstone: Active / Validated
-- Batch 1 Validation: [`repository/BATCH-1-VALIDATION-REPORT.md`](repository/BATCH-1-VALIDATION-REPORT.md)
-- Batch 2 Validation: [`repository/BATCH-2-VALIDATION-REPORT.md`](repository/BATCH-2-VALIDATION-REPORT.md)
-- Batch 3 Validation: [`repository/BATCH-3-VALIDATION-REPORT.md`](repository/BATCH-3-VALIDATION-REPORT.md)
-- e-Book: Released — Lessons 01–16 + Capstone รวมเล่ม พร้อม PDF (Learner + Instructor) และแพ็กเกจ release ดู [`e-Book/README.md`](e-Book/README.md) และ [`e-Book/release/RELEASE-MANIFEST.md`](e-Book/release/RELEASE-MANIFEST.md)
+| เอกสาร | ใช้ทำอะไร |
+|---|---|
+| [Content Rules](docs/CONTENT-RULES.md) | กฎการเขียนเนื้อหาทุกไฟล์ — source hierarchy, label, Definition of Done |
+| [Course Standard](docs/COURSE_STANDARD.md) | เกณฑ์ release gate ของบทเรียน |
+| [Style Guide](docs/STYLE_GUIDE.md) | แนวการเขียน ภาษา และการทำ link |
+| [Lesson Template](docs/LESSON_TEMPLATE.md) | โครงบทเรียนมาตรฐาน |
+| [Course Roadmap](docs/COURSE-ROADMAP.md) · [Lesson Index](docs/LESSON_INDEX.md) | ลำดับบทและสารบัญรวม |
+| [Artifact Dependency Map](docs/ARTIFACT_DEPENDENCY_MAP.md) | Artifact ของบทไหนถูกใช้ต่อในบทใด |
+| [PMBOK Edition Position](docs/PMBOK-EDITION-POSITION.md) | จุดยืนเรื่อง edition ของ repo นี้ |
+| [`validate-repository.sh`](docs/validate-repository.sh) | ตรวจ metadata / link / absolute path ก่อน commit |
+
+## ผู้เรียบเรียง
+
+Witchwasin K.

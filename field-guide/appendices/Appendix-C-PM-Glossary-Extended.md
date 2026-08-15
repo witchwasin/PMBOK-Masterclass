@@ -5,12 +5,12 @@ document_type: Appendix
 version: 1.0
 status: Draft
 last_reviewed: 2026-08-13
-note: "คำศัพท์ทั้งหมดถูก sync เข้า governance/PM_GLOSSARY.md แล้ว (ส่วน Ver.2 additions) — ไฟล์นี้คือฉบับรวมสำหรับผู้อ่านเล่ม ไม่ใช่ glossary แยก"
+note: "คำศัพท์ทั้งหมดถูก sync เข้า docs/PM_GLOSSARY.md แล้ว (ส่วน field-guide additions) — ไฟล์นี้คือฉบับรวมสำหรับผู้อ่านเล่ม ไม่ใช่ glossary แยก"
 ---
 
 # Appendix C — PM Glossary (ฉบับรวมสำหรับเล่ม)
 
-> **สำคัญ:** คำศัพท์นี้เป็นฉบับรวมของเล่ม — คำทั้งหมดถูกเพิ่มเข้า **`governance/PM_GLOSSARY.md`** (ส่วน "Ver.2 — field-guide additions") แล้ว ไม่ใช่ glossary ที่ขัดกัน (ตาม master_plan §5 ข้อ 9) — ดูไฟล์ต้นทางเป็น authoritative
+> **สำคัญ:** คำศัพท์นี้เป็นฉบับรวมของเล่ม — คำทั้งหมดถูกเพิ่มเข้า **`docs/PM_GLOSSARY.md`** (ส่วน "field-guide additions") แล้ว ไม่ใช่ glossary ที่ขัดกัน — ดูไฟล์ต้นทางเป็น authoritative
 
 ## C.1 คำศัพท์ใหม่ของเล่ม (PMBOK 8 / workflow A–H)
 
@@ -68,4 +68,4 @@ note: "คำศัพท์ทั้งหมดถูก sync เข้า gov
 | WBS | โครงสร้างจำแนกงานตาม deliverable |
 | WIP Limit | จำกัดงานค้าง (Kanban) |
 
-> ดูคำเต็ม + การใช้ผิดที่พบบ่อยได้ที่ `../../governance/PM_GLOSSARY.md`
+> ดูคำเต็ม + การใช้ผิดที่พบบ่อยได้ที่ `../../docs/PM_GLOSSARY.md`

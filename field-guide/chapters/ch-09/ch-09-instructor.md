@@ -15,7 +15,7 @@ learner_chapter: ./ch-09-learner.md
 
 ## Teaching Notes
 
-**บทนี้เป็นเนื้อหาใหม่ทั้งหมด — e-Book เดิมไม่มีบท deployment/hypercare เฉพาะ (ตาม master_plan §3)** — เขียนจาก Playbook Phase G โดยตรง + ผูก Scenario Master (soft launch 3 โรงแรม = Sprint 12, full launch 12 โรงแรม, post-launch support 3 เดือน) — เน้นว่าผู้ใช้เคยจับว่า "Go-live ≠ Closure" มาก่อน (lesson-01) ต้องชี้ชัดว่าบทนี้คือ Go-live, Closure คือ Ch.10
+**บทนี้เป็นเนื้อหาใหม่ทั้งหมด — `e-Book/` ไม่มีบท deployment/hypercare เฉพาะ** — เขียนจาก Playbook Phase G โดยตรง + ผูก Scenario Master (soft launch 3 โรงแรม = Sprint 12, full launch 12 โรงแรม, post-launch support 3 เดือน) — เน้นว่าผู้ใช้เคยจับว่า "Go-live ≠ Closure" มาก่อน (lesson-01) ต้องชี้ชัดว่าบทนี้คือ Go-live, Closure คือ Ch.10
 
 ## Learning Intent
 

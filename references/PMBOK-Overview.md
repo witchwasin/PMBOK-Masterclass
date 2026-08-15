@@ -607,21 +607,20 @@ Agile is a MINDSET → Described by 4 VALUES → Defined by 12 PRINCIPLES → Ma
 
 ## 🔗 8. Cross-Reference
 
-| Document | Path | ความเชื่อมโยง |
-|---|---|---|
-| **R06 — WBS Reference** | [`WBS-Reference.md`](WBS-Reference.md) | เจาะลึก Scope Management (KA 6) → WBS techniques |
-| **R08 — Quality & Risk** | [`Quality-Risk-Reference.md`](Quality-Risk-Reference.md) | เจาะลึก Quality (KA 10) + Risk (KA 9) |
-| **R07 — Schedule, Cost, Quality** | [`Schedule-Cost-Quality-Reference.md`](Schedule-Cost-Quality-Reference.md) | เจาะลึก Schedule (KA 7) + Cost (KA 8) + Quality (KA 10) — Iron Triangle |
-| **R09 — Agile** | [`Agile-Reference.md`](Agile-Reference.md) | เจาะลึก Agile Project Management |
-| **R04 — AI-PMO Gov vs Traditional** | [`2026-05-12_AI-PMO-Gov-Traditional-Research.md`](2026-05-12_AI-PMO-Gov-Traditional-Research.md) | เปรียบเทียบ PMBOK กับ AI-augmented PMO |
-| **R01 — PM Capability Catalog** | [`PM-Capability-Catalog.md`](PM-Capability-Catalog.md) | Mapping ความสามารถ PM กับ Knowledge Areas |
-| **R03 — Thai Gov IT Project Lifecycle** | [`Thai-Gov-IT-Project-Lifecycle.md`](Thai-Gov-IT-Project-Lifecycle.md) | บริบทไทย — Government procurement flow (KA 3) |
-| **Project Execution Manual (SOP)** | `../Project-Execution-Manual/SOP-PM.md` | SOP ปฏิบัติของอาร์ม — สอดคล้องกับ 5 Process Groups |
+| หัวข้อที่ต้องการเจาะลึก | ไปที่ |
+|---|---|
+| Scope Management + WBS | [Lesson 07](../lessons/lesson-07/Lesson-07_2-Project-Scope-Management-and-WBS.md) · [field-guide Ch.3](../field-guide/chapters/ch-03/ch-03-learner.md) |
+| Schedule + Cost + Earned Value | [Lesson 08](../lessons/lesson-08/Lesson-08_2-Project-Schedule-Management.md) · [Lesson 09](../lessons/lesson-09/Lesson-09_2-Project-Cost-Management-and-Earned-Value.md) |
+| Quality Management | [Lesson 10](../lessons/lesson-10/Lesson-10_2-Project-Quality-Management.md) · [field-guide Ch.5](../field-guide/chapters/ch-05/ch-05-learner.md) |
+| Risk Management | [Lesson 13](../lessons/lesson-13/Lesson-13_2-Project-Risk-Management.md) |
+| Agile / Scrum / Kanban | [Lesson 15](../lessons/lesson-15/Lesson-15_2-Agile-Project-Management-Scrum-and-Kanban.md) |
+| Tailoring — Predictive vs Agile vs Hybrid | [Lesson 16](../lessons/lesson-16/Lesson-16_2-Predictive-vs-Agile-vs-Hybrid-and-Tailoring.md) |
+| End-to-end delivery workflow (A–H) | [Delivery Playbook V2](PMBOK-Aligned-End-to-End-Project-Delivery-Playbook-V2.md) |
 
 ---
 
 > 📌 **หมายเหตุการใช้งาน:**
-> - เอกสารนี้เป็น **foundational overview** — สำหรับ deep-dive ไป R06 (WBS) / R07 (Schedule/Cost/Quality) / R08 (Quality/Risk) / R09 (Agile)
+> - เอกสารนี้เป็น **foundational overview** และเป็น canonical source ที่ทุกบทเรียนอ้างอิง — สำหรับ deep-dive ดูตาราง Cross-Reference ด้านบน
 > - ใช้ตอนเริ่มโครงการใหม่ (Initiating) เพื่อ recall framework
 > - ใช้ตอนสอน/coach น้อง PM เพื่อ align vocabulary
 > - ใช้ตอนเขียน proposal เพื่ออ้างอิงมาตรฐาน PMBOK

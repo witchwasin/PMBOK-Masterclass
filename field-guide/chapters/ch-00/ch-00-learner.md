@@ -14,7 +14,7 @@ related_chapters: "ทุกบท (Ch.1–10)"
 canonical_source:
   - ../../references/PMBOK-Aligned-End-to-End-Project-Delivery-Playbook-V2.md (§1 Reference Basis, §1.1)
   - ../../references/PMBOK-Overview.md (ปรับ)
-note: "บทปฐมบท — ตาม master_plan §5 ไม่มี Workshop และ Assessment"
+note: "บทปฐมบท — ไม่มี Workshop และ Assessment โดยการออกแบบ"
 ---
 
 # Chapter 00 — PMBOK Primer: ทำไมเล่มนี้เดินตาม A→H
@@ -164,7 +164,7 @@ Next Action: เลือกโหมด -> เริ่ม Ch.1 (Pre-sales) ห
 
 ## 10. Workshop
 
-**บทปฐมบทไม่มี Workshop** — ตาม `Ver.2/master_plan.md` §5 (Ch.0 ยกเว้น Workshop/Assessment) — เริ่มฝึกจริงที่ Ch.1 เป็นต้นไป
+**บทปฐมบทไม่มี Workshop** — Ch.0 ยกเว้น Workshop/Assessment โดยการออกแบบ — เริ่มฝึกจริงที่ Ch.1 เป็นต้นไป
 
 ## 11. Checklist ใช้งานจริง (เริ่มต้นอ่านเล่มนี้)
 
@@ -177,7 +177,7 @@ Next Action: เลือกโหมด -> เริ่ม Ch.1 (Pre-sales) ห
 
 ## 12. Assessment
 
-**บทปฐมบทไม่มี Assessment** — ตาม `Ver.2/master_plan.md` §5 — ประเมินความเข้าใจด้วยคำถามท้ายบทที่ 13 และ Checkpoint ในบทถัดไป
+**บทปฐมบทไม่มี Assessment** — ประเมินความเข้าใจด้วยคำถามท้ายบทที่ 13 และ Checkpoint ในบทถัดไป
 
 ## 13. Executive Summary
 

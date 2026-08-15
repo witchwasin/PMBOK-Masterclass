@@ -16,7 +16,7 @@ Instructor-facing only.
 
 ## หมายเหตุ
 
-ตาม `master_plan.md` §5 บทปฐมบท (Ch.0) ไม่มี Workshop และ Assessment — ไฟล์นี้ให้แนวทาง (model guidance) สำหรับ discussion prompts ใน instructor guide และคำถามท้ายบท (Checkpoint ผ่านบทถัดไป)
+บทปฐมบท (Ch.0) ไม่มี Workshop และ Assessment โดยการออกแบบ — ไฟล์นี้ให้แนวทาง (model guidance) สำหรับ discussion prompts ใน instructor guide และคำถามท้ายบท (Checkpoint ผ่านบทถัดไป)
 
 ## Discussion Prompt 1 — PMBOK ต่างจาก methodology อย่างไร
 
