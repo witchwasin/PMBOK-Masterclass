@@ -2,7 +2,7 @@
 chapter: lesson-09
 title: Project Cost Management and Earned Value
 edition: Learner
-status: Ready for Human Review
+status: Released
 source_lesson: ../../../lessons/lesson-09/
 scenario_version:
   erp: "1.0"

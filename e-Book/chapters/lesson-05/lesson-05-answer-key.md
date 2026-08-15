@@ -2,7 +2,7 @@
 chapter: lesson-05
 title: Project Integration Management
 edition: Answer Key
-status: Ready for Human Review
+status: Released
 source_assessment: ../../../lessons/lesson-05/Lesson-05_3-Assessment.md
 ---
 

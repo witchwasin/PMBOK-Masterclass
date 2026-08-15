@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Assemble the combined Learner + Instructor PMBOK Masterclass book.html,
-then render it to PDF (weasyprint if available, Chrome headless otherwise).
+then render it to PDF via Chrome headless.
 
-Usage: /usr/bin/python3 build_pdf.py
+Usage: python3 build_pdf.py
 """
 import html
 import os
@@ -279,6 +279,19 @@ def build_toc_entry(chap_id, title, instr_id, ans_id):
 </ul></li>"""
 
 
+def render_pdf(html_path, pdf_path):
+    if not os.path.exists(CHROME_BIN):
+        print(f"ERROR: Chrome not found at {CHROME_BIN}", file=sys.stderr)
+        sys.exit(1)
+    cmd = [
+        CHROME_BIN, "--headless=new", "--disable-gpu", "--no-sandbox",
+        "--no-pdf-header-footer", f"--print-to-pdf={pdf_path}", "file://" + html_path,
+    ]
+    print("Running:", " ".join(cmd))
+    subprocess.run(cmd, check=True)
+    print(f"Wrote {pdf_path} ({os.path.getsize(pdf_path)} bytes)")
+
+
 def main():
     seen_ids = set()
     learner_chapters = split_learner_chapters()
@@ -351,7 +364,7 @@ def main():
 <h1>PMBOK-aligned Practical Masterclass</h1>
 <p class="byline">ผู้เรียบเรียง: Witchwasin K.</p>
 <p class="edition">Learner Edition + Instructor Companion — Combined</p>
-<p class="disclaimer">เอกสารนี้ไม่ใช่เอกสารทางการของ PMI<br>This is not official PMI material.</p>
+<p class="disclaimer">เอกสารนี้ไม่ใช่เอกสารทางการของ PMI<br>This is not official PMI material.<br>© 2026 Witchwasin K. — CC BY-NC 4.0</p>
 </section>"""
 
     toc = f"""<section class="toc">
@@ -379,6 +392,8 @@ def main():
     with open(BOOK_HTML, "w", encoding="utf-8") as f:
         f.write(full_html)
     print(f"Wrote {BOOK_HTML} ({len(full_html)} bytes)")
+
+    render_pdf(BOOK_HTML, BOOK_PDF)
 
 
 if __name__ == "__main__":

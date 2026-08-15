@@ -2,7 +2,7 @@
 chapter: lesson-11
 title: Project Resource Management
 edition: Instructor
-status: Ready for Human Review
+status: Released
 source_lesson: ../../../lessons/lesson-11/
 learner_chapter: ./lesson-11-learner.md
 ---

@@ -2,7 +2,7 @@
 title: PMBOK-aligned Practical Masterclass
 author: Witchwasin K.
 edition: Instructor Companion Assembly
-status: Ready for Release Packaging
+status: Released
 generated_on: 2026-07-22
 ---
 

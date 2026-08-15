@@ -2,9 +2,9 @@
 title: "Appendix E — SDLC Role & Output Matrix"
 document_type: Field Guide Appendix
 version: 1.0
-status: Draft
+status: Released
 last_updated: 2026-07-31
-source: references/PMBOK-Aligned-End-to-End-Project-Delivery-Playbook-V2.md
+source: ../../references/PMBOK-Overview.md
 print_edition: field-guide/pdf/Appendix-E-SDLC-Role-Output-Matrix.pdf
 ---
 
@@ -33,9 +33,9 @@ PM แทบไม่ได้ "ลงมือทำเนื้องาน" �
 
 คำถามที่พบบ่อยที่สุดคือเอกสารเหล่านี้ "หายไปไหน" — คำตอบคือมันไม่ได้หาย แต่เป็น Output ของ **Phase C (Detailed Planning)** ไม่ใช่ Phase D:
 
-- **SRS / FSD** — ผลผลิตของ BA ใน Phase C (Conditional: ต้องมีเมื่อ Contract Formal, ระบบซับซ้อน, ต้อง Sign-off — ดู Playbook V2 §C4) ถ้าตัดออกต้องมีเอกสารทดแทน เช่น User Story + Acceptance Criteria ที่ Coverage เทียบเท่า
+- **SRS / FSD** — ผลผลิตของ BA ใน Phase C (Conditional: ต้องมีเมื่อ Contract Formal, ระบบซับซ้อน, ต้อง Sign-off — ดู Ch.3) ถ้าตัดออกต้องมีเอกสารทดแทน เช่น User Story + Acceptance Criteria ที่ Coverage เทียบเท่า
 - **Technical Design (TDD/SDD)** — ผลผลิตของ Architect/Tech Lead ใน Phase C เช่นกัน (หรือ ADR/Architecture Docs เป็นเอกสารทดแทน)
 - **Test Strategy / Test Plan** — วางแผนใน Phase C (Plan Quality and Acceptance) แล้วนำไป **รันจริง** ใน Phase D และ F — ตัว Test Plan (แผน) กับ Test Results (ผลการรัน) จึงอยู่คนละ Phase กัน
 - **RTM (Requirements Traceability Matrix)** — เริ่มสร้างใน Phase C แล้วอัปเดตต่อเนื่องถึง Phase F เพื่อโยง Requirement → Design → Test → Acceptance
 
-PMBOK ไม่บังคับชื่อไฟล์เป๊ะ — สิ่งที่บังคับคือ "เนื้อหา" ต้องถูก Elicit, Analyze, Document, Approve, Trace ให้ครบ ไม่ว่าจะเก็บเป็นไฟล์แยกหรือรวมอยู่ใน Backlog/Wiki ก็ได้ (ดู [Playbook V2 §C4.1](../../references/PMBOK-Aligned-End-to-End-Project-Delivery-Playbook-V2.md))
+PMBOK ไม่บังคับชื่อไฟล์เป๊ะ — สิ่งที่บังคับคือ "เนื้อหา" ต้องถูก Elicit, Analyze, Document, Approve, Trace ให้ครบ ไม่ว่าจะเก็บเป็นไฟล์แยกหรือรวมอยู่ใน Backlog/Wiki ก็ได้

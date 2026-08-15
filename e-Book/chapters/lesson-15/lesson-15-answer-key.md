@@ -2,7 +2,7 @@
 chapter: lesson-15
 title: Agile Project Management - Scrum and Kanban
 document_type: Answer Key
-status: Ready for Human Review
+status: Released
 learner_chapter: ./lesson-15-learner.md
 ---
 

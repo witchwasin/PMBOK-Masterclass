@@ -1,10 +1,10 @@
 ---
 chapter: ch-03
 title: "Requirements, Scope และ WBS (Playbook C1–C6)"
-book: "PM Delivery Guide (Ver.2)"
+book: "PM Delivery Guide"
 edition: Instructor
-status: Draft
-validation_status: Not Validated
+status: Released
+validation_status: Reviewed
 last_reviewed: 2026-08-13
 learner_chapter: ./ch-03-learner.md
 ---

@@ -3,8 +3,8 @@ chapter: ch-06
 title: "Execution — ส่งมอบ Solution, บริหารทีม และ Manage Quality (Playbook D)"
 book: "PM Delivery Guide: From Pre-sales to Closure — คู่มือปฏิบัติการบริหารโครงการซอฟต์แวร์ (PMBOK 8th Edition)"
 edition: Learner
-status: Draft
-validation_status: Not Validated
+status: Released
+validation_status: Reviewed
 last_reviewed: 2026-08-15
 intended_learner_level: Experienced PM
 difficulty: Core
@@ -15,7 +15,7 @@ related_chapters:
   - "Ch.7 — Monitoring & Change (ควบคู่กับ Execution)"
   - "Ch.8 — Verification/UAT (QC ผลจริง)"
 canonical_source:
-  - ../../references/PMBOK-Aligned-End-to-End-Project-Delivery-Playbook-V2.md (Phase D)
+  - ../../references/PMBOK-Overview.md (PMBOK framework)
   - ../../e-Book/chapters/lesson-10/lesson-10-learner.md (Quality — ฝั่ง Manage Quality)
   - ../../e-Book/chapters/lesson-11/lesson-11-learner.md (Resource — ฝั่ง Develop/Manage Team)
   - ../../e-Book/chapters/lesson-15/lesson-15-learner.md + lesson-16 (Agile inserts)

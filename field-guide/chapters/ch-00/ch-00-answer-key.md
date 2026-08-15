@@ -1,10 +1,10 @@
 ---
 chapter: ch-00
 title: "PMBOK Primer — กรอบคิดสำหรับเล่มนี้ (PMBOK 8)"
-book: "PM Delivery Guide (Ver.2)"
+book: "PM Delivery Guide"
 edition: Answer Key
-status: Draft
-validation_status: Not Validated
+status: Released
+validation_status: Reviewed
 last_reviewed: 2026-08-13
 learner_chapter: ./ch-00-learner.md
 note: "บทปฐมบทไม่มี Assessment — ไฟล์นี้เป็นแนวทางการตอบ discussion prompts"

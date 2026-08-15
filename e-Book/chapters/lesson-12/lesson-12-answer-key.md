@@ -2,7 +2,7 @@
 chapter: lesson-12
 title: Project Communications Management
 document_type: Answer Key
-status: Ready for Human Review
+status: Released
 learner_chapter: ./lesson-12-learner.md
 ---
 

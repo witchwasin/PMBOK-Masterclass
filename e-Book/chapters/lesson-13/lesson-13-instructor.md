@@ -2,7 +2,7 @@
 chapter: lesson-13
 title: Project Risk Management
 edition: Instructor
-status: Ready for Human Review
+status: Released
 source_lesson: ../../../lessons/lesson-13/
 learner_chapter: ./lesson-13-learner.md
 ---

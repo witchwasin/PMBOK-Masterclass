@@ -615,7 +615,7 @@ Agile is a MINDSET → Described by 4 VALUES → Defined by 12 PRINCIPLES → Ma
 | Risk Management | [Lesson 13](../lessons/lesson-13/Lesson-13_2-Project-Risk-Management.md) |
 | Agile / Scrum / Kanban | [Lesson 15](../lessons/lesson-15/Lesson-15_2-Agile-Project-Management-Scrum-and-Kanban.md) |
 | Tailoring — Predictive vs Agile vs Hybrid | [Lesson 16](../lessons/lesson-16/Lesson-16_2-Predictive-vs-Agile-vs-Hybrid-and-Tailoring.md) |
-| End-to-end delivery workflow (A–H) | [Delivery Playbook V2](PMBOK-Aligned-End-to-End-Project-Delivery-Playbook-V2.md) |
+| End-to-end delivery workflow (A–H) | [PM Delivery Guide](../field-guide/README.md) — ทั้งเล่ม |
 
 ---
 

@@ -1,10 +1,10 @@
 ---
 chapter: ch-04
 title: "Schedule, Cost และ Resource (Playbook C8–C13)"
-book: "PM Delivery Guide (Ver.2)"
+book: "PM Delivery Guide"
 edition: Answer Key
-status: Draft
-validation_status: Not Validated
+status: Released
+validation_status: Reviewed
 last_reviewed: 2026-08-13
 learner_chapter: ./ch-04-learner.md
 ---

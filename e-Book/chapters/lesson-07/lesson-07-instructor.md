@@ -2,7 +2,7 @@
 chapter: lesson-07
 title: Project Scope Management and WBS
 edition: Instructor
-status: Ready for Human Review
+status: Released
 source_lesson: ../../../lessons/lesson-07/
 learner_chapter: ./lesson-07-learner.md
 ---

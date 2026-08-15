@@ -2,7 +2,7 @@
 chapter: lesson-04
 title: 10 Project Management Knowledge Areas Overview
 edition: Answer Key
-status: Ready for Human Review
+status: Released
 source_assessment: ../../../lessons/lesson-04/Lesson-04_3-Assessment.md
 ---
 

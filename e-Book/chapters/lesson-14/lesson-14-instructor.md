@@ -2,7 +2,7 @@
 chapter: lesson-14
 title: Project Procurement Management
 edition: Instructor
-status: Ready for Human Review
+status: Released
 source_lesson: ../../../lessons/lesson-14/
 learner_chapter: ./lesson-14-learner.md
 ---

@@ -1,11 +1,11 @@
 ---
 title: "Appendix F — Problem → Chapter Index (เปิดเมื่อมีปัญหา)"
-book: "PM Delivery Guide (Ver.2)"
+book: "PM Delivery Guide"
 document_type: Appendix
 version: 1.0
-status: Draft
+status: Released
 last_reviewed: 2026-08-13
-related_reference: ../../references/PMBOK-Aligned-End-to-End-Project-Delivery-Playbook-V2.md
+related_reference: ../../references/PMBOK-Overview.md
 ---
 
 # Appendix F — Problem → Chapter Index

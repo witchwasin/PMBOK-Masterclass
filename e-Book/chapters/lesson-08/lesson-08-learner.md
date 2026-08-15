@@ -2,7 +2,7 @@
 chapter: lesson-08
 title: Project Schedule Management
 edition: Learner
-status: Ready for Human Review
+status: Released
 source_lesson: ../../../lessons/lesson-08/
 scenario_version:
   erp: "1.0"

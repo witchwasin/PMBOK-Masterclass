@@ -2,7 +2,7 @@
 chapter: lesson-10
 title: Project Quality Management
 edition: Instructor
-status: Ready for Human Review
+status: Released
 source_lesson: ../../../lessons/lesson-10/
 learner_chapter: ./lesson-10-learner.md
 ---

@@ -1,16 +1,16 @@
 ---
 title: "Appendix B — Golden Rules Poster (20 ข้อ)"
-book: "PM Delivery Guide (Ver.2)"
+book: "PM Delivery Guide"
 document_type: Appendix
 version: 1.0
-status: Draft
+status: Released
 last_reviewed: 2026-08-13
-related_reference: ../../references/PMBOK-Aligned-End-to-End-Project-Delivery-Playbook-V2.md (§9 Golden Rules)
+related_reference: ../../references/PMBOK-Overview.md
 ---
 
 # Appendix B — Golden Rules for Project Managers (พิมพ์เป็น 1 หน้า)
 
-> มาจาก Playbook V2 §9 — ใช้เป็น poster ติดโต๊ะ/ห้องประชุม — แต่ละข้อ map ไปบทที่เกี่ยวข้อง
+> สรุปจากทั้งเล่ม — ใช้เป็น poster ติดโต๊ะ/ห้องประชุม — แต่ละข้อ map ไปบทที่เกี่ยวข้อง
 
 | # | Golden Rule | บทที่เกี่ยวข้อง |
 |---|---|---|

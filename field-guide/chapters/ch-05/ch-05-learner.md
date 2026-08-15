@@ -3,8 +3,8 @@ chapter: ch-05
 title: "Risk, Procurement, Communications, Environment และ Integrated Plan (Playbook C7 + C14–C19)"
 book: "PM Delivery Guide: From Pre-sales to Closure — คู่มือปฏิบัติการบริหารโครงการซอฟต์แวร์ (PMBOK 8th Edition)"
 edition: Learner
-status: Draft
-validation_status: Not Validated
+status: Released
+validation_status: Reviewed
 last_reviewed: 2026-08-15
 intended_learner_level: Experienced PM
 difficulty: Advanced
@@ -15,7 +15,7 @@ related_chapters:
   - "Ch.7 — Monitoring & Change (EVM ฝั่ง Control, Risk Monitor)"
   - "Ch.8 — Verification/UAT (ผลการทดสอบจริง — cross-ref กับ Test Strategy ในบทนี้)"
 canonical_source:
-  - ../../references/PMBOK-Aligned-End-to-End-Project-Delivery-Playbook-V2.md (Phase C7, C14–C19)
+  - ../../references/PMBOK-Overview.md (PMBOK framework)
   - ../../e-Book/chapters/lesson-13/lesson-13-learner.md (Risk เต็มบท)
   - ../../e-Book/chapters/lesson-14/lesson-14-learner.md (Procurement เต็มบท)
   - ../../e-Book/chapters/lesson-12/lesson-12-learner.md (Communications เต็มบท)

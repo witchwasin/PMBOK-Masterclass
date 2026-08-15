@@ -3,8 +3,8 @@ chapter: ch-04
 title: "Schedule, Cost และ Resource (Playbook C8–C13)"
 book: "PM Delivery Guide: From Pre-sales to Closure — คู่มือปฏิบัติการบริหารโครงการซอฟต์แวร์ (PMBOK 8th Edition)"
 edition: Learner
-status: Draft
-validation_status: Not Validated
+status: Released
+validation_status: Reviewed
 last_reviewed: 2026-08-15
 intended_learner_level: Experienced PM
 difficulty: Advanced
@@ -15,7 +15,7 @@ related_chapters:
   - "Ch.7 — Monitoring & Change (EVM ฝั่ง Control)"
   - "Ch.6 — Execution (Develop/Manage Team)"
 canonical_source:
-  - ../../references/PMBOK-Aligned-End-to-End-Project-Delivery-Playbook-V2.md (Phase C8–C13)
+  - ../../references/PMBOK-Overview.md (PMBOK framework)
   - ../../e-Book/chapters/lesson-08/lesson-08-learner.md (Schedule เต็มบท)
   - ../../e-Book/chapters/lesson-09/lesson-09-learner.md (Cost/EVM เต็มบท)
   - ../../e-Book/chapters/lesson-11/lesson-11-learner.md (Resource เต็มบท)

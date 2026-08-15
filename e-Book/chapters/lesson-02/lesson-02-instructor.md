@@ -2,7 +2,7 @@
 chapter: lesson-02
 title: Project Management Overview
 edition: Instructor
-status: Ready for Human Review
+status: Released
 source_lesson: ../../../lessons/lesson-02/
 learner_chapter: ./lesson-02-learner.md
 ---

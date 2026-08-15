@@ -2,7 +2,7 @@
 chapter: lesson-05
 title: Project Integration Management
 edition: Learner
-status: Ready for Human Review
+status: Released
 source_lesson: ../../../lessons/lesson-05/
 scenario_version:
   erp: "1.0"

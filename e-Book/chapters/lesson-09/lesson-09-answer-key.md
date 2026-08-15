@@ -2,7 +2,7 @@
 chapter: lesson-09
 title: Project Cost Management and Earned Value
 document_type: Answer Key
-status: Ready for Human Review
+status: Released
 learner_chapter: ./lesson-09-learner.md
 ---
 

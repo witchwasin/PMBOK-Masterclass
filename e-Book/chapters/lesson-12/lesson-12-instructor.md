@@ -2,7 +2,7 @@
 chapter: lesson-12
 title: Project Communications Management
 edition: Instructor
-status: Ready for Human Review
+status: Released
 source_lesson: ../../../lessons/lesson-12/
 learner_chapter: ./lesson-12-learner.md
 ---

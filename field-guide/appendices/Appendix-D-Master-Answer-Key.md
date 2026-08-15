@@ -1,9 +1,9 @@
 ---
 title: "Appendix D — Master Answer Key (รวมทุกบท)"
-book: "PM Delivery Guide (Ver.2)"
+book: "PM Delivery Guide"
 document_type: Appendix
 version: 1.0
-status: Draft
+status: Released
 last_reviewed: 2026-08-13
 related_reference: ../../docs/COURSE_STANDARD.md
 ---

@@ -2,7 +2,7 @@
 chapter: lesson-02
 title: Project Management Overview
 edition: Answer Key
-status: Ready for Human Review
+status: Released
 source_assessment: ../../../lessons/lesson-02/Lesson-02_3-Assessment.md
 ---
 

@@ -1,7 +1,7 @@
 ---
 document_type: E-book Capstone
 edition: Instructor
-status: Ready for Human Review
+status: Released
 source_capstone: ../../capstone/
 learner_capstone: ./capstone-learner.md
 ---

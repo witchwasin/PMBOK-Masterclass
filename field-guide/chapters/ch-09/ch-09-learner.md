@@ -3,8 +3,8 @@ chapter: ch-09
 title: "Go-Live และ Hypercare (Playbook G)"
 book: "PM Delivery Guide: From Pre-sales to Closure — คู่มือปฏิบัติการบริหารโครงการซอฟต์แวร์ (PMBOK 8th Edition)"
 edition: Learner
-status: Draft
-validation_status: Not Validated
+status: Released
+validation_status: Reviewed
 last_reviewed: 2026-08-15
 intended_learner_level: Experienced PM
 difficulty: Core
@@ -15,7 +15,7 @@ related_chapters:
   - "Ch.5 — Environment/Release/Transition Plan (C17, แผนเบื้องต้น)"
   - "Ch.10 — Transition & Closure (ต่อจาก Stabilization)"
 canonical_source:
-  - ../../references/PMBOK-Aligned-End-to-End-Project-Delivery-Playbook-V2.md (Phase G)
+  - ../../references/PMBOK-Overview.md (PMBOK framework)
   - ../../e-Book/chapters/lesson-05/lesson-05-learner.md (แนวคิด Close Project — บางส่วน)
 scenario_version:
   hotel_booking: "1.0"

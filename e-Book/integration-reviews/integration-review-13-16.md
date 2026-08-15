@@ -1,7 +1,7 @@
 ---
 document_type: E-book Integration Review
 scope: Lessons 13-16
-status: Ready for Human Review
+status: Released
 validated_on: 2026-07-22
 ---
 

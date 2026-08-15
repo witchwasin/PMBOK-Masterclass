@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Assemble the field-guide (Ver.2) PM Delivery Guide book.html — Learner and
+"""Assemble the field-guide PM Delivery Guide book.html — Learner and
 Combined (Learner + Instructor + Answer Key) editions — then render to PDF
 via Chrome headless (same renderer used for the original e-Book).
 
-Layout (Ver.2 typography pass):
+Layout:
   * Running heads via CSS *named pages*: every page carries
     "บทที่ N: ชื่อบท | P{page}" (appendices: "ภาคผนวก X — ชื่อ | P{page}").
     The chapter opener page and the cover suppress the header (:first).
@@ -43,7 +43,7 @@ BOOK_LEARNER_PDF = os.path.join(HERE, "PM-Delivery-Guide-Learner-Edition.pdf")
 
 CHROME_BIN = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 
-BOOK_TITLE = "PM Delivery Guide (Ver.2)"
+BOOK_TITLE = "PM Delivery Guide"
 BOOK_SUBTITLE = "Project Delivery Playbook + PM Masterclass — เล่มรวมฉบับสมบูรณ์ (PMBOK 8-aligned)"
 
 # ---------------------------------------------------------------------------
@@ -587,7 +587,7 @@ def main():
 <div class="rule"></div>
 <p class="byline">{html.escape(subtitle, quote=False)}</p>
 <p class="edition">{html.escape(edition, quote=False)}</p>
-<p class="disclaimer">อ้างอิง PMBOK 8th Edition (Principles / Domains / Focus Areas) ประกอบ Playbook V2<br>เอกสารนี้ไม่ใช่เอกสารทางการของ PMI — This is not official PMI material.</p>
+<p class="disclaimer">อ้างอิง PMBOK 8th Edition (Principles / Domains / Focus Areas)<br>เอกสารนี้ไม่ใช่เอกสารทางการของ PMI — This is not official PMI material.<br>© 2026 Witchwasin K. — CC BY-NC 4.0</p>
 </section>"""
 
     cover_combined = build_cover(
@@ -625,8 +625,8 @@ def main():
 </html>
 """
 
-    css_combined = build_css("PM Delivery Guide (Ver.2) · Combined Edition")
-    css_learner = build_css("PM Delivery Guide (Ver.2) · Learner Edition")
+    css_combined = build_css("PM Delivery Guide · Combined Edition")
+    css_learner = build_css("PM Delivery Guide · Learner Edition")
 
     with open(BOOK_HTML, "w", encoding="utf-8") as f:
         f.write(full_page(cover_combined, toc_combined, "".join(body_parts), css_combined))

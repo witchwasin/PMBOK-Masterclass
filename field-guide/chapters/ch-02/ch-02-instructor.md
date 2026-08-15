@@ -1,10 +1,10 @@
 ---
 chapter: ch-02
 title: "Initiation — Charter, Stakeholder, Governance และ Kickoff (Playbook B)"
-book: "PM Delivery Guide (Ver.2)"
+book: "PM Delivery Guide"
 edition: Instructor
-status: Draft
-validation_status: Not Validated
+status: Released
+validation_status: Reviewed
 last_reviewed: 2026-08-13
 learner_chapter: ./ch-02-learner.md
 scenario_extension: "[Teaching Scenario Extension] — vendor layer สิ้นสุดที่ Ch.2 (Kickoff) หลังนี้ใช้ทีม SHG ภายใน"
@@ -16,7 +16,7 @@ scenario_extension: "[Teaching Scenario Extension] — vendor layer สิ้น
 
 ## Teaching Notes
 
-สอนว่า Initiation แปลง "สัญญาการค้า" เป็น "authorization + governance" — เนื้อหาผสาน Develop Charter (lesson-05 บางส่วน) กับ Stakeholder Management เต็มบท (lesson-06) + Phase B ของ Playbook V2 ต้องชี้ให้เห็นว่า Integration ถูกผ่า: Charter อยู่บทนี้, Change Control อยู่ Ch.7, Closure อยู่ Ch.10
+สอนว่า Initiation แปลง "สัญญาการค้า" เป็น "authorization + governance" — เนื้อหาผสาน Develop Charter (lesson-05 บางส่วน) กับ Stakeholder Management เต็มบท (lesson-06) + Phase B ของโครง A→H ต้องชี้ให้เห็นว่า Integration ถูกผ่า: Charter อยู่บทนี้, Change Control อยู่ Ch.7, Closure อยู่ Ch.10
 
 ## Learning Intent
 

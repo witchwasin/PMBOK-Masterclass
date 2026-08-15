@@ -68,7 +68,7 @@ PMBOK-Masterclass/
 ├── lessons/            # ต้นฉบับบทเรียน 01–16 (Blueprint / เนื้อหา / Assessment / Source Mapping)
 ├── capstone/           # โจทย์ Capstone + เกณฑ์ประเมิน
 ├── scenarios/          # Scenario Master — ERP และ Hotel Booking (แหล่งอ้างอิงข้อเท็จจริงเดียว)
-├── references/         # PMBOK Overview (canonical source) + Delivery Playbook
+├── references/         # PMBOK Overview — canonical source ที่ทุกบทอ้างอิง
 └── docs/               # มาตรฐานและเอกสารอ้างอิงสำหรับคนที่จะเขียนต่อ
 ```
 
@@ -104,8 +104,6 @@ PMBOK-Masterclass/
 "PMBOK Masterclass" โดย Witchwasin K.
 https://github.com/witchwasin/PMBOK-Masterclass — CC BY-NC 4.0
 ```
-
-**ข้อยกเว้น** — ไฟล์ `references/PMBOK-Aligned-End-to-End-Project-Delivery-Playbook.md` และ `-V2.md` เป็นเอกสารต้นฉบับจากภายนอก เก็บไว้เป็น external reference ไม่ได้เรียบเรียงขึ้นในโครงการนี้ และไม่อยู่ภายใต้สัญญาอนุญาตข้างต้น
 
 **เครื่องหมายการค้า** — PMBOK®, PMP® และ PMI® เป็นเครื่องหมายการค้าจดทะเบียนของ Project Management Institute, Inc. สัญญาอนุญาตนี้ครอบคลุมเฉพาะเนื้อหาที่เรียบเรียงขึ้นเองใน repo นี้ ไม่ครอบคลุมมาตรฐาน PMBOK ต้นฉบับซึ่งเป็นลิขสิทธิ์ของ PMI
 

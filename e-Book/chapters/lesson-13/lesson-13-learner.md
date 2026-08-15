@@ -2,7 +2,7 @@
 chapter: lesson-13
 title: Project Risk Management
 edition: Learner
-status: Ready for Human Review
+status: Released
 source_lesson: ../../../lessons/lesson-13/
 scenario_version:
   erp: "1.0"

@@ -2,7 +2,7 @@
 chapter: lesson-06
 title: Project Stakeholder Management
 edition: Instructor
-status: Ready for Human Review
+status: Released
 source_lesson: ../../../lessons/lesson-06/
 learner_chapter: ./lesson-06-learner.md
 ---

@@ -10,6 +10,9 @@ core_scenarios:
   - ERP Transformation
   - Hotel Booking Digital Platform
 total_lessons: 16
+related_books:
+  - e-Book/ (16 chapters, PMBOK 6+7)
+  - field-guide/ (11 chapters, PMBOK 8, workflow A–H)
 ---
 
 # PMBOK Masterclass — Course Roadmap

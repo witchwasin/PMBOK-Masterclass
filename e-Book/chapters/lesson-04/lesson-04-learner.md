@@ -2,7 +2,7 @@
 chapter: lesson-04
 title: 10 Project Management Knowledge Areas Overview
 edition: Learner
-status: Ready for Human Review
+status: Released
 source_lesson: ../../../lessons/lesson-04/
 scenario_version:
   erp: "1.0"

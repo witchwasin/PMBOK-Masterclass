@@ -32,6 +32,8 @@ Every blueprint, lesson, assessment, and source-mapping file must use the metada
 
 Until a lesson passes its release gate, use `status: Draft` and `validation_status: Not Validated`. `Active` is reserved for a reviewed and released lesson.
 
+The two compiled books use their own status vocabulary: files under `e-Book/` and `field-guide/` carry `status: Released` once the book is published, with `validation_status: Validated` for material that passed a batch validation gate and `Reviewed` for material that was reviewed but not gated. Lesson-level files under `lessons/` keep the `Draft` / `Review` / `Active` scale above.
+
 ## 4. Teaching sequence and depth
 
 Write a lesson as an instructor-led reasoning journey:

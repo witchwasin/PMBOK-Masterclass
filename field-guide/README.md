@@ -46,7 +46,7 @@
 
 ## แหล่งอ้างอิงของเล่มนี้
 
-โครง A→H มาจาก [PMBOK-Aligned End-to-End Project Delivery Playbook V2](../references/PMBOK-Aligned-End-to-End-Project-Delivery-Playbook-V2.md) ส่วนกรณีศึกษาที่ใช้ตลอดเล่มถูกล็อกไว้ที่ [`../scenarios/`](../scenarios)
+กรอบเนื้อหา PMBOK ของเล่มนี้อ้างอิง [`../references/PMBOK-Overview.md`](../references/PMBOK-Overview.md) ซึ่งเป็น canonical source ของทั้ง repo ส่วนโครง A→H (Pre-sales → Closure) เป็นการจัดลำดับของเล่มนี้เองตามลำดับงานจริงของโครงการ และกรณีศึกษาที่ใช้ตลอดเล่มถูกล็อกไว้ที่ [`../scenarios/`](../scenarios)
 
 ## การสร้าง PDF ใหม่
 

@@ -3,8 +3,8 @@ chapter: ch-08
 title: "Verification, UAT และ Release Readiness (Playbook F)"
 book: "PM Delivery Guide: From Pre-sales to Closure — คู่มือปฏิบัติการบริหารโครงการซอฟต์แวร์ (PMBOK 8th Edition)"
 edition: Learner
-status: Draft
-validation_status: Not Validated
+status: Released
+validation_status: Reviewed
 last_reviewed: 2026-08-15
 intended_learner_level: Experienced PM
 difficulty: Core
@@ -16,7 +16,7 @@ related_chapters:
   - "Ch.5 — วางแผน Test/Quality (cross-reference)"
   - "Ch.9 — Go-Live & Hypercare (ต่อจาก Go/No-Go)"
 canonical_source:
-  - ../../references/PMBOK-Aligned-End-to-End-Project-Delivery-Playbook-V2.md (Phase F)
+  - ../../references/PMBOK-Overview.md (PMBOK framework)
   - ../../e-Book/chapters/lesson-10/lesson-10-learner.md (Quality — ฝั่ง Control Quality/Validate)
 scenario_version:
   hotel_booking: "1.0"

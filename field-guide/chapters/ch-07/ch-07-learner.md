@@ -3,8 +3,8 @@ chapter: ch-07
 title: "Monitoring, Controlling และ Change Control (Playbook E)"
 book: "PM Delivery Guide: From Pre-sales to Closure — คู่มือปฏิบัติการบริหารโครงการซอฟต์แวร์ (PMBOK 8th Edition)"
 edition: Learner
-status: Draft
-validation_status: Not Validated
+status: Released
+validation_status: Reviewed
 last_reviewed: 2026-08-15
 intended_learner_level: Experienced PM
 difficulty: Core
@@ -16,7 +16,7 @@ related_chapters:
   - "Ch.2 — Initiation (Integration ท่อนที่ 1: Charter)"
   - "Ch.10 — Transition & Closure (Integration ท่อนที่ 3: Close)"
 canonical_source:
-  - ../../references/PMBOK-Aligned-End-to-End-Project-Delivery-Playbook-V2.md (Phase E)
+  - ../../references/PMBOK-Overview.md (PMBOK framework)
   - ../../e-Book/chapters/lesson-05/lesson-05-learner.md (Perform Integrated Change Control)
   - ../../e-Book/chapters/lesson-09/lesson-09-learner.md (Cost Control / EVM ฝั่ง Control)
   - ../../e-Book/chapters/lesson-08/lesson-08-learner.md (Control Schedule)

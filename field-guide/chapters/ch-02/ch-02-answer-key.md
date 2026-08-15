@@ -1,10 +1,10 @@
 ---
 chapter: ch-02
 title: "Initiation — Charter, Stakeholder, Governance และ Kickoff (Playbook B)"
-book: "PM Delivery Guide (Ver.2)"
+book: "PM Delivery Guide"
 edition: Answer Key
-status: Draft
-validation_status: Not Validated
+status: Released
+validation_status: Reviewed
 last_reviewed: 2026-08-13
 learner_chapter: ./ch-02-learner.md
 ---

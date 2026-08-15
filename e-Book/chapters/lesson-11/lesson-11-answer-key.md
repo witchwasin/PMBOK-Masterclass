@@ -2,7 +2,7 @@
 chapter: lesson-11
 title: Project Resource Management
 document_type: Answer Key
-status: Ready for Human Review
+status: Released
 learner_chapter: ./lesson-11-learner.md
 ---
 

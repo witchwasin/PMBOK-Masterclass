@@ -3,8 +3,8 @@ chapter: ch-03
 title: "Requirements, Scope และ WBS (Playbook C1–C6)"
 book: "PM Delivery Guide: From Pre-sales to Closure — คู่มือปฏิบัติการบริหารโครงการซอฟต์แวร์ (PMBOK 8th Edition)"
 edition: Learner
-status: Draft
-validation_status: Not Validated
+status: Released
+validation_status: Reviewed
 last_reviewed: 2026-08-15
 intended_learner_level: Beginner PM | Experienced PM
 difficulty: Core
@@ -15,7 +15,7 @@ related_chapters:
   - "Ch.5 — Risk/Procurement/Environment (รวม Test Strategy/Quality Plan — ดู cross-reference)"
   - "Ch.8 — Verification/UAT (Test Results/UAT Evidence)"
 canonical_source:
-  - ../../references/PMBOK-Aligned-End-to-End-Project-Delivery-Playbook-V2.md (Phase C1–C6)
+  - ../../references/PMBOK-Overview.md (PMBOK framework)
   - ../../e-Book/chapters/lesson-07/lesson-07-learner.md (Scope Management เต็มบท)
 scenario_version:
   hotel_booking: "1.0"
@@ -58,7 +58,7 @@ artifact_outputs:
 
 ## 3. Mental Model
 
-จาก Playbook V2:
+ลำดับงานของช่วงนี้:
 
 ```text
 Stakeholder Need (Ch.2)
@@ -105,7 +105,7 @@ Stakeholder Need (Ch.2)
 
 **[PMBOK 8]** PMBOK ไม่บังคับชื่อเอกสาร — บังคับว่า Requirement ถูก Elicit, Analyze, Document, Prioritize, Approve, Trace, Validate และ Control
 
-**[Best Practice]** SRS (Software Requirements Specification) ควรมีเมื่อ contract formal/ระบบซับซ้อน/หลายทีม/ต้อง sign-off/compliance; FSD (Functional Specification) ครอบคลุม behavior, business rules, screen behavior, validation, error handling — **ห้ามตัด FSD โดยไม่มีสิ่งทดแทน** เมื่อ logic ซับซ้อน/หลายระบบ/offshore/audit/ผูก payment (ดู Document Substitution Matrix ใน Playbook V2 §C4.4)
+**[Best Practice]** SRS (Software Requirements Specification) ควรมีเมื่อ contract formal/ระบบซับซ้อน/หลายทีม/ต้อง sign-off/compliance; FSD (Functional Specification) ครอบคลุม behavior, business rules, screen behavior, validation, error handling — **ห้ามตัด FSD โดยไม่มีสิ่งทดแทน** เมื่อ logic ซับซ้อน/หลายระบบ/offshore/audit/ผูก payment
 
 **[Best Practice]** กฎเลือกเอกสาร: ดู **coverage** ไม่ใช่ชื่อไฟล์ — แต่ละหัวข้อต้องมี "เอกสารหลักหรือเอกสารทดแทน" อย่างใดอย่างหนึ่ง (Document Substitution Matrix):
 

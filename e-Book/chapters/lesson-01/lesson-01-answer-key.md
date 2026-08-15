@@ -2,7 +2,7 @@
 chapter: lesson-01
 title: ทำไม Project Manager ต้องรู้ PMBOK
 edition: Answer Key
-status: Ready for Human Review
+status: Released
 source_assessment: ../../../lessons/lesson-01/Lesson-01_3-Assessment.md
 ---
 

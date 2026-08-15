@@ -1,10 +1,10 @@
 ---
 chapter: ch-01
 title: "Pre-sales — จาก Opportunity ถึง Proposal/SOW (Playbook A)"
-book: "PM Delivery Guide (Ver.2)"
+book: "PM Delivery Guide"
 edition: Instructor
-status: Draft
-validation_status: Not Validated
+status: Released
+validation_status: Reviewed
 last_reviewed: 2026-08-13
 learner_chapter: ./ch-01-learner.md
 scenario_extension: "[Teaching Scenario Extension] — vendor layer (Booking Tech Solutions) ใช้เฉพาะ Ch.1–2"

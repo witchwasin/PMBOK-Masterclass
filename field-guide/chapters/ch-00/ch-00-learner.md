@@ -3,8 +3,8 @@ chapter: ch-00
 title: "PMBOK Primer — กรอบคิดสำหรับเล่มนี้ (PMBOK 8)"
 book: "PM Delivery Guide: From Pre-sales to Closure — คู่มือปฏิบัติการบริหารโครงการซอฟต์แวร์ (PMBOK 8th Edition)"
 edition: Learner
-status: Draft
-validation_status: Not Validated
+status: Released
+validation_status: Reviewed
 last_reviewed: 2026-08-15
 intended_learner_level: Beginner PM | Experienced PM
 difficulty: Foundation
@@ -12,7 +12,6 @@ estimated_study_time: 60
 prerequisite: ไม่มี
 related_chapters: "ทุกบท (Ch.1–10)"
 canonical_source:
-  - ../../references/PMBOK-Aligned-End-to-End-Project-Delivery-Playbook-V2.md (§1 Reference Basis, §1.1)
   - ../../references/PMBOK-Overview.md (ปรับ)
 note: "บทปฐมบท — ไม่มี Workshop และ Assessment โดยการออกแบบ"
 ---
@@ -66,7 +65,7 @@ Business Need
 | Focus Areas | 5 | จุดเน้นการปฏิบัติ (เช่น tailoring, governance, quality, risk, value) | "ตอนนี้ต้องโฟกัสตรงไหน" — เช่น ใกล้ launch → โฟกัส quality/risk มากกว่าตกแต่ง UI; ช่วงเริ่ม → โฟกัส governance/scope |
 | Process Groups | 5 | Initiating → Planning → Executing → Monitoring & Controlling → Closing (จาก Process Groups: A Practice Guide) | "วงจรที่เกิดซ้ำ ไม่ใช่บันไดที่เดินขึ้นครั้งเดียว" — กลาง execution ยังต้องกลับไป planning อีกหลายรอบ |
 
-> **หมายเหตุ:** รายละเอียดระดับหัวข้อของ PMBOK 8 เป็นไปตาม reference basis ของเล่มนี้ (Playbook V2 §1) — ตัวเลขข้างต้นเป็นกรอบที่เล่มนี้ใช้; เนื้อหาหลักของเล่มเน้น "วิธีใช้" มากกว่า "จำจำนวน"
+> **หมายเหตุ:** รายละเอียดระดับหัวข้อของ PMBOK 8 เป็นไปตาม PMBOK 8th Edition — ตัวเลขข้างต้นเป็นกรอบที่เล่มนี้ใช้; เนื้อหาหลักของเล่มเน้น "วิธีใช้" มากกว่า "จำจำนวน"
 
 ### 4.3 Process Groups ไม่ใช่ Project Phases
 

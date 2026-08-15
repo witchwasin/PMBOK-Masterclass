@@ -2,7 +2,7 @@
 chapter: lesson-08
 title: Project Schedule Management
 edition: Instructor
-status: Ready for Human Review
+status: Released
 source_lesson: ../../../lessons/lesson-08/
 learner_chapter: ./lesson-08-learner.md
 ---

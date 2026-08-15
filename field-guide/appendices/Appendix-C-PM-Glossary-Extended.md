@@ -1,9 +1,9 @@
 ---
 title: "Appendix C — PM Glossary (ฉบับเล่ม)"
-book: "PM Delivery Guide (Ver.2)"
+book: "PM Delivery Guide"
 document_type: Appendix
 version: 1.0
-status: Draft
+status: Released
 last_reviewed: 2026-08-13
 note: "คำศัพท์ทั้งหมดถูก sync เข้า docs/PM_GLOSSARY.md แล้ว (ส่วน field-guide additions) — ไฟล์นี้คือฉบับรวมสำหรับผู้อ่านเล่ม ไม่ใช่ glossary แยก"
 ---

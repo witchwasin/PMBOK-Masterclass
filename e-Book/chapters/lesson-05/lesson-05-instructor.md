@@ -2,7 +2,7 @@
 chapter: lesson-05
 title: Project Integration Management
 edition: Instructor
-status: Ready for Human Review
+status: Released
 source_lesson: ../../../lessons/lesson-05/
 learner_chapter: ./lesson-05-learner.md
 ---

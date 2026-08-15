@@ -1,6 +1,6 @@
 ---
 document_type: Release Manifest
-status: Ready for Release Packaging
+status: Released
 author: Witchwasin K.
 generated_on: 2026-07-22
 ---

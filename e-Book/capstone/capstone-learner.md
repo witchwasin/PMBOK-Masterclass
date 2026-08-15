@@ -1,7 +1,7 @@
 ---
 document_type: E-book Capstone
 edition: Learner
-status: Ready for Human Review
+status: Released
 source_capstone: ../../capstone/
 scenario_version:
   erp: "1.0"

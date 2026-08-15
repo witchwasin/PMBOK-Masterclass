@@ -2,7 +2,7 @@
 chapter: lesson-02
 title: Project Management Overview
 edition: Learner
-status: Ready for Human Review
+status: Released
 source_lesson: ../../../lessons/lesson-02/
 scenario_version:
   erp: "1.0"

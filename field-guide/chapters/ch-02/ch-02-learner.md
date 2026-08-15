@@ -3,8 +3,8 @@ chapter: ch-02
 title: "Initiation — Charter, Stakeholder, Governance และ Kickoff (Playbook B)"
 book: "PM Delivery Guide: From Pre-sales to Closure — คู่มือปฏิบัติการบริหารโครงการซอฟต์แวร์ (PMBOK 8th Edition)"
 edition: Learner
-status: Draft
-validation_status: Not Validated
+status: Released
+validation_status: Reviewed
 last_reviewed: 2026-08-15
 intended_learner_level: Beginner PM | Experienced PM
 difficulty: Core
@@ -15,7 +15,7 @@ related_chapters:
   - "Ch.7 — Monitoring & Change (Perform Integrated Change Control)"
   - "Ch.10 — Transition & Closure (Close Project or Phase)"
 canonical_source:
-  - ../../references/PMBOK-Aligned-End-to-End-Project-Delivery-Playbook-V2.md (Phase B)
+  - ../../references/PMBOK-Overview.md (PMBOK framework)
   - ../../e-Book/chapters/lesson-05/lesson-05-learner.md (Integration: Develop Charter)
   - ../../e-Book/chapters/lesson-06/lesson-06-learner.md (Stakeholder Management เต็มบท)
 scenario_version:
@@ -68,7 +68,7 @@ artifact_outputs:
 
 ## 3. Mental Model
 
-จาก Playbook V2 Phase B flow:
+ลำดับงานของ Phase B:
 
 ```text
 Internal Handover (B1) — Sales -> Delivery: เอาสิ่งที่รับปากไว้ออกมาทั้งหมด

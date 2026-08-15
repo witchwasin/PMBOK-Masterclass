@@ -2,7 +2,7 @@
 chapter: lesson-13
 title: Project Risk Management
 document_type: Answer Key
-status: Ready for Human Review
+status: Released
 learner_chapter: ./lesson-13-learner.md
 ---
 

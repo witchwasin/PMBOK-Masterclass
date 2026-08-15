@@ -228,7 +228,7 @@ canonical_source: references/PMBOK-Overview.md
 
 ## Section 7: field-guide — Knowledge Area → Chapter Mapping
 
-> ใน `field-guide/` ("PM Delivery Guide") KA เดิมของ `e-Book/` ถูกผ่าและเทลง chapter ใหม่ที่เรียงตาม workflow จริง A→H ของ `references/PMBOK-Aligned-End-to-End-Project-Delivery-Playbook-V2.md` — ตารางด้านล่างคือ mapping ระหว่างสองเล่ม (Chapter ใหม่ ≠ KA เดิมแบบ 1:1 — ดูคำเตือน Quality/Integration ด้านล่าง)
+> ใน `field-guide/` ("PM Delivery Guide") KA เดิมของ `e-Book/` ถูกผ่าและเทลง chapter ใหม่ที่เรียงตาม workflow จริง A→H ของโครงการ — ตารางด้านล่างคือ mapping ระหว่างสองเล่ม (Chapter ใหม่ ≠ KA เดิมแบบ 1:1 — ดูคำเตือน Quality/Integration ด้านล่าง)
 
 | Knowledge Area เดิม (e-Book) | ถูก map ไปที่ (field-guide/chapters/) | Source lesson เดิม |
 |---|---|---|

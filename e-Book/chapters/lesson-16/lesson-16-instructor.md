@@ -2,7 +2,7 @@
 chapter: lesson-16
 title: Predictive vs Agile vs Hybrid and Tailoring
 edition: Instructor
-status: Ready for Human Review
+status: Released
 source_lesson: ../../../lessons/lesson-16/
 learner_chapter: ./lesson-16-learner.md
 ---

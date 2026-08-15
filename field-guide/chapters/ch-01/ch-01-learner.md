@@ -3,8 +3,8 @@ chapter: ch-01
 title: "Pre-sales — จาก Opportunity ถึง Proposal/SOW (Playbook A)"
 book: "PM Delivery Guide: From Pre-sales to Closure — คู่มือปฏิบัติการบริหารโครงการซอฟต์แวร์ (PMBOK 8th Edition)"
 edition: Learner
-status: Draft
-validation_status: Not Validated
+status: Released
+validation_status: Reviewed
 last_reviewed: 2026-08-15
 intended_learner_level: Beginner PM | Experienced PM
 difficulty: Core
@@ -14,7 +14,7 @@ prerequisite:
 related_chapters:
   - "Ch.2 — Initiation (Charter, Stakeholder, Governance)"
 canonical_source:
-  - ../../references/PMBOK-Aligned-End-to-End-Project-Delivery-Playbook-V2.md (Phase A)
+  - ../../references/PMBOK-Overview.md (PMBOK framework)
   - ../../e-Book/chapters/lesson-05/lesson-05-learner.md (บางส่วน: Business Case / Value)
 scenario_version:
   hotel_booking: "1.0"
@@ -62,7 +62,7 @@ artifact_outputs:
 
 ## 3. Mental Model
 
-จาก Playbook V2 Phase A flow:
+ลำดับงานของ Phase A:
 
 ```text
 Opportunity Intake
@@ -90,7 +90,7 @@ Opportunity Intake
 
 ### 4.2 Initial Discovery — คำถาม 10 ข้อขั้นต่ำ
 
-**[PMBOK 8]** Discovery คือการเก็บ fact ก่อนออกความเห็น ใช้คำถามขั้นต่ำ 10 ข้อจาก Playbook V2 §A2: ปัญหาปัจจุบันคืออะไร เกิดกับใคร เกิดบ่อยแค่ไหน ผลกระทบคืออะไร ทำไมต้องแก้ตอนนี้ ถ้าไม่ทำจะเกิดอะไร Outcome ที่ต้องการคืออะไร Success วัดอย่างไร มีข้อจำกัดอะไร และใครมีอำนาจตัดสินใจ
+**[PMBOK 8]** Discovery คือการเก็บ fact ก่อนออกความเห็น ใช้คำถามขั้นต่ำ 10 ข้อ: ปัญหาปัจจุบันคืออะไร เกิดกับใคร เกิดบ่อยแค่ไหน ผลกระทบคืออะไร ทำไมต้องแก้ตอนนี้ ถ้าไม่ทำจะเกิดอะไร Outcome ที่ต้องการคืออะไร Success วัดอย่างไร มีข้อจำกัดอะไร และใครมีอำนาจตัดสินใจ
 
 **[Best Practice]** ระหว่าง Discovery ให้จับ As-Is Process (trigger, actor, step, data, decision, system, waiting, error, rework, pain, impact) แล้วทำ Root Cause Analysis แยก symptom / immediate cause / root cause — อย่ารีบแปลง pain point เป็น software feature ทันที
 
@@ -197,7 +197,7 @@ Next Action: ถ้า Bid -> เขียน Proposal ครบ 19 องค์
 
 ## 7. จุดตัดสินใจและกับดักที่พบบ่อย
 
-**Common Mistakes (จาก Playbook V2 §A.11):**
+**Common Mistakes:**
 
 1. รับปากราคาและเวลาจากคำบอกเล่าครั้งแรก — ผล: ขาด basis ในการ defend เมื่อ scope เปลี่ยน
 2. Estimate โดย PM คนเดียว — ผล: ไม่เห็น skill/capacity gap จริงของทีม

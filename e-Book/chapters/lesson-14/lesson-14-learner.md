@@ -2,7 +2,7 @@
 chapter: lesson-14
 title: Project Procurement Management
 edition: Learner
-status: Ready for Human Review
+status: Released
 source_lesson: ../../../lessons/lesson-14/
 scenario_version:
   erp: "1.0"

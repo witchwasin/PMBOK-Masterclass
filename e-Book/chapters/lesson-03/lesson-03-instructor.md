@@ -2,7 +2,7 @@
 chapter: lesson-03
 title: 5 Project Management Process Groups
 edition: Instructor
-status: Ready for Human Review
+status: Released
 source_lesson: ../../../lessons/lesson-03/
 learner_chapter: ./lesson-03-learner.md
 ---

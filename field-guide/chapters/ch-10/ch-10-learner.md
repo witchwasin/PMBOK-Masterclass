@@ -3,8 +3,8 @@ chapter: ch-10
 title: "Transition, Closure และ Benefit Handover (Playbook H)"
 book: "PM Delivery Guide: From Pre-sales to Closure — คู่มือปฏิบัติการบริหารโครงการซอฟต์แวร์ (PMBOK 8th Edition)"
 edition: Learner
-status: Draft
-validation_status: Not Validated
+status: Released
+validation_status: Reviewed
 last_reviewed: 2026-08-15
 intended_learner_level: Experienced PM
 difficulty: Core
@@ -15,7 +15,7 @@ related_chapters:
   - "Ch.2 — Initiation (Integration ท่อนที่ 1: Charter)"
   - "Ch.7 — Monitoring & Change (Integration ท่อนที่ 2: Change Control)"
 canonical_source:
-  - ../../references/PMBOK-Aligned-End-to-End-Project-Delivery-Playbook-V2.md (Phase H)
+  - ../../references/PMBOK-Overview.md (PMBOK framework)
   - ../../e-Book/chapters/lesson-05/lesson-05-learner.md (Close Project or Phase)
 scenario_version:
   hotel_booking: "1.0"

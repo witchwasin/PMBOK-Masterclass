@@ -1,10 +1,10 @@
 ---
 chapter: ch-01
 title: "Pre-sales — จาก Opportunity ถึง Proposal/SOW (Playbook A)"
-book: "PM Delivery Guide (Ver.2)"
+book: "PM Delivery Guide"
 edition: Answer Key
-status: Draft
-validation_status: Not Validated
+status: Released
+validation_status: Reviewed
 last_reviewed: 2026-08-13
 learner_chapter: ./ch-01-learner.md
 ---

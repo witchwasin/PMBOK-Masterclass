@@ -73,8 +73,8 @@ title: <title>
 document_type: <Lesson | Blueprint | Assessment | Source Mapping>
 difficulty: <Foundation | Core | Advanced>
 estimated_study_time: <minutes>
-status: Draft | Review | Active
-validation_status: Not Validated | Validated
+status: Draft | Review | Active          # lessons/ ; compiled books use: Released
+validation_status: Not Validated | Validated  # books may also use: Reviewed
 last_reviewed: <YYYY-MM-DD>
 intended_learner_level: <Beginner PM | Experienced PM | Senior PM>
 prerequisite:

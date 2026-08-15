@@ -2,7 +2,7 @@
 chapter: lesson-12
 title: Project Communications Management
 edition: Learner
-status: Ready for Human Review
+status: Released
 source_lesson: ../../../lessons/lesson-12/
 scenario_version:
   erp: "1.0"
