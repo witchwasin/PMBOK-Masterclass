@@ -54,4 +54,4 @@
 python3 field-guide/pdf/build_pdf.py
 ```
 
-สคริปต์จะประกอบบททั้งหมดเป็น `book.html` / `book-learner.html` แล้วเรนเดอร์เป็น PDF ทั้งสองฉบับ (ใช้ weasyprint ถ้ามี ไม่งั้น fallback ไป Chrome headless) — ไฟล์ HTML ระหว่างทางไม่ถูก commit
+สคริปต์จะประกอบบททั้งหมดเป็น `book.html` / `book-learner.html` แล้วเรนเดอร์เป็น PDF ทั้งสองฉบับด้วย Chrome headless — ไฟล์ HTML ระหว่างทางไม่ถูก commit

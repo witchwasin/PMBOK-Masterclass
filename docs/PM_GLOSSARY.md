@@ -1,8 +1,8 @@
 ---
 title: PM Glossary
 document_type: Glossary
-version: 1.0
-last_updated: 2026-07-22
+version: 1.1
+last_updated: 2026-08-15
 ---
 
 # PMBOK Masterclass — PM Glossary

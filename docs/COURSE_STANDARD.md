@@ -1,8 +1,9 @@
 ---
 title: Course Standard
 document_type: Course Standard
-version: 1.0
+version: 1.1
 status: Active
+last_updated: 2026-08-15
 ---
 
 # PMBOK Masterclass — Course Standard

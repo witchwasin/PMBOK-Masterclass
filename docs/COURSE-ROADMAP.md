@@ -1,8 +1,9 @@
 ---
 title: PMBOK Masterclass — Course Roadmap
 document_type: Course Roadmap
-version: 2.0
+version: 2.1
 status: Active
+last_updated: 2026-08-15
 language: Thai
 canonical_source:
   - references/PMBOK-Overview.md

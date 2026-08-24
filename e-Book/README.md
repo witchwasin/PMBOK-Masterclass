@@ -34,4 +34,4 @@ e-Book/
 python3 e-Book/pdf/build_pdf.py
 ```
 
-สคริปต์จะประกอบบททั้งหมดเป็น `book.html` แล้วเรนเดอร์เป็น PDF (ใช้ weasyprint ถ้ามี ไม่งั้น fallback ไป Chrome headless) — `book.html` เป็นไฟล์ระหว่างทาง ไม่ถูก commit
+สคริปต์จะประกอบบททั้งหมดเป็น `book.html` แล้วเรนเดอร์เป็น PDF ด้วย Chrome headless — `book.html` เป็นไฟล์ระหว่างทาง ไม่ถูก commit

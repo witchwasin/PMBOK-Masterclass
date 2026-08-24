@@ -2,7 +2,7 @@
 document_type: Release Manifest
 status: Released
 author: Witchwasin K.
-generated_on: 2026-07-22
+generated_on: 2026-08-15
 ---
 
 # PMBOK-aligned Practical Masterclass Release Manifest
@@ -24,14 +24,14 @@ generated_on: 2026-07-22
 
 - This package is a PMBOK-aligned Practical Masterclass and is not official PMI material.
 - Learner-facing files do not include instructor model answers or rubrics.
-- A combined Learner + Instructor book-style PDF is produced by `../pdf/build_pdf.py` (weasyprint if available, Chrome headless otherwise) and stored at `../pdf/PMBOK-Masterclass-Complete-Edition.pdf`. EPUB export is not generated.
+- A combined Learner + Instructor book-style PDF is produced by `../pdf/build_pdf.py` (Chrome headless) and stored at `../pdf/PMBOK-Masterclass-Complete-Edition.pdf`. EPUB export is not generated.
 - Release files are self-contained for reading and review.
 
 ## Verification Snapshot
 
 | Check | Result |
 |---|---|
-| Learner full word count | 21,604 by `wc -w` |
+| Learner full word count | 21,541 by `wc -w` |
 | Combined PDF export | Produced at `../pdf/PMBOK-Masterclass-Complete-Edition.pdf` |
 | Author string | `Witchwasin K.` present in release metadata and reader files |
 | Markdown link check | Passed |
